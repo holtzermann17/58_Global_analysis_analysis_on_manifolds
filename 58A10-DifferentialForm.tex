@@ -1,0 +1,178 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{DifferentialForm}
+\pmcreated{2013-03-22 12:44:46}
+\pmmodified{2013-03-22 12:44:46}
+\pmowner{rmilson}{146}
+\pmmodifier{rmilson}{146}
+\pmtitle{differential form}
+\pmrecord{28}{33050}
+\pmprivacy{1}
+\pmauthor{rmilson}{146}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{58A10}
+\pmdefines{exterior derivative}
+\pmdefines{1-form}
+\pmdefines{exterior product}
+\pmdefines{wedge product}
+\pmdefines{interior product}
+\pmdefines{tensorial}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+
+\newcommand{\Rset}{\mathbb{R}}
+\newcommand{\Hom}{\operatorname{Hom}}
+\begin{document}
+\PMlinkescapeword{exterior}
+\PMlinkescapeword{interior}
+\section{Notation and Preliminaries.}
+Let $M$ be an $n$-dimensional differential manifold.  Let $TM$ denote
+the manifold's tangent bundle, $C^\infty(M)$ the algebra of smooth
+functions, and $ V(M)$ the Lie algebra of smooth vector fields.  The
+directional derivative  makes $C^\infty(M)$ into a $V(M)$
+module.  Using local coordinates, the directional derivative operation
+can be expressed as
+\[ v(f) = v^i \partial_i f,\quad v\in V(M),\; f\in C^\infty(M).\]
+
+
+\section{Definitions.}
+\paragraph{Differential forms.} 
+Let $A$ be a $C^\infty(M)$ module. An $ \mathbb{R}$-linear mapping $ \alpha: V(M)\to A$ is said to be \emph{tensorial} if it is a
+$C^\infty(M)$-homomorphism, in other words, if it satisfies
+\[  \alpha(f v) = f \alpha(v)  \]
+for all
+for all vector fields $v\in V(M)$ and functions $f\in C^\infty(M)$.
+More generally, a multilinear map $\alpha: V(M)\times\dots\times
+V(M)\to A$ is called tensorial if it satisfies
+\[
+  \alpha(f u,\dots,v)  =   \cdots = \alpha(u,\dots, fv) = f \alpha(u,\dots, v)
+\]
+for all vector fields $u,\dots,v$ and all functions $f\in C^\infty(M)$.
+
+
+
+We now define a differential 1-form to be a tensorial linear mapping
+from $V(M)$ to $C^\infty(M)$.  More generally, for $k=0,1,2,\ldots, $ we
+define a differential $k$-form to be a tensorial multilinear,
+antisymmetric, mapping from $V(M)\times \cdots \times V(M)$ ($k$
+times) to $C^\infty(M)$.  Using slightly fancier language, the above amounts
+to saying that a $1$-form is a section of the cotangent bundle $T^*M =
+\Hom(TM,\Rset)$, while a differential $k$-form as a section of
+$\Hom(\Lambda^k TM,\Rset)$. 
+
+Henceforth, we let $\Omega^k(M)$ denote the $C^\infty(M)$-module of
+differential $k$-forms. In particular, a differential $0$-form is the
+same thing as a function.  Since the tangent spaces of $M$ are
+$n$-dimensional vector spaces, we also have $\Omega^k(M)=0$ for $k>n$.
+We let
+\[\Omega(M) = \bigoplus_{k=0}^n \Omega^k(M)\]
+denote the vector space of all differential forms.  There is a natural
+operator, called the exterior product, that endows $\Omega(M)$ with
+the structure of a graded algebra.  We describe this operation below.
+
+  
+\paragraph{Exterior and Interior Product.}
+Let $v\in V(M)$ be a vector field and $\alpha\in \Omega^k(M)$ a
+differential form.  We define $\iota_v(\omega)$, the interior product
+of $v$ and $\alpha$, to be the differential $k-1$ form given by
+\[ \iota_v(\alpha)(u_1,\dots,u_{k-1}) =
+\alpha(v,v_1,\dots,v_{k-1}),\quad v_1,\dots,v_{k-1}\in V(M).\] The
+interior product of a vector field with a $0$-form is defined to be
+zero.  
+
+Let $\alpha\in \Omega^k(M)$ and $\beta\in\Omega^\ell(M)$ be differential
+forms.  We define the exterior, or wedge product
+$\alpha\wedge\beta\in\Omega^{k+\ell}(M)$ to be the 
+unique differential form such that
+\[ \iota_v(\alpha\wedge\beta) = \iota_v(\alpha)\wedge \beta + (-1)^k
+\alpha \wedge \iota_v(\beta)\]
+for all vector fields $v\in V(M)$.  Equivalently, we could have defined
+\[ (\alpha\wedge\beta)(v_1,\dots, v_{k+\ell}) =
+\sum_{\pi}\operatorname{sgn}(\pi)
+\alpha(v_{\pi_1},\dots,v_{\pi_k})
+\beta(v_{\pi_{k+1}},\dots,v_{\pi_{k+\ell}}),\] where the sum is taken
+over all permutations $\pi$ of $\{1,2,\dots, k+\ell\}$ such that $\pi_1<
+\pi_2 < \cdots \pi_k$ and $\pi_{k+1} < \cdots < \pi_{k+\ell}$, and where
+$\operatorname{sgn} \pi=\pm 1$ according to whether $\pi$ is an even
+or odd permutation.
+
+
+
+\paragraph{Exterior derivative.} The exterior derivative is a
+first-order differential operator $d:\Omega^*(M)\rightarrow
+\Omega^*(M)$, that can be defined as the unique linear mapping 
+satisfying
+\begin{align*}
+  d(d \alpha)&=0, \qquad \alpha\in\Omega^k(M);\\
+  \iota_V(df)&=v(f),\qquad  v\in V(M),\;f\in C^\infty(M);\\
+  d(\alpha \wedge \beta) &= d(\alpha)\wedge \beta + (-1)^k
+  \alpha\wedge d(\beta), \qquad
+  \alpha\in\Omega^k(M),\;\beta\in \Omega^\ell(M).
+\end{align*}
+
+
+\section{Local coordinates.}
+Let $(x^1,\ldots,x^n)$ be a system of local coordinates on $M$, and
+let $\partial_1,\dots,\partial_n$ denote the corresponding frame of
+coordinate vector fields. In other words, 
+\[ \partial_i(x^j) = \delta_i{}^j,\] where the right hand side is the
+usual Kronecker delta symbol. By the definition of the
+exterior derivative, 
+\[\iota_{\partial_i} (dx^j) = \delta_i{}^j;\]
+In other words, the 1-forms $dx^1,\dots,dx^n$ form the dual coframe.
+
+Locally, the $\partial_i$ freely generate $V(M)$, meaning
+that every vector field $v\in V(M)$ has the form
+\[ v= v^i \partial_i, \]
+where the coordinate components $v^i$ are uniquely determined as
+\[ v^i=v(x^i). \]
+Similarly, locally the $dx^i$ freely generate $\Omega^1(M)$.  This
+means that 
+every
+one-form $\alpha\in\Omega^1(M)$ takes the form
+\[\alpha=\alpha_i dx^i,\]
+where
+\[\alpha_i=\iota_{\partial_i} (\alpha).\]
+More generally, locally $\Omega^k(M)$ is a freely generated by the
+differential $k$-forms
+\[dx^{i_1}\wedge\cdots\wedge dx^{i_k},\qquad 1\leq
+i_1<i_2<\cdots<i_k\leq n.\] Thus, a differential form $\alpha\in
+\Omega^k(M)$ is given by
+\begin{align}
+  \label{eq:dformcomponents}
+  \alpha &= \!\!\!\sum_{i_1< \ldots< i_k} \!\!\!\alpha_{i_1\ldots
+    i_k}\, d x^{i_1} \wedge\ldots\wedge d x^ {i_k},\\ \nonumber
+  &= \frac{1}{k!} \; \alpha_{i_1\ldots
+    i_k}\, d x^{i_1} \wedge\ldots\wedge d x^ {i_k},
+\end{align}
+where
+\[ \alpha_{i_1\dots i_k} = \alpha(\partial_{i_1},\dots,
+\partial_{i_k}).\] Consequently, for vector fields $u,v,\dots, w\in
+V(M)$, we have
+\[ \alpha(u,v,\dots,w)  = \alpha_{i_1i_2\dots i_k} u^{i_1} v^{i_2}\cdots w^{i_k}.\]
+
+In terms of local coordinates and the skew-symmetrization index
+notation, the interior and exterior product, and the exterior
+derivative take the following expressions:
+\begin{align}
+  (\iota_v (\alpha))_{i_1\dots i_k} &= v^j
+  \alpha_{j i_1\dots i_k},\quad v\in V(M),\; \alpha\in\Omega^{k+1}(M);\\
+  \label{eq:dfextprod}
+  (\alpha\wedge\beta)_{i_1\dots i_{k+\ell}} &= \binom{k+\ell}{k}\,
+  \alpha_{[i_1\dots i_k} \beta_{i_{k+1}\dots i_{k+\ell}]},\quad
+  \alpha\in\Omega^k(M),\; \beta\in\Omega^\ell(M);\\
+  \label{eq:dfextder}
+  (d\alpha)_{i_0i_1\dots i_k} &= (k+1) \,\partial_{[i_0} \alpha_{i_1\dots
+    i_k]},\quad \alpha\in\Omega^k(M).
+\end{align}
+Note that some authors prefer a different definition of the components
+of a differential.  According to this alternate convention, a factor
+of $k!$ placed before the summation sign in
+\eqref{eq:dformcomponents}, and the leading factors are removed from
+\eqref{eq:dfextprod} and \eqref{eq:dfextder}.
+%%%%%
+%%%%%
+\end{document}

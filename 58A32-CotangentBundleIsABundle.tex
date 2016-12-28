@@ -1,0 +1,53 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{CotangentBundleIsABundle}
+\pmcreated{2013-03-22 14:54:31}
+\pmmodified{2013-03-22 14:54:31}
+\pmowner{rspuzio}{6075}
+\pmmodifier{rspuzio}{6075}
+\pmtitle{cotangent bundle is a bundle}
+\pmrecord{6}{36593}
+\pmprivacy{1}
+\pmauthor{rspuzio}{6075}
+\pmtype{Proof}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{58A32}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+Verifying the first criterion is simply a matter of writing it out:
+ $$(x^1, \ldots, x^{2n}) \mapsto ( \pi (x^1, \ldots, x^{2n}), \phi_\alpha (x^1, \ldots, x^{n})) = ( (x^1, \ldots, x^n), (x^{n+1}, \ldots, x^{2n}) )$$
+This is obviously a homeomorphism.
+
+As for the second criterion,
+\begin{eqnarray*}
+\sum_{j = 1}^n {g_{\alpha \beta}}^i_j (x^1, \ldots, x^{2n}) {\phi_\beta}^j (x^1, \ldots, x^{2n}) &=& \sum_{j = n}^{2n} {\partial \big( \sigma_{\alpha \beta} (x^1, \ldots x^n) \big)^i \over \partial x^j} x^{j+n} \\ &=& {{\sigma'}_{\alpha \beta}}^{i+n} (x^1, \ldots, x^{2n}) \\ &=& {\phi_\alpha}^i (x^1, \ldots, x^{2n})
+\end{eqnarray*}
+
+The third criterion follows from the chain rule:
+\begin{eqnarray*}
+{g_{\alpha \beta}}^i_j  {g_{\beta \gamma}}^j_k = {\partial \big( \sigma_{\alpha \beta} (x^1, \ldots x^n) \big)^i \over \partial x^j} {\partial \big( \sigma_{\beta \gamma} (x^1, \ldots x^n) \big)^j \over \partial x^k}
+\end{eqnarray*}
+%%%%%
+%%%%%
+\end{document}

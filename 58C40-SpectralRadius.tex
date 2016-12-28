@@ -1,0 +1,54 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{SpectralRadius}
+\pmcreated{2013-03-22 13:13:58}
+\pmmodified{2013-03-22 13:13:58}
+\pmowner{Koro}{127}
+\pmmodifier{Koro}{127}
+\pmtitle{spectral radius}
+\pmrecord{11}{33703}
+\pmprivacy{1}
+\pmauthor{Koro}{127}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{58C40}
+\pmdefines{spectrum}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+If $V$ is a vector space over $\mathbb{C}$, the spectrum of a linear mapping $T:V\rightarrow V$ is the set
+\[\sigma(T) = 
+\{\lambda\in \mathbb{C}: T-\lambda I \mbox{is not invertible}\},\]
+where $I$ denotes the identity mapping. 
+If $V$ is finite dimensional, the spectrum of $T$ is precisely the set of its eigenvalues. For infinite dimensional spaces this is not generally true,
+although it is true that each eigenvalue of $T$ belongs to $\sigma(T)$. The \emph{spectral radius} of $T$ is 
+\[\rho(T) = \sup \{|\lambda|:\lambda\in\sigma(T)\}.\]
+
+More generally, the spectrum and spectral radius can be defined for Banach algebras with identity element: If $\mathcal{A}$ is a Banach algebra over $\mathbb{C}$ with identity element $e$, the spectrum of an element $a \in \mathcal{A}$ is the set
+ $$\sigma(a) = \{ \lambda \in \mathbb{C} : a - \lambda e \mbox{is not invertible in} \mathcal{A} \}$$
+
+The spectral radius of $a$ is $\rho(a) = \sup \{| \lambda | : \lambda \in \sigma(a) \}$.
+
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,114 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{Current}
+\pmcreated{2013-03-22 14:27:39}
+\pmmodified{2013-03-22 14:27:39}
+\pmowner{paolini}{1187}
+\pmmodifier{paolini}{1187}
+\pmtitle{current}
+\pmrecord{7}{35980}
+\pmprivacy{1}
+\pmauthor{paolini}{1187}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{58A25}
+\pmdefines{mass}
+\pmdefines{support}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newcommand{\R}{\mathbb R}
+\begin{document}
+Let $\Lambda_c^m(\R^n)$ denote the space of $C^\infty$ differentiable $m$-forms with compact support in $\R^n$. A continuous linear operator $T\colon \Lambda_c^m(\R^n)\to \R$ is called an $m$-\emph{current}. Let $\mathcal D_m$ denote the space of $m$-currents in $\R^n$. 
+We define a boundary operator $\partial\colon \mathcal D_{m+1}\to \mathcal D_m$ by
+\[
+  \partial T(\omega) := T(d\omega).
+\]
+
+We will see that currents represent a generalization of $m$-surfaces.
+In fact if $M$ is a compact $m$-dimensional oriented manifold with boundary, we can associate to $M$ the current $[[M]]$ defined by
+\[
+  [[M]](\omega)=\int_M \omega.
+\]
+So the definition of boundary $\partial T$ of a current, is justified by
+Stokes Theorem:
+\[
+  \int_{\partial M} \omega = \int_M d\omega.
+\]
+
+The space $\mathcal D_m$ of $m$-dimensional currents is a real vector space with operations defined by
+\[
+  (T+S)(\omega):= T(\omega)+S(\omega),\qquad
+   (\lambda T)(\omega):=\lambda T(\omega).
+\]
+The sum of two currents represents the \emph{union} of the surfaces they represents. Multiplication by a scalar represents a change in the \emph{multiplicity} of the surface. In particular multiplication by $-1$ represents the change of orientation of the surface.
+
+We define the \emph{support} of a current $T$, denoted by $\mathrm{spt}(T)$, the smallest closed set $C$ such that
+\[
+  T(\omega)=0\ \text{whenever $\omega=0$ on $C$}.
+\]
+We denote with $\mathcal E_m$ the vector subspace of $\mathcal D_m$ of currents with compact support.
+
+\section*{Topology}
+The space of currents is naturally endowed with the \emph{weak-star} topology, which will be further simply called \emph{weak convergence}. We say that a sequence $T_k$ of currents, weakly converges to a current $T$ if
+\[
+   T_k(\omega) \to T(\omega),\qquad \forall \omega.
+\]
+
+A stronger norm on the space of currents is the \emph{mass norm}. First of all we define the mass norm of a $m$-form $\omega$ as
+\[
+  ||\omega||:= \sup\{|\langle \omega,\xi\rangle|\colon \text{$\xi$ is a unit, simple, $m$-vector}\}.
+\]
+So if $\omega$ is a simple $m$-form, then its mass norm is the usual norm of its coefficient. We hence define the \emph{mass} of a current $T$ as
+\[
+  \mathbf M (T) := \sup\{ T(\omega)\colon \sup_x ||\omega(x)||\le 1\}.
+\]
+The mass of a currents represents the \emph{area} of the generalized surface.
+
+An intermediate norm, is the \emph{flat norm} defined by
+\[
+  \mathbf F (T) := \inf \{\mathbf M(A) + \mathbf M(B) \colon
+    T= A + \partial B,\ A\in\mathcal E_m,\ B\in\mathcal E_{m+1}\}.
+\]
+
+Notice that two currents are close in the mass norm if they coincide apart from 
+a small part. On the other hand the are close in the flat norm if they coincide up to a small deformation.
+
+
+\section*{Examples}
+Recall that $\Lambda_c^0(\R^n)\equiv C^\infty_c(\R^n)$ so that the following defines a $0$-current:
+\[
+  T(f) = f(0). 
+\]
+In particuar every signed measure $\mu$ with finite mass is a $0$-current:
+\[
+  T(f) = \int f(x)\, d\mu(x).
+\]
+
+Let $(x,y,z)$ be the coordinates in $\R^3$. Then the following defines a $2$-current:
+\[
+T(a\,dx\wedge dy + b\,dy\wedge dz + c\,dx\wedge dz) = 
+ \int_0^1 \int_0^1 b(x,y,0)\, dx \, dy.
+\]
+%%%%%
+%%%%%
+\end{document}

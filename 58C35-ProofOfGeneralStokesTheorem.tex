@@ -1,0 +1,154 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ProofOfGeneralStokesTheorem}
+\pmcreated{2013-03-22 13:41:43}
+\pmmodified{2013-03-22 13:41:43}
+\pmowner{paolini}{1187}
+\pmmodifier{paolini}{1187}
+\pmtitle{proof of general Stokes theorem}
+\pmrecord{9}{34370}
+\pmprivacy{1}
+\pmauthor{paolini}{1187}
+\pmtype{Proof}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{58C35}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+We divide the proof in several steps.
+
+\emph{Step One.}
+
+Suppose $M=(0,1]\times (0,1)^{n-1}$ and 
+\[
+        \omega(x_1,\ldots,x_n)=f(x_1,\ldots,x_n)\, d
+        x_1\wedge\cdots\wedge \widehat{d x_j}\wedge \cdots \wedge d
+        x_n
+\]
+(i.e. the term $dx_j$ is missing).
+Hence we have
+\begin{eqnarray*}
+        d\omega(x_1,\ldots,x_n)
+        &=&
+        \left(\frac{\partial f}{\partial x_1} d x_1+\cdots +\frac{\partial
+        f}{\partial x_n}d x_n\right)\wedge d x_1\wedge \cdots \wedge
+        \widehat{d x_j}\wedge \cdots \wedge d x_n \\
+        &=& (-1)^{j-1} \frac{\partial f}{\partial x_j} d x_1\wedge
+        \cdots \wedge d x_n
+\end{eqnarray*}
+and from the definition of integral on a manifold we get
+\[
+        \int_M d\omega
+        = \int_0^1\cdots \int_0^1 (-1)^{j-1} \frac{\partial
+f}{\partial x_j} d x_1 \cdots d x_n.
+\]
+From the fundamental theorem of Calculus we get
+\[
+        \int_M d\omega
+        =(-1)^{j-1}
+        \int_0^1\cdots\widehat{\int_0^1}\cdots\int_0^1
+        f(x_1,\ldots,1,\ldots,x_n)-f(x_1,\ldots,0,\ldots,x_n) d
+        x_1\cdots \widehat{ d x_j}\cdots d x_n.
+\]
+Since $\omega$ and hence  $f$ have compact support in $M$ we obtain
+\[
+        \int_M d\omega=\left\{
+        \begin{array}{lcl}
+                \int_0^1\cdots\int_0^1 f(1,x_2,\ldots,x_n) d x_2
+        \cdots d x_n & \text{if} & j=1 \\\\
+                0 &\text{if} & j>1 .
+        \end{array}\right.
+\]
+
+On the other hand we notice that
+ $\int_{\partial M}\omega$
+is to be understood as $\int_{\partial M}i^* \omega$ where
+$i:\partial M\to M$ is the inclusion map.
+Hence it is trivial to verify that when $j\neq 1$ then $i^*\omega=0$ 
+while if $j=1$ it holds
+\[
+        i^*\omega(x) = f(1,x_2,\ldots,x_n) d x_2\wedge\ldots\wedge d x_n
+\]
+and hence, as wanted
+\[
+        \int_{\partial M}i^*\omega
+        = \int_0^1\cdots\int_0^1 f(1,x_2,\ldots,x_n) d x_2 \cdots d x_n.
+\]
+
+\emph{Step Two.}
+
+Suppose now that $M=(0,1]\times (0,1)^{n-1}$ and let $\omega$ be any differential form.
+We can always write
+        \[
+        \omega(x)=\sum_j f_j(x) d x_1 \wedge\cdots \wedge \widehat{
+d x_j} \wedge \cdots \wedge d x_n
+        \]
+and by the additivity of the integral we can reduce ourself to the previous case.
+
+\emph{Step Three.}
+
+When $M=(0,1)^n$ we could follow the proof as in the first case
+and end up with
+$\int_M d \omega = 0$ 
+while, in fact, $\partial
+M=\emptyset$.
+
+\emph{Step Four.}
+
+Consider now the general case.
+
+First of all we consider an oriented atlas $(U_i,\phi_i)$ such that either 
+$U_i$ is the cube
+$(0,1]\times (0,1)^{n-1}$ or $U_i=(0,1)^n$. 
+This is always possible. In fact given any open set $U$ in $[0,+\infty)\times
+\mathbb R^{n-1}$ and a point $x\in U$ up to translations and rescaling it is possible
+to find a ``cubic'' neighbourhood of $x$ contained in $U$.
+
+Then consider a partition of unity $\alpha_i$ for this atlas.
+
+From the properties of the integral on manifolds we have
+\begin{eqnarray*}
+        \int_{M} d \omega
+        &=& \sum_i \int_{U_i} \alpha_i \phi^* d \omega
+        = \sum_i \int_{U_i} \alpha_i d (\phi^* \omega) \\
+        &=& \sum_i \int_{U_i} d (\alpha_i\cdot \phi^*\omega)
+                - \sum_i \int_{U_i} (d\alpha_i)\wedge(\phi^*\omega).
+\end{eqnarray*}
+
+The second integral in the last equality is zero since
+$\sum_i
+d\alpha_i= d \sum_i \alpha_i = 0$, while applying the previous steps to the first integral we have
+\[
+        \int_{M} d\omega = \sum_i \int_{\partial U_i}\alpha_i\cdot
+        \phi^*\omega.
+\]
+On the other hand, being
+$(\partial U_i,\phi_{|\partial U_i})$ an oriented atlas for $\partial M$ and being ${\alpha_i}_{|\partial U_i}$ a partition of unity, we have
+\[
+        \int_{\partial M} \omega
+        = \sum_i \int_{\partial U_i} \alpha_i \phi^* \omega
+\]
+and the theorem is proved.
+%%%%%
+%%%%%
+\end{document}

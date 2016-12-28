@@ -1,0 +1,176 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{InvariantDifferentialForm}
+\pmcreated{2013-03-22 17:48:31}
+\pmmodified{2013-03-22 17:48:31}
+\pmowner{asteroid}{17536}
+\pmmodifier{asteroid}{17536}
+\pmtitle{invariant differential form}
+\pmrecord{25}{40271}
+\pmprivacy{1}
+\pmauthor{asteroid}{17536}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{58A10}
+\pmclassification{msc}{57T10}
+\pmclassification{msc}{57S15}
+\pmclassification{msc}{22E30}
+\pmclassification{msc}{22E15}
+\pmsynonym{invariant form}{InvariantDifferentialForm}
+\pmsynonym{bi-invariant form}{InvariantDifferentialForm}
+\pmsynonym{bi-invariant differential form}{InvariantDifferentialForm}
+\pmrelated{CohomologyOfCompactConnectedLieGroups}
+\pmdefines{left invariant differential form}
+\pmdefines{left invariant form}
+\pmdefines{right invariant differential form}
+\pmdefines{right invariant form}
+\pmdefines{adjoint invariant form}
+\pmdefines{adjoint invariant differential form}
+\pmdefines{chain complex of invariant forms}
+\pmdefines{cohomology of manifolds with a Lie group action}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+\usepackage{eufrak}
+%%\usepackage{xypic}
+\usepackage{graphicx}
+
+% define commands here
+
+\begin{document}
+\PMlinkescapeword{invariant}
+\PMlinkescapeword{right}
+\PMlinkescapeword{induced}
+\PMlinkescapeword{similar}
+\PMlinkescapeword{adjoint}
+
+\section{Lie Groups}
+
+Let $G$ be a Lie group and $g \in G$.
+
+Let $L_g:G \longrightarrow G$ and $R_g:G \longrightarrow G$ be the functions of left and right multiplication by $g$ (respectively). Let $C_g:G \longrightarrow G$ be the function of conjugation by $g$, i.e. $C_g(h):=ghg^{-1}$.
+
+A \PMlinkname{differential $k$-form}{DifferentialForms} $\omega$ on $G$ is said to be
+\begin{itemize}
+\item {\bf left invariant}$\,$ if $L_g^*\, \omega = \omega$ for every $g \in G$, where $L_g^*$ is the pullback induced $L_g$.
+\item {\bf right invariant}$\,$ if $R_g^*\, \omega = \omega$ for every $g \in G$, where $R_g^*$ is the pullback induced $R_g$.
+\item {\bf invariant} or {\bf bi-invariant}$\,$ if it is both left invariant and right invariant.
+\item {\bf adjoint invariant}$\,$ if $C_g^*\, \omega = \omega$ for every $g \in G$, where $C_g^*$ is the pullback induced by $C_g$.
+\end{itemize}
+$\,$
+
+Much like \PMlinkname{left invariant vector fields}{LieGroup}, left invariant forms are uniquely determined by their values  in $T_e(G)$, the tangent space at the identity element $e \in G$, i.e. a left invairant form $\omega$ is uniquely determined by the values
+\begin{displaymath}
+w_e(X_1, \dots, X_k)\,,\qquad\qquad X_1, \dots, X_k \in T_e(G)
+\end{displaymath}
+This means that left invariant forms are uniquely determined by their values on the Lie algebra of $G$.
+
+Under this setting, the space $\Omega^k_L(G)$ of left invariant $k$-forms can be identified with $Hom(\Lambda^k \mathfrak{g}, \mathbb{R})$, the space of homomorphisms from the $k$-th exterior power of $\mathfrak{g}$ to $\mathbb{R}$, where $\mathfrak{g}$ denotes the Lie algebra of $G$.
+
+$\,$
+
+{\bf \PMlinkescapetext{Proposition} -} Let $\Omega^k(G)$ be the space of $k$-forms in $G$. The exterior derivative $d:\Omega^k(G) \longrightarrow \Omega^{k+1}(G)$ takes left invariant forms to left invariant forms. Moreover, the formula for exterior derivative for left invariant forms simplifies to
+\begin{displaymath}
+d\omega (X_0, \dots , X_k) = \sum_{i<j} (-1)^{i+j} \omega([X_i, X_j], X_0, \dots, \hat{X_i}, \dots, \hat{X_j}, \dots, X_k)
+\end{displaymath}
+where $\omega \in \Omega^k(G)$ and $X_0, \dots , X_k$ are left invariant vector fields in $G$.
+
+$\,$
+
+Hence, the exterior derivative induces a map $d:\Omega^k_L(G) \longrightarrow \Omega^{k+1}_L(G)$ and $(\Omega^*_L(G), d)$ forms a chain complex. Thus, we can talk about the cohomology groups of left invariant forms.
+
+Similar results hold for right invariant forms.
+
+\section{Manifolds}
+
+Suppose a Lie group $G$ acts \PMlinkname{smoothly}{Manifold} on a differential manifold $M$ and let
+\begin{displaymath}
+(g,x)\longmapsto t_g(x)\,, \qquad\qquad g \in G, x \in M
+\end{displaymath}
+denote the action of $G$.
+
+A differential $k$-form $\omega$ in $M$ is said to be {\bf invariant} if $t_g^*\,\omega = \omega$ for every $g \in G$, where $t_g^*$ denotes the pullback induced by $t_g$.
+
+This definition reduces to the previous ones when we take $M$ as the group $G$ itself and when the action is
+\begin{itemize}
+\item the action of $G$ on itself by left multiplication.
+\item the action of $G$ on itself by right multiplication.
+\item the action of $G\times G$ on $G$ defined by $t_{(g,h)}(k):=gkh^{-1}$.
+\item the action of $G$ on itself by conjugation.
+\end{itemize}
+
+\section{Compact Lie Group Actions}
+
+We now consider actions of a compact Lie group $G$ on a manifold $M$. Let $\Omega^k(M)$ the space of $k$-forms in $M$ and $\Omega_G^k(M)$ the space of invariant $k$-forms in $M$. Let $\mu$ be the Haar measure of $G$.
+
+From each $k$-form in $M$ we can construct an invariant form by taking \PMlinkescapetext{averages} on its "\PMlinkescapetext{translations}". Following this idea we define a map $J: \Omega^k(M) \longrightarrow \Omega_G^k(M)$ by
+\begin{displaymath}
+J(\omega)\,(X_1, \dots, X_k) := \frac{1}{\mu(G)} \int_G t_g^*\,\omega\,(X_1,\dots,X_k)\;d\mu(g)
+\end{displaymath}
+where $\omega \in \Omega^k(M)$ and $X_1, \dots, X_k$ are vector fields of $M$.
+
+The image of the map $J$ is indeed in $\Omega_G^k(M)$ since for every $h \in G$:
+\begin{eqnarray*}
+t_h(J(\omega))\,(X_1, \dots, X_k) & = & J(\omega)\,((t_h)_*X_1, \dots, (t_h)_*X_k)\\
+& = & \frac{1}{\mu(G)}\int_G \omega((t_g)_*(t_h)_*X_1, \dots, (t_g)_*(t_h)_*X_k)\;d\mu(g)\\
+& = & \frac{1}{\mu(G)}\int_G \omega((t_{gh})_*X_1, \dots, (t_{gh})_*X_k)\;d\mu(g)\\
+& = & \frac{1}{\mu(G)}\int_G \omega((t_g)_*X_1, \dots, (t_g)_*X_k)\;d\mu(g)\\
+& = & J(\omega)\,(X_1, \dots, X_k)
+\end{eqnarray*}
+
+Moreover, $J$ is the identity for invariant $k$-forms. Suppose $\omega \in \Omega_G^k(M)$, then
+\begin{eqnarray*}
+J(\omega)\,(X_1, \dots, X_k) & = & \frac{1}{\mu(G)}\int_G t_g^*(\omega)\,(X_1, \dots, X_k)\;d\mu(g)\\
+& = & \frac{1}{\mu(G)}\int_G \omega\,(X_1, \dots, X_k)\;d\mu(g)\\
+& = & \omega(X_1, \dots, X_k)
+\end{eqnarray*}
+
+$\,$
+
+{\bf Theorem -} The map $J$ is a chain map, i.e. $dJ = Jd$, where $d$ is the exterior derivative of a form.
+
+$\,$
+
+From the previous observations we can see that the exterior derivative takes invariant forms to invariant forms, inducing a map $d:\Omega_G^k(M) \longrightarrow \Omega_G^{k+1}(M)$. Hence, $(\Omega_G^*(M), d)$ is a chain complex and we can talk about the cohomology groups of invariant forms in $M$.
+
+\section{Cohomology of Manifolds}
+
+Let $G$ be a compact Lie group that acts smoothly on a manifold $M$ (again, with the action denoted by $t_g$).
+
+Since $t_g$ is a diffeomorphism of $M$ it induces an automorphism $t_g^*$ on the cohomology groups $H^k(M;\mathbb{R})$. Hence, $G$ acts as a group of automorphisms on $H^k(M; \mathbb{R})$. Let $H^k(M; \mathbb{R})^G$ be the fixed point set of this action.
+
+$\,$
+
+{\bf Theorem -} The inclusion $I:\Omega_G^k(M) \longrightarrow \Omega^k(M)$ induces an isomorphism
+\begin{displaymath}
+\xymatrix{I^*:H^k(\Omega_G(M)) \ar[r]^{\simeq} & H^k(M; \mathbb{R})^G}
+\end{displaymath}
+
+$\,$
+
+If in \PMlinkescapetext{addition} $G$ is connected, then $t_g$ and the identity $1_M$ are homotopic, $t_g \simeq 1_M$, for every $g \in G$. This implies that the induced automorphisms are the same, i.e. $t_g^* = Id$, where $Id$ is the identity on $H^k(M; \mathbb{R})$. Hence, the fixed point set is the whole $H^k(M;\mathbb{R})$ and there is an isomorphism
+\begin{displaymath}
+\xymatrix{I^*:H^k(\Omega_G(M)) \ar[r]^{\simeq} & H^k(M; \mathbb{R})}
+\end{displaymath}
+
+Thus, the cohomology groups of a manifold where a compact connected Lie group acts are just the cohomology groups defined by the invariant forms on $M$. This means we can "forget" the whole \PMlinkescapetext{complex} of differential forms in $M$ and regard only those who are invariant.
+%%%%%
+%%%%%
+\end{document}

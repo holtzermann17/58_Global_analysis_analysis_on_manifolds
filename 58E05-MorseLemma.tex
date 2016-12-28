@@ -1,0 +1,98 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{MorseLemma}
+\pmcreated{2013-03-22 13:53:12}
+\pmmodified{2013-03-22 13:53:12}
+\pmowner{matte}{1858}
+\pmmodifier{matte}{1858}
+\pmtitle{Morse lemma}
+\pmrecord{18}{34631}
+\pmprivacy{1}
+\pmauthor{matte}{1858}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{58E05}
+%\pmkeywords{morse theory}
+\pmdefines{non degenerate critical point}
+\pmdefines{index of a bilinear map}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newtheorem{thm}{Theorem}
+\newtheorem{prop}{Proposition}
+
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\ddd}{\mathrm{d}}
+\newcommand{\Hom}[2]{\mathrm{Hom}(#1,#2)}
+\newcommand{\id}{\mathrm{id}}
+\renewcommand{\ker}{\mathrm{ker}\,}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Z}{\mathbb{Z}}
+
+\begin{document}
+\newcommand{\criti}{\mathrm{Crit}}
+\newcommand{\inde}{\mathrm{Index}}
+\newcommand{\deriv}[1]{\frac{\partial }{\partial #1}}
+\newcommand{\dderiv}[3]{\frac{\partial^2 #1}{\partial #2\,\partial #3}}
+\newcommand{\derivv}[2]{\left.\deriv{#1}\right|_{#2}}
+
+
+
+Let    $M$ be a smooth $n$-dimensional manifold, and $f:M\rightarrow \mathbb \R$ a
+smooth map. We denote by $\criti(f)$ the set of critical points of
+$f$, i.e. $$\criti(f)=\{p\in M\,|\, (f_*)_p=0\}$$
+
+For each $p\in \criti(f)$ we denote by $f_{**}:T_pM\times
+T_pM\rightarrow\R$ (or $(f_{**})_p$ if $p$ need to be specified) the
+bilinear map $$f_{**}(v,w)=v(\tilde w (f))=w(\tilde v (f)),\ \
+\forall v,w\in T_pM,$$ where $\tilde v,\tilde w\in\mathcal T(M)$ are
+smooth vector fields such that $\tilde v_p=v$ and $\tilde w_p=w$.
+This is a good definition. In fact $p\in\criti(f)$ implies
+$$v(\tilde w (f))-w(\tilde v (f))=(\tilde v (f),\tilde
+w (f))_p=f_{*}(\tilde v,\tilde w)_p=0.$$ In smooth local coordinates
+$x^1,...,x^n$ on a neighborhood $U$ of $p$ we have
+$$f_{**}\left( \derivv{x^i}{p}, \derivv{x^j}{p}
+\right)=\dderiv{f}{x^i}{x^j}(p).$$
+
+A critical point $p\in\criti(f)$ is called \emph{non degenerate}
+when the matrix $$\left( \dderiv{f}{x^i}{x^j}(p)
+\right)_{i,j\in\{1,...,n\}}$$ is non singular. We can equivalently
+express this condition without the use of local coordinates saying
+that $p\in\criti(f)$ is non degenerate when for each $v\in T_p
+M\setminus\{0\}$ the linear functional $f_{**}(v,\cdot)\in\Hom{T_pM}{\R}$
+is not zero, i.e. there exists $w$ such that $f_{**}(v,w)\neq 0$.
+
+We recall that the \emph{index} of a bilinear functional $H:V\times
+V\rightarrow\R$ is the dimension $\inde(H)$ of a maximal linear
+subspace $W\subseteq V$ such that $H$ is negative definite on
+$W\times W$.
+
+\begin{thm}[Morse lemma]
+Let $f:M\rightarrow\R$ be a smooth map. For each non degenerate $p\in\criti(f)$ there exists a neighborhood $U$ of $p$ and smooth coordinates $x=(x^1,...,x^n)$ on $U$ such that $x(p)=0$ and
+$$f|_U=f(p)-(x^1)^2-...-(x^\lambda)^2+(x^{\lambda+1})^2+...+(x^n)^2,$$
+where $\lambda=\inde((f_{**})_p)$.
+\end{thm}
+%%%%%
+%%%%%
+\end{document}

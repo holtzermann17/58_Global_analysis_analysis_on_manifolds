@@ -1,0 +1,479 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{LagrangeMultipliersOnManifolds}
+\pmcreated{2013-03-22 15:25:45}
+\pmmodified{2013-03-22 15:25:45}
+\pmowner{stevecheng}{10074}
+\pmmodifier{stevecheng}{10074}
+\pmtitle{Lagrange multipliers on manifolds}
+\pmrecord{24}{37276}
+\pmprivacy{1}
+\pmauthor{stevecheng}{10074}
+\pmtype{Topic}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{58C05}
+\pmclassification{msc}{49-00}
+%\pmkeywords{manifold}
+%\pmkeywords{Lagrange multiplier}
+%\pmkeywords{Lagrangian multiplier}
+\pmrelated{Manifold}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+% used for TeXing text within eps files
+\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+\usepackage{enumerate}
+
+% define commands here
+\newcommand{\real}{\mathbb{R}}
+\newcommand{\rat}{\mathbb{Q}}
+\newcommand{\nat}{\mathbb{N}}
+
+\providecommand{\abs}[1]{\lvert#1\rvert}
+\providecommand{\absW}[1]{\left\lvert#1\right\rvert}
+\providecommand{\absB}[1]{\Bigl\lvert#1\Bigr\rvert}
+\providecommand{\norm}[1]{\lVert#1\rVert}
+\providecommand{\normW}[1]{\left\lVert#1\right\rVert}
+\providecommand{\normB}[1]{\Bigl\lVert#1\Bigr\rVert}
+\providecommand{\defnterm}[1]{\emph{#1}}
+
+\DeclareMathOperator{\D}{D}
+\DeclareMathOperator{\linspan}{span}
+\DeclareMathOperator{\rank}{rank}
+
+\newcommand{\Tp}{\mathrm{T}_p}
+
+\newtheorem{thm}{Theorem}
+
+% Differentiation operators
+\newcommand{\od}[2]{\frac{d #1}{d #2}}
+\newcommand{\pd}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\pdd}[2]{\frac{\partial^2 #1}{\partial #2}}
+\newcommand{\ipd}[2]{\partial #1 / \partial #2}
+
+\begin{document}
+\PMlinkescapeword{language}
+\PMlinkescapeword{simple}
+\PMlinkescapeword{modifications}
+\PMlinkescapeword{order}
+\PMlinkescapeword{representation}
+\PMlinkescapeword{similar}
+\PMlinkescapeword{even}
+\PMlinkescapeword{addition}
+\PMlinkescapeword{translation}
+\PMlinkescapeword{argument}
+\PMlinkescapeword{arguments}
+
+We discuss in this article the theoretical aspects of 
+the Lagrange multiplier method.
+
+To enhance understanding,
+proofs and intuitive explanations of the Lagrange multipler method
+will be given from several different viewpoints,
+both elementary and advanced.
+
+\tableofcontents
+
+\section{Statements of theorem}
+
+Let $N$ be a $n$-dimensional differentiable manifold (without boundary), and $f \colon N \to \real$, and
+$g_i \colon N \to \real$, for $i = 1, \dotsc, k$, be continuously differentiable.
+Set $M = \bigcap_{i=1}^k g_i^{-1}(\{ 0 \})$.  
+
+\subsection{Formulation with differential forms}
+\begin{thm}
+Suppose $dg_i$ are linearly independent 
+at each point of $M$.
+If $p \in M$ is a local minimum or maximum point of $f$ restricted to $M$,
+then there exist Lagrange multipliers
+ $\lambda_1, \dotsc, \lambda_k \in \real$, depending on $p$,
+such that
+\[
+d f(p) = \lambda_1 \, d g_1(p) + \dotsb + \lambda_k \, d g_k(p)\,.
+\]
+Here, $d$ denotes the exterior derivative.
+\end{thm}
+
+Of course, as in one-dimensional calculus, the condition $d f(p) = 
+\sum_i \lambda_i \, d g_i(p)$ by itself does not guarantee $p$ is a 
+minimum or maximum point, even locally.
+
+
+\subsection{Formulation with gradients}
+
+The version of Lagrange multipliers typically 
+used in calculus is the special case 
+$N = \real^n$ in Theorem 1. 
+In this case, 
+the conclusion of the 
+theorem can also be written 
+in terms of gradients instead of differential forms:
+
+\begin{thm}
+Suppose $\nabla g_i$ are linearly independent 
+at each point of $M$.
+If $p \in M$ is a local minimum or maximum point of $f$ restricted to $M$,
+then there exist Lagrange multipliers
+ $\lambda_1, \dotsc, \lambda_k \in \real$, depending on $p$,
+such that
+\[
+\nabla f(p) = \lambda_1 \, \nabla g_1(p) + \dotsb + \lambda_k \, \nabla g_k(p)\,.
+\]
+\end{thm}
+
+This formulation and the first one 
+are equivalent since
+the 1-form $df$ can be identified with the gradient
+$\nabla f$, via the formula $\nabla f(p) \cdot v = d f(p;v) = df_p(v)$.
+
+
+\subsection{Formulation with tangent maps}
+
+The functions $g_i$ can also be coalesced into a vector-valued function 
+$g\colon N \to \real^k$.  Then we have:
+
+\begin{thm}
+Let $g = (g_1, \dotsc, g_k) \colon N \to \real^k$.
+Suppose the tangent map $\D g $ is surjective
+at each point of $M$.
+If $p \in M$ is a local minimum or maximum point of $f$ restricted to $M$,
+then 
+there exists a Lagrange multiplier vector $\lambda \in (\real^k)^*$,
+depending on $p$, such that
+\[
+\D f(p) = \D g(p)^* \lambda\,.
+\]
+Here, $\D g(p)\colon (\real^k)^* \to (\Tp N)^*$ 
+denotes the \PMlinkname{pullback of the linear
+transformation}{DualHomomorphism} $\D g(p) \colon \Tp N \to \real^k$.
+\end{thm}
+
+If $\D g$ is represented by its Jacobian matrix,
+then the condition that it be surjective is equivalent to
+its Jacobian matrix having full rank.
+
+
+Note the deliberate use of the space $(\real^k)^*$ instead of $\real^k$
+--- to which the former is isomorphic to --- 
+for the Lagrange multiplier vector.   It turns out that the
+Lagrange multiplier vector naturally
+lives in the dual space and not the original vector space $\real^k$.
+This distinction is particularly important in the infinite-dimensional
+generalizations of Lagrange multipliers.
+But even in the finite-dimensional setting,
+we do see hints that the dual space
+has to be involved, because a transpose is involved
+in the matrix expression for Lagrange multipliers.
+
+If the expression $\D g(p)^* \lambda$ is written
+out in coordinates, then it is apparent that the components $\lambda_i$
+of the vector $\lambda$ are exactly those
+Lagrange multipliers from Theorems 1 and 2.
+
+
+\section{Proofs}
+The proof of the Lagrange multiplier theorem is surprisingly short and elegant,
+when properly phrased in the language of abstract manifolds and 
+differential forms.
+
+However, for the benefit of the readers not versed in these topics,
+we provide, in addition to the abstract proof, a concrete translation of the arguments
+in the more familiar setting $N = \real^n$.
+
+\subsection{Beautiful abstract proof}
+
+\begin{proof}
+Since $dg_i$ are linearly independent at each point of $M = \bigcap_{i=1}^k g_i^{-1}(\{ 0 \})$,
+$M$ is an embedded submanifold of $N$,
+of dimension $m = n-k$.  Let $\alpha\colon U \to M$, with $U$ open in $\real^m$, be
+a coordinate chart for $M$ such that $\alpha(0) = p$.
+Then $\alpha^* f$ has a local minimum or maximum at $0$,
+and therefore $0 = d(\alpha^* f) = \alpha^* df$ at $0$.
+But $\alpha^*$ at $p$ is an isomorphism $\left(\Tp M\right)^* \to \left(\mathrm{T}_0 \real^m\right)^*$,
+so the preceding equation says that $df$ vanishes on $\Tp M$.
+
+Now, by the definition of $g_i$, we have $\alpha^* g_i = 0$,
+so $0 = d(\alpha^* g_i) = \alpha^* dg_i$.  So like $df$, $dg_i$ vanishes on $\Tp M$.
+
+In other words, $dg_i(p)$ is in the \PMlinkname{annihilator}{AnnihilatorOfVectorSubspace}
+$\left( \Tp M \right)^0$ of the subspace $\Tp M \subseteq \Tp N$.
+Since $\Tp M$ has dimension $m = n - k$, and $\Tp N$ has dimension $n$,
+the annihilator $\left(\Tp M\right)^0$ has dimension $k$.
+Now $dg_i(p) \in \left(\Tp M\right)^0$ are linearly independent, 
+so they must in fact be a basis for $\left(\Tp M\right)^0$.
+But we had argued that $df(p) \in \left(\Tp M\right)^0$.
+Therefore $df(p)$ may be written as a unique linear combination
+of the $dg_i(p)$:
+\[
+d f(p) = \lambda_1 \, d g_1(p) + \dotsb + \lambda_k \, d g_k(p)\,.
+\qedhere
+\]
+\end{proof}
+
+The last paragraph of the previous proof can also be rephrased,
+based on the same underlying ideas,
+to make evident the fact that the Lagrange multiplier vector
+lives in the dual space $(\real^k)^*$.  
+
+\begin{proof}[Alternative argument.]
+A general theorem in linear algebra states that for any linear
+transformation $L$, 
+the image of the pullback $L^*$  
+is the annihilator of the kernel of $L$.
+Since $\ker \D g(p) = \Tp M$
+and $df(p) \in (\Tp M)^0$,
+it immediately follows that $\lambda \in (\real^k)^*$
+exists such that $df(p) = \D g(p)^* \lambda$.
+\end{proof}
+
+Yet another proof
+could be devised by observing
+that the result is obvious if $N = \real^n$ and the constraint functions
+are just coordinate projections on $\real^n$:
+\[
+g_i(y_1, \dotsc, y_n) = y_i\,, \quad i = 1, \dotsc, k\,.
+\]
+We clearly must have 
+$\ipd{f}{y_{k+1}} = \dotsb = \ipd{f}{y_n} = 0$ 
+at a point $p$ that minimizes $f(y)$ over $y_1 = \dotsb = y_k = 0$.
+The general case can be deduced to this by a coordinate change:
+
+\begin{proof}[Alternate argument.]
+Since $dg_i$ are linearly independent,
+we can find  a coordinate chart for $N$ about the point $p$,
+with coordinate functions $y_1, \dotsc, y_n \colon N \to \real$
+such that $y_i = g_i$ for $i = 1, \dotsc, k$.
+Then 
+\begin{align*}
+df &= 
+\pd{f}{y_1} dy_1 + \dotsb + \pd{f}{y_n} dy_n \\
+&=
+\pd{f}{g_1} dg_1 + \dotsb + \pd{f}{g_k} dg_k + \pd{f}{y_{k+1}} dy_{k+1} + \dotsb + \pd{f}{y_n} dy_n\,,
+\end{align*}
+but $\ipd{f}{y_{k+1}} = \dotsb = \ipd{f}{y_n} = 0$
+at the point $p$.  Set $\lambda_i = \ipd{f}{g_i}$ at $p$.
+\end{proof}
+
+
+
+
+\subsection{Clumsy, but down-to-earth proof}
+
+\begin{proof}
+We assume that $N = \real^n$.
+Consider the list vector $g = (g_1, \dotsc, g_k)$ discussed earlier,
+and its Jacobian matrix $\D g$ in Euclidean coordinates.
+The $i$th row of this matrix
+is
+\[
+\begin{bmatrix} \dfrac{\partial g_i}{\partial x_1} & \hdots & \dfrac{\partial g_i}{\partial x_n} \end{bmatrix} = 
+\left( \nabla g_i \right)^{\mathrm{T}}\,.
+\]
+So the matrix $\D g$ has full rank (i.e. $\rank \D g = k$) if and only
+if the $k$ gradients $\nabla g_i$ are linearly independent.
+
+Consider each solution $q \in M$ of $g(q) = 0$.
+Since $\D g$ has full rank, we can apply the implicit function theorem, 
+which states that there exist smooth solution parameterizations
+$\alpha\colon U \to M$ around each point $q \in M$. ($U$ is an open set in $\real^m$, $m = n -k$.)
+These $\alpha$ are the coordinate charts which give to $M = g^{-1}( \{ 0 \})$ a manifold structure.
+
+We now consider specially the point $q = p$; without loss of generality, assume $\alpha(0) = p$.
+Then $f \circ \alpha$ is a function on Euclidean space having a local minimum or maximum at $0$,
+so its derivative vanishes at $0$.
+Calculating by the chain rule, we have
+$0 = \D (f \circ \alpha)(0) = \D f(p) \cdot \D \alpha(0)$.
+In other words, $\ker \D f(p) \supseteq \textrm{range of } \D \alpha(0) = \Tp M$.
+Intuitively, this says that the directional derivatives 
+at $p$ of $f$ lying in the tangent space $\Tp M$ of the manifold $M$ vanish.
+
+By the definition of $g$ and $\alpha$, we have $g \circ \alpha = 0$.
+By the chain rule again, we derive $0 = \D g(p) \cdot \D \alpha(0)$.
+
+Let the columns of $\D \alpha(0)$ be the column vectors $v_1, \dotsc, v_m$, which span the
+$m$-dimensional space $\Tp M$,
+and look at the matrix equation $0 = \D f(p) \cdot \D \alpha(0)$ again.
+The equation for each entry of this matrix, which consists of only one row, is:
+\[
+\nabla f(p) \cdot v_j = 0\,, \quad j = 1, \dotsc, m\,.
+\]
+In other words, $\nabla f(p)$ is orthogonal to $v_1, \dotsc, v_m$,
+and hence it is orthogonal to the entire tangent space $\Tp M$.
+
+Similarly, the matrix equation $0 = \D g(p) \cdot \D \alpha(0)$ can be split into individual
+scalar equations:
+\[
+\nabla g_i(p) \cdot v_j = 0\,, \quad i = 1, \dotsc, k,\; j = 1, \dotsc, m\,.
+\]
+Thus $\nabla g_i(p)$ is orthogonal to $\Tp M$.
+But $\nabla g_i(p)$ are, by hypothesis, linearly independent,
+and there are $k$ of these gradients, so they must form a basis for
+the orthogonal complement of $\Tp M$, of $n - m = k$ dimensions.
+Hence $\nabla f(p)$ can be written as a unique linear combination of $\nabla g_i(p)$:
+\[
+\nabla f(p) = \lambda_1 \nabla g_1(p) + \dotsb + \lambda_k \nabla g_k(p)\,. \qedhere
+\]
+\end{proof}
+
+\section{Intuitive interpretations}
+
+We now discuss the intuitive and geometric
+interpretations of Lagrange multipliers.
+
+\subsection{Normals to tangent hyperplanes}
+
+\begin{center}
+\includegraphics[scale=0.65]{manifold-tangent}
+\end{center}
+
+Each equation $g_i = 0$ defines a hypersurface $M_i$ in $\real^n$, a manifold of dimension $n-1$.
+If we consider the tangent hyperplane at $p$ of these hypersurfaces, $\Tp M_i$, the gradient $\nabla g_i(p)$
+gives the normal vector to these hyperplanes.  
+
+The manifold $M$ is the intersection of the hypersurfaces $M_i$.
+Presumably, the tangent space $\Tp M$ is the intersection of the $\Tp M_i$, and the subspace perpendicular to $\Tp M$ would be spanned by the normals $\nabla g_i(p)$.  
+Now, the direction derivatives at $p$ of $f$ with respect to each vector in $\Tp M$, as we have proved,
+vanish.  So the direction of $\nabla f(p)$, the direction
+of the greatest change in $f$ at $p$, should be perpendicular 
+to $\Tp M$.  Hence $\nabla f(p)$ can be written as a linear combination of the $\nabla g_i(p)$.
+
+
+Note, however, that this geometric picture, and the manipulations with the gradients $\nabla f(p)$
+and $\nabla g_i(p)$, do not carry over to abstract manifolds.
+The notions of gradients and normals to surfaces depend on the 
+inner product structure of $\real^n$, which is 
+not present in an abstract manifold (without a Riemannian metric).  
+
+On the other hand, this explains the mysterious appearance of annihilators in 
+the last paragraph of the abstract proof.
+Annihilators and dual space theory serve as the proper tools
+to formalize the manipulations we made with the matrix equations $0 = \D f(p) \cdot \D \alpha(0)$ and $0 = \D g(p) \cdot \D \alpha(0)$, without resorting to Euclidean coordinates, which, of course, are not even defined on an abstract manifold.
+
+\subsection{With infinitesimals}
+
+If we are willing to interpret the quantities $df$ and $dg_i$ as infinitesimals,
+even the abstract version of the result has an intuitive explanation.
+Suppose we are at the point $p$ of the manifold $M$,
+and consider an infinitesimal movement $\Delta p$ about this point.
+The infinitesimal movement $\Delta p$ is a vector in the tangent space
+$\Tp M$, because, near $p$, $M$ looks like the linear space $\Tp M$.
+And as $p$ moves, the function $f$ changes by a corresponding infinitesimal amount $df$
+that is approximately linear in $\Delta p$.
+
+Furthermore, the change $df$ may be decomposed
+as the sum of a change as $p$ moves \emph{along} the manifold $M$,
+and a change as $p$ moves \emph{out} of the manifold $M$.  
+But if $f$ has a local minimum at $p$, then there cannot be
+any change of $f$ along $M$; thus $f$ only changes
+when moving out of $M$.
+Now $M$ is described by the equations $g_i = 0$,
+so a movement out of $M$ is described by the infinitesimal changes
+$dg_i$.
+As $df$ is linear in the change $\Delta p$,
+we ought to be able to write it as a weighted sum of the changes $dg_i$.
+The weights are, of course, the Lagrange multipliers $\lambda_i$.
+
+The linear algebra performed in the abstract proof can be regarded as the precise, rigorous
+translation of the preceding argument.
+
+\subsection{As rates of substitution}
+
+Observe that the formula for Lagrange multipliers is formally
+very similar to the standard formula for expressing
+a differential form in terms of a basis:
+\[
+df(p) = \pd{f}{y_1} dy_1 + \dotsb + \pd{f}{y_k} dy_k\,.
+\]
+
+In fact, if $dg_i(p)$ are linearly independent,
+then they do form a basis for $(\Tp M)^0$,
+that can be extended to a basis for $(\Tp N)^*$.
+By the uniqueness of the basis representation,
+we must have
+\[
+\lambda_i = \pd{f}{g_i}\,.
+\]
+That is, $\lambda_i$ is the differential
+of $f$ with respect to changes in $g_i$.
+
+In applications of Lagrange multipliers to economic
+problems, the multipliers $\lambda_i$ are \emph{rates of substitution} ---
+they give the rate of improvement in the objective function $f$
+as the constraints $g_i$ are relaxed.
+
+\section{Stationary points}
+In applications,
+sometimes we are interested in 
+finding stationary points $p$ of $f$ --- defined as 
+points $p$ such that $df$ vanishes on $\Tp M$, or equivalently, 
+that the Taylor expansion of $f$ at $p$, under any system of coordinates 
+for $M$, has no terms of first order. Then the Lagrange multiplier method 
+works for this situation too.
+
+The following theorem incorporates
+the more general notion of stationary points.
+
+\begin{thm}
+Let $N$ be a $n$-dimensional differentiable manifold (without boundary), and $f \colon N \to \real$,
+$g_i \colon N \to \real$, for $i = 1, \dotsc, k$,
+be continuously differentiable. Suppose $p \in M = \bigcap_{i=1}^k g_i^{-1}( \{ 0 \})$, and
+$dg_i(p)$ are linearly independent.
+
+Then $p$ is a stationary point (e.g. a local extremum point) of $f$ restricted to $M$,
+if and only if there exist $\lambda_1, \dotsc, \lambda_k \in \real$
+such that
+\[
+d f(p) = \lambda_1 \, d g_1(p) + \dotsb + \lambda_k \, d g_k(p)\,.
+\]
+The Lagrange multipliers $\lambda_i$, which depend on $p$, are unique when they exist.
+\end{thm}
+In this formulation, $M$ is not necessarily a manifold,
+but it is one when intersected with a sufficiently small neighborhood about $p$.
+So it makes sense to talk about $\Tp M$, although we are abusing notation here.
+The subspace in question can be more accurately described as the 
+annihilated subspace of $\linspan \{ dg_i(p) \}$.
+
+It is also enough that $dg_i$ be linearly independent 
+only at the point $p$.
+For $dg_i$ are continuous, so they will be 
+linearly independent for points near 
+$p$ anyway,
+and we may restrict our viewpoint to a sufficiently small neighborhood
+around $p$, and the proofs carry through.
+
+The proof involves only simple modifications to
+that of Theorem 1 --- for instance,
+the converse implication follows
+because we have already proved that the $d g_i(p)$ form a basis for the annihilator of $\Tp M$,
+independently of whether or not $p$ is a stationary point of $f$ on $M$.
+
+
+\begin{thebibliography}{3}
+\bibitem{Friedberg} Friedberg, Insel, Spence. {\it Linear Algebra}. Prentice-Hall, 1997.
+\bibitem{Luenberger} David Luenberger. {\it Optimization by Vector Space Methods}. 
+John Wiley \& Sons, 1969.
+\bibitem{Munkres} James R. Munkres. {\it Analysis on Manifolds}. Westview Press, 1991.
+\bibitem{Rockafellar} R. Tyrrell Rockafellar. ``Lagrange Multipliers and Optimality''. {\it SIAM Review}. Vol. 35, No. 2, June 1993. 
+\bibitem{Spivak} Michael Spivak. {\it Calculus on Manifolds}. Perseus Books, 1998.
+
+\end{thebibliography}
+
+%%%%%
+%%%%%
+\end{document}

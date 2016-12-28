@@ -1,0 +1,210 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{CommonFormulasInCalculusOfDifferentialForms}
+\pmcreated{2013-03-22 15:51:28}
+\pmmodified{2013-03-22 15:51:28}
+\pmowner{juanman}{12619}
+\pmmodifier{juanman}{12619}
+\pmtitle{common formulas in calculus of differential forms}
+\pmrecord{37}{37844}
+\pmprivacy{1}
+\pmauthor{juanman}{12619}
+\pmtype{Topic}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{58A12}
+\pmclassification{msc}{58A10}
+%\pmkeywords{exterior product}
+%\pmkeywords{tensor}
+\pmrelated{Calculus}
+\pmrelated{TopicsOnCalculus}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\newcommand{\paren}[1]{\left(\begin{array}{c} #1 \end{array}\right) }
+\begin{document}
+\section{\bf Euclidean forms}
+
+To begin with we have the total differential for scalars $f\colon D\to \mathbb{R}$ where $D$ is a domain in $\mathbb{R}^n$:
+$$df=\sum_s\frac{\partial f}{\partial x^s}dx^s$$
+or by the Einstein summation convention
+$$df=\frac{\partial f}{\partial x^s}dx^s$$
+which are a special case of the so-called Euclidean 1-forms. 
+Here we reconize the covariant form of the gradient of $f$ in contravaiant ''state'':
+$$\nabla f=\frac{\partial f}{\partial x^s}$$ 
+being the components of $df$.
+
+Here the symbols $dx^s$ are linear functionals $\mathbb{R}^n\to \mathbb{R}$ dual to the derivations $\frac{\partial }{\partial x^s}$, that is
+$$dx^s\Big(\frac{\partial}{\partial x^t}\Big)=\delta^s_t$$
+this coincides with the calculation
+$dx^s(\frac{\partial }{\partial x^t})=\frac{\partial x^s}{\partial x^t}=\delta^s_t$.
+
+If $X$ is a vector field and $f$ a scalar field then one has for the directional derivative
+$$Xf=X^s\frac{\partial}{\partial x^s}f=X^sdf(\frac{\partial}{\partial x^s})=df(X)$$
+
+For a pair of functions $g,f\colon D\to \mathbb{R}$ we can check Leibniz's rule
+$$d(fg)=gdf+fdg$$
+
+Let $\Omega^0(D)=C^{\infty}(D)$ be the set of 0-forms in $D$ and let $\Omega^1(D)=\{ w=w_sdx^s\colon w_s\in\Omega^0\}$
+(where $w_sdx^s=\sum_sw_sdx^s$) be the set of 1-forms in $D$.
+
+Then the operator $d$ can be seen as a linear operator $d\colon \Omega^0(D)\to\Omega^1(D)$.
+
+This can be generalized by defining $\Omega^k(D)$ to be the set of k-forms; that is,
+expressions of the type:
+$$A_{s_1...s_k}dx^{s_1}\wedge\cdots\wedge dx^{s_k}$$
+where $A_{s_1...s_k}$ are in $\Omega^0(D)$ i.e. they are scalars and
+they are multi-indexed sums. Further, the symbols $dx^{s_1}\wedge\cdots\wedge dx^{s_k}$ are the wedge products of the $dx^s$. 
+
+So $d\colon \Omega^k(D)\to\Omega^{k+1}(D)$
+is calculated by
+$$d(A_{s_1...s_k}dx^{s_1}\wedge\cdots\wedge dx^{s_k})=
+d(A_{s_1...s_k})\wedge dx^{s_1}\wedge\cdots\wedge dx^{s_k}$$
+
+For example, if $A=A_sdx^s$ then $dA=dA_s\wedge dx^s$, hence 
+$$dA=\frac{\partial A_s}{\partial x^t}dx^t\wedge dx^s$$ 
+which is rearranged as
+
+$$dA=\Big(\frac{\partial A_s}{\partial x^t}-\frac{\partial A_t}{\partial x^s}\Big)dx^t\wedge dx^s,$$
+
+and for two forms, if $B=B_{st}dx^s\wedge dx^t$ then 
+$$dB=\frac{\partial B_{st}}{\partial x^u}dx^u\wedge dx^s\wedge dx^t.$$
+
+Now if we have a map between two domains $F\colon D\to E$ and $F=(F^1,...,F^n)$, we can pullback forms as $F^*\colon \Omega^k(E)\to \Omega^k(D)$, beginnig with the observation that at basics $dx^k$, we pullback it as 
+$$F^*(dx^k)=d(x^k\circ F)=dF^k=\frac{\partial F^k}{\partial x^s}dx^s$$
+then, if we want $\omega\mapsto F^*(\omega)$, 
+where $\omega=\omega_{s_1...s_k}dx^{s_1}\wedge\cdots\wedge dx^{s_k}$, 
+we are going to receive  
+$$F^*(\omega)=\omega_{s_1...s_k}\circ f\ \frac{\partial F^{s_1}}{\partial x^{t_1}}\cdots\frac{\partial F^{s_k}}{\partial x^{t_k}}dx^{t_1}\wedge\cdots \wedge dx^{t_k}$$  
+Here the $t_i$-sums 
+must be taken between all indexes obeying $1\le t_1< t_2<\cdots < t_k\le n$.
+
+So if $\omega\in\Omega^n(D)$, $F^*(\omega)=\omega_{1...n}\circ F\ \det(F')
+dx^1\wedge\cdots\wedge dx^n$
+
+We also have $$F^*(v\wedge w)=F^*(v)\wedge F^*(w)$$  
+
+
+Obviously there are no $n+1, n+2,\ldots$ forms in $D$ and usually one set $\Omega^k(D)=0$ if $k\ge n$. 
+
+\section{\bf The de Rham complex.}
+The collection of mappings 
+$$0\longrightarrow\Omega^0(D)\stackrel{d}\longrightarrow\Omega^1(D)\stackrel{d}
+\longrightarrow\cdots\stackrel{d}\longrightarrow\Omega^n(D)\longrightarrow 0$$
+give us a chain complex due that $dd=0$, so one can measure how much this differs from exactness via its homology
+$$H^k(D)=\frac{\operatorname{ker}(d)}{\operatorname{im}(d)}$$
+called the cohomological $k$-group for $D$.
+
+Some
+ with the fear of being confused with the giving of the same name to the operator $\Omega^k(D)\stackrel{d}\longrightarrow\Omega^{k+1}(D)$, would like to write
+$$\Omega^k(D)\stackrel{d^k}\longrightarrow\Omega^{k+1}(D)$$ 
+and then one should modify the above conventions with
+$$d^{k+1}d^k=0$$
+and 
+$$H^k(D)=\frac{\operatorname{ker}(d^k)}{\operatorname{im}(d^{k-1})}$$
+
+
+\section{\bf Manifold's Forms.}
+
+One had seen that for mappings $F\colon D\to E$ between $\mathbb{R}^n$'s domains behave as $F^*\colon \Omega^k(E)\to\Omega^k(D)$. 
+Then we can assign k-forms in each chart $(U,\Phi)$ of a n-manifold $M$
+by means of the coordinated functions $u^i=x^i\circ\Phi$ on the neighborhood $U$.
+Then
+$$du^i=d(x^i\circ\Phi)=\Phi^*dx^i$$
+which will be the duals of the derivations
+$\frac{\partial}{\partial u^j}$.  
+
+Observe that if $\Phi^*\colon\Omega^0(\phi(U))\to\Omega^0(U)$
+then $\Phi(g)=g\circ\Phi$ is a scalar in $U$.
+
+If $\Phi^*\colon\Omega^1(\phi(U))\to\Omega^1(U)$ then
+$$\Phi^*(w_sdx^s)=w_s\circ\Phi \Phi^*(dx^s)=w_s\circ\Phi du^s$$
+
+For $k$-forms 
+$$
+w_{s_1s_2...s_k}du^{s_1}\wedge\cdots \wedge du^{s_k}=
+w_{s_1s_2...s_k}\circ\Phi^{-1}\circ\Phi
+d(x^{s_1}\circ\Phi)\wedge\cdots \wedge d(x^{s_k}\circ\Phi)$$
+
+$$=\Phi^*(w_{s_1s_2...s_k}\circ\Phi^{-1})
+\Phi^*(dx^{s_1}\wedge\cdots\wedge dx^{s_k})$$
+$$=\Phi^*(w_{s_1s_2...s_k}\circ\Phi^{-1}dx^{s_1}\wedge\cdots\wedge dx^{s_k})$$
+where $w_{s_1s_2...s_k}\circ\Phi^{-1}dx^{s_1}\wedge\cdots\wedge dx^{s_k}$ is a $k$-form in $\Phi(U)$.
+
+\section{\bf Forms and connections}
+
+A connection is a bi-linear operator $\nabla:\Gamma(TM)^2\to \Gamma(TM)$ where $\Gamma(TM)$ is the space of differentiable sections in the tangent bundle.
+
+The Chistoffel symbols $\Gamma^s_{ij}$ are the components of $\nabla_{\partial_i}\partial_j$ through the equation
+$$\nabla_{\partial_i}\partial_j=\Gamma^s_{ij}\partial_s$$
+where the $\partial_s$ are the coordinated tangent vectors.
+
+The curvature tensor is defined as 
+$$R(X,Y)Z=\nabla_X\nabla_YZ-\nabla_Y\nabla_XZ-\nabla_{[X,Y]}Z$$
+which is a tri-linear map $\Gamma(TM)^3\to \Gamma(TM)$, so the Riemann-Chistoffel symbols are defined by the components ${R^s}_{ijk}$ of
+$$R(\partial_i,\partial_j)\partial_k={R^s}_{ijk}\partial_s$$
+
+With these one define the connection forms and the curvature forms as
+$$\nabla_X\partial_j={\omega^s}_j(X)\partial_s$$
+and
+$$R(X,Y)\partial_j={\Omega^s}_j(X,Y)\partial_s$$
+these ${\omega^s}_j$ and ${\Omega^s}_j$ define a 1-form and a 2-form viewed as a sections $M\to \Omega^1(TM)$ and $M\to \Omega^2(TM)$ respectively.
+
+Observe that $\nabla_{\partial_k}\partial_j={\omega^s}_j(\partial_k)\partial_s$ which compared with $\nabla_{\partial_k}\partial_j=\Gamma^s_{kj}\partial_s$, it implies ${\omega^s}_j(\partial_k)=\Gamma^s_{kj}$
+and for an arbitrary vector field $X=X^k\partial_k$ (in the tangent coordinated basis)
+$${\omega^s}_j(X)=X^k\Gamma^s_{kj}$$
+
+
+Let $X_1,X_2,...,X_n$ be another frame field (the $\partial_i$ are the coordinated frame field) , i.e. a system of $n$-tangent vectors which are linearly independent in the tangent space, i.e, they span each $T_pM$.
+
+Define thru $$\nabla_{X_i}X_j=\hat{\Gamma}^s_{ij}X_s$$ 
+a an-holonomic connection coefficients
+
+and 
+
+$$R(X_i,X_j)X_k={  {\hat{R^s}}  }_{ijk} X_s$$
+as the an-holonomic.
+
+Remember that in the coordinated frame field $[\partial_i,\partial_j]=0$, but since $\nabla_{X_i}X_j-\nabla_{X_j}X_i=[X_i,X_j]$  this define the structural "constants" 
+$${c^s}_{ij}X_s=[X_i,X_j]$$
+and the give relation
+$${c^s}_{ij}=\hat{\Gamma}^s_{ij}-\hat{\Gamma}^s_{ji}$$
+
+
+\section{\bf Cartan Structural Equations}
+
+The connection and the curvature forms satisfy the premiere
+$d\theta^i=- {\hat{\omega^i}}_s\wedge\theta^s$, 
+where the $\theta^i$ are the 1-forms dual to the $X_j$ and the deuxieme 
+${\hat{\Omega^i}}_j=d{{ \hat{\omega^i}} }_j+{{ \hat{\omega^i}} }_s\wedge
+{{\hat{\omega^s}} }_j$
+where the corresponding connection forms are calculated by
+$\nabla_YX_j=\hat{\omega^s}_j(Y)X_s$
+i.e.
+$$\hat{\omega^l}_j=\hat{\Gamma}^l_{js}\theta_s.$$
+All that fits perfectly to give
+$$\hat{\Omega^i}_j={1\over2}\hat{R^i}_{jkl} \theta^k \wedge \theta^l$$
+with $k<l$.
+
+This shows that the calculations of $\hat{R^i}_{jkl}$ are very easy objects to put into an algorithm (Debever).
+%%%%%
+%%%%%
+\end{document}

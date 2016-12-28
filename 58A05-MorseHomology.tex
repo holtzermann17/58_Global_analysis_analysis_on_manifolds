@@ -1,0 +1,69 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{MorseHomology}
+\pmcreated{2013-03-22 15:21:09}
+\pmmodified{2013-03-22 15:21:09}
+\pmowner{PrimeFan}{13766}
+\pmmodifier{PrimeFan}{13766}
+\pmtitle{Morse homology}
+\pmrecord{17}{37174}
+\pmprivacy{1}
+\pmauthor{PrimeFan}{13766}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{58A05}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\DeclareMathOperator{\Id}{Id}
+\DeclareMathOperator{\Crit}{Crit}
+\begin{document}
+{\em Morse homology} is a tool developed by Thom, Smale, and Milnor for homology theory.
+
+Take $M$ to be a smooth compact manifold. Throughout we assume that $f$ is a suitable Morse function, that is, all critical points of $f$ are nondegenerate.  We must first make some definitions before defining the Morse homology.
+Choose a Riemannian metric on $M$ so that the notion of a gradient vector field makes sense.
+The map $\phi\colon\mathbb{R} \times M \rightarrow M$ such that 
+\[
+\frac{d}{dt}\phi(t,x) = -\nabla f(\phi(t,x)),
+\]
+with $\phi(0,x) = \Id$, is called the negative gradient flow of $f$. Let $p$ be a critical point of $f$, and define 
+\[
+W_p^s :=  \{ x \in M | \lim_{t\rightarrow \infty} \phi(t,x) = p \} \text{\ and \ } W_p^u := \{ x\in M | \lim_{t \rightarrow -\infty} \phi(t,x) = p \}
+\]
+to be the stable and unstable manifolds respectively.
+Thom realized that one could decompose $M$ into its unstable manifolds and arrive at something that is homologically equivalent to its handle decomposition, but this decomposition was not a CW complex, hence it was hard to say anything about the homotopy type of $M$. But Smale realized that if we impose more conditions on the metric itself, then we can make this into a CW complex.
+
+The pair $(f,g)$, where $f$ is a Morse function and $g$ is the Riemannian metric, is called Morse-Smale pair, if for every pair $p$, $q$ of critical points of $f$, $W_p^u$ is transverse to $W_q^s$. This is known as the Morse-Smale condition.
+This condition actually holds for a generic Riemannian metric on M. With this restriction, this makes Thom's decomposition into a CW complex.
+
+We can define a complex called the Morse complex as follows: 
+
+Let $\Crit_k (f)$ be the set of critical points of $f$ of index $k$. We define the chain group , $C_k(f)$ to be the formal linear combination with integer coefficients of elements of $\Crit_k (f)$. We must also keep track of the signs of the flow lines. (However, it is true if you count mod 2, the Morse complex computes homology with coefficients in $Z \over 2$.)
+To make this a chain complex we must define the differential map. 
+The map $\delta _k : C_k \rightarrow C_{k-1}$ applied to a critical point $p$ is a formal sum of critical points with $q$ given by this number. It is possible to prove that $\delta^2 = 0$ , making this into a chain complex.
+
+The homology of this complex is called the Morse homology. It can be shown to be isomorphic to the singular homology of $M$. 
+
+Note: There is another way of realizing the Morse homology using Hodge theory, an idea pioneered by Edward Witten. His idea is essentially to conjugate the $d$ operator by $e^{sf}$ and it can be shown that this conjugation again leads to another isomorphism between the set of harmonic forms and the De Rham cohomology. This parameter $s$ is like a curve of chain complexes and Witten claimed that if $s$ is large enough, then we can obtain a space whose dimension is the number of critical points of a given index and the boundary operator induced on $d$ is the number of critical paths between critical points, as before. Witten did not prove this idea rigorously, but it was done later by Helffer and Sjostrand.
+%%%%%
+%%%%%
+\end{document}

@@ -1,0 +1,80 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{FormulasForDifferentialFormsOfSmallValence}
+\pmcreated{2013-03-22 15:13:04}
+\pmmodified{2013-03-22 15:13:04}
+\pmowner{rmilson}{146}
+\pmmodifier{rmilson}{146}
+\pmtitle{formulas for differential forms of small valence}
+\pmrecord{10}{36981}
+\pmprivacy{1}
+\pmauthor{rmilson}{146}
+\pmtype{Theorem}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{58A10}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\begin{document}
+\paragraph{Coboundary formulas.}  Given a function $f$ (same thing as
+a differential $0$-form), a differential 1-form $\alpha$ and a
+differential 2-form $\beta$, and for vector fields $u,v,w$, we have
+\begin{align*}
+  d f(u) =& u(f),\\
+  d \alpha(u,v) =& u(\alpha(v)) - v(\alpha(u))-
+  \alpha([u,v]);\\
+  d \beta(u,v,w) =& u( \beta(v,w)) +v(\beta(w,u)) +
+  w(\beta(u,v)) \\ &\ -\beta([u,v],w) - \beta([v,w],u) -
+  \beta([w,u],v).
+\end{align*}
+
+
+\paragraph{Local coordinate formulas.} Let $f$ be a function, $v=v^i\,
+\partial_i$ a vector field, and $\alpha = \alpha_i\, d x^i$ and $\beta
+= \beta_i\, d x^i$ be 1-forms, and $\gamma=\tfrac{1}{2} \gamma_{ij}\,
+dx^i \wedge dx^j$ a $2$-form, expressed relative to a system of local
+coordinates.  The corresponding interior product expressions are:
+\begin{align*}
+  \iota_v(\alpha) &= v^i \alpha_i ,\\
+  \iota_v(\gamma) &= v^i \gamma_{ij}\, dx^j.
+\end{align*}
+The exterior product  formulas are:
+\begin{align*}
+  \alpha\wedge\beta &= \alpha_i \beta_j\, dx^i\wedge dx^j \\
+  &=\tfrac{1}{2} (\alpha_i \beta_j - \alpha_j \beta_i)\, d x^i \wedge
+  d x^j\\ &= \sum_{i<j} (\alpha_i \beta_j - \alpha_j \beta_i)\, d x^i
+  \wedge d x^j;\\
+  \alpha\wedge\gamma &= \tfrac{1}{2} \, \alpha_i \gamma_{jk}\,
+  dx^i\wedge dx^j\wedge dx^k \\ 
+  &=\tfrac{1}{6} (\alpha_i \gamma_{jk} + \alpha_j \gamma_{ki} +
+  \alpha_k \gamma_{ij})\, d x^i \wedge
+  d x^j \wedge d x^k \\ 
+  &=\sum_{i<j<k} (\alpha_i \gamma_{jk} + \alpha_j \gamma_{ki} +
+  \alpha_k \gamma_{ij})\, d x^i \wedge
+  d x^j \wedge d x^k.
+\end{align*}
+The exterior derivative formulas are:
+\begin{align*}
+  df &= \partial_i f\, dx^i,\\
+  d\alpha &= \partial_i \alpha_j \,dx^i\wedge dx^j \\
+  &=\tfrac{1}{2}\,(\partial_i \alpha_j-\partial_j\alpha_i) \,dx^i\wedge dx^j \\
+  &=\sum_{i<j} (\partial_i \alpha_j-\partial_j\alpha_i) \,dx^i\wedge dx^j;\\
+  d\gamma &= \tfrac{1}{2}\, \partial_i \gamma_{jk} \,dx^i\wedge
+  dx^j\wedge dx^k \\
+  &=\tfrac{1}{6}\,(\partial_i \gamma_{jk}+\partial_j \gamma_{ki}
+  +\partial_k \gamma_{ij}) \,dx^i\wedge
+  dx^j\wedge dx^k \\
+  &=\sum_{i<j<k}(\partial_i \gamma_{jk}+\partial_j \gamma_{ki}
+  +\partial_k \gamma_{ij}) \,dx^i\wedge
+  dx^j\wedge dx^k .
+\end{align*}
+%%%%%
+%%%%%
+\end{document}

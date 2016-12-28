@@ -1,0 +1,105 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{Poincare1form}
+\pmcreated{2013-03-22 14:45:44}
+\pmmodified{2013-03-22 14:45:44}
+\pmowner{matte}{1858}
+\pmmodifier{matte}{1858}
+\pmtitle{Poincar\'e $1$-form}
+\pmrecord{7}{36405}
+\pmprivacy{1}
+\pmauthor{matte}{1858}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{58A32}
+\pmsynonym{Liouville one-form}{Poincare1form}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+
+\usepackage{mathrsfs}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+
+\newcommand{\sR}[0]{\mathbb{R}}
+\newcommand{\sC}[0]{\mathbb{C}}
+\newcommand{\sN}[0]{\mathbb{N}}
+\newcommand{\sZ}[0]{\mathbb{Z}}
+
+ \usepackage{bbm}
+ \newcommand{\Z}{\mathbbmss{Z}}
+ \newcommand{\C}{\mathbbmss{C}}
+ \newcommand{\R}{\mathbbmss{R}}
+ \newcommand{\Q}{\mathbbmss{Q}}
+
+
+
+\newcommand*{\norm}[1]{\lVert #1 \rVert}
+\newcommand*{\abs}[1]{| #1 |}
+
+
+
+\newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
+\newtheorem{prop}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{cor}{Corollary}
+\begin{document}
+\begin{defn} Suppose $M$ is a manifold, and $T^\ast M$ is its cotangent bundle.
+Then the \PMlinkescapetext{\emph{Poincar\'e $1$-form}}, 
+$\alpha \in \Omega^1(T^\ast M)$, is locally
+defined as
+$$ 
+  \alpha = \sum_{i=1}^n y_i dx^i   
+$$
+where $x^i, y_i$ are canonical local coordinates for $T^\ast M$.
+\end{defn}
+
+Let us show that the Poincar\'e $1$-form is globally defined. That is, 
+$\alpha$ has the same expression in all local coordinates. Suppose $x^i, \tilde{x}^i$ are overlapping coordinates for $M$. Then we have 
+overlapping local coordinates $(x^i, y_i)$, $(\tilde{x}^i, \tilde{y}_i)$
+for $T^\ast M$ with the transformation rule
+$$
+   \tilde{y}_i = \frac{\partial \tilde{x}^j}{\partial x^i} y_j.
+$$
+Hence
+\begin{eqnarray*}
+\sum_{i=1}^n \tilde{y}_i d\tilde{x}^i &=& \sum_{i=1}^n \tilde{y}_i \frac{\partial \tilde{x}^i}{\partial x^k} dx^k \\
+&=& \sum_{i=1}^n \frac{\partial \tilde{x}^j}{\partial x^i} y_j \frac{\partial \tilde{x}^i}{\partial x^k} dx^k  \\
+&=& \sum_{k=1}^n y_k dx^k.
+\end{eqnarray*}
+
+\subsubsection*{Properties}
+\begin{enumerate}
+\item The Poincar\'e $1$-form play a crucial role in symplectic geometry. 
+The form $d\alpha$ is the canonical symplectic form for $T^\ast M$. 
+\item Suppose $\pi\colon T^\ast M\to M$ is the canonical projection. 
+Then
+$$
+  \alpha(w) = \xi( (D\pi)(w) ),\quad w\in T_\xi(T^\ast M),
+$$
+which is an alternative definition of $\alpha$ without local coordinates.
+\item The restriction of this form to the unit cotangent bundle, is a 
+contact form.
+\end{enumerate}
+%%%%%
+%%%%%
+\end{document}

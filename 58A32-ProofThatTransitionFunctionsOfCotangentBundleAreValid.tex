@@ -1,0 +1,67 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{ProofThatTransitionFunctionsOfCotangentBundleAreValid}
+\pmcreated{2013-03-22 14:52:25}
+\pmmodified{2013-03-22 14:52:25}
+\pmowner{rspuzio}{6075}
+\pmmodifier{rspuzio}{6075}
+\pmtitle{proof that transition functions of cotangent bundle are valid}
+\pmrecord{13}{36550}
+\pmprivacy{1}
+\pmauthor{rspuzio}{6075}
+\pmtype{Proof}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{58A32}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+In this entry, we shall verify that the transition functions proposed for the cotangent bundle \PMlinkescapeword{satisfy} the three criteria required by the classical definition of a manifold.
+
+The first criterion is the easiest to verify.  If $\alpha = \beta$, then $\sigma_{\alpha \alpha}$ reduces to the identity and we have
+ $$\bigg({\sigma'}_{\alpha \alpha} (x_1, \ldots, x_{2n}) \bigg)^i = \bigg(\sigma_{\alpha \alpha} (x_1, \ldots, x_n) \bigg)^i = x^i \qquad 1 \le i \le n $$
+$$\bigg({\sigma'}_{\alpha \alpha} (x_1, \ldots, x_{2n}) \bigg)^{i+n} = \sum_{j = 1}^n {\partial \bigg(\sigma_{\alpha \alpha} (x_1, \ldots, x_n) \bigg)^i \over \partial x_j} x^{j+n} = \sum_{j = 1}^n {\partial x^i \over \partial x_j} x^{j+n} = x^{i+n} \qquad 1 \le i \le n$$
+Thus we see that ${\sigma'}_{\alpha \alpha}$ is the identity map, as required.
+
+Next, we turn our attention to the third criterion --- showing that ${\sigma'}_{\beta \gamma} \circ {\sigma'}_{\alpha \beta} = {\sigma'}_{\alpha \gamma}$ .  For clarity of notation let us define $y^i = ({\sigma'}_{\alpha \beta})^i (x^1, \ldots x^{2n})$.  Then we have
+\begin{eqnarray*}
+({\sigma'}_{\beta \gamma} \circ {\sigma'}_{\alpha \beta})^i (x^1, \dots, x^{2n}) &=& ({\sigma'}_{\beta \gamma})^i (y^1, \dots, y^{2n}) \\
+&=& (\sigma_{\beta \gamma})^i (y^1, \dots, y^n) \\
+&=& (\sigma_{\beta \gamma} \circ \sigma_{\alpha \beta})^i (x^1, \dots, x^n) \\
+&=& (\sigma_{\alpha \gamma})^i (x^1, \dots, x^n) \\
+&=& ({\sigma'}_{\alpha \gamma})^i (x^1, \dots, x^{2n}) \\
+\end{eqnarray*}
+when $1 \le i \le n $.
+\begin{eqnarray*}
+({\sigma'}_{\beta \gamma} \circ {\sigma'}_{\alpha \beta})^{i+n} (x^1, \dots, x^{2n}) &=& ({\sigma'}_{\beta \gamma})^{i+n} (y^1, \dots, y^{2n}) \\
+&=& \sum_{j = 1}^n {\partial \bigg(\sigma_{\beta \gamma} (y_1, \ldots, y_n) \bigg)^i \over \partial y_j} y^{j+n} \\
+&=& \sum_{j = 1}^n \sum_{k = 1}^n {\partial \bigg(\sigma_{\beta \gamma} (y_1, \ldots, y_n) \bigg)^i \over \partial y_j} {\partial \bigg(\sigma_{\alpha \beta} (x_1, \ldots, x_n) \bigg)^j \over \partial x_k} x^{n+k} \\
+&=& \sum_{k = 1}^n {\partial \bigg(\sigma_{\beta \gamma} \circ \sigma_{\alpha \beta} (x_1, \ldots, x_n) \bigg)^i \over \partial x_k} x^{n+k} \\
+&=& \sum_{k = 1}^n {\partial \bigg(\sigma_{\alpha \gamma} (x_1, \ldots, x_n) \bigg)^i \over \partial x_k} x^{n+k} \\
+&=& {\sigma'}_{\alpha \gamma} (x^1, \dots, x^{2n}) \\
+\end{eqnarray*}
+when $1 \le i \le n $.
+
+Finally, the second criterion does not need to be checked because it is a consequence of the first and third criteria.
+%%%%%
+%%%%%
+\end{document}

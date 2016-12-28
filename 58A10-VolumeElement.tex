@@ -1,0 +1,96 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{VolumeElement}
+\pmcreated{2013-03-22 17:40:58}
+\pmmodified{2013-03-22 17:40:58}
+\pmowner{jirka}{4157}
+\pmmodifier{jirka}{4157}
+\pmtitle{volume element}
+\pmrecord{5}{40122}
+\pmprivacy{1}
+\pmauthor{jirka}{4157}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{58A10}
+\pmclassification{msc}{53-00}
+\pmsynonym{volume form}{VolumeElement}
+\pmsynonym{volume measure}{VolumeElement}
+\pmdefines{area element}
+\pmdefines{area form}
+\pmdefines{area measure}
+\pmdefines{Euclidean volume element}
+\pmdefines{Euclidean volume form}
+\pmdefines{euclidean volume measure}
+\pmdefines{surface area measure}
+\pmdefines{surface area element}
+\pmdefines{surface area form}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\theoremstyle{theorem}
+\newtheorem*{thm}{Theorem}
+\newtheorem*{lemma}{Lemma}
+\newtheorem*{conj}{Conjecture}
+\newtheorem*{cor}{Corollary}
+\newtheorem*{example}{Example}
+\newtheorem*{prop}{Proposition}
+\theoremstyle{definition}
+\newtheorem*{defn}{Definition}
+\theoremstyle{remark}
+\newtheorem*{rmk}{Remark}
+
+\begin{document}
+If $M$ is an $n$ dimensional manifold, then a \PMlinkname{differential $n$ form}{DifferentialForms} that is never zero is called a {\em volume element}
+or a {\em volume form}.  Usually one volume form is associated with the manifold.  The volume element is sometimes denoted
+by $dV,$ $\omega$ or $\operatorname{vol}_n.$
+If the manifold is a Riemannian manifold with \PMlinkescapetext{metric} $g,$ then the natural volume form is defined in local coordinates $x^1 \ldots x^n$ by
+\begin{equation*}
+dV := \sqrt{\lvert g \rvert} dx^1 ~ \wedge \ldots \wedge ~dx^n .
+\end{equation*}
+It is not hard to show that a manifold has a volume form if and only if it is orientable.
+
+If the manifold is ${\mathbb{R}}^n,$ then
+the usual volume element $dV = dx^1~ \wedge ~ dx^2 ~ \wedge \ldots \wedge ~dx^n$ is called the {\em Euclidean volume element}
+or {\em Euclidean volume form}.
+In this context, ${\mathbb{C}}^n$ is usually treated as ${\mathbb{R}}^{2n}$ unless stated otherwise.
+
+When $n=2$, then the form is frequently called the {\em area element} or {\em area form} and frequently denoted
+by $dA$.  Furthermore, when the manifold is a submanifold of ${\mathbb{R}}^3$, then many authors will refer to
+a {\em surface area element} or {\em surface area form}.
+
+When the context is measure theoretic, this form is sometimes called a {\em volume measure}, {\em area measure},
+etc...
+
+\begin{thebibliography}{9}
+\bibitem{spivak}
+Michael Spivak.
+{\em \PMlinkescapetext{Calculus on Manifolds}},
+W.A. Benjamin, Inc., 1965.
+\bibitem{boothby}
+William M.\@ Boothby.
+{\em \PMlinkescapetext{An Introduction to Differentiable Manifolds and
+Riemannian Geometry}},
+Academic Press, San Diego, California, 2003.
+\end{thebibliography}
+%%%%%
+%%%%%
+\end{document}

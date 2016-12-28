@@ -1,0 +1,632 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{GeneralizedToposesWithManyvaluedLogicSubobjectClassifiers}
+\pmcreated{2013-03-22 18:13:11}
+\pmmodified{2013-03-22 18:13:11}
+\pmowner{bci1}{20947}
+\pmmodifier{bci1}{20947}
+\pmtitle{generalized toposes with many-valued logic subobject classifiers}
+\pmrecord{60}{40803}
+\pmprivacy{1}
+\pmauthor{bci1}{20947}
+\pmtype{Topic}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{58A03}
+\pmclassification{msc}{18B25}
+\pmclassification{msc}{03B15}
+\pmclassification{msc}{03G30}
+\pmclassification{msc}{03G20}
+\pmclassification{msc}{03B50}
+\pmsynonym{LMn-algebraic n-valued logic}{GeneralizedToposesWithManyvaluedLogicSubobjectClassifiers}
+\pmsynonym{algebraic category of $LM_n$ logic algebras}{GeneralizedToposesWithManyvaluedLogicSubobjectClassifiers}
+%\pmkeywords{generalized topoi with many-valued logic subobject classifiers}
+%\pmkeywords{the category of n-valued}
+%\pmkeywords{LMn-logic algebras and LMn-lattice morphisms}
+%\pmkeywords{n-valued logic algebra}
+%\pmkeywords{algebraic catgeory of n-valued logic lattices and lattice-morphisms}
+\pmrelated{NonAbelianStructures}
+\pmrelated{AbelianCategory}
+\pmrelated{AxiomsForAnAbelianCategory}
+\pmrelated{GeneralizedVanKampenTheoremsHigherDimensional}
+\pmrelated{AxiomaticTheoryOfSupercategories}
+\pmrelated{CategoricalOntology}
+\pmrelated{NonCommutingGraphOfAGroup}
+\pmrelated{NonAbelianStructures}
+\pmrelated{QuantumLogicsTopoi}
+\pmrelated{CategoricalAlgebr}
+\pmdefines{many-valued logic subobject classifier}
+\pmdefines{algebraic category of LMn logic algebras}
+\pmdefines{noncommutative lattice}
+
+% this is the default PlanetMath preamble.  as your % define commands here
+%%\usepackage{xypic}
+\usepackage[mathscr]{eucal}
+\usepackage{amsmath, amssymb, amsfonts, amsthm, amscd, latexsym,color,enumerate}
+%%\usepackage{xypic}
+\usepackage[mathscr]{eucal}
+\usepackage{setspace}
+\xyoption{curve}
+\theoremstyle{plain}
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}{Corollary}[section]
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
+\newtheorem{example}{Example}[section]
+%\theoremstyle{remark}
+\newtheorem{remark}{Remark}[section]
+\newtheorem*{notation}{Notation}
+\newtheorem*{claim}{Claim}
+\newtheorem{exe}{Example}[section]
+
+\renewcommand{\thefootnote}{\ensuremath{\fnsymbol{footnote%%@
+}}} \numberwithin{equation}{section}
+
+\newcommand{\Ad}{{\rm Ad}}
+\newcommand{\Aut}{{\rm Aut}}
+\newcommand{\Cl}{{\rm Cl}}
+\newcommand{\Co}{{\rm Co}}
+\newcommand{\DES}{{\rm DES}}
+\newcommand{\Diff}{{\rm Diff}}
+\newcommand{\Dom}{{\rm Dom}}
+\newcommand{\Hol}{{\rm Hol}}
+\newcommand{\Mon}{{\rm Mon}}
+\newcommand{\Hom}{{\rm Hom}}
+\newcommand{\Ker}{{\rm Ker}}
+\newcommand{\Ind}{{\rm Ind}}
+\newcommand{\IM}{{\rm Im}}
+\newcommand{\Is}{{\rm Is}}
+\newcommand{\ID}{{\rm id}}
+\newcommand{\GL}{{\rm GL}}
+\newcommand{\Iso}{{\rm Iso}}
+\newcommand{\Sem}{{\rm Sem}}
+\newcommand{\St}{{\rm St}}
+\newcommand{\Sym}{{\rm Sym}}
+\newcommand{\SU}{{\rm SU}}
+\newcommand{\Tor}{{\rm Tor}}
+\newcommand{\U}{{\rm U}}
+
+\newcommand{\A}{\mathcal A}
+\newcommand{\Ce}{\mathcal C}
+\newcommand{\D}{\mathcal D}
+\newcommand{\E}{\mathcal E}
+\newcommand{\F}{\mathcal F}
+\newcommand{\G}{\mathcal G}
+\newcommand{\Q}{\mathcal Q}
+\newcommand{\R}{\mathcal R}
+\newcommand{\cS}{\mathcal S}
+\newcommand{\cU}{\mathcal U}
+\newcommand{\W}{\mathcal W}
+
+\newcommand{\bA}{\mathbb{A}}
+\newcommand{\bB}{\mathbb{B}}
+\newcommand{\bC}{\mathbb{C}}
+\newcommand{\bD}{\mathbb{D}}
+\newcommand{\bE}{\mathbb{E}}
+\newcommand{\bF}{\mathbb{F}}
+\newcommand{\bG}{\mathbb{G}}
+\newcommand{\bK}{\mathbb{K}}
+\newcommand{\bM}{\mathbb{M}}
+\newcommand{\bN}{\mathbb{N}}
+\newcommand{\bO}{\mathbb{O}}
+\newcommand{\bP}{\mathbb{P}}
+\newcommand{\bR}{\mathbb{R}}
+\newcommand{\bV}{\mathbb{V}}
+\newcommand{\bZ}{\mathbb{Z}}
+
+\newcommand{\bfE}{\mathbf{E}}
+\newcommand{\bfX}{\mathbf{X}}
+\newcommand{\bfY}{\mathbf{Y}}
+\newcommand{\bfZ}{\mathbf{Z}}
+
+\renewcommand{\O}{\Omega}
+\renewcommand{\o}{\omega}
+\newcommand{\vp}{\varphi}
+\newcommand{\vep}{\varepsilon}
+
+\newcommand{\diag}{{\rm diag}}
+\newcommand{\grp}{{\mathbb G}}
+\newcommand{\dgrp}{{\mathbb D}}
+\newcommand{\desp}{{\mathbb D^{\rm{es}}}}
+\newcommand{\Geod}{{\rm Geod}}
+\newcommand{\geod}{{\rm geod}}
+\newcommand{\hgr}{{\mathbb H}}
+\newcommand{\mgr}{{\mathbb M}}
+\newcommand{\ob}{{\rm Ob}}
+\newcommand{\obg}{{\rm Ob(\mathbb G)}}
+\newcommand{\obgp}{{\rm Ob(\mathbb G')}}
+\newcommand{\obh}{{\rm Ob(\mathbb H)}}
+\newcommand{\Osmooth}{{\Omega^{\infty}(X,*)}}
+\newcommand{\ghomotop}{{\rho_2^{\square}}}
+\newcommand{\gcalp}{{\mathbb G(\mathcal P)}}
+
+\newcommand{\rf}{{R_{\mathcal F}}}
+\newcommand{\glob}{{\rm glob}}
+\newcommand{\loc}{{\rm loc}}
+\newcommand{\TOP}{{\rm TOP}}
+
+\newcommand{\wti}{\widetilde}
+\newcommand{\what}{\widehat}
+
+\renewcommand{\a}{\alpha}
+\newcommand{\be}{\beta}
+\newcommand{\ga}{\gamma}
+\newcommand{\Ga}{\Gamma}
+\newcommand{\de}{\delta}
+\newcommand{\del}{\partial}
+\newcommand{\ka}{\kappa}
+\newcommand{\si}{\sigma}
+\newcommand{\ta}{\tau}
+\def \C{\mathsf{C}}
+\newcommand{\med}{\medbreak}
+\newcommand{\medn}{\medbreak \noindent}
+\newcommand{\bign}{\bigbreak \noindent}
+
+%%N-Logic specific macros%%
+
+
+\newcommand{\B}{{\mathcal B}}
+
+\newcommand{\MV}{{\mathcal MV}}
+
+\newcommand{\LM}{{\mathcal LM}_n}
+
+\newcommand{\CLM}{{\mathcal CLM}_n}
+
+\newcommand{\Post}{{\mathcal P}ost_n}
+
+\newcommand{\Ra}{\Rightarrow}
+
+\newcommand{\GMn}{$NMV_n$}
+
+\newcommand{\LMn}{$LM_n$}
+
+\newcommand{\NMVn}{NMV_n}
+
+\newtheorem{defi}{Definition}
+
+\newtheorem{prop}{Proposition}
+
+\newtheorem{rem}{Remark}
+
+\newtheorem{coro}{Corollary}
+
+\newtheorem{lema}{Lemma}
+
+\newcommand{\lmn}{LM_{n}}
+
+\newcommand{\lmt}{LM_{\Th}}
+
+\newcommand{\ov}{\overline}
+
+\newcommand{\sm}{\smile}
+
+\newcommand{\lmrn}{LMR_{n}}
+
+\renewcommand{\t}{\times}
+
+\newcommand{\eu}{\equiv_{1}}
+
+\newcommand{\lu}{\leq_{1}}
+
+\newcommand{\ez}{\equiv_{0}}
+
+\newcommand{\lz}{\leq_{0}}
+
+\newcommand{\Su}{S_{1}}
+
+\newcommand{\Sd}{S_{2}}
+
+\newcommand{\Si}{S_{i}}
+
+\newcommand{\pri}{pr_{i}}
+
+\newcommand{\pru}{pr_{1}}
+
+\newcommand{\prd}{pr_{2}}
+
+\newcommand{\pii}{\pi_{i}}
+
+\newcommand{\piu}{\pi_{1}}
+
+\newcommand{\pid}{\pi_{2}}
+
+\newcommand{\unudoi}{\{1,2\}}
+
+\newcommand{\Li}{L_{i}}
+
+\newcommand{\Lu}{L_{1}}
+
+\newcommand{\Ld}{L_{2}}
+
+\newcommand{\ioi}{\iota_{i}}
+
+\newcommand{\iou}{\iota_{1}}
+
+\newcommand{\iod}{\iota_{2}}
+
+\newcommand{\iii}{\iou\t\iod}
+
+\newcommand{\K}{{\cal K}}
+
+\newcommand{\sta}{\stackrel}
+
+\newcommand{\fu}{f_{1}}
+
+\newcommand{\fn}{f_{n}}
+
+\newcommand{\fk}{f_{k}}
+
+\newcommand{\e}{\eta}
+
+\newcommand{\eps}{\epsilon}
+
+\newcommand{\SLI}{S^{[I]}}
+
+\newcommand{\CSLI}{C(S^{[I]})}
+
+\newcommand{\CLI}{C(L)^{[I]}}
+
+\newcommand{\mSI}{\models_{\SI}}
+
+\newcommand{\mS}{\models_{\S}}
+
+\newcommand{\tu}{t_{1}}
+
+\newcommand{\tn}{t_{n}}
+
+\newcommand{\tk}{t_{k}}
+
+\renewcommand{\S}{\Sigma}
+
+\newcommand{\s}{\sigma}
+
+\newcommand{\Sn}{\Sigma_{n}}
+
+\newcommand{\Sw}{\Sigma_{w}}
+
+\newcommand{\wu}{w_{1}}
+
+\newcommand{\wn}{w_{n}}
+
+\newcommand{\wi}{w_{i}}
+
+\newcommand{\wj}{w_{j}}
+
+\newcommand{\yu}{y_{1}}
+
+\newcommand{\yn}{y_{n}}
+
+\newcommand{\yi}{y_{i}}
+
+\newcommand{\yj}{y{j}}
+
+\newcommand{\zu}{z_{1}}
+
+\newcommand{\zn}{z_{n}}
+
+\newcommand{\zk}{z_{k}}
+
+\newcommand{\zi}{z_{i}}
+
+\newcommand{\xu}{x_{1}}
+
+\newcommand{\xn}{x_{n}}
+
+\renewcommand{\xi}{x_{i}}
+
+\newcommand{\xj}{x_{j}}
+
+\newcommand{\wk}{w_{k}}
+
+\newcommand{\xk}{x_{k}}
+
+\newcommand{\yk}{y_{k}}
+
+\newcommand{\su}{s_{1}}
+
+\newcommand{\sn}{s_{n}}
+
+
+
+\newcommand{\sj}{s_{j}}
+
+\newcommand{\sk}{s_{k}}
+
+
+
+\newcommand{\Imp}{\Rightarrow}
+
+
+
+\newcommand{\SI}{\S_{I}}
+
+\newcommand{\EI}{E_{I}}
+
+\renewcommand{\phi}{\varphi}
+
+
+
+\newcommand{\bw}{\bigwedge}
+
+\newcommand{\bv}{\bigvee}
+
+\newcommand{\w}{\wedge}
+
+\renewcommand{\v}{\vee}
+
+
+
+\renewcommand{\phi}{\varphi}
+
+\newcommand{\phii}{\phi_{i}}
+
+\newcommand{\phij}{\phi_{j}}
+
+\newcommand{\phik}{\phi_{k}}
+
+\newcommand{\phiu}{\phi_{1}}
+
+\newcommand{\phin}{\phi_{n-1}}
+
+
+
+\newcommand{\unen}{\{1,\ldots,n\}}
+
+\newcommand{\ffu}{f_{1}}
+
+\newcommand{\ffn}{f_{n}}
+
+\newcommand{\ffi}{f_{i}}
+
+\newcommand{\ffj}{f_{j}}
+
+\newcommand{\ffk}{f_{k}}
+
+
+
+\newcommand{\orc}{\forall}
+
+\newcommand{\exi}{\exists}
+
+
+
+\newcommand{\au}{a_{1}}
+
+\newcommand{\an}{a_{n}}
+
+\newcommand{\ai}{a_{i}}
+
+\newcommand{\aj}{a_{j}}
+
+\newcommand{\ak}{a_{k}}
+
+\newcommand{\bu}{b_{1}}
+
+\newcommand{\bn}{b_{n}}
+
+\newcommand{\bi}{b_{i}}
+
+\newcommand{\bj}{b_{j}}
+
+\newcommand{\bk}{b_{k}}
+
+\newcommand{\ra}{\rightarrow}
+
+
+
+\renewcommand{\P}{{\cal P}}
+
+\newcommand{\N}{{I\!\!N}}
+
+
+
+\newcommand{\p}{\oplus}
+
+\newcommand{\cd}{\odot}
+
+\newcommand{\unmu}{\{1,\ldots,n-1\}}
+
+
+
+\newcommand{\Ss}{S_{\sigma}}
+
+\newcommand{\Th}{\Theta}
+
+\newcommand{\ThS}{\Theta_{\S}}
+
+
+
+\newcommand{\Luk}{ {\cal L}uk_{n} }
+
+\newcommand{\Gen}{{\cal NMVA}_{n}}
+
+\newcommand{\CGen}{{\cal NMVA}_{n}}
+
+\newcommand{\GR}{{\cal NLGU}_{n}}
+\newcommand{\gr}{NLGU_{n}}
+
+\newcommand{\NMVN}{{\cal NMVA}_n}
+
+\newcommand{\lra}{{\longrightarrow}}
+
+\newcommand{\rat}{{\rightarrowtail}}
+\newcommand{\oset}[1]{\overset {#1}{\ra}}
+\newcommand{\osetl}[1]{\overset {#1}{\lra}}
+\newcommand{\hr}{{\hookrightarrow}}
+\newcommand{\labto}[1]{\overset{#1}{\lra}}
+\newcommand{\midsq}[1]{\save\go[0,0];[1,1]:(0.5,0) \drop{#1}\restore}
+%the following allows for longer arrows with long labels
+%the first entry gives the additional length and the second gives the label
+%e.g. \llabto{0.75}{\rm{long label}}
+\newcommand{\llabto}[2]{\stackrel{#2}
+{\rule[0.5ex]{#1 em}{0.05ex}\hspace{-0.4em}\longrightarrow}}
+
+%the next gives two direction arrows at the top of a 2 x 2 matrix
+
+\newcommand{\directs}[2]{\def\objectstyle{\scriptstyle} \objectmargin={0pt}
+\xy (0,4)*+{}="a",(0,-2)*+{\rule{0em}{1.5ex}#2}="b",(7,4)*+{\;#1}="c" \ar@{->} "a";"b"
+\ar @{->}"a";"c" \endxy }
+%the next gives two direction arrows at the middle of a 2 x 2 matrix
+
+\newcommand{\xdirects}[2]{\def\objectstyle{\scriptstyle} \objectmargin={0pt}
+\xy (0,0)*+{}="a",(0,-6)*+{\rule{0em}{1.5ex}#2}="b",(7,0)*+{\;#1}="c" \ar@{->} "a";"b"
+\ar @{->}"a";"c" \endxy }
+%and this is smaller for a 1 x 1 matrix
+\newcommand{\sdirects}[2]{\def\objectstyle{\scriptstyle} \objectmargin={0pt}
+\xy (0,2.2)*+{}="a",(0,-2.5)*+{\rule{0em}{1.5ex}#2}="b",(7,2.2)*+{\;#1}="c" \ar@{->}
+"a";"b" \ar @{->}"a";"c" \endxy }
+
+% the following are codes for the identities and connections
+\newcommand{\bl}{\mbox{\rule{0.08em}{1.7ex}\hspace{-0.00em}\rule{0.7em}{0.2ex}}}
+
+\newcommand{\br}{\mbox{\rule{0.7em}{0.2ex}\hspace{-0.04em}\rule{0.08em}{1.7ex}}}
+
+\newcommand{\tr}{\mbox{\rule[1.5ex]{0.7em}{0.2ex}\hspace{-0.03em}\rule{0.08em}{1.7ex}}}
+
+\newcommand{\tl}{\mbox{\rule{0.08em}{1.7ex}\rule[1.54ex]{0.7em}{0.2ex}}}
+
+\newcommand{\hh}{\mbox{\rule{0.7em}{0.2ex}\hspace{-0.7em}\rule[1.5ex]{0.70em}{0.2ex}}}
+
+\newcommand{\vv}{\mbox{\rule{0.08em}{1.7ex}\hspace{0.6em}\rule{0.08em}{1.7ex}}}
+
+\newcommand{\sq}{\mbox{\rule{0.08em}{1.7ex}\hspace{-0.00em}\rule{0.7em}{0.2ex}\hspace{-0.7em}\rule[1.54ex]{0.7em}{0.2ex}\hspace{-0.03em}\rule{0.08em}{1.7ex}}}
+
+\newcommand{\tsq}{\mbox{\rule{0.04em}{1.55ex}\hspace{-0.00em}\rule{0.7em}{0.1ex}\hspace{-0.7em}\rule[1.5ex]{0.7em}{0.1ex}\hspace{-0.03em}\rule{0.04em}{1.55ex}}}
+\newcommand{\tssq}{\mbox{\rule{0.04em}{1.55ex}\hspace{-0.00em}\rule{0.7em}{0.1ex}\hspace{-0.7em}\rule[1.5ex]{0.7em}{0.1ex}\hspace{-0.03em}\rule{0.04em}{1.55ex}\hspace{-0.43em}\rule[0.7ex]{0.1em}{0.2ex}}}
+
+\newcommand{\quads}[4]{\left( #1 \hspace{1em}
+\overset{\textstyle{#2}}{\underset{\textstyle{#4}} {\rule{0mm}{1mm}}} \hspace{1em} #3
+\right)}
+\def\bu{\bullet}
+\def\prt{\partial}
+\def\eps{\varepsilon}
+\def\red{\textcolor{red}}
+\def\blue{\textcolor{blue}}
+\def\leq{\leqslant}
+\def\geq{\geqslant}
+\def\le{\leqslant}
+\def\ge{\geqslant}
+
+\begin{document}
+\section{Generalized toposes}
+\subsection{Introduction}
+
+ \emph{Generalized topoi (toposes) with many-valued algebraic logic subobject classifiers}
+are specified by the associated categories of algebraic logics previously defined as $LM_n$, that is, {\em non-commutative} lattices with $n$ logical values, where $n$ can also be chosen to be any cardinal, including infinity, etc.
+
+\subsection{Algebraic category of $LM_n$ logic algebras}
+ 
+ \L{}ukasiewicz \emph{logic algebras} were constructed by Grigore Moisil in 1941 to define `nuances' in logics, or many-valued logics, as well as 3-state control logic (electronic) circuits. \L{}ukasiewicz-Moisil ($LM_n$) logic algebras were defined axiomatically in 1970, in ref. \cite{GG-CV70}, as n-valued logic algebra representations and extensions of the \L ukasiewcz (3-valued) logics; then, the universal properties of categories of $LM_n$ -logic algebras were also investigated and reported in a series of recent publications (\cite{GG2k6} and references cited therein). Recently, several modifications of {\em $LM_n$-logic algebras} are under consideration as valid candidates for representations of {\em quantum logics}, as well as for modeling non-linear biodynamics in genetic `nets' or networks (\cite{ICB77}), and in single-cell organisms, or in tumor growth. For a recent review on $n$-valued logic algebras, and major published results, the reader is referred to \cite{GG2k6}.
+
+ The \emph{category $\mathcal{LM}$ of \L{}ukasiewicz-Moisil, $n$-valued logic algebras ($LM_n$), and $LM_n$--lattice morphisms}, $\lambda_{LM_n}$, was introduced in 1970 in ref. \cite{GG-CV70} as an algebraic category tool for $n$-valued logic studies. The objects of $\mathcal{LM}$ are the \emph{non--commutative} $LM_n$ lattices and the morphisms of $\mathcal{LM}$ are the $LM_n$-lattice morphisms as defined next.
+
+\begin{definition}\rm
+
+A {\it $n$--valued \L ukasiewicz--Moisil algebra}, ({\it $LM_{n}$--algebra}) is a structure of the form
+$(L,\vee,\wedge,N,(\phii)_{i\in\{1,\ldots,n-1\}},0,1)$, subject to the following axioms:
+\begin{itemize}
+\item (L1) $(L,\vee,\wedge,N,0,1)$ is a {\it de Morgan algebra}, that is, a bounded distributive lattice with a decreasing involution $N$ satisfying the de Morgan property $N({x\vee y})=Nx\wedge Ny$;
+\item (L2) For each $i\in\{1,\ldots,n-1\}$, $\phii:L\lra L$ is a lattice endomorphism;\footnote{The $\phii$'s are called the {\em Chrysippian endomorphisms} of $L$.}
+\item (L3) For each $i\in\{1,\ldots,n-1\},x\in L$, $\phii(x)\vee N{\phii(x)}=1$ and
+$\phii(x)\wedge N{\phii(x)}=0$;
+\item (L4) For each $i,j\in\{1,\ldots,n-1\}$, $\phii\circ\phi_{j}=\phi_{k}$ iff $(i+j)= k$;
+\item (L5) For each $i,j\in\{1,\ldots,n-1\}$, $i\leq j$ implies $\phii\leq\phi_{j}$;
+\item (L6) For each $i\in\{1,\ldots,n-1\}$ and $x\in L$, $\phii(N x)=N\phi_{n-i}(x)$.
+\item (L7) Moisil's `determination principle':
+$$\left[\orc i\in\{1,\ldots,n-1\},\;\phii(x)=\phii(y)\right] \; implies \; [x = y] \;$$
+\cite{GG-CV70,GG2k6}.
+\end{itemize}
+\end{definition}
+
+\begin{exe}\rm
+Let $L_n=\{0,1/(n-1),\ldots,(n-2)/(n-1),1\}$. This set can be naturally endowed with an $\mbox{LM}_n$
+--algebra structure as follows:
+\begin{itemize}
+\item the bounded lattice operations are those induced by the usual order on rational numbers;
+\item for each $j\in\{0,\ldots,n-1\}$, $N(j/(n-1))=(n-j)/(n-1)$;
+\item for each $i\in\{1,\ldots,n-1\}$ and $j\in\{0,\ldots,n-1\}$,
+$\phii(j/(n-1))=0$ if $j<i$ and $=1$ otherwise.
+\end{itemize}
+\end{exe}
+Note that, for $n=2$, $L_n=\{0,1\}$, and there is only one Chrysippian endomorphism of $L_n$ is $\phi_1$, which
+is necessarily restricted by the determination principle to a bijection, thus making $L_n$ a Boolean algebra (if
+we were also to disregard the redundant bijection $\phi_1$). Hence, the `overloaded' notation $L_2$, which is
+used for both the classical Boolean algebra and the two--element $\mbox{LM}_2$--algebra, remains consistent.
+\begin{exe}\rm
+Consider a Boolean algebra $B$.
+
+%%$(B,\v,\w,{}^-,0,1)$.
+
+Let $T(B)=\{(x_1,\ldots,x_n)\in B^{n-1}\mid x_1\leq\ldots\leq x_{n-1}\}$. On the set $T(B)$, we define an $\mbox{LM}_n$-algebra structure as follows:
+
+\begin{itemize}
+\item the lattice operations, as well as $0$ and $1$, are defined component--wise from $\Ld$;
+
+\item for each $(x_1,\ldots,x_{n-1})\in T(B)$ and $i\in\{1,\ldots,n-1\}$ one has:\\
+$N(x_1,\ldots x_{n-1})=(\ov{x_{n-1}},\ldots,\ov{x_1})$ and $\phii(x_1,\ldots,x_n)=(x_i,\ldots,x_i) .$
+\end{itemize}
+\end{exe}
+
+\subsection{Generalized logic spaces defined by $LM_n$ algebraic logics}
+
+\begin{itemize}
+\item Topological semigroup spaces of topological automata
+\item Topological groupoid spaces of reset automata modules 
+\end{itemize}
+
+\subsection{Axioms defining a generalized topos}
+\begin{itemize}
+\item Consider a subobject logic classifier $O$ defined as an LM-algebraic logic
+$L_n$ in the category {\bf L} of LM-logic algebras, together with logic-valued functors $F_o: L \to V$, 
+where $V$ is the class of N logic values, with $N$ needing not be finite. 
+\item A triple $(O,{\bf L},F_o)$ defines a generalized topos, $\tau$, if the above axioms 
+defining $O$ are satisfied, and if the functor $Fo$ is an univalued functor in the sense of Mitchell.
+\end{itemize}
+
+{\bf More to come...}
+
+
+\subsection{Applications of generalized topoi:}
+\begin{itemize}
+\item Modern quantum logic (MQL)
+\item Generalized quantum automata 
+\item Mathematical models of N-state genetic networks \cite{BBGG1}
+\item Mathematical models of parallel computing networks
+\end{itemize}
+
+\begin{thebibliography}{9}
+
+\bibitem{GG-CV70}
+Georgescu, G. and C. Vraciu. 1970, On the characterization of centered \L{}ukasiewicz
+algebras., {\em J. Algebra}, \textbf{16}: 486-495.
+
+\bibitem{GG2k6}
+Georgescu, G. 2006, N-valued Logics and \L ukasiewicz-Moisil Algebras, \emph{Axiomathes}, \textbf{16} (1-2): 123-136.
+
+\bibitem{ICB77}
+Baianu, I.C.: 1977, A Logical Model of Genetic Activities in \L ukasiewicz Algebras: The Non-linear Theory. \emph{Bulletin of Mathematical Biology}, \textbf{39}: 249-258.
+
+\bibitem{ICB2004a}
+Baianu, I.C.: 2004a. \L{}ukasiewicz-Topos Models of Neural Networks, Cell Genome and Interactome Nonlinear Dynamic Models (2004). Eprint. Cogprints--Sussex Univ. 
+
+\bibitem{ICB04b}
+Baianu, I.C.: 2004b \L{}ukasiewicz-Topos Models of Neural Networks, Cell Genome and Interactome Nonlinear Dynamics). CERN Preprint EXT-2004-059. \textit{Health Physics and Radiation Effects} (June 29, 2004). 
+ 
+\bibitem{Bgg2}
+Baianu, I. C., Glazebrook, J. F. and G. Georgescu: 2004, Categories of Quantum Automata and N-Valued \L ukasiewicz Algebras in Relation to Dynamic Bionetworks, \textbf{(M,R)}--Systems and Their Higher Dimensional Algebra,
+\PMlinkexternal{Abstract and Preprint of Report in PDF}{http://en.wikipedia.org/wiki/User:Bci2/Books/Interactomics} . 
+
+\bibitem{BBGG1}
+Baianu I. C., Brown R., Georgescu G. and J. F. Glazebrook: 2006b, Complex Nonlinear Biodynamics in Categories, Higher Dimensional Algebra and \L{}ukasiewicz--Moisil Topos: Transformations of Neuronal, Genetic and Neoplastic Networks., \emph{Axiomathes}, \textbf{16} Nos. 1--2: 65--122.
+
+\bibitem{MB68}
+Mitchell, Barry. The Theory of Categories. Academic Press: London, 1968.
+
+\end{thebibliography}
+
+
+%%%%%
+%%%%%
+\end{document}

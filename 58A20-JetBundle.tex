@@ -1,0 +1,159 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{JetBundle}
+\pmcreated{2013-03-22 15:28:42}
+\pmmodified{2013-03-22 15:28:42}
+\pmowner{rspuzio}{6075}
+\pmmodifier{rspuzio}{6075}
+\pmtitle{jet bundle}
+\pmrecord{8}{37333}
+\pmprivacy{1}
+\pmauthor{rspuzio}{6075}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{58A20}
+\pmdefines{jet}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\def\J{\mathrm{J}}
+\def\T{\mathrm{T}}
+\begin{document}
+\PMlinkescapeword{between}
+\PMlinkescapeword{structure}
+
+\subsection{Introduction}
+Let $p\colon X\to B$ be a surjective submersion of $\mathcal{C}^r$
+differential manifolds, where
+$r\in\{0,1,\ldots\}\cup\{\infty,\omega\}$ ($\mathcal{C}^\omega$ means
+real analytic).  For all integers $k\ge 0$ with $k\le r$, we will
+define a fibre bundle $\J^k_B X$ over $X$, called the $k$-th \emph{jet
+bundle} of $X$ over $B$.  The fibre of this bundle above a point $x\in
+X$ can be interpreted as the set of equivalence classes of local
+sections of $p$ \PMlinkescapetext{passing through} $x$, where two
+sections are considered
+equivalent if their first $k$ derivatives at $x$ are equal.  The
+equivalence class of a section is then the \emph{jet} of that section;
+it indicates the direction of the section locally at $x$.  This
+concept has much in common with that of the germ of a smooth function
+on a manifold: it \PMlinkescapetext{contains} not only the value of a
+function at a point, but also some \PMlinkescapetext{information}
+about the behaviour of the function near that point.
+
+\subsection{Construction}
+We will now define each jet bundle of $X$ over $B$ as a set with a
+projection map to $X$, and we describe the concept of
+\emph{prolongation} of sections.  After that, we give a slightly
+different construction allowing us to put a manifold structure on each
+of the jet bundles.
+
+For every open subset of $B$, we denote by $\Gamma(U,X)$ the set of
+sections of $p$ over $U$, i.e.~the set of ${\cal C}^r$ functions
+$s\colon U\to p^{-1}U$ such that $p\vert_{p^{-1}U}\circ s=\mathop{\rm
+id}_U$.  Every point of $B$ has an open subset $U$ such that there
+exists at least one section of $p$ over $U$, due to the assumption
+that $p$ is a surjective submersion.  For all $x\in X$, we define the
+fibre of $\J^k_BX$ above $x$ by
+$$
+\J^k_BX(x)=\{(U,s)\colon U\subset B\hbox{ open},
+x\in U,s\in\Gamma(U,X),s(p(x))=x\}/\mathord\sim,
+$$
+where the equivalence relation $\sim$ is defined by $s\sim
+s'\Leftrightarrow s$ and $s'$ induce the same map between the fibres
+at $p(x)$ and $x$ of the $k$-th iterated tangent bundles of $B$ and
+$X$, respectively.  (Note that the fibres in the $k$-th iteration are
+the same if and only if the induced maps are already the same in the
+$(k-1)$-st iteration).  We will denote the equivalence class of a pair
+$(U,s)$ by $[U,s]$.  As a set, $\J^k_BX$ is defined as the disjoint
+union of the sets $\J^k_BX(x)$ with $x\in X$.  Write $\pi\colon
+\J^k_BX\to X$ for the `obvious' projection map, defined by
+$$
+\pi([U,s])=x\hbox{ for }[U,s]\in\J^k_BX(x).
+$$
+Notice that $\J^0_BX$ is just $X$ itself.
+
+Suppose we have some section $s$ of $X$ over an open subset $U$ of
+$B$.  By sending every point $y\in U$ to the equivalence class
+$[U,s]\in\J^k_BX(s(y))$ we obtain a section of $\pi\circ p\colon
+\J^k_BX\to B$ over $U$ for each $k\ge 0$, called the $k$-th
+\emph{prolongation} of $s$.  Composing this section on the left with
+$\pi$ gives back the original section $s$ of $X$.
+
+\subsection{The bundle structure}
+Instead of defining all the jet bundles at once, we may choose to
+define only the first jet bundle in the way described above.  After
+equipping the first jet bundle with the structure of a differential
+manifold, which we will do below, we can then inductively define
+$\J^{k+1}_BX$ as the first jet bundle of $\J^k_BX$ over $B$ for $k\ge
+1$.  This is useful because the manifold structure only needs to be
+defined for $\J^1_BX$.  %It is easy to check that both constructions give isomorphic results.
+
+We make $\J^1_BX$ into an affine bundle over $X$, locally trivial of
+rank $\dim B(\dim X-\dim B)$, in the following way.  We cover $X$ with
+charts $(W,\phi,W')$, where $\phi$ is a diffeomorphism between open
+subsets $W\subset X$ and $W'\subset\mathbb{R}^n$.  Without loss of
+generality, we assume that $p(W)$ is contained in the domain $V$ of a
+chart $(V,\psi,V')$ on $B$, with $V'\subset\mathbb{R}^m$.  Here $n$
+and $m$ are the local dimensions of $X$ and $B$, respectively.
+
+For all $x\in W$ and all $[U,s]\in\J^1_BX(x)$, we have the tangent map
+$\T s(p(x))$, which is a linear map from $\T V(p(x))$ to $\T W(x)$.
+These tangent spaces are isomorphic to $\mathbb{R}^m$ and
+$\mathbb{R}^n$ via the chosen charts, so that $\T s(p(x))$ acts as a
+matrix $M_x([U,s])\in\mathbb{R}^{n\times m}$:
+$$
+\xymatrix{
+\T W(x) \ar[r]^\simeq & \mathbb{R}^n \\
+\T V(p(x)) \ar[u]^{\T s(p(x))} \ar[r]^\simeq &
+\mathbb{R}^m \ar[u]_{M_x([U,s])}
+}
+$$
+The definition of the equivalence relation $\sim$ on $\J^1_BX(x)$ means
+that the association $[U,s]\mapsto M_x([U,s])$ is well-defined and
+injective for each $x\in W$.  The image of $M_x$ consists of the
+matrices with the property that multiplying them on the left with the
+$m\times n$ matrix corresponding to the tangent map $\T p(x)$ gives
+the $m\times m$ identity matrix.  These matrices form a
+$m(n-m)$-dimensional linear subspace $L_x\subset\mathbb{R}^{n\times m}$,
+and $L=\bigcup_{x\in W}\{x\}\times L_x$ is a submanifold of
+$W\times\mathbb{R}^{n\times m}$.
+
+We \PMlinkescapetext{fix} both the differentiable structure of
+$\pi^{-1}U$ and a local trivialisation of $\J^1_BX$ as a vector bundle
+by requiring that
+\begin{eqnarray*}
+\pi^{-1}W&\to&L \\
+{}[U,s] &\mapsto&\left(\pi([U,s]),M_{\pi([U,s])}([U,s])\right)
+\end{eqnarray*}
+be a diffeomorphism and an $\mathbb{R}$-linear map.  Since the effect
+of a change of charts on $W$ or $V$ is multiplying each $M_x([U,s])$ by
+matrices depending differentiably on $x\in W$ (namely, the derivatives
+of the glueing maps), this gives a well-defined vector bundle
+structure on all of $\J^1_BX$.
+
+Iterating the above construction by defining $\J^{k+1}_BX$ as the first
+jet bundle of $\J^k_BX$ over $B$, each jet bundle $\J^{k+1}_BX$ becomes
+a vector bundle over $\J^k_BX$ and a fibre bundle over $X$.  Normally,
+only $\J^1_BX$ is a vector bundle over $X$.
+%%%%%
+%%%%%
+\end{document}

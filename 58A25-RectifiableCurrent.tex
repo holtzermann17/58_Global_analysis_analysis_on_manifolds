@@ -1,0 +1,66 @@
+\documentclass[12pt]{article}
+\usepackage{pmmeta}
+\pmcanonicalname{RectifiableCurrent}
+\pmcreated{2013-03-22 14:28:34}
+\pmmodified{2013-03-22 14:28:34}
+\pmowner{paolini}{1187}
+\pmmodifier{paolini}{1187}
+\pmtitle{rectifiable current}
+\pmrecord{4}{36001}
+\pmprivacy{1}
+\pmauthor{paolini}{1187}
+\pmtype{Definition}
+\pmcomment{trigger rebuild}
+\pmclassification{msc}{58A25}
+\pmdefines{integral current}
+\pmdefines{integral flat norm}
+\pmdefines{integral flat chains}
+
+% this is the default PlanetMath preamble.  as your knowledge
+% of TeX increases, you will probably want to edit this, but
+% it should be fine as is for beginners.
+
+% almost certainly you want these
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+% used for TeXing text within eps files
+%\usepackage{psfrag}
+% need this for including graphics (\includegraphics)
+%\usepackage{graphicx}
+% for neatly defining theorems and propositions
+%\usepackage{amsthm}
+% making logically defined graphics
+%%%\usepackage{xypic}
+
+% there are many more packages, add them here as you need them
+
+% define commands here
+\begin{document}
+An $m$-dimensional \emph{rectifiable current} is a current $T$ whose action against a $m$-form $\omega$ can be written as
+\[
+  T(\omega) = \int_S \theta(x)\langle \xi(x),\omega(x)\rangle d\mathcal H^m(x)
+\]
+where $S$ is an $m$-dimensional bounded rectifiable set, $\xi$ is an orientation of $S$ i.e.\ $\xi(x)$ is a unit $m$-vector representing the approximate tangent plane of $S$ at $x$ for $\mathcal H^m$-a.e.\ $x\in S$ and, finally, $\theta(x)$ is an integer valued measurable function defined a.e.\ on $S$ (called \emph{multiplicity}).
+The space of $m$-dimensional rectifiable currents is denoted by $\mathcal R_m$.
+
+An $m$-dimensional rectifiable current $T$ such that the boundary $\partial T$ is itself an $(m-1)$-dimensional rectifiable current, is called \emph{integral current}. The space of integral currents is denoted by $\mathbf I_m$.
+We point out that the word ``integral'' refers to the fact that the multiplicity $\theta$ is integer valued.
+
+Also notice that rectifiable and integral currents are not vector subspaces of the space of currents. In fact while the sum of two rectifiable currents is again a rectifiable current, the multiplication by a real number gives a rectifiable current only if the number is an integer.
+
+The compactness theorem makes the space of integral currents a good space where geometric problems can be ambiented.
+
+On rectifiable currents one can define an \emph{integral flat norm}
+\[
+  \mathcal F(T) := \inf \{\mathbf M(A) + \mathbf M(B)\colon
+   T=A+\partial B,\quad A\in \mathcal R_m,\ B\in\mathcal R_{m+1}\}.
+\]
+
+The closure of the space $\mathcal R_m$ under the integral flat norm is called the space of \emph{integral flat chains} and is denoted by $\mathcal F_m$.
+
+As a consequence of the closure theorem, one finds that $\mathcal R_m = \{T\in \mathcal F_m\colon \mathbf M(T)<\infty\}$ where $\mathbf M$ is the mass norm of a current.
+%%%%%
+%%%%%
+\end{document}
