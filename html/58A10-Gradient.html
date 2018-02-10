@@ -1,0 +1,635 @@
+<!DOCTYPE html><html>
+<head>
+<title>gradient</title>
+<!--Generated on Sat Feb 10 11:50:05 2018 by LaTeXML (version 0.8.2) http://dlmf.nist.gov/LaTeXML/.-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/3f71ceeb3b055e1ddc3b6c11fb1f074c/raw/2bb23e3b173ff96840797fc0c3bcb8c54085df8e/LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/4bda0365b30858ac2fb83623185fe3ec/raw/cedd84ed3e3ad597c5d293f443ecfe4803741c6b/ltx-article.css" type="text/css">
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<div class="ltx_page_main">
+<div class="ltx_page_content">
+<article class="ltx_document ltx_authors_1line">
+<h1 class="ltx_title ltx_title_document">gradient</h1>
+
+<div id="p1" class="ltx_para">
+<br class="ltx_break">
+</div>
+<section id="S0.SS0.SSS0.Px1" class="ltx_paragraph">
+<h3 class="ltx_title ltx_title_paragraph">Summary.</h3>
+
+<div id="S0.SS0.SSS0.Px1.p1" class="ltx_para">
+<p class="ltx_p">The <em class="ltx_emph ltx_font_italic">gradient</em> is a first-order differential operator that maps
+scalar functions to vector fields. It is a generalization of the ordinary
+derivative, and as such conveys information about the rate of change
+of a function relative to small variations in the independent
+variables. The gradient of a function <math id="S0.SS0.SSS0.Px1.p1.m1" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> is customarily denoted by
+<math id="S0.SS0.SSS0.Px1.p1.m2" class="ltx_Math" alttext="\nabla f" display="inline"><mrow><mo>∇</mo><mo>⁡</mo><mi>f</mi></mrow></math> or by <math id="S0.SS0.SSS0.Px1.p1.m3" class="ltx_Math" alttext="\operatorname{grad}f" display="inline"><mrow><mi>grad</mi><mo>⁡</mo><mi>f</mi></mrow></math>.</p>
+</div>
+<div class="ltx_TOC ltx_role_contents">
+<h6>Contents:</h6>
+<ul class="ltx_toclist">
+<li class="ltx_tocentry ltx_tocentry_section"><a href="#S1" title="1 Definition: Euclidean space ‣ gradient" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1 </span>Definition: Euclidean space</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="#S2" title="2 Geometric and physical interpretations ‣ gradient" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2 </span>Geometric and physical interpretations</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="#S3" title="3 Definition: Riemannian geometry ‣ gradient" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3 </span>Definition: Riemannian geometry</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="#S4" title="4 Duality with differential one-forms ‣ gradient" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">4 </span>Duality with differential one-forms</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="#S5" title="5 Differential identities ‣ gradient" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">5 </span>Differential identities</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="#S6" title="6 The ∇ symbolism ‣ gradient" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">6 </span>The <math class="ltx_Math" alttext="\nabla" display="inline"><mo>∇</mo></math> symbolism</span></a></li>
+</ul>
+</div>
+</section>
+<section id="S1" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">1 </span>Definition: Euclidean space</h2>
+
+<div id="S1.p1" class="ltx_para">
+<p class="ltx_p">Let <math id="S1.p1.m1" class="ltx_Math" alttext="f\colon\mathbb{R}^{n}\to\mathbb{R}" display="inline"><mrow><mi>f</mi><mo>:</mo><mrow><msup><mi>ℝ</mi><mi>n</mi></msup><mo>→</mo><mi>ℝ</mi></mrow></mrow></math> be continuously differentiable.
+The <em class="ltx_emph ltx_font_italic">gradient</em> of <math id="S1.p1.m2" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math>, denoted by <math id="S1.p1.m3" class="ltx_Math" alttext="\nabla f" display="inline"><mrow><mo>∇</mo><mo>⁡</mo><mi>f</mi></mrow></math>,
+is defined
+by the property:</p>
+<table id="S1.E1" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.E1.m1" class="ltx_Math" alttext="\operatorname{D}_{\mathbf{v}}f=\nabla f\cdot\mathbf{v}\quad\text{for all %
+vectors $\mathbf{v}\in\mathbb{R}^{n}$.}" display="block"><mrow><mrow><msub><mi mathvariant="normal">D</mi><mi>𝐯</mi></msub><mo>⁡</mo><mi>f</mi></mrow><mo>=</mo><mrow><mrow><mo>∇</mo><mo>⁡</mo><mrow><mi>f</mi><mo>⋅</mo><mi>𝐯</mi></mrow></mrow><mo mathvariant="italic" separator="true"> </mo><mrow><mtext>for all vectors </mtext><mrow><mi>𝐯</mi><mo>∈</mo><msup><mi>ℝ</mi><mi>n</mi></msup></mrow><mtext>.</mtext></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1)</span></td>
+</tr>
+</table>
+<p class="ltx_p">The middle dot is the dot product,
+and <math id="S1.p1.m4" class="ltx_Math" alttext="\operatorname{D}_{\mathbf{v}}" display="inline"><msub><mi mathvariant="normal">D</mi><mi>𝐯</mi></msub></math> is the directional derivative with respect to <math id="S1.p1.m5" class="ltx_Math" alttext="\mathbf{v}" display="inline"><mi>𝐯</mi></math>.
+</p>
+</div>
+<div id="S1.p2" class="ltx_para">
+<p class="ltx_p">If <math id="S1.p2.m1" class="ltx_Math" alttext="x^{1},\ldots,x^{n}" display="inline"><mrow><msup><mi>x</mi><mn>1</mn></msup><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msup><mi>x</mi><mi>n</mi></msup></mrow></math> are Euclidean coordinates,
+corresponding to the orthonormal basis <math id="S1.p2.m2" class="ltx_Math" alttext="\mathbf{e}_{1},\ldots,\mathbf{e}_{n}" display="inline"><mrow><msub><mi>𝐞</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>𝐞</mi><mi>n</mi></msub></mrow></math>,
+then</p>
+<table id="S1.E2" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.E2.m1" class="ltx_Math" alttext="\nabla f=\sum_{i=1}^{n}\frac{\partial f}{\partial x^{i}}\,\mathbf{e}_{i}\,." display="block"><mrow><mrow><mrow><mo>∇</mo><mo>⁡</mo><mi>f</mi></mrow><mo>=</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mrow><mpadded width="+1.7pt"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>f</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>x</mi><mi>i</mi></msup></mrow></mfrac></mpadded><mo>⁢</mo><mpadded width="+1.7pt"><msub><mi>𝐞</mi><mi>i</mi></msub></mpadded></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2)</span></td>
+</tr>
+</table>
+<p class="ltx_p">The formula (<a href="#S1.E2" title="(2) ‣ 1 Definition: Euclidean space ‣ gradient" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2</span></a>) is sometimes given as the definition of <math id="S1.p2.m3" class="ltx_Math" alttext="\nabla f" display="inline"><mrow><mo>∇</mo><mo>⁡</mo><mi>f</mi></mrow></math>.
+We prefer to define <math id="S1.p2.m4" class="ltx_Math" alttext="\nabla f" display="inline"><mrow><mo>∇</mo><mo>⁡</mo><mi>f</mi></mrow></math> by the coordinate-free formula (<a href="#S1.E1" title="(1) ‣ 1 Definition: Euclidean space ‣ gradient" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1</span></a>) instead,
+because then the geometric interpretations (see below) become obvious,
+and (<a href="#S1.E1" title="(1) ‣ 1 Definition: Euclidean space ‣ gradient" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1</span></a>) also indicates how we would go about
+calculating the gradient in other curvilinear coordinate systems.
+Formula (<a href="#S1.E1" title="(1) ‣ 1 Definition: Euclidean space ‣ gradient" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1</span></a>) also makes it clear that the gradient
+is a physical vector, depending only on the inner product structure of <math id="S1.p2.m5" class="ltx_Math" alttext="\mathbb{R}^{n}" display="inline"><msup><mi>ℝ</mi><mi>n</mi></msup></math>,
+and not on the specific coordinate system used to calculate it.</p>
+</div>
+<div id="S1.p3" class="ltx_para">
+<p class="ltx_p">There is the issue of whether the <math id="S1.p3.m1" class="ltx_Math" alttext="\nabla f" display="inline"><mrow><mo>∇</mo><mo>⁡</mo><mi>f</mi></mrow></math> as defined by (<a href="#S1.E1" title="(1) ‣ 1 Definition: Euclidean space ‣ gradient" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1</span></a>)
+exists; but this is proved easily enough, by substituting the concrete expression (<a href="#S1.E2" title="(2) ‣ 1 Definition: Euclidean space ‣ gradient" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2</span></a>)
+and seeing that it satisfies (<a href="#S1.E1" title="(1) ‣ 1 Definition: Euclidean space ‣ gradient" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1</span></a>).</p>
+</div>
+<div id="S1.p4" class="ltx_para">
+<p class="ltx_p">The gradient can be considered to be a
+vector-valued differential operator, written as</p>
+<table id="S1.Ex1" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.Ex1.m1" class="ltx_Math" alttext="\nabla=\sum_{i=1}^{n}\mathbf{e}_{i}\,\frac{\partial}{\partial x^{i}}\,," display="block"><mrow><mrow><mo>∇</mo><mo>=</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mrow><mpadded width="+1.7pt"><msub><mi>𝐞</mi><mi>i</mi></msub></mpadded><mo>⁢</mo><mpadded width="+1.7pt"><mfrac><mo>∂</mo><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>x</mi><mi>i</mi></msup></mrow></mfrac></mpadded></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">or, in the context of Euclidean 3-space, as</p>
+<table id="S1.Ex2" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.Ex2.m1" class="ltx_Math" alttext="\nabla=\mathbf{i}\,\frac{\partial}{\partial x}+\mathbf{j}\,\frac{\partial}{%
+\partial y}+\mathbf{k}\,\frac{\partial}{\partial z}\,," display="block"><mrow><mrow><mo>∇</mo><mo>=</mo><mrow><mrow><mpadded width="+1.7pt"><mi>𝐢</mi></mpadded><mo>⁢</mo><mfrac><mo>∂</mo><mrow><mo>∂</mo><mo>⁡</mo><mi>x</mi></mrow></mfrac></mrow><mo>+</mo><mrow><mpadded width="+1.7pt"><mi>𝐣</mi></mpadded><mo>⁢</mo><mfrac><mo>∂</mo><mrow><mo>∂</mo><mo>⁡</mo><mi>y</mi></mrow></mfrac></mrow><mo>+</mo><mrow><mpadded width="+1.7pt"><mi>𝐤</mi></mpadded><mo>⁢</mo><mpadded width="+1.7pt"><mfrac><mo>∂</mo><mrow><mo>∂</mo><mo>⁡</mo><mi>z</mi></mrow></mfrac></mpadded></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">where
+<math id="S1.p4.m1" class="ltx_Math" alttext="\mathbf{i},\mathbf{j},\mathbf{k}" display="inline"><mrow><mi>𝐢</mi><mo>,</mo><mi>𝐣</mi><mo>,</mo><mi>𝐤</mi></mrow></math> are the unit vectors lying along the positive
+direction of the <math id="S1.p4.m2" class="ltx_Math" alttext="x,y,z" display="inline"><mrow><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi></mrow></math> axes, respectively.</p>
+</div>
+</section>
+<section id="S2" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">2 </span>Geometric and physical interpretations</h2>
+
+<div id="S2.p1" class="ltx_para">
+<ol id="I1" class="ltx_enumerate">
+<li id="I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_enumerate">(a)</span> 
+<div id="I1.i1.p1" class="ltx_para">
+<p class="ltx_p">The direction of the vector <math id="I1.i1.p1.m1" class="ltx_Math" alttext="\nabla f" display="inline"><mrow><mo>∇</mo><mo>⁡</mo><mi>f</mi></mrow></math> is the direction of the greatest positive change, or increase, in <math id="I1.i1.p1.m2" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math>.
+The magnitude of <math id="I1.i1.p1.m3" class="ltx_Math" alttext="\nabla f" display="inline"><mrow><mo>∇</mo><mo>⁡</mo><mi>f</mi></mrow></math> is the magnitude of this increase.
+This follows immediately from (<a href="#S1.E1" title="(1) ‣ 1 Definition: Euclidean space ‣ gradient" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1</span></a>):</p>
+<table id="S2.Ex3" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S2.Ex3.m1" class="ltx_Math" alttext="\operatorname{D}_{\mathbf{v}}f=\nabla f\cdot\mathbf{v}=\lVert\nabla f\rVert\,%
+\lVert\mathbf{v}\rVert\,\cos\theta\,," display="block"><mrow><mrow><mrow><msub><mi mathvariant="normal">D</mi><mi>𝐯</mi></msub><mo>⁡</mo><mi>f</mi></mrow><mo>=</mo><mrow><mo>∇</mo><mo>⁡</mo><mrow><mi>f</mi><mo>⋅</mo><mi>𝐯</mi></mrow></mrow><mo>=</mo><mrow><mrow><mo fence="true" stretchy="false">∥</mo><mrow><mo>∇</mo><mo>⁡</mo><mi>f</mi></mrow><mo fence="true" rspace="4.2pt" stretchy="false">∥</mo></mrow><mo>⁢</mo><mrow><mo fence="true" stretchy="false">∥</mo><mi>𝐯</mi><mo fence="true" rspace="4.2pt" stretchy="false">∥</mo></mrow><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mpadded width="+1.7pt"><mi>θ</mi></mpadded></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">where <math id="I1.i1.p1.m4" class="ltx_Math" alttext="\theta" display="inline"><mi>θ</mi></math> is the angle between <math id="I1.i1.p1.m5" class="ltx_Math" alttext="\nabla f" display="inline"><mrow><mo>∇</mo><mo>⁡</mo><mi>f</mi></mrow></math> and <math id="I1.i1.p1.m6" class="ltx_Math" alttext="\mathbf{v}" display="inline"><mi>𝐯</mi></math>.
+So among all unit directions <math id="I1.i1.p1.m7" class="ltx_Math" alttext="\mathbf{v}" display="inline"><mi>𝐯</mi></math> of change, if <math id="I1.i1.p1.m8" class="ltx_Math" alttext="\mathbf{v}" display="inline"><mi>𝐯</mi></math> is perpendicular to <math id="I1.i1.p1.m9" class="ltx_Math" alttext="\nabla f" display="inline"><mrow><mo>∇</mo><mo>⁡</mo><mi>f</mi></mrow></math>
+then the change <math id="I1.i1.p1.m10" class="ltx_Math" alttext="\operatorname{D}_{\mathbf{v}}f" display="inline"><mrow><msub><mi mathvariant="normal">D</mi><mi>𝐯</mi></msub><mo>⁡</mo><mi>f</mi></mrow></math> is zero; if <math id="I1.i1.p1.m11" class="ltx_Math" alttext="\mathbf{v}" display="inline"><mi>𝐯</mi></math> is parallel to <math id="I1.i1.p1.m12" class="ltx_Math" alttext="\nabla f" display="inline"><mrow><mo>∇</mo><mo>⁡</mo><mi>f</mi></mrow></math> then the change is maximized.
+</p>
+</div>
+<div id="I1.i1.p2" class="ltx_para">
+<p class="ltx_p">Similarly,
+<math id="I1.i1.p2.m1" class="ltx_Math" alttext="-\nabla f" display="inline"><mrow><mo>-</mo><mrow><mo>∇</mo><mo>⁡</mo><mi>f</mi></mrow></mrow></math> is the direction of the greatest negative change, or decrease, in <math id="I1.i1.p2.m2" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math>.</p>
+</div>
+</li>
+<li id="I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_enumerate">(b)</span> 
+<div id="I1.i2.p1" class="ltx_para">
+<p class="ltx_p">If <math id="I1.i2.p1.m1" class="ltx_Math" alttext="M" display="inline"><mi>M</mi></math> is the hypersurface in <math id="I1.i2.p1.m2" class="ltx_Math" alttext="\mathbb{R}^{n}" display="inline"><msup><mi>ℝ</mi><mi>n</mi></msup></math> defined by</p>
+<table id="S2.Ex4" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S2.Ex4.m1" class="ltx_Math" alttext="M=\{p\in\mathbb{R}^{n}:f(p)=0\,,\&gt;\operatorname{D}f(p)\neq 0\}\,," display="block"><mrow><mrow><mi>M</mi><mo>=</mo><mrow><mo stretchy="false">{</mo><mrow><mi>p</mi><mo>∈</mo><msup><mi>ℝ</mi><mi>n</mi></msup></mrow><mo>:</mo><mrow><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mpadded width="+1.7pt"><mn>0</mn></mpadded></mrow><mo rspace="4.7pt">,</mo><mrow><mrow><mrow><mi mathvariant="normal">D</mi><mo>⁡</mo><mi>f</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow><mo>≠</mo><mn>0</mn></mrow></mrow><mo rspace="4.2pt" stretchy="false">}</mo></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">then <math id="I1.i2.p1.m3" class="ltx_Math" alttext="\nabla f(p)" display="inline"><mrow><mrow><mo>∇</mo><mo>⁡</mo><mi>f</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow></math> is the normal to the hypersurface <math id="I1.i2.p1.m4" class="ltx_Math" alttext="M" display="inline"><mi>M</mi></math> at the point <math id="I1.i2.p1.m5" class="ltx_Math" alttext="p" display="inline"><mi>p</mi></math>. For <math id="I1.i2.p1.m6" class="ltx_Math" alttext="\ker\operatorname{D}f(p)" display="inline"><mrow><mrow><mi>ker</mi><mo>⁡</mo><mrow><mi mathvariant="normal">D</mi><mo>⁡</mo><mi>f</mi></mrow></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow></math> is the tangent space <math id="I1.i2.p1.m7" class="ltx_Math" alttext="\mathrm{T}_{p}M" display="inline"><mrow><msub><mi mathvariant="normal">T</mi><mi>p</mi></msub><mo>⁢</mo><mi>M</mi></mrow></math>
+to <math id="I1.i2.p1.m8" class="ltx_Math" alttext="M" display="inline"><mi>M</mi></math> at <math id="I1.i2.p1.m9" class="ltx_Math" alttext="p" display="inline"><mi>p</mi></math>, that is, <math id="I1.i2.p1.m10" class="ltx_Math" alttext="\operatorname{D}_{\mathbf{v}}f(p)=0" display="inline"><mrow><mrow><mrow><msub><mi mathvariant="normal">D</mi><mi>𝐯</mi></msub><mo>⁡</mo><mi>f</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math> for all <math id="I1.i2.p1.m11" class="ltx_Math" alttext="\mathbf{v}\in\mathrm{T}_{p}M" display="inline"><mrow><mi>𝐯</mi><mo>∈</mo><mrow><msub><mi mathvariant="normal">T</mi><mi>p</mi></msub><mo>⁢</mo><mi>M</mi></mrow></mrow></math>,
+and by definition (<a href="#S1.E1" title="(1) ‣ 1 Definition: Euclidean space ‣ gradient" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1</span></a>), <math id="I1.i2.p1.m12" class="ltx_Math" alttext="\nabla f(p)" display="inline"><mrow><mrow><mo>∇</mo><mo>⁡</mo><mi>f</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow></math> must be perpendicular to all <math id="I1.i2.p1.m13" class="ltx_Math" alttext="\mathbf{v}\in\mathrm{T}_{p}M" display="inline"><mrow><mi>𝐯</mi><mo>∈</mo><mrow><msub><mi mathvariant="normal">T</mi><mi>p</mi></msub><mo>⁢</mo><mi>M</mi></mrow></mrow></math>.</p>
+</div>
+<div id="I1.i2.p2" class="ltx_para">
+<p class="ltx_p">Note that <math id="I1.i2.p2.m1" class="ltx_Math" alttext="\operatorname{D}f\neq 0" display="inline"><mrow><mrow><mi mathvariant="normal">D</mi><mo>⁡</mo><mi>f</mi></mrow><mo>≠</mo><mn>0</mn></mrow></math> is equivalent to <math id="I1.i2.p2.m2" class="ltx_Math" alttext="\nabla f\neq 0" display="inline"><mrow><mrow><mo>∇</mo><mo>⁡</mo><mi>f</mi></mrow><mo>≠</mo><mn>0</mn></mrow></math>. Consequently, <math id="I1.i2.p2.m3" class="ltx_Math" alttext="\nabla f" display="inline"><mrow><mo>∇</mo><mo>⁡</mo><mi>f</mi></mrow></math> also gives
+an orientation to the hypersurface <math id="I1.i2.p2.m4" class="ltx_Math" alttext="M" display="inline"><mi>M</mi></math>.</p>
+</div>
+<div id="I1.i2.p3" class="ltx_para">
+<p class="ltx_p">For example, if <math id="I1.i2.p3.m1" class="ltx_Math" alttext="f(\mathbf{x})=\lVert\mathbf{x}\rVert-1" display="inline"><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>𝐱</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mo fence="true" stretchy="false">∥</mo><mi>𝐱</mi><mo fence="true" stretchy="false">∥</mo></mrow><mo>-</mo><mn>1</mn></mrow></mrow></math> for <math id="I1.i2.p3.m2" class="ltx_Math" alttext="\mathbf{x}\in\mathbb{R}^{n}" display="inline"><mrow><mi>𝐱</mi><mo>∈</mo><msup><mi>ℝ</mi><mi>n</mi></msup></mrow></math>,
+<math id="I1.i2.p3.m3" class="ltx_Math" alttext="M" display="inline"><mi>M</mi></math> is the <math id="I1.i2.p3.m4" class="ltx_Math" alttext="(n-1)" display="inline"><mrow><mo stretchy="false">(</mo><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow></math>-dimensional sphere of unit radius, embedded in <math id="I1.i2.p3.m5" class="ltx_Math" alttext="\mathbb{R}^{n}" display="inline"><msup><mi>ℝ</mi><mi>n</mi></msup></math>.
+Its normal, <math id="I1.i2.p3.m6" class="ltx_Math" alttext="\nabla f(\mathbf{x})=\mathbf{x}/\lVert\mathbf{x}\rVert" display="inline"><mrow><mrow><mrow><mo>∇</mo><mo>⁡</mo><mi>f</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>𝐱</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>𝐱</mi><mo>/</mo><mrow><mo fence="true" stretchy="false">∥</mo><mi>𝐱</mi><mo fence="true" stretchy="false">∥</mo></mrow></mrow></mrow></math>, as one would expect, points outward radially.</p>
+</div>
+</li>
+<li id="I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_enumerate">(c)</span> 
+<div id="I1.i3.p1" class="ltx_para">
+<p class="ltx_p">As a simple case of (b), consider the
+surface <math id="I1.i3.p1.m1" class="ltx_Math" alttext="z=f(x,y)" display="inline"><mrow><mi>z</mi><mo>=</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math> in <math id="I1.i3.p1.m2" class="ltx_Math" alttext="\mathbb{R}^{3}" display="inline"><msup><mi>ℝ</mi><mn>3</mn></msup></math>, with Cartesian coordinates <math id="I1.i3.p1.m3" class="ltx_Math" alttext="(x,y,z)" display="inline"><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></math>.
+Think of this surface as describing a hill, with height <math id="I1.i3.p1.m4" class="ltx_Math" alttext="z" display="inline"><mi>z</mi></math>.
+Then the direction of the gradient vector <math id="I1.i3.p1.m5" class="ltx_Math" alttext="\nabla f" display="inline"><mrow><mo>∇</mo><mo>⁡</mo><mi>f</mi></mrow></math>
+is the direction of steepest ascent of the hill, while its
+magnitude</p>
+<table id="S2.Ex5" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S2.Ex5.m1" class="ltx_Math" alttext="\|\nabla f\|=\sqrt{\left(\frac{\partial f}{\partial x}\right)^{2}+\left(\frac{%
+\partial f}{\partial y}\right)^{2}}" display="block"><mrow><mrow><mo>∥</mo><mrow><mo>∇</mo><mo>⁡</mo><mi>f</mi></mrow><mo>∥</mo></mrow><mo>=</mo><msqrt><mrow><msup><mrow><mo>(</mo><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>f</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>x</mi></mrow></mfrac><mo>)</mo></mrow><mn>2</mn></msup><mo>+</mo><msup><mrow><mo>(</mo><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>f</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>y</mi></mrow></mfrac><mo>)</mo></mrow><mn>2</mn></msup></mrow></msqrt></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">is the slope or steepness in that direction.</p>
+</div>
+<div id="I1.i3.p2" class="ltx_para">
+<p class="ltx_p">If a ball is placed on the hill at a point <math id="I1.i3.p2.m1" class="ltx_Math" alttext="(x,y,z)" display="inline"><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></math>,
+theoretically it should roll down the hill in the direction of the gradient
+vector <math id="I1.i3.p2.m2" class="ltx_Math" alttext="-\nabla f(x,y)" display="inline"><mrow><mo>-</mo><mrow><mrow><mo>∇</mo><mo>⁡</mo><mi>f</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math>. This may be easily derived by considering the mechanical forces
+on the ball. The direction of <math id="I1.i3.p2.m3" class="ltx_Math" alttext="-\nabla f(x,y)" display="inline"><mrow><mo>-</mo><mrow><mrow><mo>∇</mo><mo>⁡</mo><mi>f</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math> is, in fact, the projection
+to the xy-plane of an outward normal vector to the hill at <math id="I1.i3.p2.m4" class="ltx_Math" alttext="(x,y,z)" display="inline"><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></math>;
+the normal vector is involved because the movement of the ball
+arises from the normal force from the hill.</p>
+</div>
+</li>
+<li id="I1.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_enumerate">(d)</span> 
+<div id="I1.i4.p1" class="ltx_para">
+<p class="ltx_p">Suppose the surface <math id="I1.i4.p1.m1" class="ltx_Math" alttext="z=f(x,y)" display="inline"><mrow><mi>z</mi><mo>=</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math> in (c) describes a bowl instead of a hill,
+and we place a marble at any point <math id="I1.i4.p1.m2" class="ltx_Math" alttext="(x,y,z)" display="inline"><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></math> on this bowl.
+We would expect the marble to roll down to a local minimum point of <math id="I1.i4.p1.m3" class="ltx_Math" alttext="f(x,y)" display="inline"><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></math>.
+Since the marble should roll down in the direction of <math id="I1.i4.p1.m4" class="ltx_Math" alttext="-\nabla f" display="inline"><mrow><mo>-</mo><mrow><mo>∇</mo><mo>⁡</mo><mi>f</mi></mrow></mrow></math>,
+we might hope that we can <em class="ltx_emph ltx_font_italic">find</em> local minima
+of a <em class="ltx_emph ltx_font_italic">given function</em> <math id="I1.i4.p1.m5" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> by following the path mapped out
+by the gradients <math id="I1.i4.p1.m6" class="ltx_Math" alttext="-\nabla f" display="inline"><mrow><mo>-</mo><mrow><mo>∇</mo><mo>⁡</mo><mi>f</mi></mrow></mrow></math>. Formally, this method of
+finding local extrema (with some modifications) is called <em class="ltx_emph ltx_font_italic">gradient descent</em>.
+</p>
+</div>
+</li>
+<li id="I1.i5" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_enumerate">(e)</span> 
+<div id="I1.i5.p1" class="ltx_para">
+<p class="ltx_p">If <math id="I1.i5.p1.m1" class="ltx_Math" alttext="U" display="inline"><mi>U</mi></math> is the potential function corresponding to a
+conservative physical force, then <math id="I1.i5.p1.m2" class="ltx_Math" alttext="\mathbf{F}=-\nabla U" display="inline"><mrow><mi>𝐅</mi><mo>=</mo><mrow><mo>-</mo><mrow><mo>∇</mo><mo>⁡</mo><mi>U</mi></mrow></mrow></mrow></math>
+is the corresponding force field.</p>
+</div>
+<div id="I1.i5.p2" class="ltx_para">
+<p class="ltx_p">Consequently, the gradient theorem,</p>
+<table id="S2.Ex6" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S2.Ex6.m1" class="ltx_Math" alttext="\int_{\gamma}\mathbf{F}\cdot d\mathbf{s}=-\int_{\gamma}\nabla U\cdot d\mathbf{%
+s}=-U(\gamma(b))+U(\gamma(a)),\quad\gamma\colon[a,b]\to\mathbb{R}^{3}" display="block"><mrow><msub><mo largeop="true" symmetric="true">∫</mo><mi>γ</mi></msub><mi>𝐅</mi><mo>⋅</mo><mi>d</mi><mi>𝐬</mi><mo>=</mo><mo>-</mo><msub><mo largeop="true" symmetric="true">∫</mo><mi>γ</mi></msub><mo>∇</mo><mi>U</mi><mo>⋅</mo><mi>d</mi><mi>𝐬</mi><mo>=</mo><mo>-</mo><mi>U</mi><mrow><mo stretchy="false">(</mo><mi>γ</mi><mrow><mo stretchy="false">(</mo><mi>b</mi><mo stretchy="false">)</mo></mrow><mo stretchy="false">)</mo></mrow><mo>+</mo><mi>U</mi><mrow><mo stretchy="false">(</mo><mi>γ</mi><mrow><mo stretchy="false">(</mo><mi>a</mi><mo stretchy="false">)</mo></mrow><mo stretchy="false">)</mo></mrow><mo rspace="12.5pt">,</mo><mi>γ</mi><mo>:</mo><mrow><mo stretchy="false">[</mo><mi>a</mi><mo>,</mo><mi>b</mi><mo stretchy="false">]</mo></mrow><mo>→</mo><msup><mi>ℝ</mi><mn>3</mn></msup></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">simply gives the formula for the change in the potential energy <math id="I1.i5.p2.m1" class="ltx_Math" alttext="U" display="inline"><mi>U</mi></math>
+when an object “does work” along a path <math id="I1.i5.p2.m2" class="ltx_Math" alttext="\gamma" display="inline"><mi>γ</mi></math> in a conservative force field <math id="I1.i5.p2.m3" class="ltx_Math" alttext="\mathbf{F}" display="inline"><mi>𝐅</mi></math>.</p>
+</div>
+</li>
+</ol>
+</div>
+</section>
+<section id="S3" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">3 </span>Definition: Riemannian geometry</h2>
+
+<div id="S3.p1" class="ltx_para">
+<p class="ltx_p">It is obvious how (<a href="#S1.E1" title="(1) ‣ 1 Definition: Euclidean space ‣ gradient" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1</span></a>)
+can be generalized to the setting of Riemannian manifolds:
+the dot product of <math id="S3.p1.m1" class="ltx_Math" alttext="\mathbb{R}^{n}" display="inline"><msup><mi>ℝ</mi><mi>n</mi></msup></math> must be replaced
+by the Riemannian metric, and the analogue
+of <math id="S3.p1.m2" class="ltx_Math" alttext="\operatorname{D}_{\mathbf{v}}f" display="inline"><mrow><msub><mi mathvariant="normal">D</mi><mi>𝐯</mi></msub><mo>⁡</mo><mi>f</mi></mrow></math> is the directional derivative <math id="S3.p1.m3" class="ltx_Math" alttext="\mathbf{v}[f]" display="inline"><mrow><mi>𝐯</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>f</mi><mo stretchy="false">]</mo></mrow></mrow></math>, for tangent vectors <math id="S3.p1.m4" class="ltx_Math" alttext="\mathbf{v}" display="inline"><mi>𝐯</mi></math> on the Riemannian manifold.
+Thus for a smooth scalar-valued function <math id="S3.p1.m5" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> on a Riemannian manifold,</p>
+<table id="S3.E3" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S3.E3.m1" class="ltx_Math" alttext="\mathbf{X}=\operatorname{grad}f\&gt;\Leftrightarrow\&gt;df_{p}(\mathbf{v})=\mathbf{v%
+}[f]=\langle\mathbf{X},\mathbf{v}\rangle_{p}\,." display="block"><mrow><mrow><mrow><mi>𝐗</mi><mo>=</mo><mrow><mi>grad</mi><mo>⁡</mo><mpadded width="+2.2pt"><mi>f</mi></mpadded></mrow></mrow><mo rspace="4.7pt">⇔</mo><mrow><mrow><mi>d</mi><mo>⁢</mo><msub><mi>f</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>𝐯</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>𝐯</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>f</mi><mo stretchy="false">]</mo></mrow></mrow><mo>=</mo><mpadded width="+1.7pt"><msub><mrow><mo stretchy="false">⟨</mo><mi>𝐗</mi><mo>,</mo><mi>𝐯</mi><mo stretchy="false">⟩</mo></mrow><mi>p</mi></msub></mpadded></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(3)</span></td>
+</tr>
+</table>
+<p class="ltx_p">We can calculate <math id="S3.p1.m6" class="ltx_Math" alttext="\mathbf{X}" display="inline"><mi>𝐗</mi></math> explicitly as follows.
+If <math id="S3.p1.m7" class="ltx_Math" alttext="x^{i}" display="inline"><msup><mi>x</mi><mi>i</mi></msup></math> are local coordinates on the manifold (not necessarily orthonormal),
+set <math id="S3.p1.m8" class="ltx_Math" alttext="\mathbf{X}=X^{i}\frac{\partial}{\partial x^{i}}" display="inline"><mrow><mi>𝐗</mi><mo>=</mo><mrow><msup><mi>X</mi><mi>i</mi></msup><mo>⁢</mo><mfrac><mo>∂</mo><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>x</mi><mi>i</mi></msup></mrow></mfrac></mrow></mrow></math> (the Einstein summation convention is being used).
+Let <math id="S3.p1.m9" class="ltx_Math" alttext="g_{ij}" display="inline"><msub><mi>g</mi><mrow><mi>i</mi><mo>⁢</mo><mi>j</mi></mrow></msub></math> and <math id="S3.p1.m10" class="ltx_Math" alttext="g^{ij}" display="inline"><msup><mi>g</mi><mrow><mi>i</mi><mo>⁢</mo><mi>j</mi></mrow></msup></math> be the covariant and contravariant metric tensors, respectively.
+Then from (<a href="#S3.E3" title="(3) ‣ 3 Definition: Riemannian geometry ‣ gradient" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3</span></a>),</p>
+<table id="S3.Ex7" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S3.Ex7.m1" class="ltx_Math" alttext="\frac{\partial f}{\partial x^{j}}=\left\langle X^{i}\frac{\partial}{\partial x%
+^{i}},\frac{\partial}{\partial x^{j}}\right\rangle=X^{i}\,\left\langle\frac{%
+\partial}{\partial x^{i}},\frac{\partial}{\partial x^{j}}\right\rangle=g_{ij}%
+\,X^{i}\,," display="block"><mrow><mrow><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>f</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>x</mi><mi>j</mi></msup></mrow></mfrac><mo>=</mo><mrow><mo>⟨</mo><mrow><msup><mi>X</mi><mi>i</mi></msup><mo>⁢</mo><mfrac><mo>∂</mo><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>x</mi><mi>i</mi></msup></mrow></mfrac></mrow><mo>,</mo><mfrac><mo>∂</mo><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>x</mi><mi>j</mi></msup></mrow></mfrac><mo>⟩</mo></mrow><mo>=</mo><mrow><mpadded width="+1.7pt"><msup><mi>X</mi><mi>i</mi></msup></mpadded><mo>⁢</mo><mrow><mo>⟨</mo><mfrac><mo>∂</mo><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>x</mi><mi>i</mi></msup></mrow></mfrac><mo>,</mo><mfrac><mo>∂</mo><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>x</mi><mi>j</mi></msup></mrow></mfrac><mo>⟩</mo></mrow></mrow><mo>=</mo><mrow><mpadded width="+1.7pt"><msub><mi>g</mi><mrow><mi>i</mi><mo>⁢</mo><mi>j</mi></mrow></msub></mpadded><mo>⁢</mo><mpadded width="+1.7pt"><msup><mi>X</mi><mi>i</mi></msup></mpadded></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">and taking inverses,</p>
+<table id="S3.E4" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S3.E4.m1" class="ltx_Math" alttext="X^{i}=g^{ij}\,\frac{\partial f}{\partial x^{j}}\,." display="block"><mrow><mrow><msup><mi>X</mi><mi>i</mi></msup><mo>=</mo><mrow><mpadded width="+1.7pt"><msup><mi>g</mi><mrow><mi>i</mi><mo>⁢</mo><mi>j</mi></mrow></msup></mpadded><mo>⁢</mo><mpadded width="+1.7pt"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>f</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>x</mi><mi>j</mi></msup></mrow></mfrac></mpadded></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(4)</span></td>
+</tr>
+</table>
+</div>
+</section>
+<section id="S4" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">4 </span>Duality with differential one-forms</h2>
+
+<div id="S4.p1" class="ltx_para">
+<p class="ltx_p">Definitions (<a href="#S1.E1" title="(1) ‣ 1 Definition: Euclidean space ‣ gradient" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1</span></a>) and (<a href="#S3.E3" title="(3) ‣ 3 Definition: Riemannian geometry ‣ gradient" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3</span></a>)
+exhibit <math id="S4.p1.m1" class="ltx_Math" alttext="\nabla f" display="inline"><mrow><mo>∇</mo><mo>⁡</mo><mi>f</mi></mrow></math> as the vector field
+dual to the differential form <math id="S4.p1.m2" class="ltx_Math" alttext="df" display="inline"><mrow><mi>d</mi><mo>⁢</mo><mi>f</mi></mrow></math>.
+The isomorphism is given by applying the inner product or Riemannian metric.
+This isomorphism is, of course, linear;
+in particular it leads to the identity</p>
+<table id="S4.E5" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S4.E5.m1" class="ltx_Math" alttext="\nabla f=\frac{\partial f}{\partial x^{i}}\,\nabla x^{i}\,," display="block"><mrow><mrow><mrow><mo>∇</mo><mo>⁡</mo><mi>f</mi></mrow><mo>=</mo><mrow><mpadded width="+1.7pt"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>f</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>x</mi><mi>i</mi></msup></mrow></mfrac></mpadded><mo>⁢</mo><mrow><mo>∇</mo><mo>⁡</mo><mpadded width="+1.7pt"><msup><mi>x</mi><mi>i</mi></msup></mpadded></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(5)</span></td>
+</tr>
+</table>
+<p class="ltx_p">which is the dual to the standard formula of differential one-forms:</p>
+<table id="S4.Ex8" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S4.Ex8.m1" class="ltx_Math" alttext="df=\frac{\partial f}{\partial x^{i}}\,dx^{i}\,." display="block"><mrow><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>f</mi></mrow><mo>=</mo><mrow><mpadded width="+1.7pt"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>f</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>x</mi><mi>i</mi></msup></mrow></mfrac></mpadded><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mpadded width="+1.7pt"><msup><mi>x</mi><mi>i</mi></msup></mpadded></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Using (<a href="#S3.E3" title="(3) ‣ 3 Definition: Riemannian geometry ‣ gradient" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3</span></a>) and (<a href="#S3.E4" title="(4) ‣ 3 Definition: Riemannian geometry ‣ gradient" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4</span></a>),
+we have</p>
+<table id="S4.E6" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S4.E6.m1" class="ltx_Math" alttext="\nabla x^{i}=g^{ij}\frac{\partial}{\partial x^{j}}\,,\quad\frac{\partial}{%
+\partial x^{i}}=g_{ij}\nabla x^{j}\,." display="block"><mrow><mrow><mrow><mrow><mo>∇</mo><mo>⁡</mo><msup><mi>x</mi><mi>i</mi></msup></mrow><mo>=</mo><mrow><msup><mi>g</mi><mrow><mi>i</mi><mo>⁢</mo><mi>j</mi></mrow></msup><mo>⁢</mo><mpadded width="+1.7pt"><mfrac><mo>∂</mo><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>x</mi><mi>j</mi></msup></mrow></mfrac></mpadded></mrow></mrow><mo rspace="12.5pt">,</mo><mrow><mfrac><mo>∂</mo><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>x</mi><mi>i</mi></msup></mrow></mfrac><mo>=</mo><mrow><msub><mi>g</mi><mrow><mi>i</mi><mo>⁢</mo><mi>j</mi></mrow></msub><mo>⁢</mo><mrow><mo>∇</mo><mo>⁡</mo><mpadded width="+1.7pt"><msup><mi>x</mi><mi>j</mi></msup></mpadded></mrow></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(6)</span></td>
+</tr>
+</table>
+<p class="ltx_p">So the isomorphism between vector fields and one-forms
+is expressed by changing
+the <math id="S4.p1.m3" class="ltx_Math" alttext="\nabla" display="inline"><mo>∇</mo></math>’s in (<a href="#S4.E6" title="(6) ‣ 4 Duality with differential one-forms ‣ gradient" class="ltx_ref"><span class="ltx_text ltx_ref_tag">6</span></a>) to <math id="S4.p1.m4" class="ltx_Math" alttext="d" display="inline"><mi>d</mi></math>’s, and vice versa. That is,</p>
+<table id="S4.E7" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S4.E7.m1" class="ltx_Math" alttext="dx^{i}\leftrightarrow g^{ij}\frac{\partial}{\partial x^{j}}\,,\quad\frac{%
+\partial}{\partial x^{i}}\leftrightarrow g_{ij}\,dx^{j}\,." display="block"><mrow><mrow><mrow><mi>d</mi><mo>⁢</mo><msup><mi>x</mi><mi>i</mi></msup></mrow><mo>↔</mo><mrow><mrow><msup><mi>g</mi><mrow><mi>i</mi><mo>⁢</mo><mi>j</mi></mrow></msup><mo>⁢</mo><mpadded width="+1.7pt"><mfrac><mo>∂</mo><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>x</mi><mi>j</mi></msup></mrow></mfrac></mpadded></mrow><mo rspace="12.5pt">,</mo><mfrac><mo>∂</mo><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>x</mi><mi>i</mi></msup></mrow></mfrac></mrow><mo>↔</mo><mrow><mpadded width="+1.7pt"><msub><mi>g</mi><mrow><mi>i</mi><mo>⁢</mo><mi>j</mi></mrow></msub></mpadded><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mpadded width="+1.7pt"><msup><mi>x</mi><mi>j</mi></msup></mpadded></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(7)</span></td>
+</tr>
+</table>
+<p class="ltx_p">It is commonly said that this isomorphism is expressed by
+“raising and lowering the indices of a tensor field,
+using contractions with <math id="S4.p1.m5" class="ltx_Math" alttext="g_{ij}" display="inline"><msub><mi>g</mi><mrow><mi>i</mi><mo>⁢</mo><mi>j</mi></mrow></msub></math> and <math id="S4.p1.m6" class="ltx_Math" alttext="g^{ij}" display="inline"><msup><mi>g</mi><mrow><mi>i</mi><mo>⁢</mo><mi>j</mi></mrow></msup></math>”.</p>
+</div>
+<div id="S4.p2" class="ltx_para">
+<p class="ltx_p">Notice that when <math id="S4.p2.m1" class="ltx_Math" alttext="x^{i}" display="inline"><msup><mi>x</mi><mi>i</mi></msup></math> are orthonormal coordinates
+on <math id="S4.p2.m2" class="ltx_Math" alttext="\mathbb{R}^{n}" display="inline"><msup><mi>ℝ</mi><mi>n</mi></msup></math>, equation (<a href="#S4.E5" title="(5) ‣ 4 Duality with differential one-forms ‣ gradient" class="ltx_ref"><span class="ltx_text ltx_ref_tag">5</span></a>)
+reduces to equation (<a href="#S1.E2" title="(2) ‣ 1 Definition: Euclidean space ‣ gradient" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2</span></a>), because
+<math id="S4.p2.m3" class="ltx_Math" alttext="g_{ij}=\mathbf{e}_{i}\cdot\mathbf{e}_{j}=\delta_{ij}" display="inline"><mrow><msub><mi>g</mi><mrow><mi>i</mi><mo>⁢</mo><mi>j</mi></mrow></msub><mo>=</mo><mrow><msub><mi>𝐞</mi><mi>i</mi></msub><mo>⋅</mo><msub><mi>𝐞</mi><mi>j</mi></msub></mrow><mo>=</mo><msub><mi>δ</mi><mrow><mi>i</mi><mo>⁢</mo><mi>j</mi></mrow></msub></mrow></math> (Kronecker delta).</p>
+</div>
+<div id="S4.p3" class="ltx_para">
+<p class="ltx_p">The formulae presented in this section are useful in the Euclidean setting as
+well, for deriving the formulae for the gradient in various curvilinear coordinate systems (<span class="ltx_text ltx_font_typewriter">http://planetmath.org/GradientInCurvilinearCoordinates</span>).</p>
+</div>
+</section>
+<section id="S5" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">5 </span>Differential identities</h2>
+
+<div id="S5.p1" class="ltx_para">
+<p class="ltx_p">Several properties of the one-dimensional derivative generalize to a
+multi-dimensional setting</p>
+<table id="A0.EGx1" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tr id="S5.Ex9" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S5.Ex9.m1" class="ltx_Math" alttext="\displaystyle\nabla(af+bg)" display="inline"><mrow><mo>∇</mo><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>f</mi></mrow><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><mi>g</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S5.Ex9.m2" class="ltx_Math" alttext="\displaystyle=a\nabla f+b\nabla g" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mi>a</mi><mo>⁢</mo><mrow><mo>∇</mo><mo>⁡</mo><mi>f</mi></mrow></mrow><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><mrow><mo>∇</mo><mo>⁡</mo><mi>g</mi></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><span class="ltx_text ltx_markedasmath">Linearity</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="S5.Ex10" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S5.Ex10.m1" class="ltx_Math" alttext="\displaystyle\nabla(fg)" display="inline"><mrow><mo>∇</mo><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>f</mi><mo>⁢</mo><mi>g</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S5.Ex10.m2" class="ltx_Math" alttext="\displaystyle=f\nabla g+g\nabla f" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo>∇</mo><mo>⁡</mo><mi>g</mi></mrow></mrow><mo>+</mo><mrow><mi>g</mi><mo>⁢</mo><mrow><mo>∇</mo><mo>⁡</mo><mi>f</mi></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><span class="ltx_text ltx_markedasmath">Product rule</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="S5.Ex11" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S5.Ex11.m1" class="ltx_Math" alttext="\displaystyle\nabla(f\circ\phi)(p)" display="inline"><mrow><mrow><mo>∇</mo><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>f</mi><mo>∘</mo><mi>ϕ</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S5.Ex11.m2" class="ltx_Math" alttext="\displaystyle=\operatorname{D}\phi(p)^{*}\nabla f(\phi(p))" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mi mathvariant="normal">D</mi><mo>⁡</mo><mi>ϕ</mi></mrow><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow><mo>*</mo></msup><mo>⁢</mo><mrow><mo>∇</mo><mo>⁡</mo><mi>f</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><span class="ltx_text ltx_markedasmath">Chain rule</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="S5.Ex12" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S5.Ex12.m1" class="ltx_Math" alttext="\displaystyle\nabla(h\circ f)(p)" display="inline"><mrow><mrow><mo>∇</mo><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>h</mi><mo>∘</mo><mi>f</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S5.Ex12.m2" class="ltx_Math" alttext="\displaystyle=h^{\prime}(f(p))\,\nabla f(p)" display="inline"><mrow><mi></mi><mo>=</mo><mrow><msup><mi>h</mi><mo>′</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow><mo rspace="4.2pt" stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo>∇</mo><mo>⁡</mo><mi>f</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><span class="ltx_text ltx_markedasmath">Another Chain rule</span></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">The function <math id="S5.p1.m1" class="ltx_Math" alttext="h" display="inline"><mi>h</mi></math> is <math id="S5.p1.m2" class="ltx_Math" alttext="h\colon\mathbb{R}\to\mathbb{R}" display="inline"><mrow><mi>h</mi><mo>:</mo><mrow><mi>ℝ</mi><mo>→</mo><mi>ℝ</mi></mrow></mrow></math>.
+The notation <math id="S5.p1.m3" class="ltx_Math" alttext="(\operatorname{D}\phi)^{*}" display="inline"><msup><mrow><mo stretchy="false">(</mo><mrow><mi mathvariant="normal">D</mi><mo>⁡</mo><mi>ϕ</mi></mrow><mo stretchy="false">)</mo></mrow><mo>*</mo></msup></math> denotes the transpose of the Jacobian matrix,
+in Euclidean coordinates, of <math id="S5.p1.m4" class="ltx_Math" alttext="\phi\colon\mathbb{R}^{m}\to\mathbb{R}^{n}" display="inline"><mrow><mi>ϕ</mi><mo>:</mo><mrow><msup><mi>ℝ</mi><mi>m</mi></msup><mo>→</mo><msup><mi>ℝ</mi><mi>n</mi></msup></mrow></mrow></math>.
+In the abstract setting, <math id="S5.p1.m5" class="ltx_Math" alttext="(\operatorname{D}\phi)^{*}" display="inline"><msup><mrow><mo stretchy="false">(</mo><mrow><mi mathvariant="normal">D</mi><mo>⁡</mo><mi>ϕ</mi></mrow><mo stretchy="false">)</mo></mrow><mo>*</mo></msup></math> is the adjoint to the tangent map <math id="S5.p1.m6" class="ltx_Math" alttext="\operatorname{D}\phi" display="inline"><mrow><mi mathvariant="normal">D</mi><mo>⁡</mo><mi>ϕ</mi></mrow></math>
+between the tangent bundles of two Riemannian manifolds.</p>
+</div>
+<div id="S5.p2" class="ltx_para">
+<p class="ltx_p">These identities can be proved directly from the definition,
+but the first three are really just the duals
+of the following well-known identities for differential forms:</p>
+<table id="A0.EGx2" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tr id="S5.Ex13" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S5.Ex13.m1" class="ltx_Math" alttext="\displaystyle d(af+bg)" display="inline"><mrow><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>f</mi></mrow><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><mi>g</mi></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S5.Ex13.m2" class="ltx_Math" alttext="\displaystyle=adf+bdg" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mi>a</mi><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>f</mi></mrow><mo>+</mo><mrow><mi>b</mi><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>g</mi></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="S5.Ex14" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S5.Ex14.m1" class="ltx_Math" alttext="\displaystyle d(fg)" display="inline"><mrow><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>f</mi><mo>⁢</mo><mi>g</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S5.Ex14.m2" class="ltx_Math" alttext="\displaystyle=fdg+gdf" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mi>f</mi><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>g</mi></mrow><mo>+</mo><mrow><mi>g</mi><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>f</mi></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="S5.Ex15" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S5.Ex15.m1" class="ltx_Math" alttext="\displaystyle d(\phi^{*}f)" display="inline"><mrow><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>ϕ</mi><mo>*</mo></msup><mo>⁢</mo><mi>f</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S5.Ex15.m2" class="ltx_Math" alttext="\displaystyle=\phi^{*}df" display="inline"><mrow><mi></mi><mo>=</mo><mrow><msup><mi>ϕ</mi><mo>*</mo></msup><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>f</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">and so may be derived by changing the <math id="S5.p2.m1" class="ltx_Math" alttext="d" display="inline"><mi>d</mi></math>’s here
+to <math id="S5.p2.m2" class="ltx_Math" alttext="\nabla" display="inline"><mo>∇</mo></math>’s! (Though the third identity may take a bit of thought.)</p>
+</div>
+<div id="S5.p3" class="ltx_para">
+<p class="ltx_p">The following identity
+</p>
+<table id="S5.Ex16" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S5.Ex16.m1" class="ltx_Math" alttext="\operatorname{curl}\operatorname{grad}f=\nabla\times\nabla f=0\,," display="block"><mrow><mrow><mrow><mi>curl</mi><mo>⁡</mo><mrow><mi>grad</mi><mo>⁡</mo><mi>f</mi></mrow></mrow><mo>=</mo><mrow><mo>∇</mo><mo>×</mo><mrow><mo>∇</mo><mo>⁡</mo><mi>f</mi></mrow></mrow><mo>=</mo><mpadded width="+1.7pt"><mn>0</mn></mpadded></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">is a special case of the differential forms identity <math id="S5.p3.m1" class="ltx_Math" alttext="d^{2}=0" display="inline"><mrow><msup><mi>d</mi><mn>2</mn></msup><mo>=</mo><mn>0</mn></mrow></math>.
+Conversely, if <math id="S5.p3.m2" class="ltx_Math" alttext="\operatorname{curl}g=0" display="inline"><mrow><mrow><mi>curl</mi><mo>⁡</mo><mi>g</mi></mrow><mo>=</mo><mn>0</mn></mrow></math> on a simply connected domain, then there
+is <math id="S5.p3.m3" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> such that <math id="S5.p3.m4" class="ltx_Math" alttext="g=\operatorname{grad}f" display="inline"><mrow><mi>g</mi><mo>=</mo><mrow><mi>grad</mi><mo>⁡</mo><mi>f</mi></mrow></mrow></math>. See laminar field for details.</p>
+</div>
+</section>
+<section id="S6" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">6 </span>The <math id="S6.m1" class="ltx_Math" alttext="\nabla" display="inline"><mo>∇</mo></math> symbolism</h2>
+
+<div id="S6.p1" class="ltx_para">
+<p class="ltx_p">(This discussion does not really belong here, but should be moved
+to the nabla entry.)</p>
+</div>
+<div id="S6.p2" class="ltx_para">
+<p class="ltx_p">Using the <math id="S6.p2.m1" class="ltx_Math" alttext="\nabla" display="inline"><mo>∇</mo></math> formalism,
+the divergence operator can be expressed as
+<math id="S6.p2.m2" class="ltx_Math" alttext="\nabla\cdot" display="inline"><mrow><mo>∇</mo><mo>⋅</mo></mrow></math>, the curl operator as <math id="S6.p2.m3" class="ltx_Math" alttext="\nabla\times" display="inline"><mrow><mo>∇</mo><mo>×</mo></mrow></math>, and the
+Laplacian operator as <math id="S6.p2.m4" class="ltx_Math" alttext="\nabla^{2}" display="inline"><msup><mo>∇</mo><mn>2</mn></msup></math>. To wit, for a given vector field</p>
+<table id="S6.Ex17" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S6.Ex17.m1" class="ltx_Math" alttext="\mathbf{A}=A_{x}\,\mathbf{i}+A_{y}\,\mathbf{j}+A_{z}\,\mathbf{k}," display="block"><mrow><mrow><mi>𝐀</mi><mo>=</mo><mrow><mrow><mpadded width="+1.7pt"><msub><mi>A</mi><mi>x</mi></msub></mpadded><mo>⁢</mo><mi>𝐢</mi></mrow><mo>+</mo><mrow><mpadded width="+1.7pt"><msub><mi>A</mi><mi>y</mi></msub></mpadded><mo>⁢</mo><mi>𝐣</mi></mrow><mo>+</mo><mrow><mpadded width="+1.7pt"><msub><mi>A</mi><mi>z</mi></msub></mpadded><mo>⁢</mo><mi>𝐤</mi></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">and a given function <math id="S6.p2.m5" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math>
+we have</p>
+<table id="A0.EGx3" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tr id="S6.Ex18" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S6.Ex18.m1" class="ltx_Math" alttext="\displaystyle\nabla\cdot\mathbf{A}" display="inline"><mrow><mo>∇</mo><mo>⋅</mo><mi>𝐀</mi></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S6.Ex18.m2" class="ltx_Math" alttext="\displaystyle=\frac{\partial A_{x}}{\partial x}+\frac{\partial A_{y}}{\partial
+y%
+}+\frac{\partial A_{z}}{\partial z}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mstyle displaystyle="true"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><msub><mi>A</mi><mi>x</mi></msub></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>x</mi></mrow></mfrac></mstyle><mo>+</mo><mstyle displaystyle="true"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><msub><mi>A</mi><mi>y</mi></msub></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>y</mi></mrow></mfrac></mstyle><mo>+</mo><mstyle displaystyle="true"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><msub><mi>A</mi><mi>z</mi></msub></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>z</mi></mrow></mfrac></mstyle></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="S6.Ex19" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S6.Ex19.m1" class="ltx_Math" alttext="\displaystyle\nabla\times\mathbf{A}" display="inline"><mrow><mo>∇</mo><mo>×</mo><mi>𝐀</mi></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S6.Ex19.m2" class="ltx_Math" alttext="\displaystyle=\left(\frac{\partial A_{z}}{\partial y}-\frac{\partial A_{y}}{%
+\partial z}\right)\mathbf{i}+\left(\frac{\partial A_{x}}{\partial z}-\frac{%
+\partial A_{z}}{\partial x}\right)\mathbf{j}+\left(\frac{\partial A_{y}}{%
+\partial x}-\frac{\partial A_{x}}{\partial y}\right)\mathbf{k}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mrow><mo>(</mo><mrow><mstyle displaystyle="true"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><msub><mi>A</mi><mi>z</mi></msub></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>y</mi></mrow></mfrac></mstyle><mo>-</mo><mstyle displaystyle="true"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><msub><mi>A</mi><mi>y</mi></msub></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>z</mi></mrow></mfrac></mstyle></mrow><mo>)</mo></mrow><mo>⁢</mo><mi>𝐢</mi></mrow><mo>+</mo><mrow><mrow><mo>(</mo><mrow><mstyle displaystyle="true"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><msub><mi>A</mi><mi>x</mi></msub></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>z</mi></mrow></mfrac></mstyle><mo>-</mo><mstyle displaystyle="true"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><msub><mi>A</mi><mi>z</mi></msub></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>x</mi></mrow></mfrac></mstyle></mrow><mo>)</mo></mrow><mo>⁢</mo><mi>𝐣</mi></mrow><mo>+</mo><mrow><mrow><mo>(</mo><mrow><mstyle displaystyle="true"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><msub><mi>A</mi><mi>y</mi></msub></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>x</mi></mrow></mfrac></mstyle><mo>-</mo><mstyle displaystyle="true"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><msub><mi>A</mi><mi>x</mi></msub></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>y</mi></mrow></mfrac></mstyle></mrow><mo>)</mo></mrow><mo>⁢</mo><mi>𝐤</mi></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="S6.Ex20" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S6.Ex20.m1" class="ltx_Math" alttext="\displaystyle\nabla^{2}f" display="inline"><mrow><msup><mo>∇</mo><mn>2</mn></msup><mo>⁡</mo><mi>f</mi></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S6.Ex20.m2" class="ltx_Math" alttext="\displaystyle=\frac{\partial^{2}f}{\partial x^{2}}+\frac{\partial^{2}f}{%
+\partial y^{2}}+\frac{\partial^{2}f}{\partial z^{2}}." display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mstyle displaystyle="true"><mfrac><mrow><msup><mo>∂</mo><mn>2</mn></msup><mo>⁡</mo><mi>f</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></mfrac></mstyle><mo>+</mo><mstyle displaystyle="true"><mfrac><mrow><msup><mo>∂</mo><mn>2</mn></msup><mo>⁡</mo><mi>f</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>y</mi><mn>2</mn></msup></mrow></mfrac></mstyle><mo>+</mo><mstyle displaystyle="true"><mfrac><mrow><msup><mo>∂</mo><mn>2</mn></msup><mo>⁡</mo><mi>f</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>z</mi><mn>2</mn></msup></mrow></mfrac></mstyle></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+</section>
+<section id="bib" class="ltx_bibliography">
+<h2 class="ltx_title ltx_title_bibliography">References</h2>
+
+<ul class="ltx_biblist">
+      
+<li id="bib.bib1" class="ltx_bibitem">
+        <span class="ltx_bibtag ltx_role_refnum">1</span>
+        
+<span class="ltx_bibblock">
+Michael Spivak. <em class="ltx_emph ltx_font_italic">A Comprehensive Introduction to Differential Geometry</em>,
+Volume I. Publish or Perish, 1979.
+
+</span>
+      </li>
+    
+</ul>
+</section>
+<div id="p2" class="ltx_para ltx_align_right">
+<table class="ltx_tabular ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l ltx_border_t">Title</td>
+<td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">gradient</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Canonical name</td>
+<td class="ltx_td ltx_align_left ltx_border_r">Gradient</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Date of creation</td>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 11:59:20</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Last modified on</td>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 11:59:20</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Owner</td>
+<td class="ltx_td ltx_align_left ltx_border_r">CWoo (3771)</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Last modified by</td>
+<td class="ltx_td ltx_align_left ltx_border_r">CWoo (3771)</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Numerical id</td>
+<td class="ltx_td ltx_align_left ltx_border_r">20</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Author</td>
+<td class="ltx_td ltx_align_left ltx_border_r">CWoo (3771)</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Entry type</td>
+<td class="ltx_td ltx_align_left ltx_border_r">Definition</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Classification</td>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 58A10</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Classification</td>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 26B12</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Classification</td>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 26B10</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Related topic</td>
+<td class="ltx_td ltx_align_left ltx_border_r">Derivative2</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Related topic</td>
+<td class="ltx_td ltx_align_left ltx_border_r">RiemannianMetric</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Related topic</td>
+<td class="ltx_td ltx_align_left ltx_border_r">GradientInCurvilinearCoordinates</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Related topic</td>
+<td class="ltx_td ltx_align_left ltx_border_r">NablaNabla</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Related topic</td>
+<td class="ltx_td ltx_align_left ltx_border_r">DifferentialForms</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Related topic</td>
+<td class="ltx_td ltx_align_left ltx_border_r">FirstOrderOperatorsInRiemannianGeometry</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Related topic</td>
+<td class="ltx_td ltx_align_left ltx_border_r">VectorField</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Related topic</td>
+<td class="ltx_td ltx_align_left ltx_border_r">HessianMatrix</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Related topic</td>
+<td class="ltx_td ltx_align_left ltx_border_r">DerivativeNotation</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Related topic</td>
+<td class="ltx_td ltx_align_left ltx_border_r">JacobianMatrix</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Related topic</td>
+<td class="ltx_td ltx_align_left ltx_border_r">PartialDerivative</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Related topic</td>
+<td class="ltx_td ltx_align_left ltx_border_r">TiltCurve</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_b ltx_border_l">Defines</td>
+<td class="ltx_td ltx_align_left ltx_border_b ltx_border_r">gradient</td>
+</tr>
+</tbody>
+</table>
+</div>
+</article>
+</div>
+<footer class="ltx_page_footer">
+<div class="ltx_page_logo">Generated  on Sat Feb 10 11:50:05 2018 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</body>
+</html>

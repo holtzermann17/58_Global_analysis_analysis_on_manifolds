@@ -1,0 +1,418 @@
+<!DOCTYPE html><html>
+<head>
+<title>invariant differential form</title>
+<!--Generated on Sat Feb 10 11:50:10 2018 by LaTeXML (version 0.8.2) http://dlmf.nist.gov/LaTeXML/.-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/3f71ceeb3b055e1ddc3b6c11fb1f074c/raw/2bb23e3b173ff96840797fc0c3bcb8c54085df8e/LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/4bda0365b30858ac2fb83623185fe3ec/raw/cedd84ed3e3ad597c5d293f443ecfe4803741c6b/ltx-article.css" type="text/css">
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<div class="ltx_page_main">
+<div class="ltx_page_content">
+<article class="ltx_document ltx_authors_1line">
+<h1 class="ltx_title ltx_title_document">invariant differential form</h1>
+
+<div id="p1" class="ltx_para">
+<br class="ltx_break">
+</div>
+<section id="S1" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">1 </span>Lie Groups</h2>
+
+<div id="S1.p1" class="ltx_para">
+<p class="ltx_p">Let <math id="S1.p1.m1" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math> be a Lie group and <math id="S1.p1.m2" class="ltx_Math" alttext="g\in G" display="inline"><mrow><mi>g</mi><mo>∈</mo><mi>G</mi></mrow></math>.</p>
+</div>
+<div id="S1.p2" class="ltx_para">
+<p class="ltx_p">Let <math id="S1.p2.m1" class="ltx_Math" alttext="L_{g}:G\longrightarrow G" display="inline"><mrow><msub><mi>L</mi><mi>g</mi></msub><mo>:</mo><mrow><mi>G</mi><mo>⟶</mo><mi>G</mi></mrow></mrow></math> and <math id="S1.p2.m2" class="ltx_Math" alttext="R_{g}:G\longrightarrow G" display="inline"><mrow><msub><mi>R</mi><mi>g</mi></msub><mo>:</mo><mrow><mi>G</mi><mo>⟶</mo><mi>G</mi></mrow></mrow></math> be the functions of left and right multiplication by <math id="S1.p2.m3" class="ltx_Math" alttext="g" display="inline"><mi>g</mi></math> (respectively). Let <math id="S1.p2.m4" class="ltx_Math" alttext="C_{g}:G\longrightarrow G" display="inline"><mrow><msub><mi>C</mi><mi>g</mi></msub><mo>:</mo><mrow><mi>G</mi><mo>⟶</mo><mi>G</mi></mrow></mrow></math> be the function of conjugation by <math id="S1.p2.m5" class="ltx_Math" alttext="g" display="inline"><mi>g</mi></math>, i.e. <math id="S1.p2.m6" class="ltx_Math" alttext="C_{g}(h):=ghg^{-1}" display="inline"><mrow><mrow><msub><mi>C</mi><mi>g</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>h</mi><mo stretchy="false">)</mo></mrow></mrow><mo>:=</mo><mrow><mi>g</mi><mo>⁢</mo><mi>h</mi><mo>⁢</mo><msup><mi>g</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow></mrow></math>.</p>
+</div>
+<div id="S1.p3" class="ltx_para">
+<p class="ltx_p">A differential <math id="S1.p3.m1" class="ltx_Math" alttext="k" display="inline"><mi>k</mi></math>-form (<span class="ltx_text ltx_font_typewriter">http://planetmath.org/DifferentialForms</span>) <math id="S1.p3.m2" class="ltx_Math" alttext="\omega" display="inline"><mi>ω</mi></math> on <math id="S1.p3.m3" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math> is said to be</p>
+<ul id="I1" class="ltx_itemize">
+<li id="I1.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_itemize">•</span> 
+<div id="I1.i1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">left invariant<math id="I1.i1.p1.m1" class="ltx_Math" alttext="\," display="inline"><mi></mi></math></span> if <math id="I1.i1.p1.m2" class="ltx_Math" alttext="L_{g}^{*}\,\omega=\omega" display="inline"><mrow><mrow><mpadded width="+1.7pt"><msubsup><mi>L</mi><mi>g</mi><mo>*</mo></msubsup></mpadded><mo>⁢</mo><mi>ω</mi></mrow><mo>=</mo><mi>ω</mi></mrow></math> for every <math id="I1.i1.p1.m3" class="ltx_Math" alttext="g\in G" display="inline"><mrow><mi>g</mi><mo>∈</mo><mi>G</mi></mrow></math>, where <math id="I1.i1.p1.m4" class="ltx_Math" alttext="L_{g}^{*}" display="inline"><msubsup><mi>L</mi><mi>g</mi><mo>*</mo></msubsup></math> is the pullback induced <math id="I1.i1.p1.m5" class="ltx_Math" alttext="L_{g}" display="inline"><msub><mi>L</mi><mi>g</mi></msub></math>.
+</p>
+</div>
+</li>
+<li id="I1.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_itemize">•</span> 
+<div id="I1.i2.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">right invariant<math id="I1.i2.p1.m1" class="ltx_Math" alttext="\," display="inline"><mi></mi></math></span> if <math id="I1.i2.p1.m2" class="ltx_Math" alttext="R_{g}^{*}\,\omega=\omega" display="inline"><mrow><mrow><mpadded width="+1.7pt"><msubsup><mi>R</mi><mi>g</mi><mo>*</mo></msubsup></mpadded><mo>⁢</mo><mi>ω</mi></mrow><mo>=</mo><mi>ω</mi></mrow></math> for every <math id="I1.i2.p1.m3" class="ltx_Math" alttext="g\in G" display="inline"><mrow><mi>g</mi><mo>∈</mo><mi>G</mi></mrow></math>, where <math id="I1.i2.p1.m4" class="ltx_Math" alttext="R_{g}^{*}" display="inline"><msubsup><mi>R</mi><mi>g</mi><mo>*</mo></msubsup></math> is the pullback induced <math id="I1.i2.p1.m5" class="ltx_Math" alttext="R_{g}" display="inline"><msub><mi>R</mi><mi>g</mi></msub></math>.</p>
+</div>
+</li>
+<li id="I1.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_itemize">•</span> 
+<div id="I1.i3.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">invariant</span> or <span class="ltx_text ltx_font_bold">bi-invariant<math id="I1.i3.p1.m1" class="ltx_Math" alttext="\," display="inline"><mi></mi></math></span> if it is both left invariant and right invariant.</p>
+</div>
+</li>
+<li id="I1.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_itemize">•</span> 
+<div id="I1.i4.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">adjoint invariant<math id="I1.i4.p1.m1" class="ltx_Math" alttext="\," display="inline"><mi></mi></math></span> if <math id="I1.i4.p1.m2" class="ltx_Math" alttext="C_{g}^{*}\,\omega=\omega" display="inline"><mrow><mrow><mpadded width="+1.7pt"><msubsup><mi>C</mi><mi>g</mi><mo>*</mo></msubsup></mpadded><mo>⁢</mo><mi>ω</mi></mrow><mo>=</mo><mi>ω</mi></mrow></math> for every <math id="I1.i4.p1.m3" class="ltx_Math" alttext="g\in G" display="inline"><mrow><mi>g</mi><mo>∈</mo><mi>G</mi></mrow></math>, where <math id="I1.i4.p1.m4" class="ltx_Math" alttext="C_{g}^{*}" display="inline"><msubsup><mi>C</mi><mi>g</mi><mo>*</mo></msubsup></math> is the pullback induced by <math id="I1.i4.p1.m5" class="ltx_Math" alttext="C_{g}" display="inline"><msub><mi>C</mi><mi>g</mi></msub></math>.</p>
+</div>
+</li>
+</ul>
+<p class="ltx_p"><math id="S1.p3.m4" class="ltx_Math" alttext="\," display="inline"><mi></mi></math></p>
+</div>
+<div id="S1.p4" class="ltx_para">
+<p class="ltx_p">Much like left invariant vector fields (<span class="ltx_text ltx_font_typewriter">http://planetmath.org/LieGroup</span>), left invariant forms are uniquely determined by their values in <math id="S1.p4.m1" class="ltx_Math" alttext="T_{e}(G)" display="inline"><mrow><msub><mi>T</mi><mi>e</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>G</mi><mo stretchy="false">)</mo></mrow></mrow></math>, the tangent space at the identity element <math id="S1.p4.m2" class="ltx_Math" alttext="e\in G" display="inline"><mrow><mi>e</mi><mo>∈</mo><mi>G</mi></mrow></math>, i.e. a left invairant form <math id="S1.p4.m3" class="ltx_Math" alttext="\omega" display="inline"><mi>ω</mi></math> is uniquely determined by the values</p>
+<table id="S1.Ex1" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.Ex1.m1" class="ltx_Math" alttext="w_{e}(X_{1},\dots,X_{k})\,,\qquad\qquad X_{1},\dots,X_{k}\in T_{e}(G)" display="block"><mrow><mrow><mrow><msub><mi>w</mi><mi>e</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>X</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>X</mi><mi>k</mi></msub><mo rspace="4.2pt" stretchy="false">)</mo></mrow></mrow><mo rspace="42.5pt">,</mo><msub><mi>X</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>X</mi><mi>k</mi></msub></mrow><mo>∈</mo><mrow><msub><mi>T</mi><mi>e</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>G</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">This means that left invariant forms are uniquely determined by their values on the Lie algebra of <math id="S1.p4.m4" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math>.</p>
+</div>
+<div id="S1.p5" class="ltx_para">
+<p class="ltx_p">Under this setting, the space <math id="S1.p5.m1" class="ltx_Math" alttext="\Omega^{k}_{L}(G)" display="inline"><mrow><msubsup><mi mathvariant="normal">Ω</mi><mi>L</mi><mi>k</mi></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>G</mi><mo stretchy="false">)</mo></mrow></mrow></math> of left invariant <math id="S1.p5.m2" class="ltx_Math" alttext="k" display="inline"><mi>k</mi></math>-forms can be identified with <math id="S1.p5.m3" class="ltx_Math" alttext="Hom(\Lambda^{k}\mathfrak{g},\mathbb{R})" display="inline"><mrow><mi>H</mi><mo>⁢</mo><mi>o</mi><mo>⁢</mo><mi>m</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi mathvariant="normal">Λ</mi><mi>k</mi></msup><mo>⁢</mo><mi>𝔤</mi></mrow><mo>,</mo><mi>ℝ</mi><mo stretchy="false">)</mo></mrow></mrow></math>, the space of homomorphisms from the <math id="S1.p5.m4" class="ltx_Math" alttext="k" display="inline"><mi>k</mi></math>-th exterior power of <math id="S1.p5.m5" class="ltx_Math" alttext="\mathfrak{g}" display="inline"><mi>𝔤</mi></math> to <math id="S1.p5.m6" class="ltx_Math" alttext="\mathbb{R}" display="inline"><mi>ℝ</mi></math>, where <math id="S1.p5.m7" class="ltx_Math" alttext="\mathfrak{g}" display="inline"><mi>𝔤</mi></math> denotes the Lie algebra of <math id="S1.p5.m8" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math>.</p>
+</div>
+<div id="S1.p6" class="ltx_para">
+<p class="ltx_p"><math id="S1.p6.m1" class="ltx_Math" alttext="\," display="inline"><mi></mi></math></p>
+</div>
+<div id="S1.p7" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">-</span> Let <math id="S1.p7.m1" class="ltx_Math" alttext="\Omega^{k}(G)" display="inline"><mrow><msup><mi mathvariant="normal">Ω</mi><mi>k</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>G</mi><mo stretchy="false">)</mo></mrow></mrow></math> be the space of <math id="S1.p7.m2" class="ltx_Math" alttext="k" display="inline"><mi>k</mi></math>-forms in <math id="S1.p7.m3" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math>. The exterior derivative <math id="S1.p7.m4" class="ltx_Math" alttext="d:\Omega^{k}(G)\longrightarrow\Omega^{k+1}(G)" display="inline"><mrow><mi>d</mi><mo>:</mo><mrow><mrow><msup><mi mathvariant="normal">Ω</mi><mi>k</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>G</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⟶</mo><mrow><msup><mi mathvariant="normal">Ω</mi><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>G</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math> takes left invariant forms to left invariant forms. Moreover, the formula for exterior derivative for left invariant forms simplifies to</p>
+<table id="S1.Ex2" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.Ex2.m1" class="ltx_Math" alttext="d\omega(X_{0},\dots,X_{k})=\sum_{i&lt;j}(-1)^{i+j}\omega([X_{i},X_{j}],X_{0},%
+\dots,\hat{X_{i}},\dots,\hat{X_{j}},\dots,X_{k})" display="block"><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>ω</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>X</mi><mn>0</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>X</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><munder><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>i</mi><mo>&lt;</mo><mi>j</mi></mrow></munder><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mrow><mi>i</mi><mo>+</mo><mi>j</mi></mrow></msup><mo>⁢</mo><mi>ω</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo stretchy="false">[</mo><msub><mi>X</mi><mi>i</mi></msub><mo>,</mo><msub><mi>X</mi><mi>j</mi></msub><mo stretchy="false">]</mo></mrow><mo>,</mo><msub><mi>X</mi><mn>0</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mover accent="true"><msub><mi>X</mi><mi>i</mi></msub><mo stretchy="false">^</mo></mover><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mover accent="true"><msub><mi>X</mi><mi>j</mi></msub><mo stretchy="false">^</mo></mover><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>X</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">where <math id="S1.p7.m5" class="ltx_Math" alttext="\omega\in\Omega^{k}(G)" display="inline"><mrow><mi>ω</mi><mo>∈</mo><mrow><msup><mi mathvariant="normal">Ω</mi><mi>k</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>G</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math> and <math id="S1.p7.m6" class="ltx_Math" alttext="X_{0},\dots,X_{k}" display="inline"><mrow><msub><mi>X</mi><mn>0</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>X</mi><mi>k</mi></msub></mrow></math> are left invariant vector fields in <math id="S1.p7.m7" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math>.</p>
+</div>
+<div id="S1.p8" class="ltx_para">
+<p class="ltx_p"><math id="S1.p8.m1" class="ltx_Math" alttext="\," display="inline"><mi></mi></math></p>
+</div>
+<div id="S1.p9" class="ltx_para">
+<p class="ltx_p">Hence, the exterior derivative induces a map <math id="S1.p9.m1" class="ltx_Math" alttext="d:\Omega^{k}_{L}(G)\longrightarrow\Omega^{k+1}_{L}(G)" display="inline"><mrow><mi>d</mi><mo>:</mo><mrow><mrow><msubsup><mi mathvariant="normal">Ω</mi><mi>L</mi><mi>k</mi></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>G</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⟶</mo><mrow><msubsup><mi mathvariant="normal">Ω</mi><mi>L</mi><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>G</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math> and <math id="S1.p9.m2" class="ltx_Math" alttext="(\Omega^{*}_{L}(G),d)" display="inline"><mrow><mo stretchy="false">(</mo><mrow><msubsup><mi mathvariant="normal">Ω</mi><mi>L</mi><mo>*</mo></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>G</mi><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo><mi>d</mi><mo stretchy="false">)</mo></mrow></math> forms a chain complex. Thus, we can talk about the cohomology groups of left invariant forms.
+</p>
+</div>
+<div id="S1.p10" class="ltx_para">
+<p class="ltx_p">Similar results hold for right invariant forms.</p>
+</div>
+</section>
+<section id="S2" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">2 </span>Manifolds</h2>
+
+<div id="S2.p1" class="ltx_para">
+<p class="ltx_p">Suppose a Lie group <math id="S2.p1.m1" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math> acts smoothly (<span class="ltx_text ltx_font_typewriter">http://planetmath.org/Manifold</span>) on a differential manifold <math id="S2.p1.m2" class="ltx_Math" alttext="M" display="inline"><mi>M</mi></math> and let</p>
+<table id="S2.Ex3" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S2.Ex3.m1" class="ltx_Math" alttext="(g,x)\longmapsto t_{g}(x)\,,\qquad\qquad g\in G,x\in M" display="block"><mrow><mrow><mrow><mo stretchy="false">(</mo><mi>g</mi><mo>,</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⟼</mo><mrow><msub><mi>t</mi><mi>g</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo rspace="4.2pt" stretchy="false">)</mo></mrow></mrow></mrow><mo rspace="42.5pt">,</mo><mrow><mrow><mi>g</mi><mo>∈</mo><mi>G</mi></mrow><mo>,</mo><mrow><mi>x</mi><mo>∈</mo><mi>M</mi></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">denote the action of <math id="S2.p1.m3" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math>.</p>
+</div>
+<div id="S2.p2" class="ltx_para">
+<p class="ltx_p">A differential <math id="S2.p2.m1" class="ltx_Math" alttext="k" display="inline"><mi>k</mi></math>-form <math id="S2.p2.m2" class="ltx_Math" alttext="\omega" display="inline"><mi>ω</mi></math> in <math id="S2.p2.m3" class="ltx_Math" alttext="M" display="inline"><mi>M</mi></math> is said to be <span class="ltx_text ltx_font_bold">invariant</span> if <math id="S2.p2.m4" class="ltx_Math" alttext="t_{g}^{*}\,\omega=\omega" display="inline"><mrow><mrow><mpadded width="+1.7pt"><msubsup><mi>t</mi><mi>g</mi><mo>*</mo></msubsup></mpadded><mo>⁢</mo><mi>ω</mi></mrow><mo>=</mo><mi>ω</mi></mrow></math> for every <math id="S2.p2.m5" class="ltx_Math" alttext="g\in G" display="inline"><mrow><mi>g</mi><mo>∈</mo><mi>G</mi></mrow></math>, where <math id="S2.p2.m6" class="ltx_Math" alttext="t_{g}^{*}" display="inline"><msubsup><mi>t</mi><mi>g</mi><mo>*</mo></msubsup></math> denotes the pullback induced by <math id="S2.p2.m7" class="ltx_Math" alttext="t_{g}" display="inline"><msub><mi>t</mi><mi>g</mi></msub></math>.</p>
+</div>
+<div id="S2.p3" class="ltx_para">
+<p class="ltx_p">This definition reduces to the previous ones when we take <math id="S2.p3.m1" class="ltx_Math" alttext="M" display="inline"><mi>M</mi></math> as the group <math id="S2.p3.m2" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math> itself and when the action is</p>
+<ul id="I2" class="ltx_itemize">
+<li id="I2.i1" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_itemize">•</span> 
+<div id="I2.i1.p1" class="ltx_para">
+<p class="ltx_p">the action of <math id="I2.i1.p1.m1" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math> on itself by left multiplication.</p>
+</div>
+</li>
+<li id="I2.i2" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_itemize">•</span> 
+<div id="I2.i2.p1" class="ltx_para">
+<p class="ltx_p">the action of <math id="I2.i2.p1.m1" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math> on itself by right multiplication.</p>
+</div>
+</li>
+<li id="I2.i3" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_itemize">•</span> 
+<div id="I2.i3.p1" class="ltx_para">
+<p class="ltx_p">the action of <math id="I2.i3.p1.m1" class="ltx_Math" alttext="G\times G" display="inline"><mrow><mi>G</mi><mo>×</mo><mi>G</mi></mrow></math> on <math id="I2.i3.p1.m2" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math> defined by <math id="I2.i3.p1.m3" class="ltx_Math" alttext="t_{(g,h)}(k):=gkh^{-1}" display="inline"><mrow><mrow><msub><mi>t</mi><mrow><mo stretchy="false">(</mo><mi>g</mi><mo>,</mo><mi>h</mi><mo stretchy="false">)</mo></mrow></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>k</mi><mo stretchy="false">)</mo></mrow></mrow><mo>:=</mo><mrow><mi>g</mi><mo>⁢</mo><mi>k</mi><mo>⁢</mo><msup><mi>h</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow></mrow></math>.</p>
+</div>
+</li>
+<li id="I2.i4" class="ltx_item" style="list-style-type:none;">
+<span class="ltx_tag ltx_tag_itemize">•</span> 
+<div id="I2.i4.p1" class="ltx_para">
+<p class="ltx_p">the action of <math id="I2.i4.p1.m1" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math> on itself by conjugation.</p>
+</div>
+</li>
+</ul>
+</div>
+</section>
+<section id="S3" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">3 </span>Compact Lie Group Actions</h2>
+
+<div id="S3.p1" class="ltx_para">
+<p class="ltx_p">We now consider actions of a compact Lie group <math id="S3.p1.m1" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math> on a manifold <math id="S3.p1.m2" class="ltx_Math" alttext="M" display="inline"><mi>M</mi></math>. Let <math id="S3.p1.m3" class="ltx_Math" alttext="\Omega^{k}(M)" display="inline"><mrow><msup><mi mathvariant="normal">Ω</mi><mi>k</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow></math> the space of <math id="S3.p1.m4" class="ltx_Math" alttext="k" display="inline"><mi>k</mi></math>-forms in <math id="S3.p1.m5" class="ltx_Math" alttext="M" display="inline"><mi>M</mi></math> and <math id="S3.p1.m6" class="ltx_Math" alttext="\Omega_{G}^{k}(M)" display="inline"><mrow><msubsup><mi mathvariant="normal">Ω</mi><mi>G</mi><mi>k</mi></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow></math> the space of invariant <math id="S3.p1.m7" class="ltx_Math" alttext="k" display="inline"><mi>k</mi></math>-forms in <math id="S3.p1.m8" class="ltx_Math" alttext="M" display="inline"><mi>M</mi></math>. Let <math id="S3.p1.m9" class="ltx_Math" alttext="\mu" display="inline"><mi>μ</mi></math> be the Haar measure of <math id="S3.p1.m10" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math>.</p>
+</div>
+<div id="S3.p2" class="ltx_para">
+<p class="ltx_p">From each <math id="S3.p2.m1" class="ltx_Math" alttext="k" display="inline"><mi>k</mi></math>-form in <math id="S3.p2.m2" class="ltx_Math" alttext="M" display="inline"><mi>M</mi></math> we can construct an invariant form by taking  on its ””. Following this idea we define a map <math id="S3.p2.m3" class="ltx_Math" alttext="J:\Omega^{k}(M)\longrightarrow\Omega_{G}^{k}(M)" display="inline"><mrow><mi>J</mi><mo>:</mo><mrow><mrow><msup><mi mathvariant="normal">Ω</mi><mi>k</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⟶</mo><mrow><msubsup><mi mathvariant="normal">Ω</mi><mi>G</mi><mi>k</mi></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math> by</p>
+<table id="S3.Ex4" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S3.Ex4.m1" class="ltx_Math" alttext="J(\omega)\,(X_{1},\dots,X_{k}):=\frac{1}{\mu(G)}\int_{G}t_{g}^{*}\,\omega\,(X_%
+{1},\dots,X_{k})\;d\mu(g)" display="block"><mrow><mrow><mi>J</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ω</mi><mo rspace="4.2pt" stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>X</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>X</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>:=</mo><mrow><mfrac><mn>1</mn><mrow><mi>μ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>G</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac><mo>⁢</mo><mrow><msub><mo largeop="true" symmetric="true">∫</mo><mi>G</mi></msub><mrow><mpadded width="+1.7pt"><msubsup><mi>t</mi><mi>g</mi><mo>*</mo></msubsup></mpadded><mo>⁢</mo><mpadded width="+1.7pt"><mi>ω</mi></mpadded><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>X</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>X</mi><mi>k</mi></msub><mo rspace="5.3pt" stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo>𝑑</mo><mi>μ</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>g</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">where <math id="S3.p2.m4" class="ltx_Math" alttext="\omega\in\Omega^{k}(M)" display="inline"><mrow><mi>ω</mi><mo>∈</mo><mrow><msup><mi mathvariant="normal">Ω</mi><mi>k</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math> and <math id="S3.p2.m5" class="ltx_Math" alttext="X_{1},\dots,X_{k}" display="inline"><mrow><msub><mi>X</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>X</mi><mi>k</mi></msub></mrow></math> are vector fields of <math id="S3.p2.m6" class="ltx_Math" alttext="M" display="inline"><mi>M</mi></math>.</p>
+</div>
+<div id="S3.p3" class="ltx_para">
+<p class="ltx_p">The image of the map <math id="S3.p3.m1" class="ltx_Math" alttext="J" display="inline"><mi>J</mi></math> is indeed in <math id="S3.p3.m2" class="ltx_Math" alttext="\Omega_{G}^{k}(M)" display="inline"><mrow><msubsup><mi mathvariant="normal">Ω</mi><mi>G</mi><mi>k</mi></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow></math> since for every <math id="S3.p3.m3" class="ltx_Math" alttext="h\in G" display="inline"><mrow><mi>h</mi><mo>∈</mo><mi>G</mi></mrow></math>:</p>
+<table id="S4.EGx1" class="ltx_equationgroup ltx_eqn_eqnarray ltx_eqn_table">
+
+<tr id="S3.Ex9" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S3.Ex5.m1" class="ltx_Math" alttext="\displaystyle t_{h}(J(\omega))\,(X_{1},\dots,X_{k})" display="inline"><mrow><msub><mi>t</mi><mi>h</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>J</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ω</mi><mo stretchy="false">)</mo></mrow></mrow><mo rspace="4.2pt" stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>X</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>X</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S3.Ex5.m2" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex5.m3" class="ltx_Math" alttext="\displaystyle J(\omega)\,((t_{h})_{*}X_{1},\dots,(t_{h})_{*}X_{k})" display="inline"><mrow><mi>J</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ω</mi><mo rspace="4.2pt" stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mrow><mo stretchy="false">(</mo><msub><mi>t</mi><mi>h</mi></msub><mo stretchy="false">)</mo></mrow><mo>*</mo></msub><mo>⁢</mo><msub><mi>X</mi><mn>1</mn></msub></mrow><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mrow><msub><mrow><mo stretchy="false">(</mo><msub><mi>t</mi><mi>h</mi></msub><mo stretchy="false">)</mo></mrow><mo>*</mo></msub><mo>⁢</mo><msub><mi>X</mi><mi>k</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S3.Ex6.m2" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex6.m3" class="ltx_Math" alttext="\displaystyle\frac{1}{\mu(G)}\int_{G}\omega((t_{g})_{*}(t_{h})_{*}X_{1},\dots,%
+(t_{g})_{*}(t_{h})_{*}X_{k})\;d\mu(g)" display="inline"><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mrow><mi>μ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>G</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac></mstyle><mo>⁢</mo><mrow><mstyle displaystyle="true"><msub><mo largeop="true" symmetric="true">∫</mo><mi>G</mi></msub></mstyle><mrow><mi>ω</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mrow><mo stretchy="false">(</mo><msub><mi>t</mi><mi>g</mi></msub><mo stretchy="false">)</mo></mrow><mo>*</mo></msub><mo>⁢</mo><msub><mrow><mo stretchy="false">(</mo><msub><mi>t</mi><mi>h</mi></msub><mo stretchy="false">)</mo></mrow><mo>*</mo></msub><mo>⁢</mo><msub><mi>X</mi><mn>1</mn></msub></mrow><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mrow><msub><mrow><mo stretchy="false">(</mo><msub><mi>t</mi><mi>g</mi></msub><mo stretchy="false">)</mo></mrow><mo>*</mo></msub><mo>⁢</mo><msub><mrow><mo stretchy="false">(</mo><msub><mi>t</mi><mi>h</mi></msub><mo stretchy="false">)</mo></mrow><mo>*</mo></msub><mo>⁢</mo><msub><mi>X</mi><mi>k</mi></msub></mrow><mo rspace="5.3pt" stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo>𝑑</mo><mi>μ</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>g</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S3.Ex7.m2" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex7.m3" class="ltx_Math" alttext="\displaystyle\frac{1}{\mu(G)}\int_{G}\omega((t_{gh})_{*}X_{1},\dots,(t_{gh})_{%
+*}X_{k})\;d\mu(g)" display="inline"><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mrow><mi>μ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>G</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac></mstyle><mo>⁢</mo><mrow><mstyle displaystyle="true"><msub><mo largeop="true" symmetric="true">∫</mo><mi>G</mi></msub></mstyle><mrow><mi>ω</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mrow><mo stretchy="false">(</mo><msub><mi>t</mi><mrow><mi>g</mi><mo>⁢</mo><mi>h</mi></mrow></msub><mo stretchy="false">)</mo></mrow><mo>*</mo></msub><mo>⁢</mo><msub><mi>X</mi><mn>1</mn></msub></mrow><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mrow><msub><mrow><mo stretchy="false">(</mo><msub><mi>t</mi><mrow><mi>g</mi><mo>⁢</mo><mi>h</mi></mrow></msub><mo stretchy="false">)</mo></mrow><mo>*</mo></msub><mo>⁢</mo><msub><mi>X</mi><mi>k</mi></msub></mrow><mo rspace="5.3pt" stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo>𝑑</mo><mi>μ</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>g</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S3.Ex8.m2" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex8.m3" class="ltx_Math" alttext="\displaystyle\frac{1}{\mu(G)}\int_{G}\omega((t_{g})_{*}X_{1},\dots,(t_{g})_{*}%
+X_{k})\;d\mu(g)" display="inline"><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mrow><mi>μ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>G</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac></mstyle><mo>⁢</mo><mrow><mstyle displaystyle="true"><msub><mo largeop="true" symmetric="true">∫</mo><mi>G</mi></msub></mstyle><mrow><mi>ω</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mrow><mo stretchy="false">(</mo><msub><mi>t</mi><mi>g</mi></msub><mo stretchy="false">)</mo></mrow><mo>*</mo></msub><mo>⁢</mo><msub><mi>X</mi><mn>1</mn></msub></mrow><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mrow><msub><mrow><mo stretchy="false">(</mo><msub><mi>t</mi><mi>g</mi></msub><mo stretchy="false">)</mo></mrow><mo>*</mo></msub><mo>⁢</mo><msub><mi>X</mi><mi>k</mi></msub></mrow><mo rspace="5.3pt" stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo>𝑑</mo><mi>μ</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>g</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S3.Ex9.m2" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex9.m3" class="ltx_Math" alttext="\displaystyle J(\omega)\,(X_{1},\dots,X_{k})" display="inline"><mrow><mi>J</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ω</mi><mo rspace="4.2pt" stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>X</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>X</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+<div id="S3.p4" class="ltx_para">
+<p class="ltx_p">Moreover, <math id="S3.p4.m1" class="ltx_Math" alttext="J" display="inline"><mi>J</mi></math> is the identity for invariant <math id="S3.p4.m2" class="ltx_Math" alttext="k" display="inline"><mi>k</mi></math>-forms. Suppose <math id="S3.p4.m3" class="ltx_Math" alttext="\omega\in\Omega_{G}^{k}(M)" display="inline"><mrow><mi>ω</mi><mo>∈</mo><mrow><msubsup><mi mathvariant="normal">Ω</mi><mi>G</mi><mi>k</mi></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math>, then</p>
+<table id="S4.EGx2" class="ltx_equationgroup ltx_eqn_eqnarray ltx_eqn_table">
+
+<tr id="S3.Ex12" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S3.Ex10.m1" class="ltx_Math" alttext="\displaystyle J(\omega)\,(X_{1},\dots,X_{k})" display="inline"><mrow><mi>J</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ω</mi><mo rspace="4.2pt" stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>X</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>X</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S3.Ex10.m2" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex10.m3" class="ltx_Math" alttext="\displaystyle\frac{1}{\mu(G)}\int_{G}t_{g}^{*}(\omega)\,(X_{1},\dots,X_{k})\;d%
+\mu(g)" display="inline"><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mrow><mi>μ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>G</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac></mstyle><mo>⁢</mo><mrow><mstyle displaystyle="true"><msub><mo largeop="true" symmetric="true">∫</mo><mi>G</mi></msub></mstyle><mrow><msubsup><mi>t</mi><mi>g</mi><mo>*</mo></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ω</mi><mo rspace="4.2pt" stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>X</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>X</mi><mi>k</mi></msub><mo rspace="5.3pt" stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo>𝑑</mo><mi>μ</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>g</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S3.Ex11.m2" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex11.m3" class="ltx_Math" alttext="\displaystyle\frac{1}{\mu(G)}\int_{G}\omega\,(X_{1},\dots,X_{k})\;d\mu(g)" display="inline"><mrow><mstyle displaystyle="true"><mfrac><mn>1</mn><mrow><mi>μ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>G</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac></mstyle><mo>⁢</mo><mrow><mstyle displaystyle="true"><msub><mo largeop="true" symmetric="true">∫</mo><mi>G</mi></msub></mstyle><mrow><mpadded width="+1.7pt"><mi>ω</mi></mpadded><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>X</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>X</mi><mi>k</mi></msub><mo rspace="5.3pt" stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo>𝑑</mo><mi>μ</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>g</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S3.Ex12.m2" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex12.m3" class="ltx_Math" alttext="\displaystyle\omega(X_{1},\dots,X_{k})" display="inline"><mrow><mi>ω</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>X</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>X</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+<div id="S3.p5" class="ltx_para">
+<p class="ltx_p"><math id="S3.p5.m1" class="ltx_Math" alttext="\," display="inline"><mi></mi></math></p>
+</div>
+<div id="S3.p6" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Theorem -</span> The map <math id="S3.p6.m1" class="ltx_Math" alttext="J" display="inline"><mi>J</mi></math> is a chain map, i.e. <math id="S3.p6.m2" class="ltx_Math" alttext="dJ=Jd" display="inline"><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>J</mi></mrow><mo>=</mo><mrow><mi>J</mi><mo>⁢</mo><mi>d</mi></mrow></mrow></math>, where <math id="S3.p6.m3" class="ltx_Math" alttext="d" display="inline"><mi>d</mi></math> is the exterior derivative of a form.
+</p>
+</div>
+<div id="S3.p7" class="ltx_para">
+<p class="ltx_p"><math id="S3.p7.m1" class="ltx_Math" alttext="\," display="inline"><mi></mi></math></p>
+</div>
+<div id="S3.p8" class="ltx_para">
+<p class="ltx_p">From the previous observations we can see that the exterior derivative takes invariant forms to invariant forms, inducing a map <math id="S3.p8.m1" class="ltx_Math" alttext="d:\Omega_{G}^{k}(M)\longrightarrow\Omega_{G}^{k+1}(M)" display="inline"><mrow><mi>d</mi><mo>:</mo><mrow><mrow><msubsup><mi mathvariant="normal">Ω</mi><mi>G</mi><mi>k</mi></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⟶</mo><mrow><msubsup><mi mathvariant="normal">Ω</mi><mi>G</mi><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math>. Hence, <math id="S3.p8.m2" class="ltx_Math" alttext="(\Omega_{G}^{*}(M),d)" display="inline"><mrow><mo stretchy="false">(</mo><mrow><msubsup><mi mathvariant="normal">Ω</mi><mi>G</mi><mo>*</mo></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow><mo>,</mo><mi>d</mi><mo stretchy="false">)</mo></mrow></math> is a chain complex and we can talk about the cohomology groups of invariant forms in <math id="S3.p8.m3" class="ltx_Math" alttext="M" display="inline"><mi>M</mi></math>.</p>
+</div>
+</section>
+<section id="S4" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">4 </span>Cohomology of Manifolds</h2>
+
+<div id="S4.p1" class="ltx_para">
+<p class="ltx_p">Let <math id="S4.p1.m1" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math> be a compact Lie group that acts smoothly on a manifold <math id="S4.p1.m2" class="ltx_Math" alttext="M" display="inline"><mi>M</mi></math> (again, with the action denoted by <math id="S4.p1.m3" class="ltx_Math" alttext="t_{g}" display="inline"><msub><mi>t</mi><mi>g</mi></msub></math>).</p>
+</div>
+<div id="S4.p2" class="ltx_para">
+<p class="ltx_p">Since <math id="S4.p2.m1" class="ltx_Math" alttext="t_{g}" display="inline"><msub><mi>t</mi><mi>g</mi></msub></math> is a diffeomorphism of <math id="S4.p2.m2" class="ltx_Math" alttext="M" display="inline"><mi>M</mi></math> it induces an automorphism <math id="S4.p2.m3" class="ltx_Math" alttext="t_{g}^{*}" display="inline"><msubsup><mi>t</mi><mi>g</mi><mo>*</mo></msubsup></math> on the cohomology groups <math id="S4.p2.m4" class="ltx_Math" alttext="H^{k}(M;\mathbb{R})" display="inline"><mrow><msup><mi>H</mi><mi>k</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo>;</mo><mi>ℝ</mi><mo stretchy="false">)</mo></mrow></mrow></math>. Hence, <math id="S4.p2.m5" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math> acts as a group of automorphisms on <math id="S4.p2.m6" class="ltx_Math" alttext="H^{k}(M;\mathbb{R})" display="inline"><mrow><msup><mi>H</mi><mi>k</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo>;</mo><mi>ℝ</mi><mo stretchy="false">)</mo></mrow></mrow></math>. Let <math id="S4.p2.m7" class="ltx_Math" alttext="H^{k}(M;\mathbb{R})^{G}" display="inline"><mrow><msup><mi>H</mi><mi>k</mi></msup><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mi>M</mi><mo>;</mo><mi>ℝ</mi><mo stretchy="false">)</mo></mrow><mi>G</mi></msup></mrow></math> be the fixed point set of this action.</p>
+</div>
+<div id="S4.p3" class="ltx_para">
+<p class="ltx_p"><math id="S4.p3.m1" class="ltx_Math" alttext="\," display="inline"><mi></mi></math></p>
+</div>
+<div id="S4.p4" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_bold">Theorem -</span> The inclusion <math id="S4.p4.m1" class="ltx_Math" alttext="I:\Omega_{G}^{k}(M)\longrightarrow\Omega^{k}(M)" display="inline"><mrow><mi>I</mi><mo>:</mo><mrow><mrow><msubsup><mi mathvariant="normal">Ω</mi><mi>G</mi><mi>k</mi></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⟶</mo><mrow><msup><mi mathvariant="normal">Ω</mi><mi>k</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math> induces an isomorphism</p>
+<table id="S4.Ex13" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S4.Ex13.m1" class="ltx_Math" alttext="\xymatrix{I^{*}:H^{k}(\Omega_{G}(M))\ar[r]^{\simeq}&amp;H^{k}(M;\mathbb{R})^{G}}" display="block"><mrow><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\xymatrix</mtext></merror><mo>⁢</mo><msup><mi>I</mi><mo>*</mo></msup></mrow><mo>:</mo><mrow><msup><mi>H</mi><mi>k</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi mathvariant="normal">Ω</mi><mi>G</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\ar</mtext></merror><mo>⁢</mo><msup><mrow><mo stretchy="false">[</mo><mi>r</mi><mo stretchy="false">]</mo></mrow><mo>≃</mo></msup><mo>⁢</mo><mi mathvariant="normal">&amp;</mi><mo>⁢</mo><msup><mi>H</mi><mi>k</mi></msup><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mi>M</mi><mo>;</mo><mi>ℝ</mi><mo stretchy="false">)</mo></mrow><mi>G</mi></msup></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+<div id="S4.p5" class="ltx_para">
+<p class="ltx_p"><math id="S4.p5.m1" class="ltx_Math" alttext="\," display="inline"><mi></mi></math></p>
+</div>
+<div id="S4.p6" class="ltx_para">
+<p class="ltx_p">If in  <math id="S4.p6.m1" class="ltx_Math" alttext="G" display="inline"><mi>G</mi></math> is connected, then <math id="S4.p6.m2" class="ltx_Math" alttext="t_{g}" display="inline"><msub><mi>t</mi><mi>g</mi></msub></math> and the identity <math id="S4.p6.m3" class="ltx_Math" alttext="1_{M}" display="inline"><msub><mn>1</mn><mi>M</mi></msub></math> are homotopic, <math id="S4.p6.m4" class="ltx_Math" alttext="t_{g}\simeq 1_{M}" display="inline"><mrow><msub><mi>t</mi><mi>g</mi></msub><mo>≃</mo><msub><mn>1</mn><mi>M</mi></msub></mrow></math>, for every <math id="S4.p6.m5" class="ltx_Math" alttext="g\in G" display="inline"><mrow><mi>g</mi><mo>∈</mo><mi>G</mi></mrow></math>. This implies that the induced automorphisms are the same, i.e. <math id="S4.p6.m6" class="ltx_Math" alttext="t_{g}^{*}=Id" display="inline"><mrow><msubsup><mi>t</mi><mi>g</mi><mo>*</mo></msubsup><mo>=</mo><mrow><mi>I</mi><mo>⁢</mo><mi>d</mi></mrow></mrow></math>, where <math id="S4.p6.m7" class="ltx_Math" alttext="Id" display="inline"><mrow><mi>I</mi><mo>⁢</mo><mi>d</mi></mrow></math> is the identity on <math id="S4.p6.m8" class="ltx_Math" alttext="H^{k}(M;\mathbb{R})" display="inline"><mrow><msup><mi>H</mi><mi>k</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo>;</mo><mi>ℝ</mi><mo stretchy="false">)</mo></mrow></mrow></math>. Hence, the fixed point set is the whole <math id="S4.p6.m9" class="ltx_Math" alttext="H^{k}(M;\mathbb{R})" display="inline"><mrow><msup><mi>H</mi><mi>k</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo>;</mo><mi>ℝ</mi><mo stretchy="false">)</mo></mrow></mrow></math> and there is an isomorphism</p>
+<table id="S4.Ex14" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S4.Ex14.m1" class="ltx_Math" alttext="\xymatrix{I^{*}:H^{k}(\Omega_{G}(M))\ar[r]^{\simeq}&amp;H^{k}(M;\mathbb{R})}" display="block"><mrow><mrow><merror class="ltx_ERROR undefined undefined"><mtext>\xymatrix</mtext></merror><mo>⁢</mo><msup><mi>I</mi><mo>*</mo></msup></mrow><mo>:</mo><mrow><msup><mi>H</mi><mi>k</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi mathvariant="normal">Ω</mi><mi>G</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><merror class="ltx_ERROR undefined undefined"><mtext>\ar</mtext></merror><mo>⁢</mo><msup><mrow><mo stretchy="false">[</mo><mi>r</mi><mo stretchy="false">]</mo></mrow><mo>≃</mo></msup><mo>⁢</mo><mi mathvariant="normal">&amp;</mi><mo>⁢</mo><msup><mi>H</mi><mi>k</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo>;</mo><mi>ℝ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+<div id="S4.p7" class="ltx_para">
+<p class="ltx_p">Thus, the cohomology groups of a manifold where a compact connected Lie group acts are just the cohomology groups defined by the invariant forms on <math id="S4.p7.m1" class="ltx_Math" alttext="M" display="inline"><mi>M</mi></math>. This means we can ”forget” the whole  of differential forms in <math id="S4.p7.m2" class="ltx_Math" alttext="M" display="inline"><mi>M</mi></math> and regard only those who are invariant.
+</p>
+<table class="ltx_tabular ltx_align_right ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l ltx_border_t">Title</td>
+<td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">invariant differential form</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Canonical name</td>
+<td class="ltx_td ltx_align_left ltx_border_r">InvariantDifferentialForm</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Date of creation</td>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 17:48:31</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Last modified on</td>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 17:48:31</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Owner</td>
+<td class="ltx_td ltx_align_left ltx_border_r">asteroid (17536)</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Last modified by</td>
+<td class="ltx_td ltx_align_left ltx_border_r">asteroid (17536)</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Numerical id</td>
+<td class="ltx_td ltx_align_left ltx_border_r">25</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Author</td>
+<td class="ltx_td ltx_align_left ltx_border_r">asteroid (17536)</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Entry type</td>
+<td class="ltx_td ltx_align_left ltx_border_r">Definition</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Classification</td>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 58A10</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Classification</td>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 57T10</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Classification</td>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 57S15</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Classification</td>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 22E30</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Classification</td>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 22E15</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Synonym</td>
+<td class="ltx_td ltx_align_left ltx_border_r">invariant form</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Synonym</td>
+<td class="ltx_td ltx_align_left ltx_border_r">bi-invariant form</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Synonym</td>
+<td class="ltx_td ltx_align_left ltx_border_r">bi-invariant differential form</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Related topic</td>
+<td class="ltx_td ltx_align_left ltx_border_r">CohomologyOfCompactConnectedLieGroups</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Defines</td>
+<td class="ltx_td ltx_align_left ltx_border_r">left invariant differential form</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Defines</td>
+<td class="ltx_td ltx_align_left ltx_border_r">left invariant form</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Defines</td>
+<td class="ltx_td ltx_align_left ltx_border_r">right invariant differential form</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Defines</td>
+<td class="ltx_td ltx_align_left ltx_border_r">right invariant form</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Defines</td>
+<td class="ltx_td ltx_align_left ltx_border_r">adjoint invariant form</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Defines</td>
+<td class="ltx_td ltx_align_left ltx_border_r">adjoint invariant differential form</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Defines</td>
+<td class="ltx_td ltx_align_left ltx_border_r">chain complex of invariant forms</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_b ltx_border_l">Defines</td>
+<td class="ltx_td ltx_align_left ltx_border_b ltx_border_r">cohomology of manifolds with a Lie group action</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</article>
+</div>
+<footer class="ltx_page_footer">
+<div class="ltx_page_logo">Generated  on Sat Feb 10 11:50:10 2018 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</body>
+</html>

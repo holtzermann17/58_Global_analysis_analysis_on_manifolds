@@ -1,0 +1,258 @@
+<!DOCTYPE html><html>
+<head>
+<title>proof of general Stokes theorem</title>
+<!--Generated on Sat Feb 10 11:51:02 2018 by LaTeXML (version 0.8.2) http://dlmf.nist.gov/LaTeXML/.-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/3f71ceeb3b055e1ddc3b6c11fb1f074c/raw/2bb23e3b173ff96840797fc0c3bcb8c54085df8e/LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/4bda0365b30858ac2fb83623185fe3ec/raw/cedd84ed3e3ad597c5d293f443ecfe4803741c6b/ltx-article.css" type="text/css">
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<div class="ltx_page_main">
+<div class="ltx_page_content">
+<article class="ltx_document ltx_authors_1line">
+<h1 class="ltx_title ltx_title_document">proof of general Stokes theorem</h1>
+
+<div id="p1" class="ltx_para">
+<br class="ltx_break">
+<p class="ltx_p">We divide the proof in several steps.</p>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p"><em class="ltx_emph ltx_font_italic">Step One.</em></p>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">Suppose <math id="p3.m1" class="ltx_Math" alttext="M=(0,1]\times(0,1)^{n-1}" display="inline"><mrow><mi>M</mi><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">]</mo></mrow><mo>×</mo><msup><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msup></mrow></mrow></math> and</p>
+<table id="S0.Ex1" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex1.m1" class="ltx_Math" alttext="\omega(x_{1},\ldots,x_{n})=f(x_{1},\ldots,x_{n})\,dx_{1}\wedge\cdots\wedge%
+\widehat{dx_{j}}\wedge\cdots\wedge dx_{n}" display="block"><mrow><mrow><mi>ω</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>x</mi><mi>n</mi></msub><mo rspace="4.2pt" stretchy="false">)</mo></mrow><mo>⁢</mo><mi>d</mi><mo>⁢</mo><msub><mi>x</mi><mn>1</mn></msub></mrow><mo>∧</mo><mi mathvariant="normal">⋯</mi><mo>∧</mo><mover accent="true"><mrow><mi>d</mi><mo>⁢</mo><msub><mi>x</mi><mi>j</mi></msub></mrow><mo>^</mo></mover><mo>∧</mo><mi mathvariant="normal">⋯</mi><mo>∧</mo><mrow><mi>d</mi><mo>⁢</mo><msub><mi>x</mi><mi>n</mi></msub></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">(i.e. the term <math id="p3.m2" class="ltx_Math" alttext="dx_{j}" display="inline"><mrow><mi>d</mi><mo>⁢</mo><msub><mi>x</mi><mi>j</mi></msub></mrow></math> is missing).
+Hence we have</p>
+<table id="S0.EGx1" class="ltx_equationgroup ltx_eqn_eqnarray ltx_eqn_table">
+
+<tr id="S0.Ex3" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.Ex2.m1" class="ltx_Math" alttext="\displaystyle d\omega(x_{1},\ldots,x_{n})" display="inline"><mrow><mi>d</mi><mo>⁢</mo><mi>ω</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex2.m2" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex2.m3" class="ltx_Math" alttext="\displaystyle\left(\frac{\partial f}{\partial x_{1}}dx_{1}+\cdots+\frac{%
+\partial f}{\partial x_{n}}dx_{n}\right)\wedge dx_{1}\wedge\cdots\wedge%
+\widehat{dx_{j}}\wedge\cdots\wedge dx_{n}" display="inline"><mrow><mrow><mo>(</mo><mrow><mrow><mstyle displaystyle="true"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>f</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><msub><mi>x</mi><mn>1</mn></msub></mrow></mfrac></mstyle><mo>⁢</mo><mi>d</mi><mo>⁢</mo><msub><mi>x</mi><mn>1</mn></msub></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mrow><mstyle displaystyle="true"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>f</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><msub><mi>x</mi><mi>n</mi></msub></mrow></mfrac></mstyle><mo>⁢</mo><mi>d</mi><mo>⁢</mo><msub><mi>x</mi><mi>n</mi></msub></mrow></mrow><mo>)</mo></mrow><mo>∧</mo><mrow><mi>d</mi><mo>⁢</mo><msub><mi>x</mi><mn>1</mn></msub></mrow><mo>∧</mo><mi mathvariant="normal">⋯</mi><mo>∧</mo><mover accent="true"><mrow><mi>d</mi><mo>⁢</mo><msub><mi>x</mi><mi>j</mi></msub></mrow><mo>^</mo></mover><mo>∧</mo><mi mathvariant="normal">⋯</mi><mo>∧</mo><mrow><mi>d</mi><mo>⁢</mo><msub><mi>x</mi><mi>n</mi></msub></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex3.m2" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex3.m3" class="ltx_Math" alttext="\displaystyle(-1)^{j-1}\frac{\partial f}{\partial x_{j}}dx_{1}\wedge\cdots%
+\wedge dx_{n}" display="inline"><mrow><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mrow><mi>j</mi><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>f</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><msub><mi>x</mi><mi>j</mi></msub></mrow></mfrac></mstyle><mo>⁢</mo><mi>d</mi><mo>⁢</mo><msub><mi>x</mi><mn>1</mn></msub></mrow><mo>∧</mo><mi mathvariant="normal">⋯</mi><mo>∧</mo><mrow><mi>d</mi><mo>⁢</mo><msub><mi>x</mi><mi>n</mi></msub></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">and from the definition of integral on a manifold we get</p>
+<table id="S0.Ex4" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex4.m1" class="ltx_Math" alttext="\int_{M}d\omega=\int_{0}^{1}\cdots\int_{0}^{1}(-1)^{j-1}\frac{\partial f}{%
+\partial x_{j}}dx_{1}\cdots dx_{n}." display="block"><mrow><mrow><mrow><msub><mo largeop="true" symmetric="true">∫</mo><mi>M</mi></msub><mrow><mo>𝑑</mo><mi>ω</mi></mrow></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mn>1</mn></msubsup><mrow><mi mathvariant="normal">⋯</mi><mo>⁢</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mn>1</mn></msubsup><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mrow><mi>j</mi><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>f</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><msub><mi>x</mi><mi>j</mi></msub></mrow></mfrac><mo>⁢</mo><mrow><mo>𝑑</mo><msub><mi>x</mi><mn>1</mn></msub></mrow><mo>⁢</mo><mi mathvariant="normal">⋯</mi><mo>⁢</mo><mrow><mo>𝑑</mo><msub><mi>x</mi><mi>n</mi></msub></mrow></mrow></mrow></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">From the fundamental theorem of Calculus we get</p>
+<table id="S0.Ex5" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex5.m1" class="ltx_Math" alttext="\int_{M}d\omega=(-1)^{j-1}\int_{0}^{1}\cdots\widehat{\int_{0}^{1}}\cdots\int_{%
+0}^{1}f(x_{1},\ldots,1,\ldots,x_{n})-f(x_{1},\ldots,0,\ldots,x_{n})dx_{1}%
+\cdots\widehat{dx_{j}}\cdots dx_{n}." display="block"><mrow><mrow><mrow><msub><mo largeop="true" symmetric="true">∫</mo><mi>M</mi></msub><mrow><mo>𝑑</mo><mi>ω</mi></mrow></mrow><mo>=</mo><mrow><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mrow><mi>j</mi><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mn>1</mn></msubsup><mrow><mi mathvariant="normal">⋯</mi><mo>⁢</mo><mover accent="true"><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mn>1</mn></msubsup><mo>^</mo></mover><mo>⁢</mo><mi mathvariant="normal">⋯</mi><mo>⁢</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mn>1</mn></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow></mrow><mo>-</mo><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mn>0</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>d</mi><mo>⁢</mo><msub><mi>x</mi><mn>1</mn></msub><mo>⁢</mo><mi mathvariant="normal">⋯</mi><mo>⁢</mo><mover accent="true"><mrow><mi>d</mi><mo>⁢</mo><msub><mi>x</mi><mi>j</mi></msub></mrow><mo>^</mo></mover><mo>⁢</mo><mi mathvariant="normal">⋯</mi><mo>⁢</mo><mi>d</mi><mo>⁢</mo><msub><mi>x</mi><mi>n</mi></msub></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Since <math id="p3.m3" class="ltx_Math" alttext="\omega" display="inline"><mi>ω</mi></math> and hence <math id="p3.m4" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> have compact support in <math id="p3.m5" class="ltx_Math" alttext="M" display="inline"><mi>M</mi></math> we obtain</p>
+<table id="S0.Ex6" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex6.m1" class="ltx_Math" alttext="\int_{M}d\omega=\left\{\begin{array}[]{lcl}\int_{0}^{1}\cdots\int_{0}^{1}f(1,x%
+_{2},\ldots,x_{n})dx_{2}\cdots dx_{n}&amp;\text{if}&amp;j=1\\
+\\
+0&amp;\text{if}&amp;j&gt;1.\end{array}\right." display="block"><mrow><mrow><msub><mo largeop="true" symmetric="true">∫</mo><mi>M</mi></msub><mrow><mo>𝑑</mo><mi>ω</mi></mrow></mrow><mo>=</mo><mrow><mo>{</mo><mtable columnspacing="5pt" displaystyle="true" rowspacing="0pt"><mtr><mtd columnalign="left"><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mn>1</mn></msubsup><mrow><mi mathvariant="normal">⋯</mi><mo>⁢</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mn>1</mn></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>,</mo><msub><mi>x</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo>𝑑</mo><msub><mi>x</mi><mn>2</mn></msub></mrow><mo>⁢</mo><mi mathvariant="normal">⋯</mi><mo>⁢</mo><mrow><mo>𝑑</mo><msub><mi>x</mi><mi>n</mi></msub></mrow></mrow></mrow></mrow></mrow></mtd><mtd columnalign="center"><mtext>if</mtext></mtd><mtd columnalign="left"><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow></mtd></mtr><mtr><mtd></mtd><mtd></mtd><mtd></mtd></mtr><mtr><mtd columnalign="left"><mn>0</mn></mtd><mtd columnalign="center"><mtext>if</mtext></mtd><mtd columnalign="left"><mrow><mrow><mi>j</mi><mo>&gt;</mo><mn>1</mn></mrow><mo>.</mo></mrow></mtd></mtr></mtable><mi></mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+<div id="p4" class="ltx_para">
+<p class="ltx_p">On the other hand we notice that
+<math id="p4.m1" class="ltx_Math" alttext="\int_{\partial M}\omega" display="inline"><mrow><msub><mo largeop="true" symmetric="true">∫</mo><mrow><mo>∂</mo><mo>⁡</mo><mi>M</mi></mrow></msub><mi>ω</mi></mrow></math>
+is to be understood as <math id="p4.m2" class="ltx_Math" alttext="\int_{\partial M}i^{*}\omega" display="inline"><mrow><msub><mo largeop="true" symmetric="true">∫</mo><mrow><mo>∂</mo><mo>⁡</mo><mi>M</mi></mrow></msub><mrow><msup><mi>i</mi><mo>*</mo></msup><mo>⁢</mo><mi>ω</mi></mrow></mrow></math> where
+<math id="p4.m3" class="ltx_Math" alttext="i:\partial M\to M" display="inline"><mrow><mi>i</mi><mo>:</mo><mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>M</mi></mrow><mo>→</mo><mi>M</mi></mrow></mrow></math> is the inclusion map.
+Hence it is trivial to verify that when <math id="p4.m4" class="ltx_Math" alttext="j\neq 1" display="inline"><mrow><mi>j</mi><mo>≠</mo><mn>1</mn></mrow></math> then <math id="p4.m5" class="ltx_Math" alttext="i^{*}\omega=0" display="inline"><mrow><mrow><msup><mi>i</mi><mo>*</mo></msup><mo>⁢</mo><mi>ω</mi></mrow><mo>=</mo><mn>0</mn></mrow></math>
+while if <math id="p4.m6" class="ltx_Math" alttext="j=1" display="inline"><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow></math> it holds</p>
+<table id="S0.Ex7" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex7.m1" class="ltx_Math" alttext="i^{*}\omega(x)=f(1,x_{2},\ldots,x_{n})dx_{2}\wedge\ldots\wedge dx_{n}" display="block"><mrow><mrow><msup><mi>i</mi><mo>*</mo></msup><mo>⁢</mo><mi>ω</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>,</mo><msub><mi>x</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>d</mi><mo>⁢</mo><msub><mi>x</mi><mn>2</mn></msub></mrow><mo>∧</mo><mi mathvariant="normal">…</mi><mo>∧</mo><mrow><mi>d</mi><mo>⁢</mo><msub><mi>x</mi><mi>n</mi></msub></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">and hence, as wanted</p>
+<table id="S0.Ex8" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex8.m1" class="ltx_Math" alttext="\int_{\partial M}i^{*}\omega=\int_{0}^{1}\cdots\int_{0}^{1}f(1,x_{2},\ldots,x_%
+{n})dx_{2}\cdots dx_{n}." display="block"><mrow><mrow><mrow><msub><mo largeop="true" symmetric="true">∫</mo><mrow><mo>∂</mo><mo>⁡</mo><mi>M</mi></mrow></msub><mrow><msup><mi>i</mi><mo>*</mo></msup><mo>⁢</mo><mi>ω</mi></mrow></mrow><mo>=</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mn>1</mn></msubsup><mrow><mi mathvariant="normal">⋯</mi><mo>⁢</mo><mrow><msubsup><mo largeop="true" symmetric="true">∫</mo><mn>0</mn><mn>1</mn></msubsup><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>,</mo><msub><mi>x</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo>𝑑</mo><msub><mi>x</mi><mn>2</mn></msub></mrow><mo>⁢</mo><mi mathvariant="normal">⋯</mi><mo>⁢</mo><mrow><mo>𝑑</mo><msub><mi>x</mi><mi>n</mi></msub></mrow></mrow></mrow></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+<div id="p5" class="ltx_para">
+<p class="ltx_p"><em class="ltx_emph ltx_font_italic">Step Two.</em></p>
+</div>
+<div id="p6" class="ltx_para">
+<p class="ltx_p">Suppose now that <math id="p6.m1" class="ltx_Math" alttext="M=(0,1]\times(0,1)^{n-1}" display="inline"><mrow><mi>M</mi><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">]</mo></mrow><mo>×</mo><msup><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msup></mrow></mrow></math> and let <math id="p6.m2" class="ltx_Math" alttext="\omega" display="inline"><mi>ω</mi></math> be any differential form.
+We can always write</p>
+<table id="S0.Ex9" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex9.m1" class="ltx_Math" alttext="\omega(x)=\sum_{j}f_{j}(x)dx_{1}\wedge\cdots\wedge\widehat{dx_{j}}\wedge\cdots%
+\wedge dx_{n}" display="block"><mrow><mrow><mi>ω</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><munder><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mi>j</mi></munder><mrow><msub><mi>f</mi><mi>j</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>d</mi><mo>⁢</mo><msub><mi>x</mi><mn>1</mn></msub></mrow></mrow><mo>∧</mo><mi mathvariant="normal">⋯</mi><mo>∧</mo><mover accent="true"><mrow><mi>d</mi><mo>⁢</mo><msub><mi>x</mi><mi>j</mi></msub></mrow><mo>^</mo></mover><mo>∧</mo><mi mathvariant="normal">⋯</mi><mo>∧</mo><mrow><mi>d</mi><mo>⁢</mo><msub><mi>x</mi><mi>n</mi></msub></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">and by the additivity of the integral we can reduce ourself to the previous case.</p>
+</div>
+<div id="p7" class="ltx_para">
+<p class="ltx_p"><em class="ltx_emph ltx_font_italic">Step Three.</em></p>
+</div>
+<div id="p8" class="ltx_para">
+<p class="ltx_p">When <math id="p8.m1" class="ltx_Math" alttext="M=(0,1)^{n}" display="inline"><mrow><mi>M</mi><mo>=</mo><msup><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><mi>n</mi></msup></mrow></math> we could follow the proof as in the first case
+and end up with
+<math id="p8.m2" class="ltx_Math" alttext="\int_{M}d\omega=0" display="inline"><mrow><mrow><msub><mo largeop="true" symmetric="true">∫</mo><mi>M</mi></msub><mrow><mo>𝑑</mo><mi>ω</mi></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math>
+while, in fact, <math id="p8.m3" class="ltx_Math" alttext="\partial M=\emptyset" display="inline"><mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>M</mi></mrow><mo>=</mo><mi mathvariant="normal">∅</mi></mrow></math>.</p>
+</div>
+<div id="p9" class="ltx_para">
+<p class="ltx_p"><em class="ltx_emph ltx_font_italic">Step Four.</em></p>
+</div>
+<div id="p10" class="ltx_para">
+<p class="ltx_p">Consider now the general case.</p>
+</div>
+<div id="p11" class="ltx_para">
+<p class="ltx_p">First of all we consider an oriented atlas <math id="p11.m1" class="ltx_Math" alttext="(U_{i},\phi_{i})" display="inline"><mrow><mo stretchy="false">(</mo><msub><mi>U</mi><mi>i</mi></msub><mo>,</mo><msub><mi>ϕ</mi><mi>i</mi></msub><mo stretchy="false">)</mo></mrow></math> such that either
+<math id="p11.m2" class="ltx_Math" alttext="U_{i}" display="inline"><msub><mi>U</mi><mi>i</mi></msub></math> is the cube
+<math id="p11.m3" class="ltx_Math" alttext="(0,1]\times(0,1)^{n-1}" display="inline"><mrow><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">]</mo></mrow><mo>×</mo><msup><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msup></mrow></math> or <math id="p11.m4" class="ltx_Math" alttext="U_{i}=(0,1)^{n}" display="inline"><mrow><msub><mi>U</mi><mi>i</mi></msub><mo>=</mo><msup><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><mi>n</mi></msup></mrow></math>.
+This is always possible. In fact given any open set <math id="p11.m5" class="ltx_Math" alttext="U" display="inline"><mi>U</mi></math> in <math id="p11.m6" class="ltx_Math" alttext="[0,+\infty)\times\mathbb{R}^{n-1}" display="inline"><mrow><mrow><mo stretchy="false">[</mo><mn>0</mn><mo>,</mo><mrow><mo>+</mo><mi mathvariant="normal">∞</mi></mrow><mo stretchy="false">)</mo></mrow><mo>×</mo><msup><mi>ℝ</mi><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></msup></mrow></math> and a point <math id="p11.m7" class="ltx_Math" alttext="x\in U" display="inline"><mrow><mi>x</mi><mo>∈</mo><mi>U</mi></mrow></math> up to translations and rescaling it is possible
+to find a “cubic” neighbourhood of <math id="p11.m8" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math> contained in <math id="p11.m9" class="ltx_Math" alttext="U" display="inline"><mi>U</mi></math>.</p>
+</div>
+<div id="p12" class="ltx_para">
+<p class="ltx_p">Then consider a partition of unity <math id="p12.m1" class="ltx_Math" alttext="\alpha_{i}" display="inline"><msub><mi>α</mi><mi>i</mi></msub></math> for this atlas.</p>
+</div>
+<div id="p13" class="ltx_para">
+<p class="ltx_p">From the properties of the integral on manifolds we have</p>
+<table id="S0.EGx2" class="ltx_equationgroup ltx_eqn_eqnarray ltx_eqn_table">
+
+<tr id="S0.Ex11" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.Ex10.m1" class="ltx_Math" alttext="\displaystyle\int_{M}d\omega" display="inline"><mrow><mstyle displaystyle="true"><msub><mo largeop="true" symmetric="true">∫</mo><mi>M</mi></msub></mstyle><mrow><mo>𝑑</mo><mi>ω</mi></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex10.m2" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex10.m3" class="ltx_Math" alttext="\displaystyle\sum_{i}\int_{U_{i}}\alpha_{i}\phi^{*}d\omega=\sum_{i}\int_{U_{i}%
+}\alpha_{i}d(\phi^{*}\omega)" display="inline"><mrow><mrow><mstyle displaystyle="true"><munder><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mi>i</mi></munder></mstyle><mrow><mstyle displaystyle="true"><msub><mo largeop="true" symmetric="true">∫</mo><msub><mi>U</mi><mi>i</mi></msub></msub></mstyle><mrow><msub><mi>α</mi><mi>i</mi></msub><mo>⁢</mo><msup><mi>ϕ</mi><mo>*</mo></msup><mo>⁢</mo><mrow><mo>𝑑</mo><mi>ω</mi></mrow></mrow></mrow></mrow><mo>=</mo><mrow><mstyle displaystyle="true"><munder><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mi>i</mi></munder></mstyle><mrow><mstyle displaystyle="true"><msub><mo largeop="true" symmetric="true">∫</mo><msub><mi>U</mi><mi>i</mi></msub></msub></mstyle><mrow><msub><mi>α</mi><mi>i</mi></msub><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>ϕ</mi><mo>*</mo></msup><mo>⁢</mo><mi>ω</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex11.m2" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex11.m3" class="ltx_Math" alttext="\displaystyle\sum_{i}\int_{U_{i}}d(\alpha_{i}\cdot\phi^{*}\omega)-\sum_{i}\int%
+_{U_{i}}(d\alpha_{i})\wedge(\phi^{*}\omega)." display="inline"><mrow><mrow><mrow><mrow><mstyle displaystyle="true"><munder><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mi>i</mi></munder></mstyle><mrow><mstyle displaystyle="true"><msub><mo largeop="true" symmetric="true">∫</mo><msub><mi>U</mi><mi>i</mi></msub></msub></mstyle><mrow><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><msub><mi>α</mi><mi>i</mi></msub><mo>⋅</mo><msup><mi>ϕ</mi><mo>*</mo></msup></mrow><mo>⁢</mo><mi>ω</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>-</mo><mrow><mstyle displaystyle="true"><munder><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mi>i</mi></munder></mstyle><mrow><mstyle displaystyle="true"><msub><mo largeop="true" symmetric="true">∫</mo><msub><mi>U</mi><mi>i</mi></msub></msub></mstyle><mrow><mo stretchy="false">(</mo><mrow><mi>d</mi><mo>⁢</mo><msub><mi>α</mi><mi>i</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>∧</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>ϕ</mi><mo>*</mo></msup><mo>⁢</mo><mi>ω</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+<div id="p14" class="ltx_para">
+<p class="ltx_p">The second integral in the last equality is zero since
+<math id="p14.m1" class="ltx_Math" alttext="\sum_{i}d\alpha_{i}=d\sum_{i}\alpha_{i}=0" display="inline"><mrow><mrow><msub><mo largeop="true" symmetric="true">∑</mo><mi>i</mi></msub><mrow><mi>d</mi><mo>⁢</mo><msub><mi>α</mi><mi>i</mi></msub></mrow></mrow><mo>=</mo><mrow><mi>d</mi><mo>⁢</mo><mrow><msub><mo largeop="true" symmetric="true">∑</mo><mi>i</mi></msub><msub><mi>α</mi><mi>i</mi></msub></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math>, while applying the previous steps to the first integral we have</p>
+<table id="S0.Ex12" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex12.m1" class="ltx_Math" alttext="\int_{M}d\omega=\sum_{i}\int_{\partial U_{i}}\alpha_{i}\cdot\phi^{*}\omega." display="block"><mrow><mrow><mrow><msub><mo largeop="true" symmetric="true">∫</mo><mi>M</mi></msub><mrow><mo>𝑑</mo><mi>ω</mi></mrow></mrow><mo>=</mo><mrow><munder><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mi>i</mi></munder><mrow><msub><mo largeop="true" symmetric="true">∫</mo><mrow><mo>∂</mo><mo>⁡</mo><msub><mi>U</mi><mi>i</mi></msub></mrow></msub><mrow><mrow><msub><mi>α</mi><mi>i</mi></msub><mo>⋅</mo><msup><mi>ϕ</mi><mo>*</mo></msup></mrow><mo>⁢</mo><mi>ω</mi></mrow></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">On the other hand, being
+<math id="p14.m2" class="ltx_Math" alttext="(\partial U_{i},\phi_{|\partial U_{i}})" display="inline"><mrow><mo stretchy="false">(</mo><mrow><mo>∂</mo><mo>⁡</mo><msub><mi>U</mi><mi>i</mi></msub></mrow><mo>,</mo><msub><mi>ϕ</mi><mrow><mo stretchy="false">|</mo><mo>∂</mo><msub><mi>U</mi><mi>i</mi></msub></mrow></msub><mo stretchy="false">)</mo></mrow></math> an oriented atlas for <math id="p14.m3" class="ltx_Math" alttext="\partial M" display="inline"><mrow><mo>∂</mo><mo>⁡</mo><mi>M</mi></mrow></math> and being <math id="p14.m4" class="ltx_Math" alttext="{\alpha_{i}}_{|\partial U_{i}}" display="inline"><mmultiscripts><mi>α</mi><mi>i</mi><none></none><mrow><mo stretchy="false">|</mo><mo>∂</mo><msub><mi>U</mi><mi>i</mi></msub></mrow><none></none></mmultiscripts></math> a partition of unity, we have</p>
+<table id="S0.Ex13" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex13.m1" class="ltx_Math" alttext="\int_{\partial M}\omega=\sum_{i}\int_{\partial U_{i}}\alpha_{i}\phi^{*}\omega" display="block"><mrow><mrow><msub><mo largeop="true" symmetric="true">∫</mo><mrow><mo>∂</mo><mo>⁡</mo><mi>M</mi></mrow></msub><mi>ω</mi></mrow><mo>=</mo><mrow><munder><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mi>i</mi></munder><mrow><msub><mo largeop="true" symmetric="true">∫</mo><mrow><mo>∂</mo><mo>⁡</mo><msub><mi>U</mi><mi>i</mi></msub></mrow></msub><mrow><msub><mi>α</mi><mi>i</mi></msub><mo>⁢</mo><msup><mi>ϕ</mi><mo>*</mo></msup><mo>⁢</mo><mi>ω</mi></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">and the theorem is proved.
+</p>
+<table class="ltx_tabular ltx_align_right ltx_guessed_headers ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l ltx_border_t">Title</th>
+<td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">proof of general Stokes theorem</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Canonical name</th>
+<td class="ltx_td ltx_align_left ltx_border_r">ProofOfGeneralStokesTheorem</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Date of creation</th>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 13:41:43</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Last modified on</th>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 13:41:43</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Owner</th>
+<td class="ltx_td ltx_align_left ltx_border_r">paolini (1187)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Last modified by</th>
+<td class="ltx_td ltx_align_left ltx_border_r">paolini (1187)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Numerical id</th>
+<td class="ltx_td ltx_align_left ltx_border_r">9</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Author</th>
+<td class="ltx_td ltx_align_left ltx_border_r">paolini (1187)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Entry type</th>
+<td class="ltx_td ltx_align_left ltx_border_r">Proof</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_b ltx_border_l">Classification</th>
+<td class="ltx_td ltx_align_left ltx_border_b ltx_border_r">msc 58C35</td>
+</tr>
+</tbody>
+</table>
+</div>
+</article>
+</div>
+<footer class="ltx_page_footer">
+<div class="ltx_page_logo">Generated  on Sat Feb 10 11:51:02 2018 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</body>
+</html>

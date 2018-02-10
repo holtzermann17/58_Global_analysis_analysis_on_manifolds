@@ -1,0 +1,600 @@
+<!DOCTYPE html><html>
+<head>
+<title>Leibniz notation for vector fields</title>
+<!--Generated on Sat Feb 10 11:50:15 2018 by LaTeXML (version 0.8.2) http://dlmf.nist.gov/LaTeXML/.-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/3f71ceeb3b055e1ddc3b6c11fb1f074c/raw/2bb23e3b173ff96840797fc0c3bcb8c54085df8e/LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/4bda0365b30858ac2fb83623185fe3ec/raw/cedd84ed3e3ad597c5d293f443ecfe4803741c6b/ltx-article.css" type="text/css">
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<div class="ltx_page_main">
+<div class="ltx_page_content">
+<article class="ltx_document ltx_authors_1line">
+<h1 class="ltx_title ltx_title_document">Leibniz notation for vector fields</h1>
+
+<div id="p1" class="ltx_para">
+<br class="ltx_break">
+<p class="ltx_p">Consider a vector field <math id="p1.m1" class="ltx_Math" alttext="V" display="inline"><mi>V</mi></math>,
+such as</p>
+<table id="S0.Ex1" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex1.m1" class="ltx_Math" alttext="V(x,y)=(y,-x)\qquad\text{for $(x,y)\in\mathbb{R}^{2}$.}" display="block"><mrow><mrow><mi>V</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mi>y</mi><mo>,</mo><mrow><mo>-</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mo mathvariant="italic" separator="true">  </mo><mrow><mtext>for </mtext><mrow><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow><mo>∈</mo><msup><mi>ℝ</mi><mn>2</mn></msup></mrow><mtext>.</mtext></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Oftentimes <math id="p1.m2" class="ltx_Math" alttext="V" display="inline"><mi>V</mi></math> will be expressed in the following Leibnizian notation</p>
+<table id="S0.Ex2" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex2.m1" class="ltx_Math" alttext="y\frac{\partial}{\partial x}-x\frac{\partial}{\partial y}\,," display="block"><mrow><mrow><mrow><mi>y</mi><mo>⁢</mo><mfrac><mo>∂</mo><mrow><mo>∂</mo><mo>⁡</mo><mi>x</mi></mrow></mfrac></mrow><mo>-</mo><mrow><mi>x</mi><mo>⁢</mo><mpadded width="+1.7pt"><mfrac><mo>∂</mo><mrow><mo>∂</mo><mo>⁡</mo><mi>y</mi></mrow></mfrac></mpadded></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">which is extremely strange the first time one encounters it. After all, why
+not just
+write</p>
+<table id="S0.Ex3" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex3.m1" class="ltx_Math" alttext="V(x,y)=ye_{1}-xe_{2}" display="block"><mrow><mrow><mi>V</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>y</mi><mo>⁢</mo><msub><mi>e</mi><mn>1</mn></msub></mrow><mo>-</mo><mrow><mi>x</mi><mo>⁢</mo><msub><mi>e</mi><mn>2</mn></msub></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">where <math id="p1.m3" class="ltx_Math" alttext="e_{1}=(1,0)" display="inline"><mrow><msub><mi>e</mi><mn>1</mn></msub><mo>=</mo><mrow><mo stretchy="false">(</mo><mn>1</mn><mo>,</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow></math>, <math id="p1.m4" class="ltx_Math" alttext="e_{2}=(0,1)" display="inline"><mrow><msub><mi>e</mi><mn>2</mn></msub><mo>=</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo>,</mo><mn>1</mn><mo stretchy="false">)</mo></mrow></mrow></math>?
+What do partial derivatives have to do with anything?
+(That was the question I asked.)</p>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">However, if viewed in the right way, it is not so strange.
+For if a vector field <math id="p2.m1" class="ltx_Math" alttext="V" display="inline"><mi>V</mi></math> is given, then one natural thing that can be done
+with it is to differentiate a scalar-valued function <math id="p2.m2" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math>
+in the direction of <math id="p2.m3" class="ltx_Math" alttext="V" display="inline"><mi>V</mi></math>.
+In functional notation, this would be</p>
+<table id="S0.Ex4" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex4.m1" class="ltx_Math" alttext="\operatorname{D}f(p)\cdot V(p)" display="block"><mrow><mrow><mrow><mrow><mi mathvariant="normal">D</mi><mo>⁡</mo><mi>f</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⋅</mo><mi>V</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">where <math id="p2.m4" class="ltx_Math" alttext="p" display="inline"><mi>p</mi></math> is a point, <math id="p2.m5" class="ltx_Math" alttext="V(p)" display="inline"><mrow><mi>V</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow></math> is gives the particular vector
+in the vector field at the point <math id="p2.m6" class="ltx_Math" alttext="p" display="inline"><mi>p</mi></math>, and <math id="p2.m7" class="ltx_Math" alttext="\operatorname{D}f(p)\cdot v" display="inline"><mrow><mrow><mrow><mi mathvariant="normal">D</mi><mo>⁡</mo><mi>f</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⋅</mo><mi>v</mi></mrow></math>
+denotes the directional derivative of <math id="p2.m8" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> at <math id="p2.m9" class="ltx_Math" alttext="p" display="inline"><mi>p</mi></math> with respect
+to the direction <math id="p2.m10" class="ltx_Math" alttext="v" display="inline"><mi>v</mi></math>.</p>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">For our example, <math id="p3.m1" class="ltx_Math" alttext="\operatorname{D}f(p)\cdot V(p)" display="inline"><mrow><mrow><mrow><mrow><mi mathvariant="normal">D</mi><mo>⁡</mo><mi>f</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⋅</mo><mi>V</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow></math> (where <math id="p3.m2" class="ltx_Math" alttext="p=(x,y)" display="inline"><mrow><mi>p</mi><mo>=</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></math>) equals</p>
+<table id="A0.EGx1" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tr id="S0.Ex5" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.Ex5.m1" class="ltx_Math" alttext="\displaystyle\operatorname{D}_{1}f(x,y)\cdot y+\operatorname{D}_{2}f(x,y)\cdot%
+(-x)" display="inline"><mrow><mrow><mrow><mrow><msub><mi mathvariant="normal">D</mi><mn>1</mn></msub><mo>⁡</mo><mi>f</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⋅</mo><mi>y</mi></mrow><mo>+</mo><mrow><mrow><mrow><msub><mi mathvariant="normal">D</mi><mn>2</mn></msub><mo>⁡</mo><mi>f</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⋅</mo><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex5.m2" class="ltx_Math" alttext="\displaystyle=\frac{\partial f}{\partial x}y-\frac{\partial f}{\partial y}x" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mstyle displaystyle="true"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>f</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>x</mi></mrow></mfrac></mstyle><mo>⁢</mo><mi>y</mi></mrow><mo>-</mo><mrow><mstyle displaystyle="true"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>f</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>y</mi></mrow></mfrac></mstyle><mo>⁢</mo><mi>x</mi></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="S0.Ex6" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex6.m2" class="ltx_Math" alttext="\displaystyle=y\frac{\partial f}{\partial x}-x\frac{\partial f}{\partial y}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mi>y</mi><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>f</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>x</mi></mrow></mfrac></mstyle></mrow><mo>-</mo><mrow><mi>x</mi><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>f</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>y</mi></mrow></mfrac></mstyle></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="S0.Ex7" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex7.m2" class="ltx_Math" alttext="\displaystyle=\left(y\frac{\partial}{\partial x}-x\frac{\partial}{\partial y}%
+\right)[f]=V[f]\,." display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mrow><mo>(</mo><mrow><mrow><mi>y</mi><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mo>∂</mo><mrow><mo>∂</mo><mo>⁡</mo><mi>x</mi></mrow></mfrac></mstyle></mrow><mo>-</mo><mrow><mi>x</mi><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mo>∂</mo><mrow><mo>∂</mo><mo>⁡</mo><mi>y</mi></mrow></mfrac></mstyle></mrow></mrow><mo>)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>f</mi><mo stretchy="false">]</mo></mrow></mrow><mo>=</mo><mrow><mi>V</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>f</mi><mo rspace="4.2pt" stretchy="false">]</mo></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">We have written out the steps explicitly to show
+where the partial derivative notation for <math id="p3.m3" class="ltx_Math" alttext="V" display="inline"><mi>V</mi></math> comes from.
+At the second last step we considered <math id="p3.m4" class="ltx_Math" alttext="\partial/\partial x" display="inline"><mrow><mo>∂</mo><mo>/</mo><mrow><mo>∂</mo><mo>⁡</mo><mi>x</mi></mrow></mrow></math>
+and <math id="p3.m5" class="ltx_Math" alttext="\partial/\partial y" display="inline"><mrow><mo>∂</mo><mo>/</mo><mrow><mo>∂</mo><mo>⁡</mo><mi>y</mi></mrow></mrow></math> as operators acting on the
+function <math id="p3.m6" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math>.</p>
+</div>
+<section id="Sx1" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">The Leibniz notation on manifolds</h2>
+
+<div id="Sx1.p1" class="ltx_para">
+<p class="ltx_p">But there is more. We can consider a more general situation,
+where <math id="Sx1.p1.m1" class="ltx_Math" alttext="V" display="inline"><mi>V</mi></math> is a vector field on a manifold.
+In this case, because the tangent space to a manifold varies
+with each point <math id="Sx1.p1.m2" class="ltx_Math" alttext="p" display="inline"><mi>p</mi></math>, we cannot fix certain basis vectors
+<math id="Sx1.p1.m3" class="ltx_Math" alttext="e_{i}" display="inline"><msub><mi>e</mi><mi>i</mi></msub></math> to describe our vector field anymore.
+Loosely speaking, the basis vectors now have to vary smoothly.</p>
+</div>
+<div id="Sx1.p2" class="ltx_para">
+<p class="ltx_p">Suppose we have a coordinate system <math id="Sx1.p2.m1" class="ltx_Math" alttext="\{x^{i}\}_{i=1,\ldots,n}" display="inline"><msub><mrow><mo stretchy="false">{</mo><msup><mi>x</mi><mi>i</mi></msup><mo stretchy="false">}</mo></mrow><mrow><mi>i</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi>n</mi></mrow></mrow></msub></math> on the manifold.
+Then the <em class="ltx_emph ltx_font_italic">tangent vector</em> on the manifold corresponding to an infinitesimal
+change in <math id="Sx1.p2.m2" class="ltx_Math" alttext="x^{i}" display="inline"><msup><mi>x</mi><mi>i</mi></msup></math>
+is often written</p>
+<table id="Sx1.Ex8" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Sx1.Ex8.m1" class="ltx_Math" alttext="\frac{\partial}{\partial x^{i}}\,." display="block"><mrow><mpadded width="+1.7pt"><mfrac><mo>∂</mo><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>x</mi><mi>i</mi></msup></mrow></mfrac></mpadded><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">This makes total sense, because one of the favorite ways to <em class="ltx_emph ltx_font_italic">define</em>
+tangent vectors on abstract manifolds is to identify them
+with directional derivatives. The basis <math id="Sx1.p2.m3" class="ltx_Math" alttext="\partial/\partial x^{i}" display="inline"><mrow><mo>∂</mo><mo>/</mo><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>x</mi><mi>i</mi></msup></mrow></mrow></math> (which
+varies smoothly with <math id="Sx1.p2.m4" class="ltx_Math" alttext="p" display="inline"><mi>p</mi></math>)
+then becomes the replacement for the fixed basis <math id="Sx1.p2.m5" class="ltx_Math" alttext="e_{i}" display="inline"><msub><mi>e</mi><mi>i</mi></msub></math> in Euclidean space.
+Note that this is consistent with the calculus notation
+<math id="Sx1.p2.m6" class="ltx_Math" alttext="\partial f/\partial x^{i}" display="inline"><mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>f</mi></mrow><mo>/</mo><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>x</mi><mi>i</mi></msup></mrow></mrow></math> for the partial derivative of
+<math id="Sx1.p2.m7" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> with respect to the <math id="Sx1.p2.m8" class="ltx_Math" alttext="x^{i}" display="inline"><msup><mi>x</mi><mi>i</mi></msup></math> variable,
+because partial derivatives are merely directional derivatives
+with respect to the direction <math id="Sx1.p2.m9" class="ltx_Math" alttext="e_{i}" display="inline"><msub><mi>e</mi><mi>i</mi></msub></math>.</p>
+</div>
+<div id="Sx1.p3" class="ltx_para">
+<p class="ltx_p">If <math id="Sx1.p3.m1" class="ltx_Math" alttext="\{y^{j}\}" display="inline"><mrow><mo stretchy="false">{</mo><msup><mi>y</mi><mi>j</mi></msup><mo stretchy="false">}</mo></mrow></math> is another coordinate system for the manifold,
+then we have the formula (for the derivation, see the entry on
+vector fields (<span class="ltx_text ltx_font_typewriter">http://planetmath.org/VectorField</span>))</p>
+<table id="Sx1.E1" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Sx1.E1.m1" class="ltx_Math" alttext="\frac{\partial}{\partial y^{j}}=\frac{\partial x^{i}}{\partial y^{j}}\frac{%
+\partial}{\partial x^{i}}\,," display="block"><mrow><mrow><mfrac><mo>∂</mo><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>y</mi><mi>j</mi></msup></mrow></mfrac><mo>=</mo><mrow><mfrac><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>x</mi><mi>i</mi></msup></mrow><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>y</mi><mi>j</mi></msup></mrow></mfrac><mo>⁢</mo><mpadded width="+1.7pt"><mfrac><mo>∂</mo><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>x</mi><mi>i</mi></msup></mrow></mfrac></mpadded></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1)</span></td>
+</tr>
+</table>
+<p class="ltx_p">We have used the Einstein
+summation convention above to emphasize the mnemonic cancelling of fractions.</p>
+</div>
+<div id="Sx1.p4" class="ltx_para">
+<p class="ltx_p">The quantity <math id="Sx1.p4.m1" class="ltx_Math" alttext="\partial x^{i}/\partial y^{j}" display="inline"><mrow><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>x</mi><mi>i</mi></msup></mrow><mo>/</mo><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>y</mi><mi>j</mi></msup></mrow></mrow></math>
+is the directional derivative in the direction <math id="Sx1.p4.m2" class="ltx_Math" alttext="\partial/\partial y^{j}" display="inline"><mrow><mo>∂</mo><mo>/</mo><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>y</mi><mi>j</mi></msup></mrow></mrow></math>
+of the <math id="Sx1.p4.m3" class="ltx_Math" alttext="i" display="inline"><mi>i</mi></math>th coordinate <em class="ltx_emph ltx_font_italic">function</em>, mapping a point <math id="Sx1.p4.m4" class="ltx_Math" alttext="p" display="inline"><mi>p</mi></math> on the manifold to
+the coordinate <math id="Sx1.p4.m5" class="ltx_Math" alttext="x^{i}" display="inline"><msup><mi>x</mi><mi>i</mi></msup></math>. Notice the subtle subtle change of
+viewpoint here:
+we are not considering <math id="Sx1.p4.m6" class="ltx_Math" alttext="x^{i}" display="inline"><msup><mi>x</mi><mi>i</mi></msup></math> as mere “variables”,
+but as <em class="ltx_emph ltx_font_italic">functions</em> of the point <math id="Sx1.p4.m7" class="ltx_Math" alttext="p" display="inline"><mi>p</mi></math>.</p>
+</div>
+<div id="Sx1.p5" class="ltx_para">
+<p class="ltx_p">Formula (<a href="#Sx1.E1" title="(1) ‣ The Leibniz notation on manifolds ‣ Leibniz notation for vector fields" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1</span></a>), which is a <em class="ltx_emph ltx_font_italic">linear combination</em> of <em class="ltx_emph ltx_font_italic">vectors</em>
+in a tangent space,
+of course looks like the chain rule learned in elementary multivariate
+calculus,
+but it is much more than that:
+we are saying that the formula holds for general curvilinear coordinate systems on manifolds!
+This is definitely one of the virtues of the Leibnizian notation — making advanced concepts
+look simple.</p>
+</div>
+<div id="Sx1.p6" class="ltx_para">
+<p class="ltx_p">As a simple example to get used to this notation,
+consider the function <math id="Sx1.p6.m1" class="ltx_Math" alttext="f\colon\mathbb{R}^{3}\to\mathbb{R}" display="inline"><mrow><mi>f</mi><mo>:</mo><mrow><msup><mi>ℝ</mi><mn>3</mn></msup><mo>→</mo><mi>ℝ</mi></mrow></mrow></math>
+defined by <math id="Sx1.p6.m2" class="ltx_Math" alttext="f(x,y,z)=x^{2}+y^{2}+z^{2}" display="inline"><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup><mo>+</mo><msup><mi>z</mi><mn>2</mn></msup></mrow></mrow></math>.
+The Euclidean space <math id="Sx1.p6.m3" class="ltx_Math" alttext="\mathbb{R}^{3}" display="inline"><msup><mi>ℝ</mi><mn>3</mn></msup></math> can also be thought of as a manifold,
+and suppose we use a spherical coordinate system <math id="Sx1.p6.m4" class="ltx_Math" alttext="(r,\theta,\phi)" display="inline"><mrow><mo stretchy="false">(</mo><mi>r</mi><mo>,</mo><mi>θ</mi><mo>,</mo><mi>ϕ</mi><mo stretchy="false">)</mo></mrow></math> on it.</p>
+</div>
+<div id="Sx1.p7" class="ltx_para">
+<p class="ltx_p">Let us compute <math id="Sx1.p7.m1" class="ltx_Math" alttext="\partial f/\partial r" display="inline"><mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>f</mi></mrow><mo>/</mo><mrow><mo>∂</mo><mo>⁡</mo><mi>r</mi></mrow></mrow></math>. If <math id="Sx1.p7.m2" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> is “viewed as a function of <math id="Sx1.p7.m3" class="ltx_Math" alttext="(r,\theta,\phi)" display="inline"><mrow><mo stretchy="false">(</mo><mi>r</mi><mo>,</mo><mi>θ</mi><mo>,</mo><mi>ϕ</mi><mo stretchy="false">)</mo></mrow></math>”,
+then <math id="Sx1.p7.m4" class="ltx_Math" alttext="f(r,\theta,\phi)=r^{2}" display="inline"><mrow><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo>,</mo><mi>θ</mi><mo>,</mo><mi>ϕ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msup><mi>r</mi><mn>2</mn></msup></mrow></math>,
+so we certainly hope that <math id="Sx1.p7.m5" class="ltx_Math" alttext="\partial f/\partial r=2r" display="inline"><mrow><mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>f</mi></mrow><mo>/</mo><mrow><mo>∂</mo><mo>⁡</mo><mi>r</mi></mrow></mrow><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mi>r</mi></mrow></mrow></math>
+with our definition of directional derivatives.
+This easily follows from the formula for differential forms on manifolds:</p>
+<table id="Sx1.Ex9" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Sx1.Ex9.m1" class="ltx_Math" alttext="df=\frac{\partial f}{\partial r}\,dr+\frac{\partial f}{\partial\theta}\,d%
+\theta+\frac{\partial f}{\partial\phi}\,d\phi\,." display="block"><mrow><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>f</mi></mrow><mo>=</mo><mrow><mrow><mpadded width="+1.7pt"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>f</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>r</mi></mrow></mfrac></mpadded><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>r</mi></mrow><mo>+</mo><mrow><mpadded width="+1.7pt"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>f</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>θ</mi></mrow></mfrac></mpadded><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>θ</mi></mrow><mo>+</mo><mrow><mpadded width="+1.7pt"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>f</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>ϕ</mi></mrow></mfrac></mpadded><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mpadded width="+1.7pt"><mi>ϕ</mi></mpadded></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">But let us see this by calculating from (<a href="#Sx1.E1" title="(1) ‣ The Leibniz notation on manifolds ‣ Leibniz notation for vector fields" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1</span></a>) too.
+We have</p>
+<table id="A0.EGx2" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tr id="Sx1.Ex10" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Sx1.Ex10.m1" class="ltx_Math" alttext="\displaystyle x=r\sin\theta\cos\phi\,,\quad y=r\sin\theta\sin\phi\,,\quad z=r%
+\cos\theta\,." display="inline"><mrow><mrow><mrow><mi>x</mi><mo>=</mo><mrow><mi>r</mi><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mpadded width="+1.7pt"><mi>ϕ</mi></mpadded></mrow></mrow></mrow><mo rspace="12.5pt">,</mo><mrow><mrow><mi>y</mi><mo>=</mo><mrow><mi>r</mi><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mpadded width="+1.7pt"><mi>ϕ</mi></mpadded></mrow></mrow></mrow><mo rspace="12.5pt">,</mo><mrow><mi>z</mi><mo>=</mo><mrow><mi>r</mi><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mpadded width="+1.7pt"><mi>θ</mi></mpadded></mrow></mrow></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">So</p>
+<table id="A0.EGx3" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tr id="Sx1.Ex11" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Sx1.Ex11.m1" class="ltx_Math" alttext="\displaystyle\frac{\partial x}{\partial r}=\sin\theta\cos\phi\,,\quad\frac{%
+\partial y}{\partial r}=\sin\theta\sin\phi\,,\quad\frac{\partial z}{\partial r%
+}=\cos\theta\,," display="inline"><mrow><mrow><mrow><mstyle displaystyle="true"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>x</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>r</mi></mrow></mfrac></mstyle><mo>=</mo><mrow><mrow><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mpadded width="+1.7pt"><mi>ϕ</mi></mpadded></mrow></mrow></mrow><mo rspace="12.5pt">,</mo><mrow><mrow><mstyle displaystyle="true"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>y</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>r</mi></mrow></mfrac></mstyle><mo>=</mo><mrow><mrow><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mpadded width="+1.7pt"><mi>ϕ</mi></mpadded></mrow></mrow></mrow><mo rspace="12.5pt">,</mo><mrow><mstyle displaystyle="true"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>z</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>r</mi></mrow></mfrac></mstyle><mo>=</mo><mrow><mi>cos</mi><mo>⁡</mo><mpadded width="+1.7pt"><mi>θ</mi></mpadded></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">and substituting in (<a href="#Sx1.E1" title="(1) ‣ The Leibniz notation on manifolds ‣ Leibniz notation for vector fields" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1</span></a>),</p>
+<table id="A0.EGx4" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tr id="Sx1.Ex12" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="Sx1.Ex12.m1" class="ltx_Math" alttext="\displaystyle\frac{\partial f}{\partial r}" display="inline"><mstyle displaystyle="true"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>f</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>r</mi></mrow></mfrac></mstyle></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Sx1.Ex12.m2" class="ltx_Math" alttext="\displaystyle=\frac{\partial x}{\partial r}\frac{\partial f}{\partial x}+\frac%
+{\partial y}{\partial r}\frac{\partial f}{\partial y}+\frac{\partial z}{%
+\partial r}\frac{\partial f}{\partial z}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mstyle displaystyle="true"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>x</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>r</mi></mrow></mfrac></mstyle><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>f</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>x</mi></mrow></mfrac></mstyle></mrow><mo>+</mo><mrow><mstyle displaystyle="true"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>y</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>r</mi></mrow></mfrac></mstyle><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>f</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>y</mi></mrow></mfrac></mstyle></mrow><mo>+</mo><mrow><mstyle displaystyle="true"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>z</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>r</mi></mrow></mfrac></mstyle><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>f</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>z</mi></mrow></mfrac></mstyle></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Sx1.Ex13" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Sx1.Ex13.m2" class="ltx_Math" alttext="\displaystyle=(\sin\theta\cos\phi)(2x)+(\sin\theta\sin\phi)(2y)+(\cos\theta)(2z)" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mi>ϕ</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>⁢</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>ϕ</mi></mrow></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>⁢</mo><mi>y</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>cos</mi><mo>⁡</mo><mi>θ</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mn>2</mn><mo>⁢</mo><mi>z</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Sx1.Ex14" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Sx1.Ex14.m2" class="ltx_Math" alttext="\displaystyle=2r^{-1}(xr\sin\theta\cos\phi+yr\sin\theta\sin\phi+zr\cos\theta)" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><msup><mi>r</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>x</mi><mo>⁢</mo><mi>r</mi><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mi>ϕ</mi></mrow></mrow><mo>+</mo><mrow><mi>y</mi><mo>⁢</mo><mi>r</mi><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>θ</mi></mrow><mo>⁢</mo><mrow><mi>sin</mi><mo>⁡</mo><mi>ϕ</mi></mrow></mrow><mo>+</mo><mrow><mi>z</mi><mo>⁢</mo><mi>r</mi><mo>⁢</mo><mrow><mi>cos</mi><mo>⁡</mo><mi>θ</mi></mrow></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Sx1.Ex15" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Sx1.Ex15.m2" class="ltx_Math" alttext="\displaystyle=2r^{-1}(x^{2}+y^{2}+z^{2})" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><msup><mi>r</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>x</mi><mn>2</mn></msup><mo>+</mo><msup><mi>y</mi><mn>2</mn></msup><mo>+</mo><msup><mi>z</mi><mn>2</mn></msup></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="Sx1.Ex16" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="Sx1.Ex16.m2" class="ltx_Math" alttext="\displaystyle=2r\,." display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mn>2</mn><mo>⁢</mo><mpadded width="+1.7pt"><mi>r</mi></mpadded></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+<div id="Sx1.p8" class="ltx_para">
+<p class="ltx_p">Needless to say, this calculation can be done with the usual functional notation,
+but it will be somewhat clumsy. We have to say: let <math id="Sx1.p8.m1" class="ltx_Math" alttext="\alpha" display="inline"><mi>α</mi></math> be the spherical coordinate chart; and then
+<math id="Sx1.p8.m2" class="ltx_Math" alttext="\operatorname{D}_{1}(f\circ\alpha)(r,\theta,\phi)=\operatorname{D}f(\alpha(r,%
+\theta,\phi))\cdot\operatorname{D}_{1}\alpha(r,\theta,\phi)" display="inline"><mrow><mrow><mrow><msub><mi mathvariant="normal">D</mi><mn>1</mn></msub><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>f</mi><mo>∘</mo><mi>α</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo>,</mo><mi>θ</mi><mo>,</mo><mi>ϕ</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mrow><mrow><mi mathvariant="normal">D</mi><mo>⁡</mo><mi>f</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>α</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo>,</mo><mi>θ</mi><mo>,</mo><mi>ϕ</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>⋅</mo><mrow><msub><mi mathvariant="normal">D</mi><mn>1</mn></msub><mo>⁡</mo><mi>α</mi></mrow></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>r</mi><mo>,</mo><mi>θ</mi><mo>,</mo><mi>ϕ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math>
+would be the quantity <math id="Sx1.p8.m3" class="ltx_Math" alttext="\partial f/\partial r" display="inline"><mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>f</mi></mrow><mo>/</mo><mrow><mo>∂</mo><mo>⁡</mo><mi>r</mi></mrow></mrow></math>.
+That is not to say Leibnizian notation has no disadvantages.
+For example,
+one of the typical objections to the Leibnizian formula</p>
+<table id="Sx1.Ex17" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Sx1.Ex17.m1" class="ltx_Math" alttext="\frac{df}{dx}=\frac{df}{dy}\frac{dy}{dx}" display="block"><mrow><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>f</mi></mrow><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mfrac><mo>=</mo><mrow><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>f</mi></mrow><mrow><mi>d</mi><mo>⁢</mo><mi>y</mi></mrow></mfrac><mo>⁢</mo><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>y</mi></mrow><mrow><mi>d</mi><mo>⁢</mo><mi>x</mi></mrow></mfrac></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">is that the function <math id="Sx1.p8.m4" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> means something different on the two sides of the equation.
+However, formula (<a href="#Sx1.E1" title="(1) ‣ The Leibniz notation on manifolds ‣ Leibniz notation for vector fields" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1</span></a>) partly escapes this objection:
+we can consider <math id="Sx1.p8.m5" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> to be a function on a <em class="ltx_emph ltx_font_italic">manifold</em>, ignoring the vector space structure of <math id="Sx1.p8.m6" class="ltx_Math" alttext="\mathbb{R}^{3}" display="inline"><msup><mi>ℝ</mi><mn>3</mn></msup></math>.
+Cartesian coordinates <math id="Sx1.p8.m7" class="ltx_Math" alttext="(x,y,z)" display="inline"><mrow><mo stretchy="false">(</mo><mi>x</mi><mo>,</mo><mi>y</mi><mo>,</mo><mi>z</mi><mo stretchy="false">)</mo></mrow></math> simply become another coordinate chart.
+Spherical coordinates constitute another.
+Then <math id="Sx1.p8.m8" class="ltx_Math" alttext="\partial f/\partial r" display="inline"><mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>f</mi></mrow><mo>/</mo><mrow><mo>∂</mo><mo>⁡</mo><mi>r</mi></mrow></mrow></math> (i.e. the directional derivative <math id="Sx1.p8.m9" class="ltx_Math" alttext="\partial/\partial r" display="inline"><mrow><mo>∂</mo><mo>/</mo><mrow><mo>∂</mo><mo>⁡</mo><mi>r</mi></mrow></mrow></math> applied to <math id="Sx1.p8.m10" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math>) is a natural quantity to consider,
+rather than “the derivative of <math id="Sx1.p8.m11" class="ltx_Math" alttext="f\circ\alpha" display="inline"><mrow><mi>f</mi><mo>∘</mo><mi>α</mi></mrow></math>’ with respect to the first variable”
+(which is what the functional notation says).</p>
+</div>
+<div id="Sx1.p9" class="ltx_para">
+<p class="ltx_p">Physicists seem to grasp the Leibnizian formalism very readily,
+and it is a shame that many calculus textbooks do not fully explain the logic
+behind the formalism — probably because it looks to be unrigorous —
+but the point we are trying to drive here is that when differentials are suitably
+interpreted, they <em class="ltx_emph ltx_font_italic">are</em> rigorous.</p>
+</div>
+</section>
+<section id="Sx2" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">The dual to the tangent vectors <math id="Sx2.m1" class="ltx_Math" alttext="\partial/\partial x^{i}" display="inline"><mrow><mo>∂</mo><mo>/</mo><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>x</mi><mi>i</mi></msup></mrow></mrow></math>
+</h2>
+
+<div id="Sx2.p1" class="ltx_para">
+<p class="ltx_p">There is a subtle ambiguity in the Leibniz notation
+that we should also discuss here.
+Suppose we are on a two-dimensional manifold with coordinates <math id="Sx2.p1.m1" class="ltx_Math" alttext="u" display="inline"><mi>u</mi></math> and <math id="Sx2.p1.m2" class="ltx_Math" alttext="v" display="inline"><mi>v</mi></math>. The notation <math id="Sx2.p1.m3" class="ltx_Math" alttext="\partial f/\partial u" display="inline"><mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>f</mi></mrow><mo>/</mo><mrow><mo>∂</mo><mo>⁡</mo><mi>u</mi></mrow></mrow></math> is ambiguous, because it implicitly depends on the <math id="Sx2.p1.m4" class="ltx_Math" alttext="v" display="inline"><mi>v</mi></math> coordinate as well. What we really mean when we refer to <math id="Sx2.p1.m5" class="ltx_Math" alttext="\partial f/\partial u" display="inline"><mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>f</mi></mrow><mo>/</mo><mrow><mo>∂</mo><mo>⁡</mo><mi>u</mi></mrow></mrow></math>
+is a displacement where <math id="Sx2.p1.m6" class="ltx_Math" alttext="u" display="inline"><mi>u</mi></math> changes at a uniform rate of 1, and where <math id="Sx2.p1.m7" class="ltx_Math" alttext="v" display="inline"><mi>v</mi></math> does not change at all.</p>
+</div>
+<div id="Sx2.p2" class="ltx_para">
+<p class="ltx_p">Say, for some bizarre reason, I decided to use a coordinate system on the Euclidean plane made up of the Euclidean <math id="Sx2.p2.m1" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math> coordinate and the radial <math id="Sx2.p2.m2" class="ltx_Math" alttext="r" display="inline"><mi>r</mi></math> coordinate. Now when I write <math id="Sx2.p2.m3" class="ltx_Math" alttext="\partial f/\partial x" display="inline"><mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>f</mi></mrow><mo>/</mo><mrow><mo>∂</mo><mo>⁡</mo><mi>x</mi></mrow></mrow></math>, I mean something quite different than when I write <math id="Sx2.p2.m4" class="ltx_Math" alttext="\partial f/\partial x" display="inline"><mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>f</mi></mrow><mo>/</mo><mrow><mo>∂</mo><mo>⁡</mo><mi>x</mi></mrow></mrow></math> relative to the Euclidean coordinates.
+In the first instance the derivative is with respect to the vector field</p>
+<table id="Sx2.Ex18" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Sx2.Ex18.m1" class="ltx_Math" alttext="e_{1}-(y/x)e_{2}\,." display="block"><mrow><mrow><msub><mi>e</mi><mn>1</mn></msub><mo>-</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>y</mi><mo>/</mo><mi>x</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mpadded width="+1.7pt"><msub><mi>e</mi><mn>2</mn></msub></mpadded></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">In the second instance, the derivative is with respect to the vector field</p>
+<table id="Sx2.Ex19" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Sx2.Ex19.m1" class="ltx_Math" alttext="e_{1}+0e_{2}\,." display="block"><mrow><mrow><msub><mi>e</mi><mn>1</mn></msub><mo>+</mo><mrow><mn>0</mn><mo>⁢</mo><mpadded width="+1.7pt"><msub><mi>e</mi><mn>2</mn></msub></mpadded></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+<div id="Sx2.p3" class="ltx_para">
+<p class="ltx_p">On closer thought, we can see that <math id="Sx2.p3.m1" class="ltx_Math" alttext="\partial/\partial x" display="inline"><mrow><mo>∂</mo><mo>/</mo><mrow><mo>∂</mo><mo>⁡</mo><mi>x</mi></mrow></mrow></math>
+in the elementary calculus interpretation
+has the same ambiguity, but the problem is so trivial that
+we often forget that it exists.
+For instance, if we have a function <math id="Sx2.p3.m2" class="ltx_Math" alttext="f=xyz" display="inline"><mrow><mi>f</mi><mo>=</mo><mrow><mi>x</mi><mo>⁢</mo><mi>y</mi><mo>⁢</mo><mi>z</mi></mrow></mrow></math>, and we stipulate
+that also <math id="Sx2.p3.m3" class="ltx_Math" alttext="y=x^{2}" display="inline"><mrow><mi>y</mi><mo>=</mo><msup><mi>x</mi><mn>2</mn></msup></mrow></math>,
+then obviously <math id="Sx2.p3.m4" class="ltx_Math" alttext="\partial f/\partial x\neq yz" display="inline"><mrow><mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>f</mi></mrow><mo>/</mo><mrow><mo>∂</mo><mo>⁡</mo><mi>x</mi></mrow></mrow><mo>≠</mo><mrow><mi>y</mi><mo>⁢</mo><mi>z</mi></mrow></mrow></math>, because <math id="Sx2.p3.m5" class="ltx_Math" alttext="y" display="inline"><mi>y</mi></math> is changing
+at the same time as <math id="Sx2.p3.m6" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math>.
+The definition of a partial derivative with respect
+to <math id="Sx2.p3.m7" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math>
+is the derivative when <math id="Sx2.p3.m8" class="ltx_Math" alttext="x" display="inline"><mi>x</mi></math> changes and all the other variables are held
+<em class="ltx_emph ltx_font_italic">fixed</em>. So this rule should be applied when
+working with the tangent vectors <math id="Sx2.p3.m9" class="ltx_Math" alttext="\partial/\partial x^{i}" display="inline"><mrow><mo>∂</mo><mo>/</mo><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>x</mi><mi>i</mi></msup></mrow></mrow></math>
+on a manifold too.</p>
+</div>
+<div id="Sx2.p4" class="ltx_para">
+<p class="ltx_p">If we agree to use different letters for each coordinate system,
+and not mix them up (always a reasonable thing to do),
+then we will not make any mistakes arising from this ambiguity
+with the Leibniz notation.</p>
+</div>
+<div id="Sx2.p5" class="ltx_para">
+<p class="ltx_p">Another way to understand the ambiguity is as follows.
+In a vector space, there is no natural isomorphism between
+it and its dual space (unless we involve the inner product or something like that). On manifolds, the role of the dual space
+is taken by the space of differential one-forms.
+(See differential forms (<span class="ltx_text ltx_font_typewriter">http://planetmath.org/DifferentialForms</span>)
+for the rigorous details.) A basis for this dual space
+is <math id="Sx2.p5.m1" class="ltx_Math" alttext="dx^{j}" display="inline"><mrow><mi>d</mi><mo>⁢</mo><msup><mi>x</mi><mi>j</mi></msup></mrow></math> for <math id="Sx2.p5.m2" class="ltx_Math" alttext="j=1,\ldots,n" display="inline"><mrow><mi>j</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi>n</mi></mrow></mrow></math>.
+There is a basis in the tangent space that is dual to <math id="Sx2.p5.m3" class="ltx_Math" alttext="dx^{i}" display="inline"><mrow><mi>d</mi><mo>⁢</mo><msup><mi>x</mi><mi>i</mi></msup></mrow></math>:
+namely, these are the <math id="Sx2.p5.m4" class="ltx_Math" alttext="\partial/\partial x^{i}" display="inline"><mrow><mo>∂</mo><mo>/</mo><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>x</mi><mi>i</mi></msup></mrow></mrow></math>:
+</p>
+<table id="Sx2.E2" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Sx2.E2.m1" class="ltx_Math" alttext="dx^{j}\left(\frac{\partial}{\partial x^{i}}\right)=\delta_{i}^{j}\quad\text{(%
+Kronecker delta).}" display="block"><mrow><mrow><mi>d</mi><mo>⁢</mo><msup><mi>x</mi><mi>j</mi></msup><mo>⁢</mo><mrow><mo>(</mo><mfrac><mo>∂</mo><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>x</mi><mi>i</mi></msup></mrow></mfrac><mo>)</mo></mrow></mrow><mo>=</mo><mrow><msubsup><mi>δ</mi><mi>i</mi><mi>j</mi></msubsup><mo mathvariant="italic" separator="true"> </mo><mtext>(Kronecker delta).</mtext></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2)</span></td>
+</tr>
+</table>
+<p class="ltx_p">But if we are given a lone element <math id="Sx2.p5.m5" class="ltx_Math" alttext="dx^{j}" display="inline"><mrow><mi>d</mi><mo>⁢</mo><msup><mi>x</mi><mi>j</mi></msup></mrow></math>, we
+cannot produce
+a unique vector <math id="Sx2.p5.m6" class="ltx_Math" alttext="\partial/\partial x^{j}" display="inline"><mrow><mo>∂</mo><mo>/</mo><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>x</mi><mi>j</mi></msup></mrow></mrow></math> from it (i.e. there is no isomorphism) —
+we need to be given the <em class="ltx_emph ltx_font_italic">entire</em> basis <math id="Sx2.p5.m7" class="ltx_Math" alttext="\{dx^{j}\}_{j=1,\ldots,n}" display="inline"><msub><mrow><mo stretchy="false">{</mo><mrow><mi>d</mi><mo>⁢</mo><msup><mi>x</mi><mi>j</mi></msup></mrow><mo stretchy="false">}</mo></mrow><mrow><mi>j</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi>n</mi></mrow></mrow></msub></math>.
+So it is not surprising why the vectors <math id="Sx2.p5.m8" class="ltx_Math" alttext="\partial/\partial x^{i}" display="inline"><mrow><mo>∂</mo><mo>/</mo><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>x</mi><mi>i</mi></msup></mrow></mrow></math> should depend
+on each other.</p>
+</div>
+</section>
+<section id="Sx3" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">Motivation for the notation of differential forms</h2>
+
+<div id="Sx3.p1" class="ltx_para">
+<p class="ltx_p">Incidentally, the formula (<a href="#Sx2.E2" title="(2) ‣ The dual to the tangent vectors / ∂ ∂ x i ‣ Leibniz notation for vector fields" class="ltx_ref"><span class="ltx_text ltx_ref_tag">2</span></a>) explains the following
+identity involving differential forms (often seen in calculus textbooks with hardly
+any explanation of what it means):</p>
+<table id="Sx3.E3" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Sx3.E3.m1" class="ltx_Math" alttext="df=\frac{\partial f}{\partial x^{j}}\,dx^{j}\,." display="block"><mrow><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>f</mi></mrow><mo>=</mo><mrow><mpadded width="+1.7pt"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>f</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>x</mi><mi>j</mi></msup></mrow></mfrac></mpadded><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mpadded width="+1.7pt"><msup><mi>x</mi><mi>j</mi></msup></mpadded></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(3)</span></td>
+</tr>
+</table>
+<p class="ltx_p">The various <math id="Sx3.p1.m1" class="ltx_Math" alttext="d" display="inline"><mi>d</mi></math>’s floating around obscures the essential idea somewhat,
+but the derivation of this formula is basic linear algebra. Since <math id="Sx3.p1.m2" class="ltx_Math" alttext="df" display="inline"><mrow><mi>d</mi><mo>⁢</mo><mi>f</mi></mrow></math>
+is a linear functional on the tangent space,
+<em class="ltx_emph ltx_font_italic">defined</em> by <math id="Sx3.p1.m3" class="ltx_Math" alttext="df(V)=V[f]" display="inline"><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>V</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>V</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>f</mi><mo stretchy="false">]</mo></mrow></mrow></mrow></math>, it can be written
+as a linear combination of the dual basis <math id="Sx3.p1.m4" class="ltx_Math" alttext="dx^{j}" display="inline"><mrow><mi>d</mi><mo>⁢</mo><msup><mi>x</mi><mi>j</mi></msup></mrow></math>.
+That is, for some <math id="Sx3.p1.m5" class="ltx_Math" alttext="a_{j}" display="inline"><msub><mi>a</mi><mi>j</mi></msub></math>, we have</p>
+<table id="Sx3.Ex20" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Sx3.Ex20.m1" class="ltx_Math" alttext="df=a_{j}\,dx^{j}\,." display="block"><mrow><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>f</mi></mrow><mo>=</mo><mrow><mpadded width="+1.7pt"><msub><mi>a</mi><mi>j</mi></msub></mpadded><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mpadded width="+1.7pt"><msup><mi>x</mi><mi>j</mi></msup></mpadded></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">And these <math id="Sx3.p1.m6" class="ltx_Math" alttext="a_{j}" display="inline"><msub><mi>a</mi><mi>j</mi></msub></math> are solved for by evaluating at the tangent
+vectors <math id="Sx3.p1.m7" class="ltx_Math" alttext="V=\partial/\partial x^{i}" display="inline"><mrow><mi>V</mi><mo>=</mo><mrow><mo>∂</mo><mo>/</mo><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>x</mi><mi>i</mi></msup></mrow></mrow></mrow></math>:</p>
+<table id="Sx3.Ex21" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Sx3.Ex21.m1" class="ltx_Math" alttext="\frac{\partial f}{\partial x^{i}}=\frac{\partial}{\partial x^{i}}[f]=df\left(%
+\frac{\partial}{\partial x^{i}}\right)=a_{j}dx^{j}\left(\frac{\partial}{%
+\partial x^{i}}\right)=a_{j}\delta_{i}^{j}=a_{i}\,," display="block"><mrow><mrow><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>f</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>x</mi><mi>i</mi></msup></mrow></mfrac><mo>=</mo><mrow><mfrac><mo>∂</mo><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>x</mi><mi>i</mi></msup></mrow></mfrac><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>f</mi><mo stretchy="false">]</mo></mrow></mrow><mo>=</mo><mrow><mi>d</mi><mo>⁢</mo><mi>f</mi><mo>⁢</mo><mrow><mo>(</mo><mfrac><mo>∂</mo><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>x</mi><mi>i</mi></msup></mrow></mfrac><mo>)</mo></mrow></mrow><mo>=</mo><mrow><msub><mi>a</mi><mi>j</mi></msub><mo>⁢</mo><mi>d</mi><mo>⁢</mo><msup><mi>x</mi><mi>j</mi></msup><mo>⁢</mo><mrow><mo>(</mo><mfrac><mo>∂</mo><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>x</mi><mi>i</mi></msup></mrow></mfrac><mo>)</mo></mrow></mrow><mo>=</mo><mrow><msub><mi>a</mi><mi>j</mi></msub><mo>⁢</mo><msubsup><mi>δ</mi><mi>i</mi><mi>j</mi></msubsup></mrow><mo>=</mo><mpadded width="+1.7pt"><msub><mi>a</mi><mi>i</mi></msub></mpadded></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">giving formula (<a href="#Sx3.E3" title="(3) ‣ Motivation for the notation of differential forms ‣ Leibniz notation for vector fields" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3</span></a>).</p>
+</div>
+<div id="Sx3.p2" class="ltx_para">
+<p class="ltx_p">For those who are not familiar with the language of differential forms,
+the definition <math id="Sx3.p2.m1" class="ltx_Math" alttext="df(V)=V[f]" display="inline"><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>V</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>V</mi><mo>⁢</mo><mrow><mo stretchy="false">[</mo><mi>f</mi><mo stretchy="false">]</mo></mrow></mrow></mrow></math> just used
+might seem to be somewhat artificial, designed solely to make
+the classical formula (<a href="#Sx3.E3" title="(3) ‣ Motivation for the notation of differential forms ‣ Leibniz notation for vector fields" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3</span></a>) work out.
+The following comment by Spivak<cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib2" title="" class="ltx_ref">2</a>]</cite> might help clarify matters:</p>
+</div>
+<div id="Sx3.p3" class="ltx_para">
+<blockquote class="ltx_quote">
+<p class="ltx_p">Classical differential geometers (and classical analysts)
+did not hesitate to talk about “infinitely small” changes <math id="Sx3.p3.m1" class="ltx_Math" alttext="dx^{i}" display="inline"><mrow><mi>d</mi><mo>⁢</mo><msup><mi>x</mi><mi>i</mi></msup></mrow></math>
+of the coordinates <math id="Sx3.p3.m2" class="ltx_Math" alttext="x^{i}" display="inline"><msup><mi>x</mi><mi>i</mi></msup></math>, just as Leibniz had.
+No one wanted to admit that this was nonsense, because true
+results were obtained when these infinitely small quantities
+were divided into each other (provided one did it in the right way).
+Eventually it was realized that the closest one can come to describing an
+infinitely small change is to describe a direction in which this change
+is supposed to occur, i.e. a tangent vector. Since <math id="Sx3.p3.m3" class="ltx_Math" alttext="df" display="inline"><mrow><mi>d</mi><mo>⁢</mo><mi>f</mi></mrow></math> is supposed
+to be the infinitesimal change of <math id="Sx3.p3.m4" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> under an infinitesimal change
+of the point, <math id="Sx3.p3.m5" class="ltx_Math" alttext="df" display="inline"><mrow><mi>d</mi><mo>⁢</mo><mi>f</mi></mrow></math> must be a function of this change,
+which means that <math id="Sx3.p3.m6" class="ltx_Math" alttext="df" display="inline"><mrow><mi>d</mi><mo>⁢</mo><mi>f</mi></mrow></math> should be a function on tangent vectors.
+The <math id="Sx3.p3.m7" class="ltx_Math" alttext="dx^{i}" display="inline"><mrow><mi>d</mi><mo>⁢</mo><msup><mi>x</mi><mi>i</mi></msup></mrow></math> themselves then metamorphosed into functions,
+and it became clear that they must be distinguished from the tangent
+vectors <math id="Sx3.p3.m8" class="ltx_Math" alttext="\partial/\partial x^{i}" display="inline"><mrow><mo>∂</mo><mo>/</mo><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>x</mi><mi>i</mi></msup></mrow></mrow></math>.
+Once this realization came, it was only a matter of making new definitions,
+which preserved the <em class="ltx_emph ltx_font_italic">old</em> notation, and waiting for everybody
+to catch up. In short, all classical notions involving infinitely
+small quantities became functions on tangent vectors, like <math id="Sx3.p3.m9" class="ltx_Math" alttext="df" display="inline"><mrow><mi>d</mi><mo>⁢</mo><mi>f</mi></mrow></math>,
+except for quotients of infinitely small
+quantities, which became tangent vectors, like <math id="Sx3.p3.m10" class="ltx_Math" alttext="dc/dt" display="inline"><mrow><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>c</mi></mrow><mo>/</mo><mi>d</mi></mrow><mo>⁢</mo><mi>t</mi></mrow></math>.</p>
+</blockquote>
+</div>
+<div id="Sx3.p4" class="ltx_para">
+<p class="ltx_p">We can also give an analogy as follows (also from <cite class="ltx_cite ltx_citemacro_cite">[<a href="#bib.bib2" title="" class="ltx_ref">2</a>]</cite>).
+Suppose <math id="Sx3.p4.m1" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> is a
+function on a manifold. Let “<math id="Sx3.p4.m2" class="ltx_Math" alttext="x^{i}=x^{i}(t)" display="inline"><mrow><msup><mi>x</mi><mi>i</mi></msup><mo>=</mo><mrow><msup><mi>x</mi><mi>i</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math>” be a
+curve on this manifold (this is the classical notation).
+Then by the chain rule,</p>
+<table id="Sx3.Ex22" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Sx3.Ex22.m1" class="ltx_Math" alttext="\frac{df}{dt}=\frac{\partial f}{\partial x^{i}}\frac{dx^{i}}{dt}\,," display="block"><mrow><mrow><mfrac><mrow><mi>d</mi><mo>⁢</mo><mi>f</mi></mrow><mrow><mi>d</mi><mo>⁢</mo><mi>t</mi></mrow></mfrac><mo>=</mo><mrow><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>f</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>x</mi><mi>i</mi></msup></mrow></mfrac><mo>⁢</mo><mpadded width="+1.7pt"><mfrac><mrow><mi>d</mi><mo>⁢</mo><msup><mi>x</mi><mi>i</mi></msup></mrow><mrow><mi>d</mi><mo>⁢</mo><mi>t</mi></mrow></mfrac></mpadded></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">where <math id="Sx3.p4.m3" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> on the left side really means <math id="Sx3.p4.m4" class="ltx_Math" alttext="f(x^{i}(t))" display="inline"><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>x</mi><mi>i</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></math>.
+The formal identity obtained by multiplying both sides by <math id="Sx3.p4.m5" class="ltx_Math" alttext="dt" display="inline"><mrow><mi>d</mi><mo>⁢</mo><mi>t</mi></mrow></math>,
+</p>
+<table id="Sx3.Ex23" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="Sx3.Ex23.m1" class="ltx_Math" alttext="df=\frac{\partial f}{\partial x^{i}}\,dx^{i}\,," display="block"><mrow><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>f</mi></mrow><mo>=</mo><mrow><mpadded width="+1.7pt"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>f</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>x</mi><mi>i</mi></msup></mrow></mfrac></mpadded><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mpadded width="+1.7pt"><msup><mi>x</mi><mi>i</mi></msup></mpadded></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">means that “true results are obtained by dividing by <math id="Sx3.p4.m6" class="ltx_Math" alttext="dt" display="inline"><mrow><mi>d</mi><mo>⁢</mo><mi>t</mi></mrow></math> again,
+<em class="ltx_emph ltx_font_italic">no matter what the functions</em> <math id="Sx3.p4.m7" class="ltx_Math" alttext="x^{i}(t)" display="inline"><mrow><msup><mi>x</mi><mi>i</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></math> are.”
+Also, the left- and right-hand sides individually
+do not depend on any particular curve <math id="Sx3.p4.m8" class="ltx_Math" alttext="x^{i}(t)" display="inline"><mrow><msup><mi>x</mi><mi>i</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>t</mi><mo stretchy="false">)</mo></mrow></mrow></math> at all, but
+really just the tangent vectors <math id="Sx3.p4.m9" class="ltx_Math" alttext="dx^{i}/dt" display="inline"><mrow><mrow><mrow><mi>d</mi><mo>⁢</mo><msup><mi>x</mi><mi>i</mi></msup></mrow><mo>/</mo><mi>d</mi></mrow><mo>⁢</mo><mi>t</mi></mrow></math> to that curve.
+Again, this leads us to realization that <math id="Sx3.p4.m10" class="ltx_Math" alttext="df" display="inline"><mrow><mi>d</mi><mo>⁢</mo><mi>f</mi></mrow></math>
+and <math id="Sx3.p4.m11" class="ltx_Math" alttext="dx^{i}" display="inline"><mrow><mi>d</mi><mo>⁢</mo><msup><mi>x</mi><mi>i</mi></msup></mrow></math> should be treated as functions of a tangent vector.</p>
+</div>
+</section>
+<section id="bib" class="ltx_bibliography">
+<h2 class="ltx_title ltx_title_bibliography">References</h2>
+
+<ul class="ltx_biblist">
+      
+<li id="bib.bib1" class="ltx_bibitem">
+        <span class="ltx_bibtag ltx_role_refnum">1</span>
+        
+<span class="ltx_bibblock">
+Vladimir I. Arnol’d (trans. Roger Cooke).
+<span class="ltx_text ltx_font_italic">Ordinary Differential Equations</span>. Springer-Verlag, 1992.
+
+</span>
+      </li>
+      
+<li id="bib.bib2" class="ltx_bibitem">
+        <span class="ltx_bibtag ltx_role_refnum">2</span>
+        
+<span class="ltx_bibblock">
+Michael Spivak. <em class="ltx_emph ltx_font_italic">A Comprehensive Introduction to Differential Geometry</em>,
+Volume I. Publish or Perish, 1979.
+
+</span>
+      </li>
+      
+<li id="bib.bib3" class="ltx_bibitem">
+        <span class="ltx_bibtag ltx_role_refnum">3</span>
+        
+<span class="ltx_bibblock">
+Michael Spivak. <em class="ltx_emph ltx_font_italic">Calculus on Manifolds</em>. Perseus, 1965.
+
+</span>
+      </li>
+    
+</ul>
+</section>
+<div id="p4" class="ltx_para ltx_align_right">
+<table class="ltx_tabular ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l ltx_border_t">Title</td>
+<td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">Leibniz notation for vector fields</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Canonical name</td>
+<td class="ltx_td ltx_align_left ltx_border_r">LeibnizNotationForVectorFields</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Date of creation</td>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 15:26:54</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Last modified on</td>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 15:26:54</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Owner</td>
+<td class="ltx_td ltx_align_left ltx_border_r">stevecheng (10074)</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Last modified by</td>
+<td class="ltx_td ltx_align_left ltx_border_r">stevecheng (10074)</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Numerical id</td>
+<td class="ltx_td ltx_align_left ltx_border_r">13</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Author</td>
+<td class="ltx_td ltx_align_left ltx_border_r">stevecheng (10074)</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Entry type</td>
+<td class="ltx_td ltx_align_left ltx_border_r">Topic</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Classification</td>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 58A10</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Classification</td>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 34-00</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Classification</td>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 53-00</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Related topic</td>
+<td class="ltx_td ltx_align_left ltx_border_r">VectorField</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Related topic</td>
+<td class="ltx_td ltx_align_left ltx_border_r">DerivativeNotation</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Related topic</td>
+<td class="ltx_td ltx_align_left ltx_border_r">DifferentialForms</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Related topic</td>
+<td class="ltx_td ltx_align_left ltx_border_r">FirstOrderOperatorsInRiemannianGeometry</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_b ltx_border_l">Related topic</td>
+<td class="ltx_td ltx_align_left ltx_border_b ltx_border_r">LieDerivative</td>
+</tr>
+</tbody>
+</table>
+</div>
+</article>
+</div>
+<footer class="ltx_page_footer">
+<div class="ltx_page_logo">Generated  on Sat Feb 10 11:50:15 2018 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,200 @@
+<!DOCTYPE html><html>
+<head>
+<title>proof that transition functions of cotangent bundle are valid</title>
+<!--Generated on Sat Feb 10 11:50:46 2018 by LaTeXML (version 0.8.2) http://dlmf.nist.gov/LaTeXML/.-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/3f71ceeb3b055e1ddc3b6c11fb1f074c/raw/2bb23e3b173ff96840797fc0c3bcb8c54085df8e/LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/4bda0365b30858ac2fb83623185fe3ec/raw/cedd84ed3e3ad597c5d293f443ecfe4803741c6b/ltx-article.css" type="text/css">
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<div class="ltx_page_main">
+<div class="ltx_page_content">
+<article class="ltx_document ltx_authors_1line">
+<h1 class="ltx_title ltx_title_document">proof that transition functions of cotangent bundle are valid</h1>
+
+<div id="p1" class="ltx_para">
+<br class="ltx_break">
+<p class="ltx_p">In this entry, we shall verify that the transition functions proposed for the cotangent bundle  the three criteria required by the classical definition of a manifold.</p>
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">The first criterion is the easiest to verify. If <math id="p2.m1" class="ltx_Math" alttext="\alpha=\beta" display="inline"><mrow><mi>α</mi><mo>=</mo><mi>β</mi></mrow></math>, then <math id="p2.m2" class="ltx_Math" alttext="\sigma_{\alpha\alpha}" display="inline"><msub><mi>σ</mi><mrow><mi>α</mi><mo>⁢</mo><mi>α</mi></mrow></msub></math> reduces to the identity and we have</p>
+<table id="S0.Ex1" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex1.m1" class="ltx_Math" alttext="\bigg{(}{\sigma^{\prime}}_{\alpha\alpha}(x_{1},\ldots,x_{2n})\bigg{)}^{i}=%
+\bigg{(}\sigma_{\alpha\alpha}(x_{1},\ldots,x_{n})\bigg{)}^{i}=x^{i}\qquad 1%
+\leq i\leq n" display="block"><mrow><mrow><msup><mrow><mo maxsize="210%" minsize="210%">(</mo><mrow><mmultiscripts><mi>σ</mi><none></none><mo>′</mo><mrow><mi>α</mi><mo>⁢</mo><mi>α</mi></mrow><none></none></mmultiscripts><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>x</mi><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow></msub><mo stretchy="false">)</mo></mrow></mrow><mo maxsize="210%" minsize="210%">)</mo></mrow><mi>i</mi></msup><mo>=</mo><msup><mrow><mo maxsize="210%" minsize="210%">(</mo><mrow><msub><mi>σ</mi><mrow><mi>α</mi><mo>⁢</mo><mi>α</mi></mrow></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo maxsize="210%" minsize="210%">)</mo></mrow><mi>i</mi></msup><mo>=</mo><msup><mi>x</mi><mi>i</mi></msup></mrow><mo mathvariant="italic" separator="true">  </mo><mrow><mn>1</mn><mo>≤</mo><mi>i</mi><mo>≤</mo><mi>n</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<table id="S0.Ex2" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S0.Ex2.m1" class="ltx_Math" alttext="\bigg{(}{\sigma^{\prime}}_{\alpha\alpha}(x_{1},\ldots,x_{2n})\bigg{)}^{i+n}=%
+\sum_{j=1}^{n}{\partial\bigg{(}\sigma_{\alpha\alpha}(x_{1},\ldots,x_{n})\bigg{%
+)}^{i}\over\partial x_{j}}x^{j+n}=\sum_{j=1}^{n}{\partial x^{i}\over\partial x%
+_{j}}x^{j+n}=x^{i+n}\qquad 1\leq i\leq n" display="block"><mrow><mrow><msup><mrow><mo maxsize="210%" minsize="210%">(</mo><mrow><mmultiscripts><mi>σ</mi><none></none><mo>′</mo><mrow><mi>α</mi><mo>⁢</mo><mi>α</mi></mrow><none></none></mmultiscripts><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>x</mi><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow></msub><mo stretchy="false">)</mo></mrow></mrow><mo maxsize="210%" minsize="210%">)</mo></mrow><mrow><mi>i</mi><mo>+</mo><mi>n</mi></mrow></msup><mo>=</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mrow><mfrac><mrow><mo>∂</mo><msup><mrow><mo maxsize="210%" minsize="210%">(</mo><msub><mi>σ</mi><mrow><mi>α</mi><mo>⁢</mo><mi>α</mi></mrow></msub><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow><mo maxsize="210%" minsize="210%">)</mo></mrow><mi>i</mi></msup></mrow><mrow><mo>∂</mo><mo>⁡</mo><msub><mi>x</mi><mi>j</mi></msub></mrow></mfrac><mo>⁢</mo><msup><mi>x</mi><mrow><mi>j</mi><mo>+</mo><mi>n</mi></mrow></msup></mrow></mrow><mo>=</mo><mrow><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mrow><mfrac><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>x</mi><mi>i</mi></msup></mrow><mrow><mo>∂</mo><mo>⁡</mo><msub><mi>x</mi><mi>j</mi></msub></mrow></mfrac><mo>⁢</mo><msup><mi>x</mi><mrow><mi>j</mi><mo>+</mo><mi>n</mi></mrow></msup></mrow></mrow><mo>=</mo><msup><mi>x</mi><mrow><mi>i</mi><mo>+</mo><mi>n</mi></mrow></msup></mrow><mo mathvariant="italic" separator="true">  </mo><mrow><mn>1</mn><mo>≤</mo><mi>i</mi><mo>≤</mo><mi>n</mi></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Thus we see that <math id="p2.m3" class="ltx_Math" alttext="{\sigma^{\prime}}_{\alpha\alpha}" display="inline"><mmultiscripts><mi>σ</mi><none></none><mo>′</mo><mrow><mi>α</mi><mo>⁢</mo><mi>α</mi></mrow><none></none></mmultiscripts></math> is the identity map, as required.</p>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">Next, we turn our attention to the third criterion — showing that <math id="p3.m1" class="ltx_Math" alttext="{\sigma^{\prime}}_{\beta\gamma}\circ{\sigma^{\prime}}_{\alpha\beta}={\sigma^{%
+\prime}}_{\alpha\gamma}" display="inline"><mrow><mrow><mmultiscripts><mi>σ</mi><none></none><mo>′</mo><mrow><mi>β</mi><mo>⁢</mo><mi>γ</mi></mrow><none></none></mmultiscripts><mo>∘</mo><mmultiscripts><mi>σ</mi><none></none><mo>′</mo><mrow><mi>α</mi><mo>⁢</mo><mi>β</mi></mrow><none></none></mmultiscripts></mrow><mo>=</mo><mmultiscripts><mi>σ</mi><none></none><mo>′</mo><mrow><mi>α</mi><mo>⁢</mo><mi>γ</mi></mrow><none></none></mmultiscripts></mrow></math> . For clarity of notation let us define <math id="p3.m2" class="ltx_Math" alttext="y^{i}=({\sigma^{\prime}}_{\alpha\beta})^{i}(x^{1},\ldots x^{2n})" display="inline"><mrow><msup><mi>y</mi><mi>i</mi></msup><mo>=</mo><mrow><msup><mrow><mo stretchy="false">(</mo><mmultiscripts><mi>σ</mi><none></none><mo>′</mo><mrow><mi>α</mi><mo>⁢</mo><mi>β</mi></mrow><none></none></mmultiscripts><mo stretchy="false">)</mo></mrow><mi>i</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mn>1</mn></msup><mo>,</mo><mrow><mi mathvariant="normal">…</mi><mo>⁢</mo><msup><mi>x</mi><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow></msup></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math>. Then we have</p>
+<table id="S0.EGx1" class="ltx_equationgroup ltx_eqn_eqnarray ltx_eqn_table">
+
+<tr id="S0.Ex7" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.Ex3.m1" class="ltx_Math" alttext="\displaystyle({\sigma^{\prime}}_{\beta\gamma}\circ{\sigma^{\prime}}_{\alpha%
+\beta})^{i}(x^{1},\dots,x^{2n})" display="inline"><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mmultiscripts><mi>σ</mi><none></none><mo>′</mo><mrow><mi>β</mi><mo>⁢</mo><mi>γ</mi></mrow><none></none></mmultiscripts><mo>∘</mo><mmultiscripts><mi>σ</mi><none></none><mo>′</mo><mrow><mi>α</mi><mo>⁢</mo><mi>β</mi></mrow><none></none></mmultiscripts></mrow><mo stretchy="false">)</mo></mrow><mi>i</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mn>1</mn></msup><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msup><mi>x</mi><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow></msup><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex3.m2" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex3.m3" class="ltx_Math" alttext="\displaystyle({\sigma^{\prime}}_{\beta\gamma})^{i}(y^{1},\dots,y^{2n})" display="inline"><mrow><msup><mrow><mo stretchy="false">(</mo><mmultiscripts><mi>σ</mi><none></none><mo>′</mo><mrow><mi>β</mi><mo>⁢</mo><mi>γ</mi></mrow><none></none></mmultiscripts><mo stretchy="false">)</mo></mrow><mi>i</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>y</mi><mn>1</mn></msup><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msup><mi>y</mi><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow></msup><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex4.m2" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex4.m3" class="ltx_Math" alttext="\displaystyle(\sigma_{\beta\gamma})^{i}(y^{1},\dots,y^{n})" display="inline"><mrow><msup><mrow><mo stretchy="false">(</mo><msub><mi>σ</mi><mrow><mi>β</mi><mo>⁢</mo><mi>γ</mi></mrow></msub><mo stretchy="false">)</mo></mrow><mi>i</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>y</mi><mn>1</mn></msup><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msup><mi>y</mi><mi>n</mi></msup><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex5.m2" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex5.m3" class="ltx_Math" alttext="\displaystyle(\sigma_{\beta\gamma}\circ\sigma_{\alpha\beta})^{i}(x^{1},\dots,x%
+^{n})" display="inline"><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><msub><mi>σ</mi><mrow><mi>β</mi><mo>⁢</mo><mi>γ</mi></mrow></msub><mo>∘</mo><msub><mi>σ</mi><mrow><mi>α</mi><mo>⁢</mo><mi>β</mi></mrow></msub></mrow><mo stretchy="false">)</mo></mrow><mi>i</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mn>1</mn></msup><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msup><mi>x</mi><mi>n</mi></msup><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex6.m2" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex6.m3" class="ltx_Math" alttext="\displaystyle(\sigma_{\alpha\gamma})^{i}(x^{1},\dots,x^{n})" display="inline"><mrow><msup><mrow><mo stretchy="false">(</mo><msub><mi>σ</mi><mrow><mi>α</mi><mo>⁢</mo><mi>γ</mi></mrow></msub><mo stretchy="false">)</mo></mrow><mi>i</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mn>1</mn></msup><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msup><mi>x</mi><mi>n</mi></msup><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex7.m2" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex7.m3" class="ltx_Math" alttext="\displaystyle({\sigma^{\prime}}_{\alpha\gamma})^{i}(x^{1},\dots,x^{2n})" display="inline"><mrow><msup><mrow><mo stretchy="false">(</mo><mmultiscripts><mi>σ</mi><none></none><mo>′</mo><mrow><mi>α</mi><mo>⁢</mo><mi>γ</mi></mrow><none></none></mmultiscripts><mo stretchy="false">)</mo></mrow><mi>i</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mn>1</mn></msup><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msup><mi>x</mi><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow></msup><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">when <math id="p3.m3" class="ltx_Math" alttext="1\leq i\leq n" display="inline"><mrow><mn>1</mn><mo>≤</mo><mi>i</mi><mo>≤</mo><mi>n</mi></mrow></math>.</p>
+<table id="S0.EGx2" class="ltx_equationgroup ltx_eqn_eqnarray ltx_eqn_table">
+
+<tr id="S0.Ex14" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S0.Ex9.m1" class="ltx_Math" alttext="\displaystyle({\sigma^{\prime}}_{\beta\gamma}\circ{\sigma^{\prime}}_{\alpha%
+\beta})^{i+n}(x^{1},\dots,x^{2n})" display="inline"><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mmultiscripts><mi>σ</mi><none></none><mo>′</mo><mrow><mi>β</mi><mo>⁢</mo><mi>γ</mi></mrow><none></none></mmultiscripts><mo>∘</mo><mmultiscripts><mi>σ</mi><none></none><mo>′</mo><mrow><mi>α</mi><mo>⁢</mo><mi>β</mi></mrow><none></none></mmultiscripts></mrow><mo stretchy="false">)</mo></mrow><mrow><mi>i</mi><mo>+</mo><mi>n</mi></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mn>1</mn></msup><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msup><mi>x</mi><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow></msup><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex9.m2" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex9.m3" class="ltx_Math" alttext="\displaystyle({\sigma^{\prime}}_{\beta\gamma})^{i+n}(y^{1},\dots,y^{2n})" display="inline"><mrow><msup><mrow><mo stretchy="false">(</mo><mmultiscripts><mi>σ</mi><none></none><mo>′</mo><mrow><mi>β</mi><mo>⁢</mo><mi>γ</mi></mrow><none></none></mmultiscripts><mo stretchy="false">)</mo></mrow><mrow><mi>i</mi><mo>+</mo><mi>n</mi></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>y</mi><mn>1</mn></msup><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msup><mi>y</mi><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow></msup><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex10.m2" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex10.m3" class="ltx_Math" alttext="\displaystyle\sum_{j=1}^{n}{\partial\bigg{(}\sigma_{\beta\gamma}(y_{1},\ldots,%
+y_{n})\bigg{)}^{i}\over\partial y_{j}}y^{j+n}" display="inline"><mrow><mstyle displaystyle="true"><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover></mstyle><mrow><mstyle displaystyle="true"><mfrac><mrow><mo>∂</mo><msup><mrow><mo maxsize="210%" minsize="210%">(</mo><msub><mi>σ</mi><mrow><mi>β</mi><mo>⁢</mo><mi>γ</mi></mrow></msub><mrow><mo stretchy="false">(</mo><msub><mi>y</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>y</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow><mo maxsize="210%" minsize="210%">)</mo></mrow><mi>i</mi></msup></mrow><mrow><mo>∂</mo><mo>⁡</mo><msub><mi>y</mi><mi>j</mi></msub></mrow></mfrac></mstyle><mo>⁢</mo><msup><mi>y</mi><mrow><mi>j</mi><mo>+</mo><mi>n</mi></mrow></msup></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex11.m2" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex11.m3" class="ltx_Math" alttext="\displaystyle\sum_{j=1}^{n}\sum_{k=1}^{n}{\partial\bigg{(}\sigma_{\beta\gamma}%
+(y_{1},\ldots,y_{n})\bigg{)}^{i}\over\partial y_{j}}{\partial\bigg{(}\sigma_{%
+\alpha\beta}(x_{1},\ldots,x_{n})\bigg{)}^{j}\over\partial x_{k}}x^{n+k}" display="inline"><mrow><mstyle displaystyle="true"><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover></mstyle><mrow><mstyle displaystyle="true"><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover></mstyle><mrow><mstyle displaystyle="true"><mfrac><mrow><mo>∂</mo><msup><mrow><mo maxsize="210%" minsize="210%">(</mo><msub><mi>σ</mi><mrow><mi>β</mi><mo>⁢</mo><mi>γ</mi></mrow></msub><mrow><mo stretchy="false">(</mo><msub><mi>y</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>y</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow><mo maxsize="210%" minsize="210%">)</mo></mrow><mi>i</mi></msup></mrow><mrow><mo>∂</mo><mo>⁡</mo><msub><mi>y</mi><mi>j</mi></msub></mrow></mfrac></mstyle><mo>⁢</mo><mstyle displaystyle="true"><mfrac><mrow><mo>∂</mo><msup><mrow><mo maxsize="210%" minsize="210%">(</mo><msub><mi>σ</mi><mrow><mi>α</mi><mo>⁢</mo><mi>β</mi></mrow></msub><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow><mo maxsize="210%" minsize="210%">)</mo></mrow><mi>j</mi></msup></mrow><mrow><mo>∂</mo><mo>⁡</mo><msub><mi>x</mi><mi>k</mi></msub></mrow></mfrac></mstyle><mo>⁢</mo><msup><mi>x</mi><mrow><mi>n</mi><mo>+</mo><mi>k</mi></mrow></msup></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex12.m2" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex12.m3" class="ltx_Math" alttext="\displaystyle\sum_{k=1}^{n}{\partial\bigg{(}\sigma_{\beta\gamma}\circ\sigma_{%
+\alpha\beta}(x_{1},\ldots,x_{n})\bigg{)}^{i}\over\partial x_{k}}x^{n+k}" display="inline"><mrow><mstyle displaystyle="true"><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover></mstyle><mrow><mstyle displaystyle="true"><mfrac><mrow><mo>∂</mo><msup><mrow><mo maxsize="210%" minsize="210%">(</mo><msub><mi>σ</mi><mrow><mi>β</mi><mo>⁢</mo><mi>γ</mi></mrow></msub><mo>∘</mo><msub><mi>σ</mi><mrow><mi>α</mi><mo>⁢</mo><mi>β</mi></mrow></msub><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow><mo maxsize="210%" minsize="210%">)</mo></mrow><mi>i</mi></msup></mrow><mrow><mo>∂</mo><mo>⁡</mo><msub><mi>x</mi><mi>k</mi></msub></mrow></mfrac></mstyle><mo>⁢</mo><msup><mi>x</mi><mrow><mi>n</mi><mo>+</mo><mi>k</mi></mrow></msup></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex13.m2" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex13.m3" class="ltx_Math" alttext="\displaystyle\sum_{k=1}^{n}{\partial\bigg{(}\sigma_{\alpha\gamma}(x_{1},\ldots%
+,x_{n})\bigg{)}^{i}\over\partial x_{k}}x^{n+k}" display="inline"><mrow><mstyle displaystyle="true"><munderover><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><mi>k</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover></mstyle><mrow><mstyle displaystyle="true"><mfrac><mrow><mo>∂</mo><msup><mrow><mo maxsize="210%" minsize="210%">(</mo><msub><mi>σ</mi><mrow><mi>α</mi><mo>⁢</mo><mi>γ</mi></mrow></msub><mrow><mo stretchy="false">(</mo><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>x</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow><mo maxsize="210%" minsize="210%">)</mo></mrow><mi>i</mi></msup></mrow><mrow><mo>∂</mo><mo>⁡</mo><msub><mi>x</mi><mi>k</mi></msub></mrow></mfrac></mstyle><mo>⁢</mo><msup><mi>x</mi><mrow><mi>n</mi><mo>+</mo><mi>k</mi></mrow></msup></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr class="ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_center ltx_eqn_cell"><math id="S0.Ex14.m2" class="ltx_Math" alttext="\displaystyle=" display="inline"><mo>=</mo></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S0.Ex14.m3" class="ltx_Math" alttext="\displaystyle{\sigma^{\prime}}_{\alpha\gamma}(x^{1},\dots,x^{2n})" display="inline"><mrow><mmultiscripts><mi>σ</mi><none></none><mo>′</mo><mrow><mi>α</mi><mo>⁢</mo><mi>γ</mi></mrow><none></none></mmultiscripts><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mn>1</mn></msup><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msup><mi>x</mi><mrow><mn>2</mn><mo>⁢</mo><mi>n</mi></mrow></msup><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">when <math id="p3.m4" class="ltx_Math" alttext="1\leq i\leq n" display="inline"><mrow><mn>1</mn><mo>≤</mo><mi>i</mi><mo>≤</mo><mi>n</mi></mrow></math>.</p>
+</div>
+<div id="p4" class="ltx_para">
+<p class="ltx_p">Finally, the second criterion does not need to be checked because it is a consequence of the first and third criteria.
+</p>
+<table class="ltx_tabular ltx_align_right ltx_guessed_headers ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l ltx_border_t">Title</th>
+<td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">proof that transition functions of cotangent bundle are valid</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Canonical name</th>
+<td class="ltx_td ltx_align_left ltx_border_r">ProofThatTransitionFunctionsOfCotangentBundleAreValid</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Date of creation</th>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 14:52:25</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Last modified on</th>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 14:52:25</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Owner</th>
+<td class="ltx_td ltx_align_left ltx_border_r">rspuzio (6075)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Last modified by</th>
+<td class="ltx_td ltx_align_left ltx_border_r">rspuzio (6075)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Numerical id</th>
+<td class="ltx_td ltx_align_left ltx_border_r">13</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Author</th>
+<td class="ltx_td ltx_align_left ltx_border_r">rspuzio (6075)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Entry type</th>
+<td class="ltx_td ltx_align_left ltx_border_r">Proof</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_b ltx_border_l">Classification</th>
+<td class="ltx_td ltx_align_left ltx_border_b ltx_border_r">msc 58A32</td>
+</tr>
+</tbody>
+</table>
+</div>
+</article>
+</div>
+<footer class="ltx_page_footer">
+<div class="ltx_page_logo">Generated  on Sat Feb 10 11:50:46 2018 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</body>
+</html>

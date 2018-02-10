@@ -1,0 +1,420 @@
+<!DOCTYPE html><html>
+<head>
+<title>differential form</title>
+<!--Generated on Sat Feb 10 11:49:55 2018 by LaTeXML (version 0.8.2) http://dlmf.nist.gov/LaTeXML/.-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/3f71ceeb3b055e1ddc3b6c11fb1f074c/raw/2bb23e3b173ff96840797fc0c3bcb8c54085df8e/LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/4bda0365b30858ac2fb83623185fe3ec/raw/cedd84ed3e3ad597c5d293f443ecfe4803741c6b/ltx-article.css" type="text/css">
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<div class="ltx_page_main">
+<div class="ltx_page_content">
+<article class="ltx_document ltx_authors_1line">
+<h1 class="ltx_title ltx_title_document">differential form</h1>
+
+<div id="p1" class="ltx_para">
+<br class="ltx_break">
+</div>
+<section id="S1" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">1 </span>Notation and Preliminaries.</h2>
+
+<div id="S1.p1" class="ltx_para">
+<p class="ltx_p">Let <math id="S1.p1.m1" class="ltx_Math" alttext="M" display="inline"><mi>M</mi></math> be an <math id="S1.p1.m2" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math>-dimensional differential manifold. Let <math id="S1.p1.m3" class="ltx_Math" alttext="TM" display="inline"><mrow><mi>T</mi><mo>⁢</mo><mi>M</mi></mrow></math> denote
+the manifold’s tangent bundle, <math id="S1.p1.m4" class="ltx_Math" alttext="C^{\infty}(M)" display="inline"><mrow><msup><mi>C</mi><mi mathvariant="normal">∞</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow></math> the algebra of smooth
+functions, and <math id="S1.p1.m5" class="ltx_Math" alttext="V(M)" display="inline"><mrow><mi>V</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow></math> the Lie algebra of smooth vector fields. The
+directional derivative makes <math id="S1.p1.m6" class="ltx_Math" alttext="C^{\infty}(M)" display="inline"><mrow><msup><mi>C</mi><mi mathvariant="normal">∞</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow></math> into a <math id="S1.p1.m7" class="ltx_Math" alttext="V(M)" display="inline"><mrow><mi>V</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow></math>
+module. Using local coordinates, the directional derivative operation
+can be expressed as</p>
+<table id="S1.Ex1" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.Ex1.m1" class="ltx_Math" alttext="v(f)=v^{i}\partial_{i}f,\quad v\in V(M),\;f\in C^{\infty}(M)." display="block"><mrow><mrow><mrow><mrow><mi>v</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>f</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msup><mi>v</mi><mi>i</mi></msup><mo>⁢</mo><mrow><msub><mo>∂</mo><mi>i</mi></msub><mo>⁡</mo><mi>f</mi></mrow></mrow></mrow><mo rspace="12.5pt">,</mo><mrow><mrow><mi>v</mi><mo>∈</mo><mrow><mi>V</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo rspace="5.3pt">,</mo><mrow><mi>f</mi><mo>∈</mo><mrow><msup><mi>C</mi><mi mathvariant="normal">∞</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+</section>
+<section id="S2" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">2 </span>Definitions.</h2>
+
+<section id="S2.SS0.SSS0.Px1" class="ltx_paragraph">
+<h3 class="ltx_title ltx_title_paragraph">Differential forms.</h3>
+
+<div id="S2.SS0.SSS0.Px1.p1" class="ltx_para">
+<p class="ltx_p">Let <math id="S2.SS0.SSS0.Px1.p1.m1" class="ltx_Math" alttext="A" display="inline"><mi>A</mi></math> be a <math id="S2.SS0.SSS0.Px1.p1.m2" class="ltx_Math" alttext="C^{\infty}(M)" display="inline"><mrow><msup><mi>C</mi><mi mathvariant="normal">∞</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow></math> module. An <math id="S2.SS0.SSS0.Px1.p1.m3" class="ltx_Math" alttext="\mathbb{R}" display="inline"><mi>ℝ</mi></math>-linear mapping <math id="S2.SS0.SSS0.Px1.p1.m4" class="ltx_Math" alttext="\alpha:V(M)\to A" display="inline"><mrow><mi>α</mi><mo>:</mo><mrow><mrow><mi>V</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow><mo>→</mo><mi>A</mi></mrow></mrow></math> is said to be <em class="ltx_emph ltx_font_italic">tensorial</em> if it is a
+<math id="S2.SS0.SSS0.Px1.p1.m5" class="ltx_Math" alttext="C^{\infty}(M)" display="inline"><mrow><msup><mi>C</mi><mi mathvariant="normal">∞</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow></math>-homomorphism, in other words, if it satisfies</p>
+<table id="S2.Ex2" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S2.Ex2.m1" class="ltx_Math" alttext="\alpha(fv)=f\alpha(v)" display="block"><mrow><mrow><mi>α</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>f</mi><mo>⁢</mo><mi>v</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>f</mi><mo>⁢</mo><mi>α</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>v</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">for all
+for all vector fields <math id="S2.SS0.SSS0.Px1.p1.m6" class="ltx_Math" alttext="v\in V(M)" display="inline"><mrow><mi>v</mi><mo>∈</mo><mrow><mi>V</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math> and functions <math id="S2.SS0.SSS0.Px1.p1.m7" class="ltx_Math" alttext="f\in C^{\infty}(M)" display="inline"><mrow><mi>f</mi><mo>∈</mo><mrow><msup><mi>C</mi><mi mathvariant="normal">∞</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math>.
+More generally, a multilinear map <math id="S2.SS0.SSS0.Px1.p1.m8" class="ltx_Math" alttext="\alpha:V(M)\times\dots\times V(M)\to A" display="inline"><mrow><mi>α</mi><mo>:</mo><mrow><mrow><mrow><mrow><mi>V</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow><mo>×</mo><mi mathvariant="normal">…</mi><mo>×</mo><mi>V</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow><mo>→</mo><mi>A</mi></mrow></mrow></math> is called tensorial if it satisfies</p>
+<table id="S2.Ex3" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S2.Ex3.m1" class="ltx_Math" alttext="\alpha(fu,\dots,v)=\cdots=\alpha(u,\dots,fv)=f\alpha(u,\dots,v)" display="block"><mrow><mrow><mi>α</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>f</mi><mo>⁢</mo><mi>u</mi></mrow><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi>v</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi mathvariant="normal">⋯</mi><mo>=</mo><mrow><mi>α</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>u</mi><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mrow><mi>f</mi><mo>⁢</mo><mi>v</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>f</mi><mo>⁢</mo><mi>α</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>u</mi><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi>v</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">for all vector fields <math id="S2.SS0.SSS0.Px1.p1.m9" class="ltx_Math" alttext="u,\dots,v" display="inline"><mrow><mi>u</mi><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi>v</mi></mrow></math> and all functions <math id="S2.SS0.SSS0.Px1.p1.m10" class="ltx_Math" alttext="f\in C^{\infty}(M)" display="inline"><mrow><mi>f</mi><mo>∈</mo><mrow><msup><mi>C</mi><mi mathvariant="normal">∞</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math>.</p>
+</div>
+<div id="S2.SS0.SSS0.Px1.p2" class="ltx_para">
+<p class="ltx_p">We now define a differential 1-form to be a tensorial linear mapping
+from <math id="S2.SS0.SSS0.Px1.p2.m1" class="ltx_Math" alttext="V(M)" display="inline"><mrow><mi>V</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow></math> to <math id="S2.SS0.SSS0.Px1.p2.m2" class="ltx_Math" alttext="C^{\infty}(M)" display="inline"><mrow><msup><mi>C</mi><mi mathvariant="normal">∞</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow></math>. More generally, for <math id="S2.SS0.SSS0.Px1.p2.m3" class="ltx_Math" alttext="k=0,1,2,\ldots," display="inline"><mrow><mrow><mi>k</mi><mo>=</mo><mrow><mn>0</mn><mo>,</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mi mathvariant="normal">…</mi></mrow></mrow><mo>,</mo></mrow></math> we
+define a differential <math id="S2.SS0.SSS0.Px1.p2.m4" class="ltx_Math" alttext="k" display="inline"><mi>k</mi></math>-form to be a tensorial multilinear,
+antisymmetric, mapping from <math id="S2.SS0.SSS0.Px1.p2.m5" class="ltx_Math" alttext="V(M)\times\cdots\times V(M)" display="inline"><mrow><mrow><mrow><mi>V</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow><mo>×</mo><mi mathvariant="normal">⋯</mi><mo>×</mo><mi>V</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow></math> (<math id="S2.SS0.SSS0.Px1.p2.m6" class="ltx_Math" alttext="k" display="inline"><mi>k</mi></math>
+times) to <math id="S2.SS0.SSS0.Px1.p2.m7" class="ltx_Math" alttext="C^{\infty}(M)" display="inline"><mrow><msup><mi>C</mi><mi mathvariant="normal">∞</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow></math>. Using slightly fancier language, the above amounts
+to saying that a <math id="S2.SS0.SSS0.Px1.p2.m8" class="ltx_Math" alttext="1" display="inline"><mn>1</mn></math>-form is a section of the cotangent bundle <math id="S2.SS0.SSS0.Px1.p2.m9" class="ltx_Math" alttext="T^{*}M=\operatorname{Hom}(TM,\mathbb{R})" display="inline"><mrow><mrow><msup><mi>T</mi><mo>*</mo></msup><mo>⁢</mo><mi>M</mi></mrow><mo>=</mo><mrow><mi>Hom</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>T</mi><mo>⁢</mo><mi>M</mi></mrow><mo>,</mo><mi>ℝ</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math>, while a differential <math id="S2.SS0.SSS0.Px1.p2.m10" class="ltx_Math" alttext="k" display="inline"><mi>k</mi></math>-form as a section of
+<math id="S2.SS0.SSS0.Px1.p2.m11" class="ltx_Math" alttext="\operatorname{Hom}(\Lambda^{k}TM,\mathbb{R})" display="inline"><mrow><mi>Hom</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi mathvariant="normal">Λ</mi><mi>k</mi></msup><mo>⁢</mo><mi>T</mi><mo>⁢</mo><mi>M</mi></mrow><mo>,</mo><mi>ℝ</mi><mo stretchy="false">)</mo></mrow></mrow></math>.</p>
+</div>
+<div id="S2.SS0.SSS0.Px1.p3" class="ltx_para">
+<p class="ltx_p">Henceforth, we let <math id="S2.SS0.SSS0.Px1.p3.m1" class="ltx_Math" alttext="\Omega^{k}(M)" display="inline"><mrow><msup><mi mathvariant="normal">Ω</mi><mi>k</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow></math> denote the <math id="S2.SS0.SSS0.Px1.p3.m2" class="ltx_Math" alttext="C^{\infty}(M)" display="inline"><mrow><msup><mi>C</mi><mi mathvariant="normal">∞</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow></math>-module of
+differential <math id="S2.SS0.SSS0.Px1.p3.m3" class="ltx_Math" alttext="k" display="inline"><mi>k</mi></math>-forms. In particular, a differential <math id="S2.SS0.SSS0.Px1.p3.m4" class="ltx_Math" alttext="0" display="inline"><mn>0</mn></math>-form is the
+same thing as a function. Since the tangent spaces of <math id="S2.SS0.SSS0.Px1.p3.m5" class="ltx_Math" alttext="M" display="inline"><mi>M</mi></math> are
+<math id="S2.SS0.SSS0.Px1.p3.m6" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math>-dimensional vector spaces, we also have <math id="S2.SS0.SSS0.Px1.p3.m7" class="ltx_Math" alttext="\Omega^{k}(M)=0" display="inline"><mrow><mrow><msup><mi mathvariant="normal">Ω</mi><mi>k</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math> for <math id="S2.SS0.SSS0.Px1.p3.m8" class="ltx_Math" alttext="k&gt;n" display="inline"><mrow><mi>k</mi><mo>&gt;</mo><mi>n</mi></mrow></math>.
+We let</p>
+<table id="S2.Ex4" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S2.Ex4.m1" class="ltx_Math" alttext="\Omega(M)=\bigoplus_{k=0}^{n}\Omega^{k}(M)" display="block"><mrow><mrow><mi mathvariant="normal">Ω</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><munderover><mo largeop="true" mathsize="160%" movablelimits="false" stretchy="false" symmetric="true">⊕</mo><mrow><mi>k</mi><mo>=</mo><mn>0</mn></mrow><mi>n</mi></munderover><mrow><msup><mi mathvariant="normal">Ω</mi><mi>k</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">denote the vector space of all differential forms. There is a natural
+operator, called the exterior product, that endows <math id="S2.SS0.SSS0.Px1.p3.m9" class="ltx_Math" alttext="\Omega(M)" display="inline"><mrow><mi mathvariant="normal">Ω</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow></math> with
+the structure of a graded algebra. We describe this operation below.</p>
+</div>
+</section>
+<section id="S2.SS0.SSS0.Px2" class="ltx_paragraph">
+<h3 class="ltx_title ltx_title_paragraph">Exterior and Interior Product.</h3>
+
+<div id="S2.SS0.SSS0.Px2.p1" class="ltx_para">
+<p class="ltx_p">Let <math id="S2.SS0.SSS0.Px2.p1.m1" class="ltx_Math" alttext="v\in V(M)" display="inline"><mrow><mi>v</mi><mo>∈</mo><mrow><mi>V</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math> be a vector field and <math id="S2.SS0.SSS0.Px2.p1.m2" class="ltx_Math" alttext="\alpha\in\Omega^{k}(M)" display="inline"><mrow><mi>α</mi><mo>∈</mo><mrow><msup><mi mathvariant="normal">Ω</mi><mi>k</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math> a
+differential form. We define <math id="S2.SS0.SSS0.Px2.p1.m3" class="ltx_Math" alttext="\iota_{v}(\omega)" display="inline"><mrow><msub><mi>ι</mi><mi>v</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ω</mi><mo stretchy="false">)</mo></mrow></mrow></math>, the interior product
+of <math id="S2.SS0.SSS0.Px2.p1.m4" class="ltx_Math" alttext="v" display="inline"><mi>v</mi></math> and <math id="S2.SS0.SSS0.Px2.p1.m5" class="ltx_Math" alttext="\alpha" display="inline"><mi>α</mi></math>, to be the differential <math id="S2.SS0.SSS0.Px2.p1.m6" class="ltx_Math" alttext="k-1" display="inline"><mrow><mi>k</mi><mo>-</mo><mn>1</mn></mrow></math> form given by</p>
+<table id="S2.Ex5" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S2.Ex5.m1" class="ltx_Math" alttext="\iota_{v}(\alpha)(u_{1},\dots,u_{k-1})=\alpha(v,v_{1},\dots,v_{k-1}),\quad v_{%
+1},\dots,v_{k-1}\in V(M)." display="block"><mrow><mrow><mrow><mrow><msub><mi>ι</mi><mi>v</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>α</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>u</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>u</mi><mrow><mi>k</mi><mo>-</mo><mn>1</mn></mrow></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>α</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>v</mi><mo>,</mo><msub><mi>v</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>v</mi><mrow><mi>k</mi><mo>-</mo><mn>1</mn></mrow></msub><mo stretchy="false">)</mo></mrow></mrow><mo rspace="12.5pt">,</mo><msub><mi>v</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi></mrow></mrow><mo>,</mo><mrow><msub><mi>v</mi><mrow><mi>k</mi><mo>-</mo><mn>1</mn></mrow></msub><mo>∈</mo><mrow><mi>V</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">The
+interior product of a vector field with a <math id="S2.SS0.SSS0.Px2.p1.m7" class="ltx_Math" alttext="0" display="inline"><mn>0</mn></math>-form is defined to be
+zero.</p>
+</div>
+<div id="S2.SS0.SSS0.Px2.p2" class="ltx_para">
+<p class="ltx_p">Let <math id="S2.SS0.SSS0.Px2.p2.m1" class="ltx_Math" alttext="\alpha\in\Omega^{k}(M)" display="inline"><mrow><mi>α</mi><mo>∈</mo><mrow><msup><mi mathvariant="normal">Ω</mi><mi>k</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math> and <math id="S2.SS0.SSS0.Px2.p2.m2" class="ltx_Math" alttext="\beta\in\Omega^{\ell}(M)" display="inline"><mrow><mi>β</mi><mo>∈</mo><mrow><msup><mi mathvariant="normal">Ω</mi><mi mathvariant="normal">ℓ</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math> be differential
+forms. We define the exterior, or wedge product
+<math id="S2.SS0.SSS0.Px2.p2.m3" class="ltx_Math" alttext="\alpha\wedge\beta\in\Omega^{k+\ell}(M)" display="inline"><mrow><mrow><mi>α</mi><mo>∧</mo><mi>β</mi></mrow><mo>∈</mo><mrow><msup><mi mathvariant="normal">Ω</mi><mrow><mi>k</mi><mo>+</mo><mi mathvariant="normal">ℓ</mi></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math> to be the
+unique differential form such that</p>
+<table id="S2.Ex6" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S2.Ex6.m1" class="ltx_Math" alttext="\iota_{v}(\alpha\wedge\beta)=\iota_{v}(\alpha)\wedge\beta+(-1)^{k}\alpha\wedge%
+\iota_{v}(\beta)" display="block"><mrow><mrow><msub><mi>ι</mi><mi>v</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>α</mi><mo>∧</mo><mi>β</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mrow><mrow><msub><mi>ι</mi><mi>v</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>α</mi><mo stretchy="false">)</mo></mrow></mrow><mo>∧</mo><mi>β</mi></mrow><mo>+</mo><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mi>k</mi></msup><mo>⁢</mo><mi>α</mi></mrow></mrow><mo>∧</mo><mrow><msub><mi>ι</mi><mi>v</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>β</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">for all vector fields <math id="S2.SS0.SSS0.Px2.p2.m4" class="ltx_Math" alttext="v\in V(M)" display="inline"><mrow><mi>v</mi><mo>∈</mo><mrow><mi>V</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math>. Equivalently, we could have defined</p>
+<table id="S2.Ex7" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S2.Ex7.m1" class="ltx_Math" alttext="(\alpha\wedge\beta)(v_{1},\dots,v_{k+\ell})=\sum_{\pi}\operatorname{sgn}(\pi)%
+\alpha(v_{\pi_{1}},\dots,v_{\pi_{k}})\beta(v_{\pi_{k+1}},\dots,v_{\pi_{k+\ell}%
+})," display="block"><mrow><mrow><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>α</mi><mo>∧</mo><mi>β</mi></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>v</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>v</mi><mrow><mi>k</mi><mo>+</mo><mi mathvariant="normal">ℓ</mi></mrow></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><munder><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mi>π</mi></munder><mrow><mrow><mi>sgn</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>π</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><mi>α</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>v</mi><msub><mi>π</mi><mn>1</mn></msub></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>v</mi><msub><mi>π</mi><mi>k</mi></msub></msub><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>β</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>v</mi><msub><mi>π</mi><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></msub></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>v</mi><msub><mi>π</mi><mrow><mi>k</mi><mo>+</mo><mi mathvariant="normal">ℓ</mi></mrow></msub></msub><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">where the sum is taken
+over all permutations <math id="S2.SS0.SSS0.Px2.p2.m5" class="ltx_Math" alttext="\pi" display="inline"><mi>π</mi></math> of <math id="S2.SS0.SSS0.Px2.p2.m6" class="ltx_Math" alttext="\{1,2,\dots,k+\ell\}" display="inline"><mrow><mo stretchy="false">{</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mrow><mi>k</mi><mo>+</mo><mi mathvariant="normal">ℓ</mi></mrow><mo stretchy="false">}</mo></mrow></math> such that <math id="S2.SS0.SSS0.Px2.p2.m7" class="ltx_Math" alttext="\pi_{1}&lt;\pi_{2}&lt;\cdots\pi_{k}" display="inline"><mrow><msub><mi>π</mi><mn>1</mn></msub><mo>&lt;</mo><msub><mi>π</mi><mn>2</mn></msub><mo>&lt;</mo><mrow><mi mathvariant="normal">⋯</mi><mo>⁢</mo><msub><mi>π</mi><mi>k</mi></msub></mrow></mrow></math> and <math id="S2.SS0.SSS0.Px2.p2.m8" class="ltx_Math" alttext="\pi_{k+1}&lt;\cdots&lt;\pi_{k+\ell}" display="inline"><mrow><msub><mi>π</mi><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></msub><mo>&lt;</mo><mi mathvariant="normal">⋯</mi><mo>&lt;</mo><msub><mi>π</mi><mrow><mi>k</mi><mo>+</mo><mi mathvariant="normal">ℓ</mi></mrow></msub></mrow></math>, and where
+<math id="S2.SS0.SSS0.Px2.p2.m9" class="ltx_Math" alttext="\operatorname{sgn}\pi=\pm 1" display="inline"><mrow><mrow><mi>sgn</mi><mo>⁡</mo><mi>π</mi></mrow><mo>=</mo><mrow><mo>±</mo><mn>1</mn></mrow></mrow></math> according to whether <math id="S2.SS0.SSS0.Px2.p2.m10" class="ltx_Math" alttext="\pi" display="inline"><mi>π</mi></math> is an even
+or odd permutation.</p>
+</div>
+</section>
+<section id="S2.SS0.SSS0.Px3" class="ltx_paragraph">
+<h3 class="ltx_title ltx_title_paragraph">Exterior derivative.</h3>
+
+<div id="S2.SS0.SSS0.Px3.p1" class="ltx_para">
+<p class="ltx_p">The exterior derivative is a
+first-order differential operator <math id="S2.SS0.SSS0.Px3.p1.m1" class="ltx_Math" alttext="d:\Omega^{*}(M)\rightarrow\Omega^{*}(M)" display="inline"><mrow><mi>d</mi><mo>:</mo><mrow><mrow><msup><mi mathvariant="normal">Ω</mi><mo>*</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow><mo>→</mo><mrow><msup><mi mathvariant="normal">Ω</mi><mo>*</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math>, that can be defined as the unique linear mapping
+satisfying</p>
+<table id="S3.EGx1" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tr id="S2.Ex8" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S2.Ex8.m1" class="ltx_Math" alttext="\displaystyle d(d\alpha)" display="inline"><mrow><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>d</mi><mo>⁢</mo><mi>α</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S2.Ex8.m2" class="ltx_Math" alttext="\displaystyle=0,\qquad\alpha\in\Omega^{k}(M);" display="inline"><mrow><mrow><mrow><mi></mi><mo>=</mo><mn>0</mn></mrow><mo rspace="22.5pt">,</mo><mrow><mi>α</mi><mo>∈</mo><mrow><msup><mi mathvariant="normal">Ω</mi><mi>k</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>;</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="S2.Ex9" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S2.Ex9.m1" class="ltx_Math" alttext="\displaystyle\iota_{V}(df)" display="inline"><mrow><msub><mi>ι</mi><mi>V</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>d</mi><mo>⁢</mo><mi>f</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S2.Ex9.m2" class="ltx_Math" alttext="\displaystyle=v(f),\qquad v\in V(M),\;f\in C^{\infty}(M);" display="inline"><mrow><mrow><mrow><mi></mi><mo>=</mo><mrow><mi>v</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>f</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo rspace="22.5pt">,</mo><mrow><mrow><mi>v</mi><mo>∈</mo><mrow><mi>V</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo rspace="5.3pt">,</mo><mrow><mi>f</mi><mo>∈</mo><mrow><msup><mi>C</mi><mi mathvariant="normal">∞</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow><mo>;</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="S2.Ex10" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S2.Ex10.m1" class="ltx_Math" alttext="\displaystyle d(\alpha\wedge\beta)" display="inline"><mrow><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>α</mi><mo>∧</mo><mi>β</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S2.Ex10.m2" class="ltx_Math" alttext="\displaystyle=d(\alpha)\wedge\beta+(-1)^{k}\alpha\wedge d(\beta),\qquad\alpha%
+\in\Omega^{k}(M),\;\beta\in\Omega^{\ell}(M)." display="inline"><mrow><mrow><mrow><mi></mi><mo>=</mo><mrow><mrow><mrow><mrow><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>α</mi><mo stretchy="false">)</mo></mrow></mrow><mo>∧</mo><mi>β</mi></mrow><mo>+</mo><mrow><msup><mrow><mo stretchy="false">(</mo><mrow><mo>-</mo><mn>1</mn></mrow><mo stretchy="false">)</mo></mrow><mi>k</mi></msup><mo>⁢</mo><mi>α</mi></mrow></mrow><mo>∧</mo><mrow><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>β</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo rspace="22.5pt">,</mo><mrow><mrow><mi>α</mi><mo>∈</mo><mrow><msup><mi mathvariant="normal">Ω</mi><mi>k</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo rspace="5.3pt">,</mo><mrow><mi>β</mi><mo>∈</mo><mrow><msup><mi mathvariant="normal">Ω</mi><mi mathvariant="normal">ℓ</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+</section>
+</section>
+<section id="S3" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">3 </span>Local coordinates.</h2>
+
+<div id="S3.p1" class="ltx_para">
+<p class="ltx_p">Let <math id="S3.p1.m1" class="ltx_Math" alttext="(x^{1},\ldots,x^{n})" display="inline"><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mn>1</mn></msup><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msup><mi>x</mi><mi>n</mi></msup><mo stretchy="false">)</mo></mrow></math> be a system of local coordinates on <math id="S3.p1.m2" class="ltx_Math" alttext="M" display="inline"><mi>M</mi></math>, and
+let <math id="S3.p1.m3" class="ltx_Math" alttext="\partial_{1},\dots,\partial_{n}" display="inline"><mrow><msub><mo>∂</mo><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mo>∂</mo><mi>n</mi></msub></mrow></math> denote the corresponding frame of
+coordinate vector fields. In other words,</p>
+<table id="S3.Ex11" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S3.Ex11.m1" class="ltx_Math" alttext="\partial_{i}(x^{j})=\delta_{i}{}^{j}," display="block"><mrow><msub><mo>∂</mo><mi>i</mi></msub><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mi>j</mi></msup><mo stretchy="false">)</mo></mrow><mo>=</mo><msub><mi>δ</mi><mi>i</mi></msub><mmultiscripts><mo>,</mo><mprescripts></mprescripts><none></none><mi>j</mi></mmultiscripts></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">where the right hand side is the
+usual Kronecker delta symbol. By the definition of the
+exterior derivative,</p>
+<table id="S3.Ex12" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S3.Ex12.m1" class="ltx_Math" alttext="\iota_{\partial_{i}}(dx^{j})=\delta_{i}{}^{j};" display="block"><mrow><msub><mi>ι</mi><msub><mo>∂</mo><mi>i</mi></msub></msub><mrow><mo stretchy="false">(</mo><mi>d</mi><msup><mi>x</mi><mi>j</mi></msup><mo stretchy="false">)</mo></mrow><mo>=</mo><msub><mi>δ</mi><mi>i</mi></msub><mmultiscripts><mo>;</mo><mprescripts></mprescripts><none></none><mi>j</mi></mmultiscripts></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">In other words, the 1-forms <math id="S3.p1.m4" class="ltx_Math" alttext="dx^{1},\dots,dx^{n}" display="inline"><mrow><mrow><mi>d</mi><mo>⁢</mo><msup><mi>x</mi><mn>1</mn></msup></mrow><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mrow><mi>d</mi><mo>⁢</mo><msup><mi>x</mi><mi>n</mi></msup></mrow></mrow></math> form the dual coframe.</p>
+</div>
+<div id="S3.p2" class="ltx_para">
+<p class="ltx_p">Locally, the <math id="S3.p2.m1" class="ltx_Math" alttext="\partial_{i}" display="inline"><msub><mo>∂</mo><mi>i</mi></msub></math> freely generate <math id="S3.p2.m2" class="ltx_Math" alttext="V(M)" display="inline"><mrow><mi>V</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow></math>, meaning
+that every vector field <math id="S3.p2.m3" class="ltx_Math" alttext="v\in V(M)" display="inline"><mrow><mi>v</mi><mo>∈</mo><mrow><mi>V</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math> has the form</p>
+<table id="S3.Ex13" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S3.Ex13.m1" class="ltx_Math" alttext="v=v^{i}\partial_{i}," display="block"><mrow><mrow><mi>v</mi><mo>=</mo><mrow><msup><mi>v</mi><mi>i</mi></msup><mo>⁢</mo><msub><mo>∂</mo><mi>i</mi></msub></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">where the coordinate components <math id="S3.p2.m4" class="ltx_Math" alttext="v^{i}" display="inline"><msup><mi>v</mi><mi>i</mi></msup></math> are uniquely determined as</p>
+<table id="S3.Ex14" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S3.Ex14.m1" class="ltx_Math" alttext="v^{i}=v(x^{i})." display="block"><mrow><mrow><msup><mi>v</mi><mi>i</mi></msup><mo>=</mo><mrow><mi>v</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msup><mi>x</mi><mi>i</mi></msup><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Similarly, locally the <math id="S3.p2.m5" class="ltx_Math" alttext="dx^{i}" display="inline"><mrow><mi>d</mi><mo>⁢</mo><msup><mi>x</mi><mi>i</mi></msup></mrow></math> freely generate <math id="S3.p2.m6" class="ltx_Math" alttext="\Omega^{1}(M)" display="inline"><mrow><msup><mi mathvariant="normal">Ω</mi><mn>1</mn></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow></math>. This
+means that
+every
+one-form <math id="S3.p2.m7" class="ltx_Math" alttext="\alpha\in\Omega^{1}(M)" display="inline"><mrow><mi>α</mi><mo>∈</mo><mrow><msup><mi mathvariant="normal">Ω</mi><mn>1</mn></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math> takes the form</p>
+<table id="S3.Ex15" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S3.Ex15.m1" class="ltx_Math" alttext="\alpha=\alpha_{i}dx^{i}," display="block"><mrow><mrow><mi>α</mi><mo>=</mo><mrow><msub><mi>α</mi><mi>i</mi></msub><mo>⁢</mo><mi>d</mi><mo>⁢</mo><msup><mi>x</mi><mi>i</mi></msup></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">where</p>
+<table id="S3.Ex16" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S3.Ex16.m1" class="ltx_Math" alttext="\alpha_{i}=\iota_{\partial_{i}}(\alpha)." display="block"><mrow><mrow><msub><mi>α</mi><mi>i</mi></msub><mo>=</mo><mrow><msub><mi>ι</mi><msub><mo>∂</mo><mi>i</mi></msub></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>α</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">More generally, locally <math id="S3.p2.m8" class="ltx_Math" alttext="\Omega^{k}(M)" display="inline"><mrow><msup><mi mathvariant="normal">Ω</mi><mi>k</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow></math> is a freely generated by the
+differential <math id="S3.p2.m9" class="ltx_Math" alttext="k" display="inline"><mi>k</mi></math>-forms</p>
+<table id="S3.Ex17" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S3.Ex17.m1" class="ltx_Math" alttext="dx^{i_{1}}\wedge\cdots\wedge dx^{i_{k}},\qquad 1\leq i_{1}&lt;i_{2}&lt;\cdots&lt;i_{k}%
+\leq n." display="block"><mrow><mrow><mrow><mrow><mrow><mi>d</mi><mo>⁢</mo><msup><mi>x</mi><msub><mi>i</mi><mn>1</mn></msub></msup></mrow><mo>∧</mo><mi mathvariant="normal">⋯</mi><mo>∧</mo><mrow><mi>d</mi><mo>⁢</mo><msup><mi>x</mi><msub><mi>i</mi><mi>k</mi></msub></msup></mrow></mrow><mo rspace="22.5pt">,</mo><mn>1</mn></mrow><mo>≤</mo><msub><mi>i</mi><mn>1</mn></msub><mo>&lt;</mo><msub><mi>i</mi><mn>2</mn></msub><mo>&lt;</mo><mi mathvariant="normal">⋯</mi><mo>&lt;</mo><msub><mi>i</mi><mi>k</mi></msub><mo>≤</mo><mi>n</mi></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Thus, a differential form <math id="S3.p2.m10" class="ltx_Math" alttext="\alpha\in\Omega^{k}(M)" display="inline"><mrow><mi>α</mi><mo>∈</mo><mrow><msup><mi mathvariant="normal">Ω</mi><mi>k</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math> is given by</p>
+<table id="S3.EGx2" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="S3.E1"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S3.E1.m1" class="ltx_Math" alttext="\displaystyle\alpha" display="inline"><mi>α</mi></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.E1.m2" class="ltx_Math" alttext="\displaystyle=\!\!\!\sum_{i_{1}&lt;\ldots&lt;i_{k}}\!\!\!\alpha_{i_{1}\ldots i_{k}}%
+\,dx^{i_{1}}\wedge\ldots\wedge dx^{i_{k}}," display="inline"><mrow><mrow><mi></mi><mo rspace="0pt">=</mo><mrow><mrow><mpadded width="-5pt"><mstyle displaystyle="true"><munder><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mrow><msub><mi>i</mi><mn>1</mn></msub><mo>&lt;</mo><mi mathvariant="normal">…</mi><mo>&lt;</mo><msub><mi>i</mi><mi>k</mi></msub></mrow></munder></mstyle></mpadded><mrow><mpadded width="+1.7pt"><msub><mi>α</mi><mrow><msub><mi>i</mi><mn>1</mn></msub><mo>⁢</mo><mi mathvariant="normal">…</mi><mo>⁢</mo><msub><mi>i</mi><mi>k</mi></msub></mrow></msub></mpadded><mo>⁢</mo><mi>d</mi><mo>⁢</mo><msup><mi>x</mi><msub><mi>i</mi><mn>1</mn></msub></msup></mrow></mrow><mo>∧</mo><mi mathvariant="normal">…</mi><mo>∧</mo><mrow><mi>d</mi><mo>⁢</mo><msup><mi>x</mi><msub><mi>i</mi><mi>k</mi></msub></msup></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(1)</span></td>
+</tr></tbody>
+<tr id="S3.Ex18" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.Ex18.m2" class="ltx_Math" alttext="\displaystyle=\frac{1}{k!}\;\alpha_{i_{1}\ldots i_{k}}\,dx^{i_{1}}\wedge\ldots%
+\wedge dx^{i_{k}}," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mrow><mpadded width="+2.8pt"><mstyle displaystyle="true"><mfrac><mn>1</mn><mrow><mi>k</mi><mo lspace="0pt" rspace="3.5pt">!</mo></mrow></mfrac></mstyle></mpadded><mo>⁢</mo><mpadded width="+1.7pt"><msub><mi>α</mi><mrow><msub><mi>i</mi><mn>1</mn></msub><mo>⁢</mo><mi mathvariant="normal">…</mi><mo>⁢</mo><msub><mi>i</mi><mi>k</mi></msub></mrow></msub></mpadded><mo>⁢</mo><mi>d</mi><mo>⁢</mo><msup><mi>x</mi><msub><mi>i</mi><mn>1</mn></msub></msup></mrow><mo>∧</mo><mi mathvariant="normal">…</mi><mo>∧</mo><mrow><mi>d</mi><mo>⁢</mo><msup><mi>x</mi><msub><mi>i</mi><mi>k</mi></msub></msup></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">where</p>
+<table id="S3.Ex19" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S3.Ex19.m1" class="ltx_Math" alttext="\alpha_{i_{1}\dots i_{k}}=\alpha(\partial_{i_{1}},\dots,\partial_{i_{k}})." display="block"><mrow><mrow><msub><mi>α</mi><mrow><msub><mi>i</mi><mn>1</mn></msub><mo>⁢</mo><mi mathvariant="normal">…</mi><mo>⁢</mo><msub><mi>i</mi><mi>k</mi></msub></mrow></msub><mo>=</mo><mrow><mi>α</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mo>∂</mo><msub><mi>i</mi><mn>1</mn></msub></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mo>∂</mo><msub><mi>i</mi><mi>k</mi></msub></msub><mo stretchy="false">)</mo></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Consequently, for vector fields <math id="S3.p2.m11" class="ltx_Math" alttext="u,v,\dots,w\in V(M)" display="inline"><mrow><mrow><mi>u</mi><mo>,</mo><mi>v</mi><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi>w</mi></mrow><mo>∈</mo><mrow><mi>V</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math>, we have</p>
+<table id="S3.Ex20" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S3.Ex20.m1" class="ltx_Math" alttext="\alpha(u,v,\dots,w)=\alpha_{i_{1}i_{2}\dots i_{k}}u^{i_{1}}v^{i_{2}}\cdots w^{%
+i_{k}}." display="block"><mrow><mrow><mrow><mi>α</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>u</mi><mo>,</mo><mi>v</mi><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi>w</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msub><mi>α</mi><mrow><msub><mi>i</mi><mn>1</mn></msub><mo>⁢</mo><msub><mi>i</mi><mn>2</mn></msub><mo>⁢</mo><mi mathvariant="normal">…</mi><mo>⁢</mo><msub><mi>i</mi><mi>k</mi></msub></mrow></msub><mo>⁢</mo><msup><mi>u</mi><msub><mi>i</mi><mn>1</mn></msub></msup><mo>⁢</mo><msup><mi>v</mi><msub><mi>i</mi><mn>2</mn></msub></msup><mo>⁢</mo><mi mathvariant="normal">⋯</mi><mo>⁢</mo><msup><mi>w</mi><msub><mi>i</mi><mi>k</mi></msub></msup></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+<div id="S3.p3" class="ltx_para">
+<p class="ltx_p">In terms of local coordinates and the skew-symmetrization index
+notation, the interior and exterior product, and the exterior
+derivative take the following expressions:</p>
+<table id="S3.EGx3" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tbody id="S3.E2"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S3.E2.m1" class="ltx_Math" alttext="\displaystyle(\iota_{v}(\alpha))_{i_{1}\dots i_{k}}" display="inline"><msub><mrow><mo stretchy="false">(</mo><mrow><msub><mi>ι</mi><mi>v</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>α</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow><mrow><msub><mi>i</mi><mn>1</mn></msub><mo>⁢</mo><mi mathvariant="normal">…</mi><mo>⁢</mo><msub><mi>i</mi><mi>k</mi></msub></mrow></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.E2.m2" class="ltx_Math" alttext="\displaystyle=v^{j}\alpha_{ji_{1}\dots i_{k}},\quad v\in V(M),\;\alpha\in%
+\Omega^{k+1}(M);" display="inline"><mrow><mrow><mrow><mi></mi><mo>=</mo><mrow><msup><mi>v</mi><mi>j</mi></msup><mo>⁢</mo><msub><mi>α</mi><mrow><mi>j</mi><mo>⁢</mo><msub><mi>i</mi><mn>1</mn></msub><mo>⁢</mo><mi mathvariant="normal">…</mi><mo>⁢</mo><msub><mi>i</mi><mi>k</mi></msub></mrow></msub></mrow></mrow><mo rspace="12.5pt">,</mo><mrow><mrow><mi>v</mi><mo>∈</mo><mrow><mi>V</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo rspace="5.3pt">,</mo><mrow><mi>α</mi><mo>∈</mo><mrow><msup><mi mathvariant="normal">Ω</mi><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow><mo>;</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(2)</span></td>
+</tr></tbody>
+<tbody id="S3.E3"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S3.E3.m1" class="ltx_Math" alttext="\displaystyle(\alpha\wedge\beta)_{i_{1}\dots i_{k+\ell}}" display="inline"><msub><mrow><mo stretchy="false">(</mo><mrow><mi>α</mi><mo>∧</mo><mi>β</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><msub><mi>i</mi><mn>1</mn></msub><mo>⁢</mo><mi mathvariant="normal">…</mi><mo>⁢</mo><msub><mi>i</mi><mrow><mi>k</mi><mo>+</mo><mi mathvariant="normal">ℓ</mi></mrow></msub></mrow></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.E3.m2" class="ltx_Math" alttext="\displaystyle=\binom{k+\ell}{k}\,\alpha_{[i_{1}\dots i_{k}}\beta_{i_{k+1}\dots
+i%
+_{k+\ell}]},\quad\alpha\in\Omega^{k}(M),\;\beta\in\Omega^{\ell}(M);" display="inline"><mrow><mrow><mrow><mi></mi><mo>=</mo><mrow><mpadded width="+1.7pt"><mrow><mo>(</mo><mstyle displaystyle="true"><mfrac linethickness="0pt"><mrow><mi>k</mi><mo>+</mo><mi mathvariant="normal">ℓ</mi></mrow><mi>k</mi></mfrac></mstyle><mo>)</mo></mrow></mpadded><mo>⁢</mo><msub><mi>α</mi><mrow><mo stretchy="false">[</mo><msub><mi>i</mi><mn>1</mn></msub><mi mathvariant="normal">…</mi><msub><mi>i</mi><mi>k</mi></msub></mrow></msub><mo>⁢</mo><msub><mi>β</mi><mrow><msub><mi>i</mi><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></msub><mi mathvariant="normal">…</mi><msub><mi>i</mi><mrow><mi>k</mi><mo>+</mo><mi mathvariant="normal">ℓ</mi></mrow></msub><mo stretchy="false">]</mo></mrow></msub></mrow></mrow><mo rspace="12.5pt">,</mo><mrow><mrow><mi>α</mi><mo>∈</mo><mrow><msup><mi mathvariant="normal">Ω</mi><mi>k</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow></mrow><mo rspace="5.3pt">,</mo><mrow><mi>β</mi><mo>∈</mo><mrow><msup><mi mathvariant="normal">Ω</mi><mi mathvariant="normal">ℓ</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></mrow><mo>;</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(3)</span></td>
+</tr></tbody>
+<tbody id="S3.E4"><tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S3.E4.m1" class="ltx_Math" alttext="\displaystyle(d\alpha)_{i_{0}i_{1}\dots i_{k}}" display="inline"><msub><mrow><mo stretchy="false">(</mo><mrow><mi>d</mi><mo>⁢</mo><mi>α</mi></mrow><mo stretchy="false">)</mo></mrow><mrow><msub><mi>i</mi><mn>0</mn></msub><mo>⁢</mo><msub><mi>i</mi><mn>1</mn></msub><mo>⁢</mo><mi mathvariant="normal">…</mi><mo>⁢</mo><msub><mi>i</mi><mi>k</mi></msub></mrow></msub></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S3.E4.m2" class="ltx_Math" alttext="\displaystyle=(k+1)\,\partial_{[i_{0}}\alpha_{i_{1}\dots i_{k}]},\quad\alpha%
+\in\Omega^{k}(M)." display="inline"><mrow><mrow><mrow><mi></mi><mo>=</mo><mrow><mrow><mo stretchy="false">(</mo><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow><mo rspace="4.2pt" stretchy="false">)</mo></mrow><mo>⁢</mo><mrow><msub><mo>∂</mo><mrow><mo stretchy="false">[</mo><msub><mi>i</mi><mn>0</mn></msub></mrow></msub><mo>⁡</mo><msub><mi>α</mi><mrow><msub><mi>i</mi><mn>1</mn></msub><mi mathvariant="normal">…</mi><msub><mi>i</mi><mi>k</mi></msub><mo stretchy="false">]</mo></mrow></msub></mrow></mrow></mrow><mo rspace="12.5pt">,</mo><mrow><mi>α</mi><mo>∈</mo><mrow><msup><mi mathvariant="normal">Ω</mi><mi>k</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>M</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+<td rowspan="1" class="ltx_eqn_cell ltx_eqn_eqno ltx_align_middle ltx_align_right"><span class="ltx_tag ltx_tag_equation ltx_align_right">(4)</span></td>
+</tr></tbody>
+</table>
+<p class="ltx_p">Note that some authors prefer a different definition of the components
+of a differential. According to this alternate convention, a factor
+of <math id="S3.p3.m1" class="ltx_Math" alttext="k!" display="inline"><mrow><mi>k</mi><mo lspace="0pt" rspace="3.5pt">!</mo></mrow></math> placed before the summation sign in
+(<a href="#S3.E1" title="(1) ‣ 3 Local coordinates. ‣ differential form" class="ltx_ref"><span class="ltx_text ltx_ref_tag">1</span></a>), and the leading factors are removed from
+(<a href="#S3.E3" title="(3) ‣ 3 Local coordinates. ‣ differential form" class="ltx_ref"><span class="ltx_text ltx_ref_tag">3</span></a>) and (<a href="#S3.E4" title="(4) ‣ 3 Local coordinates. ‣ differential form" class="ltx_ref"><span class="ltx_text ltx_ref_tag">4</span></a>).
+</p>
+<table class="ltx_tabular ltx_align_right ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l ltx_border_t">Title</td>
+<td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">differential form</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Canonical name</td>
+<td class="ltx_td ltx_align_left ltx_border_r">DifferentialForm</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Date of creation</td>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 12:44:46</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Last modified on</td>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 12:44:46</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Owner</td>
+<td class="ltx_td ltx_align_left ltx_border_r">rmilson (146)</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Last modified by</td>
+<td class="ltx_td ltx_align_left ltx_border_r">rmilson (146)</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Numerical id</td>
+<td class="ltx_td ltx_align_left ltx_border_r">28</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Author</td>
+<td class="ltx_td ltx_align_left ltx_border_r">rmilson (146)</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Entry type</td>
+<td class="ltx_td ltx_align_left ltx_border_r">Definition</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Classification</td>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 58A10</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Defines</td>
+<td class="ltx_td ltx_align_left ltx_border_r">exterior derivative</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Defines</td>
+<td class="ltx_td ltx_align_left ltx_border_r">1-form</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Defines</td>
+<td class="ltx_td ltx_align_left ltx_border_r">exterior product</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Defines</td>
+<td class="ltx_td ltx_align_left ltx_border_r">wedge product</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_l">Defines</td>
+<td class="ltx_td ltx_align_left ltx_border_r">interior product</td>
+</tr>
+<tr class="ltx_tr">
+<td class="ltx_td ltx_align_left ltx_border_b ltx_border_l">Defines</td>
+<td class="ltx_td ltx_align_left ltx_border_b ltx_border_r">tensorial</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</article>
+</div>
+<footer class="ltx_page_footer">
+<div class="ltx_page_logo">Generated  on Sat Feb 10 11:49:55 2018 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</body>
+</html>

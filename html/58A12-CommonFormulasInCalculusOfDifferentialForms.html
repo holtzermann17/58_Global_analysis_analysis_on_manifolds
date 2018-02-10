@@ -1,0 +1,567 @@
+<!DOCTYPE html><html>
+<head>
+<title>common formulas in calculus of differential forms</title>
+<!--Generated on Sat Feb 10 11:50:22 2018 by LaTeXML (version 0.8.2) http://dlmf.nist.gov/LaTeXML/.-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/3f71ceeb3b055e1ddc3b6c11fb1f074c/raw/2bb23e3b173ff96840797fc0c3bcb8c54085df8e/LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/4bda0365b30858ac2fb83623185fe3ec/raw/cedd84ed3e3ad597c5d293f443ecfe4803741c6b/ltx-article.css" type="text/css">
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<div class="ltx_page_main">
+<div class="ltx_page_content">
+<article class="ltx_document ltx_authors_1line">
+<h1 class="ltx_title ltx_title_document">common formulas in calculus of differential forms</h1>
+
+<div id="p1" class="ltx_para">
+<br class="ltx_break">
+</div>
+<section id="S1" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">1 </span><span class="ltx_text ltx_font_bold">Euclidean forms</span>
+</h2>
+
+<div id="S1.p1" class="ltx_para">
+<p class="ltx_p">To begin with we have the total differential for scalars <math id="S1.p1.m1" class="ltx_Math" alttext="f\colon D\to\mathbb{R}" display="inline"><mrow><mi>f</mi><mo>:</mo><mrow><mi>D</mi><mo>→</mo><mi>ℝ</mi></mrow></mrow></math> where <math id="S1.p1.m2" class="ltx_Math" alttext="D" display="inline"><mi>D</mi></math> is a domain in <math id="S1.p1.m3" class="ltx_Math" alttext="\mathbb{R}^{n}" display="inline"><msup><mi>ℝ</mi><mi>n</mi></msup></math>:</p>
+<table id="S1.Ex1" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.Ex1.m1" class="ltx_Math" alttext="df=\sum_{s}\frac{\partial f}{\partial x^{s}}dx^{s}" display="block"><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>f</mi></mrow><mo>=</mo><mrow><munder><mo largeop="true" movablelimits="false" symmetric="true">∑</mo><mi>s</mi></munder><mrow><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>f</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>x</mi><mi>s</mi></msup></mrow></mfrac><mo>⁢</mo><mi>d</mi><mo>⁢</mo><msup><mi>x</mi><mi>s</mi></msup></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">or by the Einstein summation convention</p>
+<table id="S1.Ex2" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.Ex2.m1" class="ltx_Math" alttext="df=\frac{\partial f}{\partial x^{s}}dx^{s}" display="block"><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>f</mi></mrow><mo>=</mo><mrow><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>f</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>x</mi><mi>s</mi></msup></mrow></mfrac><mo>⁢</mo><mi>d</mi><mo>⁢</mo><msup><mi>x</mi><mi>s</mi></msup></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">which are a special case of the so-called Euclidean 1-forms.
+Here we reconize the covariant form of the gradient of <math id="S1.p1.m4" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> in contravaiant ”state”:</p>
+<table id="S1.Ex3" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.Ex3.m1" class="ltx_Math" alttext="\nabla f=\frac{\partial f}{\partial x^{s}}" display="block"><mrow><mrow><mo>∇</mo><mo>⁡</mo><mi>f</mi></mrow><mo>=</mo><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>f</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>x</mi><mi>s</mi></msup></mrow></mfrac></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">being the components of <math id="S1.p1.m5" class="ltx_Math" alttext="df" display="inline"><mrow><mi>d</mi><mo>⁢</mo><mi>f</mi></mrow></math>.</p>
+</div>
+<div id="S1.p2" class="ltx_para">
+<p class="ltx_p">Here the symbols <math id="S1.p2.m1" class="ltx_Math" alttext="dx^{s}" display="inline"><mrow><mi>d</mi><mo>⁢</mo><msup><mi>x</mi><mi>s</mi></msup></mrow></math> are linear functionals <math id="S1.p2.m2" class="ltx_Math" alttext="\mathbb{R}^{n}\to\mathbb{R}" display="inline"><mrow><msup><mi>ℝ</mi><mi>n</mi></msup><mo>→</mo><mi>ℝ</mi></mrow></math> dual to the derivations <math id="S1.p2.m3" class="ltx_Math" alttext="\frac{\partial}{\partial x^{s}}" display="inline"><mfrac><mo>∂</mo><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>x</mi><mi>s</mi></msup></mrow></mfrac></math>, that is</p>
+<table id="S1.Ex4" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.Ex4.m1" class="ltx_Math" alttext="dx^{s}\Big{(}\frac{\partial}{\partial x^{t}}\Big{)}=\delta^{s}_{t}" display="block"><mrow><mrow><mi>d</mi><mo>⁢</mo><msup><mi>x</mi><mi>s</mi></msup><mo>⁢</mo><mrow><mo maxsize="160%" minsize="160%">(</mo><mfrac><mo>∂</mo><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>x</mi><mi>t</mi></msup></mrow></mfrac><mo maxsize="160%" minsize="160%">)</mo></mrow></mrow><mo>=</mo><msubsup><mi>δ</mi><mi>t</mi><mi>s</mi></msubsup></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">this coincides with the calculation
+<math id="S1.p2.m4" class="ltx_Math" alttext="dx^{s}(\frac{\partial}{\partial x^{t}})=\frac{\partial x^{s}}{\partial x^{t}}=%
+\delta^{s}_{t}" display="inline"><mrow><mrow><mi>d</mi><mo>⁢</mo><msup><mi>x</mi><mi>s</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mfrac><mo>∂</mo><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>x</mi><mi>t</mi></msup></mrow></mfrac><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>x</mi><mi>s</mi></msup></mrow><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>x</mi><mi>t</mi></msup></mrow></mfrac><mo>=</mo><msubsup><mi>δ</mi><mi>t</mi><mi>s</mi></msubsup></mrow></math>.</p>
+</div>
+<div id="S1.p3" class="ltx_para">
+<p class="ltx_p">If <math id="S1.p3.m1" class="ltx_Math" alttext="X" display="inline"><mi>X</mi></math> is a vector field and <math id="S1.p3.m2" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> a scalar field then one has for the directional derivative</p>
+<table id="S1.Ex5" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.Ex5.m1" class="ltx_Math" alttext="Xf=X^{s}\frac{\partial}{\partial x^{s}}f=X^{s}df(\frac{\partial}{\partial x^{s%
+}})=df(X)" display="block"><mrow><mrow><mi>X</mi><mo>⁢</mo><mi>f</mi></mrow><mo>=</mo><mrow><msup><mi>X</mi><mi>s</mi></msup><mo>⁢</mo><mfrac><mo>∂</mo><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>x</mi><mi>s</mi></msup></mrow></mfrac><mo>⁢</mo><mi>f</mi></mrow><mo>=</mo><mrow><msup><mi>X</mi><mi>s</mi></msup><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mfrac><mo>∂</mo><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>x</mi><mi>s</mi></msup></mrow></mfrac><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>d</mi><mo>⁢</mo><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+<div id="S1.p4" class="ltx_para">
+<p class="ltx_p">For a pair of functions <math id="S1.p4.m1" class="ltx_Math" alttext="g,f\colon D\to\mathbb{R}" display="inline"><mrow><mrow><mi>g</mi><mo>,</mo><mi>f</mi></mrow><mo>:</mo><mrow><mi>D</mi><mo>→</mo><mi>ℝ</mi></mrow></mrow></math> we can check Leibniz’s rule</p>
+<table id="S1.Ex6" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.Ex6.m1" class="ltx_Math" alttext="d(fg)=gdf+fdg" display="block"><mrow><mrow><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>f</mi><mo>⁢</mo><mi>g</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>g</mi><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>f</mi></mrow><mo>+</mo><mrow><mi>f</mi><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>g</mi></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+<div id="S1.p5" class="ltx_para">
+<p class="ltx_p">Let <math id="S1.p5.m1" class="ltx_Math" alttext="\Omega^{0}(D)=C^{\infty}(D)" display="inline"><mrow><mrow><msup><mi mathvariant="normal">Ω</mi><mn>0</mn></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>D</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msup><mi>C</mi><mi mathvariant="normal">∞</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>D</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math> be the set of 0-forms in <math id="S1.p5.m2" class="ltx_Math" alttext="D" display="inline"><mi>D</mi></math> and let <math id="S1.p5.m3" class="ltx_Math" alttext="\Omega^{1}(D)=\{w=w_{s}dx^{s}\colon w_{s}\in\Omega^{0}\}" display="inline"><mrow><mrow><msup><mi mathvariant="normal">Ω</mi><mn>1</mn></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>D</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mo stretchy="false">{</mo><mrow><mi>w</mi><mo>=</mo><mrow><msub><mi>w</mi><mi>s</mi></msub><mo>⁢</mo><mi>d</mi><mo>⁢</mo><msup><mi>x</mi><mi>s</mi></msup></mrow></mrow><mo>:</mo><mrow><msub><mi>w</mi><mi>s</mi></msub><mo>∈</mo><msup><mi mathvariant="normal">Ω</mi><mn>0</mn></msup></mrow><mo stretchy="false">}</mo></mrow></mrow></math>
+(where <math id="S1.p5.m4" class="ltx_Math" alttext="w_{s}dx^{s}=\sum_{s}w_{s}dx^{s}" display="inline"><mrow><mrow><msub><mi>w</mi><mi>s</mi></msub><mo>⁢</mo><mi>d</mi><mo>⁢</mo><msup><mi>x</mi><mi>s</mi></msup></mrow><mo>=</mo><mrow><msub><mo largeop="true" symmetric="true">∑</mo><mi>s</mi></msub><mrow><msub><mi>w</mi><mi>s</mi></msub><mo>⁢</mo><mi>d</mi><mo>⁢</mo><msup><mi>x</mi><mi>s</mi></msup></mrow></mrow></mrow></math>) be the set of 1-forms in <math id="S1.p5.m5" class="ltx_Math" alttext="D" display="inline"><mi>D</mi></math>.</p>
+</div>
+<div id="S1.p6" class="ltx_para">
+<p class="ltx_p">Then the operator <math id="S1.p6.m1" class="ltx_Math" alttext="d" display="inline"><mi>d</mi></math> can be seen as a linear operator <math id="S1.p6.m2" class="ltx_Math" alttext="d\colon\Omega^{0}(D)\to\Omega^{1}(D)" display="inline"><mrow><mi>d</mi><mo>:</mo><mrow><mrow><msup><mi mathvariant="normal">Ω</mi><mn>0</mn></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>D</mi><mo stretchy="false">)</mo></mrow></mrow><mo>→</mo><mrow><msup><mi mathvariant="normal">Ω</mi><mn>1</mn></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>D</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math>.</p>
+</div>
+<div id="S1.p7" class="ltx_para">
+<p class="ltx_p">This can be generalized by defining <math id="S1.p7.m1" class="ltx_Math" alttext="\Omega^{k}(D)" display="inline"><mrow><msup><mi mathvariant="normal">Ω</mi><mi>k</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>D</mi><mo stretchy="false">)</mo></mrow></mrow></math> to be the set of k-forms; that is,
+expressions of the type:
+</p>
+<table id="S1.Ex7" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.Ex7.m1" class="ltx_Math" alttext="A_{s_{1}...s_{k}}dx^{s_{1}}\wedge\cdots\wedge dx^{s_{k}}" display="block"><mrow><mrow><msub><mi>A</mi><mrow><msub><mi>s</mi><mn>1</mn></msub><mo>⁢</mo><mi mathvariant="normal">…</mi><mo>⁢</mo><msub><mi>s</mi><mi>k</mi></msub></mrow></msub><mo>⁢</mo><mi>d</mi><mo>⁢</mo><msup><mi>x</mi><msub><mi>s</mi><mn>1</mn></msub></msup></mrow><mo>∧</mo><mi mathvariant="normal">⋯</mi><mo>∧</mo><mrow><mi>d</mi><mo>⁢</mo><msup><mi>x</mi><msub><mi>s</mi><mi>k</mi></msub></msup></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">where <math id="S1.p7.m2" class="ltx_Math" alttext="A_{s_{1}...s_{k}}" display="inline"><msub><mi>A</mi><mrow><msub><mi>s</mi><mn>1</mn></msub><mo>⁢</mo><mi mathvariant="normal">…</mi><mo>⁢</mo><msub><mi>s</mi><mi>k</mi></msub></mrow></msub></math> are in <math id="S1.p7.m3" class="ltx_Math" alttext="\Omega^{0}(D)" display="inline"><mrow><msup><mi mathvariant="normal">Ω</mi><mn>0</mn></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>D</mi><mo stretchy="false">)</mo></mrow></mrow></math> i.e. they are scalars and
+they are multi-indexed sums. Further, the symbols <math id="S1.p7.m4" class="ltx_Math" alttext="dx^{s_{1}}\wedge\cdots\wedge dx^{s_{k}}" display="inline"><mrow><mrow><mi>d</mi><mo>⁢</mo><msup><mi>x</mi><msub><mi>s</mi><mn>1</mn></msub></msup></mrow><mo>∧</mo><mi mathvariant="normal">⋯</mi><mo>∧</mo><mrow><mi>d</mi><mo>⁢</mo><msup><mi>x</mi><msub><mi>s</mi><mi>k</mi></msub></msup></mrow></mrow></math> are the wedge products of the <math id="S1.p7.m5" class="ltx_Math" alttext="dx^{s}" display="inline"><mrow><mi>d</mi><mo>⁢</mo><msup><mi>x</mi><mi>s</mi></msup></mrow></math>.</p>
+</div>
+<div id="S1.p8" class="ltx_para">
+<p class="ltx_p">So <math id="S1.p8.m1" class="ltx_Math" alttext="d\colon\Omega^{k}(D)\to\Omega^{k+1}(D)" display="inline"><mrow><mi>d</mi><mo>:</mo><mrow><mrow><msup><mi mathvariant="normal">Ω</mi><mi>k</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>D</mi><mo stretchy="false">)</mo></mrow></mrow><mo>→</mo><mrow><msup><mi mathvariant="normal">Ω</mi><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>D</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math>
+is calculated by</p>
+<table id="S1.Ex8" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.Ex8.m1" class="ltx_Math" alttext="d(A_{s_{1}...s_{k}}dx^{s_{1}}\wedge\cdots\wedge dx^{s_{k}})=d(A_{s_{1}...s_{k}%
+})\wedge dx^{s_{1}}\wedge\cdots\wedge dx^{s_{k}}" display="block"><mrow><mrow><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><msub><mi>A</mi><mrow><msub><mi>s</mi><mn>1</mn></msub><mo>⁢</mo><mi mathvariant="normal">…</mi><mo>⁢</mo><msub><mi>s</mi><mi>k</mi></msub></mrow></msub><mo>⁢</mo><mi>d</mi><mo>⁢</mo><msup><mi>x</mi><msub><mi>s</mi><mn>1</mn></msub></msup></mrow><mo>∧</mo><mi mathvariant="normal">⋯</mi><mo>∧</mo><mrow><mi>d</mi><mo>⁢</mo><msup><mi>x</mi><msub><mi>s</mi><mi>k</mi></msub></msup></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>A</mi><mrow><msub><mi>s</mi><mn>1</mn></msub><mo>⁢</mo><mi mathvariant="normal">…</mi><mo>⁢</mo><msub><mi>s</mi><mi>k</mi></msub></mrow></msub><mo stretchy="false">)</mo></mrow></mrow><mo>∧</mo><mrow><mi>d</mi><mo>⁢</mo><msup><mi>x</mi><msub><mi>s</mi><mn>1</mn></msub></msup></mrow><mo>∧</mo><mi mathvariant="normal">⋯</mi><mo>∧</mo><mrow><mi>d</mi><mo>⁢</mo><msup><mi>x</mi><msub><mi>s</mi><mi>k</mi></msub></msup></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+<div id="S1.p9" class="ltx_para">
+<p class="ltx_p">For example, if <math id="S1.p9.m1" class="ltx_Math" alttext="A=A_{s}dx^{s}" display="inline"><mrow><mi>A</mi><mo>=</mo><mrow><msub><mi>A</mi><mi>s</mi></msub><mo>⁢</mo><mi>d</mi><mo>⁢</mo><msup><mi>x</mi><mi>s</mi></msup></mrow></mrow></math> then <math id="S1.p9.m2" class="ltx_Math" alttext="dA=dA_{s}\wedge dx^{s}" display="inline"><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>A</mi></mrow><mo>=</mo><mrow><mrow><mi>d</mi><mo>⁢</mo><msub><mi>A</mi><mi>s</mi></msub></mrow><mo>∧</mo><mrow><mi>d</mi><mo>⁢</mo><msup><mi>x</mi><mi>s</mi></msup></mrow></mrow></mrow></math>, hence</p>
+<table id="S1.Ex9" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.Ex9.m1" class="ltx_Math" alttext="dA=\frac{\partial A_{s}}{\partial x^{t}}dx^{t}\wedge dx^{s}" display="block"><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>A</mi></mrow><mo>=</mo><mrow><mrow><mfrac><mrow><mo>∂</mo><mo>⁡</mo><msub><mi>A</mi><mi>s</mi></msub></mrow><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>x</mi><mi>t</mi></msup></mrow></mfrac><mo>⁢</mo><mi>d</mi><mo>⁢</mo><msup><mi>x</mi><mi>t</mi></msup></mrow><mo>∧</mo><mrow><mi>d</mi><mo>⁢</mo><msup><mi>x</mi><mi>s</mi></msup></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">which is rearranged as</p>
+</div>
+<div id="S1.p10" class="ltx_para">
+<table id="S1.Ex10" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.Ex10.m1" class="ltx_Math" alttext="dA=\Big{(}\frac{\partial A_{s}}{\partial x^{t}}-\frac{\partial A_{t}}{\partial
+x%
+^{s}}\Big{)}dx^{t}\wedge dx^{s}," display="block"><mrow><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>A</mi></mrow><mo>=</mo><mrow><mrow><mrow><mo maxsize="160%" minsize="160%">(</mo><mrow><mfrac><mrow><mo>∂</mo><mo>⁡</mo><msub><mi>A</mi><mi>s</mi></msub></mrow><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>x</mi><mi>t</mi></msup></mrow></mfrac><mo>-</mo><mfrac><mrow><mo>∂</mo><mo>⁡</mo><msub><mi>A</mi><mi>t</mi></msub></mrow><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>x</mi><mi>s</mi></msup></mrow></mfrac></mrow><mo maxsize="160%" minsize="160%">)</mo></mrow><mo>⁢</mo><mi>d</mi><mo>⁢</mo><msup><mi>x</mi><mi>t</mi></msup></mrow><mo>∧</mo><mrow><mi>d</mi><mo>⁢</mo><msup><mi>x</mi><mi>s</mi></msup></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+<div id="S1.p11" class="ltx_para">
+<p class="ltx_p">and for two forms, if <math id="S1.p11.m1" class="ltx_Math" alttext="B=B_{st}dx^{s}\wedge dx^{t}" display="inline"><mrow><mi>B</mi><mo>=</mo><mrow><mrow><msub><mi>B</mi><mrow><mi>s</mi><mo>⁢</mo><mi>t</mi></mrow></msub><mo>⁢</mo><mi>d</mi><mo>⁢</mo><msup><mi>x</mi><mi>s</mi></msup></mrow><mo>∧</mo><mrow><mi>d</mi><mo>⁢</mo><msup><mi>x</mi><mi>t</mi></msup></mrow></mrow></mrow></math> then</p>
+<table id="S1.Ex11" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.Ex11.m1" class="ltx_Math" alttext="dB=\frac{\partial B_{st}}{\partial x^{u}}dx^{u}\wedge dx^{s}\wedge dx^{t}." display="block"><mrow><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>B</mi></mrow><mo>=</mo><mrow><mrow><mfrac><mrow><mo>∂</mo><mo>⁡</mo><msub><mi>B</mi><mrow><mi>s</mi><mo>⁢</mo><mi>t</mi></mrow></msub></mrow><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>x</mi><mi>u</mi></msup></mrow></mfrac><mo>⁢</mo><mi>d</mi><mo>⁢</mo><msup><mi>x</mi><mi>u</mi></msup></mrow><mo>∧</mo><mrow><mi>d</mi><mo>⁢</mo><msup><mi>x</mi><mi>s</mi></msup></mrow><mo>∧</mo><mrow><mi>d</mi><mo>⁢</mo><msup><mi>x</mi><mi>t</mi></msup></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+<div id="S1.p12" class="ltx_para">
+<p class="ltx_p">Now if we have a map between two domains <math id="S1.p12.m1" class="ltx_Math" alttext="F\colon D\to E" display="inline"><mrow><mi>F</mi><mo>:</mo><mrow><mi>D</mi><mo>→</mo><mi>E</mi></mrow></mrow></math> and <math id="S1.p12.m2" class="ltx_Math" alttext="F=(F^{1},...,F^{n})" display="inline"><mrow><mi>F</mi><mo>=</mo><mrow><mo stretchy="false">(</mo><msup><mi>F</mi><mn>1</mn></msup><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msup><mi>F</mi><mi>n</mi></msup><mo stretchy="false">)</mo></mrow></mrow></math>, we can pullback forms as <math id="S1.p12.m3" class="ltx_Math" alttext="F^{*}\colon\Omega^{k}(E)\to\Omega^{k}(D)" display="inline"><mrow><msup><mi>F</mi><mo>*</mo></msup><mo>:</mo><mrow><mrow><msup><mi mathvariant="normal">Ω</mi><mi>k</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">)</mo></mrow></mrow><mo>→</mo><mrow><msup><mi mathvariant="normal">Ω</mi><mi>k</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>D</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math>, beginnig with the observation that at basics <math id="S1.p12.m4" class="ltx_Math" alttext="dx^{k}" display="inline"><mrow><mi>d</mi><mo>⁢</mo><msup><mi>x</mi><mi>k</mi></msup></mrow></math>, we pullback it as</p>
+<table id="S1.Ex12" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.Ex12.m1" class="ltx_Math" alttext="F^{*}(dx^{k})=d(x^{k}\circ F)=dF^{k}=\frac{\partial F^{k}}{\partial x^{s}}dx^{s}" display="block"><mrow><mrow><msup><mi>F</mi><mo>*</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>d</mi><mo>⁢</mo><msup><mi>x</mi><mi>k</mi></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>x</mi><mi>k</mi></msup><mo>∘</mo><mi>F</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>d</mi><mo>⁢</mo><msup><mi>F</mi><mi>k</mi></msup></mrow><mo>=</mo><mrow><mfrac><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>F</mi><mi>k</mi></msup></mrow><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>x</mi><mi>s</mi></msup></mrow></mfrac><mo>⁢</mo><mi>d</mi><mo>⁢</mo><msup><mi>x</mi><mi>s</mi></msup></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">then, if we want <math id="S1.p12.m5" class="ltx_Math" alttext="\omega\mapsto F^{*}(\omega)" display="inline"><mrow><mi>ω</mi><mo>↦</mo><mrow><msup><mi>F</mi><mo>*</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ω</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math>,
+where <math id="S1.p12.m6" class="ltx_Math" alttext="\omega=\omega_{s_{1}...s_{k}}dx^{s_{1}}\wedge\cdots\wedge dx^{s_{k}}" display="inline"><mrow><mi>ω</mi><mo>=</mo><mrow><mrow><msub><mi>ω</mi><mrow><msub><mi>s</mi><mn>1</mn></msub><mo>⁢</mo><mi mathvariant="normal">…</mi><mo>⁢</mo><msub><mi>s</mi><mi>k</mi></msub></mrow></msub><mo>⁢</mo><mi>d</mi><mo>⁢</mo><msup><mi>x</mi><msub><mi>s</mi><mn>1</mn></msub></msup></mrow><mo>∧</mo><mi mathvariant="normal">⋯</mi><mo>∧</mo><mrow><mi>d</mi><mo>⁢</mo><msup><mi>x</mi><msub><mi>s</mi><mi>k</mi></msub></msup></mrow></mrow></mrow></math>,
+we are going to receive</p>
+<table id="S1.Ex13" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.Ex13.m1" class="ltx_Math" alttext="F^{*}(\omega)=\omega_{s_{1}...s_{k}}\circ f\ \frac{\partial F^{s_{1}}}{%
+\partial x^{t_{1}}}\cdots\frac{\partial F^{s_{k}}}{\partial x^{t_{k}}}dx^{t_{1%
+}}\wedge\cdots\wedge dx^{t_{k}}" display="block"><mrow><mrow><msup><mi>F</mi><mo>*</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ω</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mrow><msub><mi>ω</mi><mrow><msub><mi>s</mi><mn>1</mn></msub><mo>⁢</mo><mi mathvariant="normal">…</mi><mo>⁢</mo><msub><mi>s</mi><mi>k</mi></msub></mrow></msub><mo>∘</mo><mpadded width="+5pt"><mi>f</mi></mpadded></mrow><mo>⁢</mo><mfrac><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>F</mi><msub><mi>s</mi><mn>1</mn></msub></msup></mrow><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>x</mi><msub><mi>t</mi><mn>1</mn></msub></msup></mrow></mfrac><mo>⁢</mo><mi mathvariant="normal">⋯</mi><mo>⁢</mo><mfrac><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>F</mi><msub><mi>s</mi><mi>k</mi></msub></msup></mrow><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>x</mi><msub><mi>t</mi><mi>k</mi></msub></msup></mrow></mfrac><mo>⁢</mo><mi>d</mi><mo>⁢</mo><msup><mi>x</mi><msub><mi>t</mi><mn>1</mn></msub></msup></mrow><mo>∧</mo><mi mathvariant="normal">⋯</mi><mo>∧</mo><mrow><mi>d</mi><mo>⁢</mo><msup><mi>x</mi><msub><mi>t</mi><mi>k</mi></msub></msup></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Here the <math id="S1.p12.m7" class="ltx_Math" alttext="t_{i}" display="inline"><msub><mi>t</mi><mi>i</mi></msub></math>-sums
+must be taken between all indexes obeying <math id="S1.p12.m8" class="ltx_Math" alttext="1\leq t_{1}&lt;t_{2}&lt;\cdots&lt;t_{k}\leq n" display="inline"><mrow><mn>1</mn><mo>≤</mo><msub><mi>t</mi><mn>1</mn></msub><mo>&lt;</mo><msub><mi>t</mi><mn>2</mn></msub><mo>&lt;</mo><mi mathvariant="normal">⋯</mi><mo>&lt;</mo><msub><mi>t</mi><mi>k</mi></msub><mo>≤</mo><mi>n</mi></mrow></math>.</p>
+</div>
+<div id="S1.p13" class="ltx_para">
+<p class="ltx_p">So if <math id="S1.p13.m1" class="ltx_Math" alttext="\omega\in\Omega^{n}(D)" display="inline"><mrow><mi>ω</mi><mo>∈</mo><mrow><msup><mi mathvariant="normal">Ω</mi><mi>n</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>D</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math>, <math id="S1.p13.m2" class="ltx_Math" alttext="F^{*}(\omega)=\omega_{1...n}\circ F\ \det(F^{\prime})dx^{1}\wedge\cdots\wedge
+dx%
+^{n}" display="inline"><mrow><mrow><msup><mi>F</mi><mo>*</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>ω</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mrow><msub><mi>ω</mi><mrow><mn>1</mn><mo>⁢</mo><mi mathvariant="normal">…</mi><mo>⁢</mo><mi>n</mi></mrow></msub><mo>∘</mo><mpadded width="+5pt"><mi>F</mi></mpadded></mrow><mo>⁢</mo><mrow><mo>det</mo><mo>⁡</mo><mrow><mrow><mo stretchy="false">(</mo><msup><mi>F</mi><mo>′</mo></msup><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>d</mi><mo>⁢</mo><msup><mi>x</mi><mn>1</mn></msup></mrow></mrow></mrow><mo>∧</mo><mi mathvariant="normal">⋯</mi><mo>∧</mo><mrow><mi>d</mi><mo>⁢</mo><msup><mi>x</mi><mi>n</mi></msup></mrow></mrow></mrow></math></p>
+</div>
+<div id="S1.p14" class="ltx_para">
+<p class="ltx_p">We also have</p>
+<table id="S1.Ex14" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.Ex14.m1" class="ltx_Math" alttext="F^{*}(v\wedge w)=F^{*}(v)\wedge F^{*}(w)" display="block"><mrow><mrow><msup><mi>F</mi><mo>*</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>v</mi><mo>∧</mo><mi>w</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><msup><mi>F</mi><mo>*</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>v</mi><mo stretchy="false">)</mo></mrow></mrow><mo>∧</mo><mrow><msup><mi>F</mi><mo>*</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>w</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+<div id="S1.p15" class="ltx_para">
+<p class="ltx_p">Obviously there are no <math id="S1.p15.m1" class="ltx_Math" alttext="n+1,n+2,\ldots" display="inline"><mrow><mrow><mi>n</mi><mo>+</mo><mn>1</mn></mrow><mo>,</mo><mrow><mi>n</mi><mo>+</mo><mn>2</mn></mrow><mo>,</mo><mi mathvariant="normal">…</mi></mrow></math> forms in <math id="S1.p15.m2" class="ltx_Math" alttext="D" display="inline"><mi>D</mi></math> and usually one set <math id="S1.p15.m3" class="ltx_Math" alttext="\Omega^{k}(D)=0" display="inline"><mrow><mrow><msup><mi mathvariant="normal">Ω</mi><mi>k</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>D</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math> if <math id="S1.p15.m4" class="ltx_Math" alttext="k\geq n" display="inline"><mrow><mi>k</mi><mo>≥</mo><mi>n</mi></mrow></math>.</p>
+</div>
+</section>
+<section id="S2" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">2 </span><span class="ltx_text ltx_font_bold">The de Rham complex.</span>
+</h2>
+
+<div id="S2.p1" class="ltx_para">
+<p class="ltx_p">The collection of mappings</p>
+<table id="S2.Ex15" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S2.Ex15.m1" class="ltx_Math" alttext="0\longrightarrow\Omega^{0}(D)\lx@stackrel{{\scriptstyle d}}{{\longrightarrow}}%
+\Omega^{1}(D)\lx@stackrel{{\scriptstyle d}}{{\longrightarrow}}\cdots%
+\lx@stackrel{{\scriptstyle d}}{{\longrightarrow}}\Omega^{n}(D)\longrightarrow 0" display="block"><mrow><mn>0</mn><mo>⟶</mo><mrow><msup><mi mathvariant="normal">Ω</mi><mn>0</mn></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>D</mi><mo stretchy="false">)</mo></mrow></mrow><mover><mo movablelimits="false">⟶</mo><mi>d</mi></mover><mrow><msup><mi mathvariant="normal">Ω</mi><mn>1</mn></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>D</mi><mo stretchy="false">)</mo></mrow></mrow><mover><mo movablelimits="false">⟶</mo><mi>d</mi></mover><mi mathvariant="normal">⋯</mi><mover><mo movablelimits="false">⟶</mo><mi>d</mi></mover><mrow><msup><mi mathvariant="normal">Ω</mi><mi>n</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>D</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⟶</mo><mn>0</mn></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">give us a chain complex due that <math id="S2.p1.m1" class="ltx_Math" alttext="dd=0" display="inline"><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>d</mi></mrow><mo>=</mo><mn>0</mn></mrow></math>, so one can measure how much this differs from exactness via its homology</p>
+<table id="S2.Ex16" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S2.Ex16.m1" class="ltx_Math" alttext="H^{k}(D)=\frac{\operatorname{ker}(d)}{\operatorname{im}(d)}" display="block"><mrow><mrow><msup><mi>H</mi><mi>k</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>D</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mrow><mi>ker</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>d</mi><mo stretchy="false">)</mo></mrow></mrow><mrow><mi>im</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mi>d</mi><mo stretchy="false">)</mo></mrow></mrow></mfrac></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">called the cohomological <math id="S2.p1.m2" class="ltx_Math" alttext="k" display="inline"><mi>k</mi></math>-group for <math id="S2.p1.m3" class="ltx_Math" alttext="D" display="inline"><mi>D</mi></math>.</p>
+</div>
+<div id="S2.p2" class="ltx_para">
+<p class="ltx_p">Some
+with the fear of being confused with the giving of the same name to the operator <math id="S2.p2.m1" class="ltx_Math" alttext="\Omega^{k}(D)\lx@stackrel{{\scriptstyle d}}{{\longrightarrow}}\Omega^{k+1}(D)" display="inline"><mrow><mrow><msup><mi mathvariant="normal">Ω</mi><mi>k</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>D</mi><mo stretchy="false">)</mo></mrow></mrow><mover><mo movablelimits="false">⟶</mo><mi>d</mi></mover><mrow><msup><mi mathvariant="normal">Ω</mi><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>D</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math>, would like to write</p>
+<table id="S2.Ex17" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S2.Ex17.m1" class="ltx_Math" alttext="\Omega^{k}(D)\lx@stackrel{{\scriptstyle d^{k}}}{{\longrightarrow}}\Omega^{k+1}%
+(D)" display="block"><mrow><mrow><msup><mi mathvariant="normal">Ω</mi><mi>k</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>D</mi><mo stretchy="false">)</mo></mrow></mrow><mover><mo movablelimits="false">⟶</mo><msup><mi>d</mi><mi>k</mi></msup></mover><mrow><msup><mi mathvariant="normal">Ω</mi><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>D</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">and then one should modify the above conventions with</p>
+<table id="S2.Ex18" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S2.Ex18.m1" class="ltx_Math" alttext="d^{k+1}d^{k}=0" display="block"><mrow><mrow><msup><mi>d</mi><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></msup><mo>⁢</mo><msup><mi>d</mi><mi>k</mi></msup></mrow><mo>=</mo><mn>0</mn></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">and</p>
+<table id="S2.Ex19" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S2.Ex19.m1" class="ltx_Math" alttext="H^{k}(D)=\frac{\operatorname{ker}(d^{k})}{\operatorname{im}(d^{k-1})}" display="block"><mrow><mrow><msup><mi>H</mi><mi>k</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>D</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mfrac><mrow><mi>ker</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msup><mi>d</mi><mi>k</mi></msup><mo stretchy="false">)</mo></mrow></mrow><mrow><mi>im</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><msup><mi>d</mi><mrow><mi>k</mi><mo>-</mo><mn>1</mn></mrow></msup><mo stretchy="false">)</mo></mrow></mrow></mfrac></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+</section>
+<section id="S3" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">3 </span><span class="ltx_text ltx_font_bold">Manifold’s Forms.</span>
+</h2>
+
+<div id="S3.p1" class="ltx_para">
+<p class="ltx_p">One had seen that for mappings <math id="S3.p1.m1" class="ltx_Math" alttext="F\colon D\to E" display="inline"><mrow><mi>F</mi><mo>:</mo><mrow><mi>D</mi><mo>→</mo><mi>E</mi></mrow></mrow></math> between <math id="S3.p1.m2" class="ltx_Math" alttext="\mathbb{R}^{n}" display="inline"><msup><mi>ℝ</mi><mi>n</mi></msup></math>’s domains behave as <math id="S3.p1.m3" class="ltx_Math" alttext="F^{*}\colon\Omega^{k}(E)\to\Omega^{k}(D)" display="inline"><mrow><msup><mi>F</mi><mo>*</mo></msup><mo>:</mo><mrow><mrow><msup><mi mathvariant="normal">Ω</mi><mi>k</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>E</mi><mo stretchy="false">)</mo></mrow></mrow><mo>→</mo><mrow><msup><mi mathvariant="normal">Ω</mi><mi>k</mi></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>D</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math>.
+Then we can assign k-forms in each chart <math id="S3.p1.m4" class="ltx_Math" alttext="(U,\Phi)" display="inline"><mrow><mo stretchy="false">(</mo><mi>U</mi><mo>,</mo><mi mathvariant="normal">Φ</mi><mo stretchy="false">)</mo></mrow></math> of a n-manifold <math id="S3.p1.m5" class="ltx_Math" alttext="M" display="inline"><mi>M</mi></math>
+by means of the coordinated functions <math id="S3.p1.m6" class="ltx_Math" alttext="u^{i}=x^{i}\circ\Phi" display="inline"><mrow><msup><mi>u</mi><mi>i</mi></msup><mo>=</mo><mrow><msup><mi>x</mi><mi>i</mi></msup><mo>∘</mo><mi mathvariant="normal">Φ</mi></mrow></mrow></math> on the neighborhood <math id="S3.p1.m7" class="ltx_Math" alttext="U" display="inline"><mi>U</mi></math>.
+Then</p>
+<table id="S3.Ex20" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S3.Ex20.m1" class="ltx_Math" alttext="du^{i}=d(x^{i}\circ\Phi)=\Phi^{*}dx^{i}" display="block"><mrow><mrow><mi>d</mi><mo>⁢</mo><msup><mi>u</mi><mi>i</mi></msup></mrow><mo>=</mo><mrow><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>x</mi><mi>i</mi></msup><mo>∘</mo><mi mathvariant="normal">Φ</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msup><mi mathvariant="normal">Φ</mi><mo>*</mo></msup><mo>⁢</mo><mi>d</mi><mo>⁢</mo><msup><mi>x</mi><mi>i</mi></msup></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">which will be the duals of the derivations
+<math id="S3.p1.m8" class="ltx_Math" alttext="\frac{\partial}{\partial u^{j}}" display="inline"><mfrac><mo>∂</mo><mrow><mo>∂</mo><mo>⁡</mo><msup><mi>u</mi><mi>j</mi></msup></mrow></mfrac></math>.</p>
+</div>
+<div id="S3.p2" class="ltx_para">
+<p class="ltx_p">Observe that if <math id="S3.p2.m1" class="ltx_Math" alttext="\Phi^{*}\colon\Omega^{0}(\phi(U))\to\Omega^{0}(U)" display="inline"><mrow><msup><mi mathvariant="normal">Φ</mi><mo>*</mo></msup><mo>:</mo><mrow><mrow><msup><mi mathvariant="normal">Ω</mi><mn>0</mn></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>U</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>→</mo><mrow><msup><mi mathvariant="normal">Ω</mi><mn>0</mn></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>U</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math>
+then <math id="S3.p2.m2" class="ltx_Math" alttext="\Phi(g)=g\circ\Phi" display="inline"><mrow><mrow><mi mathvariant="normal">Φ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>g</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>g</mi><mo>∘</mo><mi mathvariant="normal">Φ</mi></mrow></mrow></math> is a scalar in <math id="S3.p2.m3" class="ltx_Math" alttext="U" display="inline"><mi>U</mi></math>.</p>
+</div>
+<div id="S3.p3" class="ltx_para">
+<p class="ltx_p">If <math id="S3.p3.m1" class="ltx_Math" alttext="\Phi^{*}\colon\Omega^{1}(\phi(U))\to\Omega^{1}(U)" display="inline"><mrow><msup><mi mathvariant="normal">Φ</mi><mo>*</mo></msup><mo>:</mo><mrow><mrow><msup><mi mathvariant="normal">Ω</mi><mn>1</mn></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>ϕ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>U</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>→</mo><mrow><msup><mi mathvariant="normal">Ω</mi><mn>1</mn></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>U</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math> then</p>
+<table id="S3.Ex21" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S3.Ex21.m1" class="ltx_Math" alttext="\Phi^{*}(w_{s}dx^{s})=w_{s}\circ\Phi\Phi^{*}(dx^{s})=w_{s}\circ\Phi du^{s}" display="block"><mrow><mrow><msup><mi mathvariant="normal">Φ</mi><mo>*</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>w</mi><mi>s</mi></msub><mo>⁢</mo><mi>d</mi><mo>⁢</mo><msup><mi>x</mi><mi>s</mi></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><msub><mi>w</mi><mi>s</mi></msub><mo>∘</mo><mi mathvariant="normal">Φ</mi></mrow><mo>⁢</mo><msup><mi mathvariant="normal">Φ</mi><mo>*</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>d</mi><mo>⁢</mo><msup><mi>x</mi><mi>s</mi></msup></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><msub><mi>w</mi><mi>s</mi></msub><mo>∘</mo><mi mathvariant="normal">Φ</mi></mrow><mo>⁢</mo><mi>d</mi><mo>⁢</mo><msup><mi>u</mi><mi>s</mi></msup></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+<div id="S3.p4" class="ltx_para">
+<p class="ltx_p">For <math id="S3.p4.m1" class="ltx_Math" alttext="k" display="inline"><mi>k</mi></math>-forms</p>
+<table id="S3.Ex22" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S3.Ex22.m1" class="ltx_Math" alttext="w_{s_{1}s_{2}...s_{k}}du^{s_{1}}\wedge\cdots\wedge du^{s_{k}}=w_{s_{1}s_{2}...%
+s_{k}}\circ\Phi^{-1}\circ\Phi d(x^{s_{1}}\circ\Phi)\wedge\cdots\wedge d(x^{s_{%
+k}}\circ\Phi)" display="block"><mrow><mrow><mrow><msub><mi>w</mi><mrow><msub><mi>s</mi><mn>1</mn></msub><mo>⁢</mo><msub><mi>s</mi><mn>2</mn></msub><mo>⁢</mo><mi mathvariant="normal">…</mi><mo>⁢</mo><msub><mi>s</mi><mi>k</mi></msub></mrow></msub><mo>⁢</mo><mi>d</mi><mo>⁢</mo><msup><mi>u</mi><msub><mi>s</mi><mn>1</mn></msub></msup></mrow><mo>∧</mo><mi mathvariant="normal">⋯</mi><mo>∧</mo><mrow><mi>d</mi><mo>⁢</mo><msup><mi>u</mi><msub><mi>s</mi><mi>k</mi></msub></msup></mrow></mrow><mo>=</mo><mrow><mrow><mrow><msub><mi>w</mi><mrow><msub><mi>s</mi><mn>1</mn></msub><mo>⁢</mo><msub><mi>s</mi><mn>2</mn></msub><mo>⁢</mo><mi mathvariant="normal">…</mi><mo>⁢</mo><msub><mi>s</mi><mi>k</mi></msub></mrow></msub><mo>∘</mo><msup><mi mathvariant="normal">Φ</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>∘</mo><mi mathvariant="normal">Φ</mi></mrow><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>x</mi><msub><mi>s</mi><mn>1</mn></msub></msup><mo>∘</mo><mi mathvariant="normal">Φ</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>∧</mo><mi mathvariant="normal">⋯</mi><mo>∧</mo><mrow><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>x</mi><msub><mi>s</mi><mi>k</mi></msub></msup><mo>∘</mo><mi mathvariant="normal">Φ</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+<div id="S3.p5" class="ltx_para">
+<table id="S3.Ex23" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S3.Ex23.m1" class="ltx_Math" alttext="=\Phi^{*}(w_{s_{1}s_{2}...s_{k}}\circ\Phi^{-1})\Phi^{*}(dx^{s_{1}}\wedge\cdots%
+\wedge dx^{s_{k}})" display="block"><mrow><mi></mi><mo>=</mo><mrow><msup><mi mathvariant="normal">Φ</mi><mo>*</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msub><mi>w</mi><mrow><msub><mi>s</mi><mn>1</mn></msub><mo>⁢</mo><msub><mi>s</mi><mn>2</mn></msub><mo>⁢</mo><mi mathvariant="normal">…</mi><mo>⁢</mo><msub><mi>s</mi><mi>k</mi></msub></mrow></msub><mo>∘</mo><msup><mi mathvariant="normal">Φ</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msup><mi mathvariant="normal">Φ</mi><mo>*</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mi>d</mi><mo>⁢</mo><msup><mi>x</mi><msub><mi>s</mi><mn>1</mn></msub></msup></mrow><mo>∧</mo><mi mathvariant="normal">⋯</mi><mo>∧</mo><mrow><mi>d</mi><mo>⁢</mo><msup><mi>x</mi><msub><mi>s</mi><mi>k</mi></msub></msup></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<table id="S3.Ex24" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S3.Ex24.m1" class="ltx_Math" alttext="=\Phi^{*}(w_{s_{1}s_{2}...s_{k}}\circ\Phi^{-1}dx^{s_{1}}\wedge\cdots\wedge dx^%
+{s_{k}})" display="block"><mrow><mi></mi><mo>=</mo><mrow><msup><mi mathvariant="normal">Φ</mi><mo>*</mo></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mrow><mrow><msub><mi>w</mi><mrow><msub><mi>s</mi><mn>1</mn></msub><mo>⁢</mo><msub><mi>s</mi><mn>2</mn></msub><mo>⁢</mo><mi mathvariant="normal">…</mi><mo>⁢</mo><msub><mi>s</mi><mi>k</mi></msub></mrow></msub><mo>∘</mo><msup><mi mathvariant="normal">Φ</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow><mo>⁢</mo><mi>d</mi><mo>⁢</mo><msup><mi>x</mi><msub><mi>s</mi><mn>1</mn></msub></msup></mrow><mo>∧</mo><mi mathvariant="normal">⋯</mi><mo>∧</mo><mrow><mi>d</mi><mo>⁢</mo><msup><mi>x</mi><msub><mi>s</mi><mi>k</mi></msub></msup></mrow></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">where <math id="S3.p5.m1" class="ltx_Math" alttext="w_{s_{1}s_{2}...s_{k}}\circ\Phi^{-1}dx^{s_{1}}\wedge\cdots\wedge dx^{s_{k}}" display="inline"><mrow><mrow><mrow><msub><mi>w</mi><mrow><msub><mi>s</mi><mn>1</mn></msub><mo>⁢</mo><msub><mi>s</mi><mn>2</mn></msub><mo>⁢</mo><mi mathvariant="normal">…</mi><mo>⁢</mo><msub><mi>s</mi><mi>k</mi></msub></mrow></msub><mo>∘</mo><msup><mi mathvariant="normal">Φ</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup></mrow><mo>⁢</mo><mi>d</mi><mo>⁢</mo><msup><mi>x</mi><msub><mi>s</mi><mn>1</mn></msub></msup></mrow><mo>∧</mo><mi mathvariant="normal">⋯</mi><mo>∧</mo><mrow><mi>d</mi><mo>⁢</mo><msup><mi>x</mi><msub><mi>s</mi><mi>k</mi></msub></msup></mrow></mrow></math> is a <math id="S3.p5.m2" class="ltx_Math" alttext="k" display="inline"><mi>k</mi></math>-form in <math id="S3.p5.m3" class="ltx_Math" alttext="\Phi(U)" display="inline"><mrow><mi mathvariant="normal">Φ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>U</mi><mo stretchy="false">)</mo></mrow></mrow></math>.</p>
+</div>
+</section>
+<section id="S4" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">4 </span><span class="ltx_text ltx_font_bold">Forms and connections</span>
+</h2>
+
+<div id="S4.p1" class="ltx_para">
+<p class="ltx_p">A connection is a bi-linear operator <math id="S4.p1.m1" class="ltx_Math" alttext="\nabla:\Gamma(TM)^{2}\to\Gamma(TM)" display="inline"><mrow><mo>∇</mo><mo>:</mo><mrow><mrow><mi mathvariant="normal">Γ</mi><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>T</mi><mo>⁢</mo><mi>M</mi></mrow><mo stretchy="false">)</mo></mrow><mn>2</mn></msup></mrow><mo>→</mo><mrow><mi mathvariant="normal">Γ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>T</mi><mo>⁢</mo><mi>M</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math> where <math id="S4.p1.m2" class="ltx_Math" alttext="\Gamma(TM)" display="inline"><mrow><mi mathvariant="normal">Γ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>T</mi><mo>⁢</mo><mi>M</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></math> is the space of differentiable sections in the tangent bundle.</p>
+</div>
+<div id="S4.p2" class="ltx_para">
+<p class="ltx_p">The Chistoffel symbols <math id="S4.p2.m1" class="ltx_Math" alttext="\Gamma^{s}_{ij}" display="inline"><msubsup><mi mathvariant="normal">Γ</mi><mrow><mi>i</mi><mo>⁢</mo><mi>j</mi></mrow><mi>s</mi></msubsup></math> are the components of <math id="S4.p2.m2" class="ltx_Math" alttext="\nabla_{\partial_{i}}\partial_{j}" display="inline"><mrow><msub><mo>∇</mo><msub><mo>∂</mo><mi>i</mi></msub></msub><mo>⁡</mo><msub><mo>∂</mo><mi>j</mi></msub></mrow></math> through the equation</p>
+<table id="S4.Ex25" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S4.Ex25.m1" class="ltx_Math" alttext="\nabla_{\partial_{i}}\partial_{j}=\Gamma^{s}_{ij}\partial_{s}" display="block"><mrow><mrow><msub><mo>∇</mo><msub><mo>∂</mo><mi>i</mi></msub></msub><mo>⁡</mo><msub><mo>∂</mo><mi>j</mi></msub></mrow><mo>=</mo><mrow><msubsup><mi mathvariant="normal">Γ</mi><mrow><mi>i</mi><mo>⁢</mo><mi>j</mi></mrow><mi>s</mi></msubsup><mo>⁢</mo><msub><mo>∂</mo><mi>s</mi></msub></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">where the <math id="S4.p2.m3" class="ltx_Math" alttext="\partial_{s}" display="inline"><msub><mo>∂</mo><mi>s</mi></msub></math> are the coordinated tangent vectors.</p>
+</div>
+<div id="S4.p3" class="ltx_para">
+<p class="ltx_p">The curvature tensor is defined as</p>
+<table id="S4.Ex26" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S4.Ex26.m1" class="ltx_Math" alttext="R(X,Y)Z=\nabla_{X}\nabla_{Y}Z-\nabla_{Y}\nabla_{X}Z-\nabla_{[X,Y]}Z" display="block"><mrow><mrow><mi>R</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi>Y</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><mi>Z</mi></mrow><mo>=</mo><mrow><mrow><mrow><msub><mo>∇</mo><mi>X</mi></msub><mo>⁡</mo><msub><mo>∇</mo><mi>Y</mi></msub></mrow><mo>⁡</mo><mi>Z</mi></mrow><mo>-</mo><mrow><mrow><msub><mo>∇</mo><mi>Y</mi></msub><mo>⁡</mo><msub><mo>∇</mo><mi>X</mi></msub></mrow><mo>⁡</mo><mi>Z</mi></mrow><mo>-</mo><mrow><msub><mo>∇</mo><mrow><mo stretchy="false">[</mo><mi>X</mi><mo>,</mo><mi>Y</mi><mo stretchy="false">]</mo></mrow></msub><mo>⁡</mo><mi>Z</mi></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">which is a tri-linear map <math id="S4.p3.m1" class="ltx_Math" alttext="\Gamma(TM)^{3}\to\Gamma(TM)" display="inline"><mrow><mrow><mi mathvariant="normal">Γ</mi><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mrow><mi>T</mi><mo>⁢</mo><mi>M</mi></mrow><mo stretchy="false">)</mo></mrow><mn>3</mn></msup></mrow><mo>→</mo><mrow><mi mathvariant="normal">Γ</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>T</mi><mo>⁢</mo><mi>M</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math>, so the Riemann-Chistoffel symbols are defined by the components <math id="S4.p3.m2" class="ltx_Math" alttext="{R^{s}}_{ijk}" display="inline"><mmultiscripts><mi>R</mi><none></none><mi>s</mi><mrow><mi>i</mi><mo>⁢</mo><mi>j</mi><mo>⁢</mo><mi>k</mi></mrow><none></none></mmultiscripts></math> of</p>
+<table id="S4.Ex27" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S4.Ex27.m1" class="ltx_Math" alttext="R(\partial_{i},\partial_{j})\partial_{k}={R^{s}}_{ijk}\partial_{s}" display="block"><mrow><mrow><mi>R</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mo>∂</mo><mi>i</mi></msub><mo>,</mo><msub><mo>∂</mo><mi>j</mi></msub><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mo>∂</mo><mi>k</mi></msub></mrow><mo>=</mo><mrow><mmultiscripts><mi>R</mi><none></none><mi>s</mi><mrow><mi>i</mi><mo>⁢</mo><mi>j</mi><mo>⁢</mo><mi>k</mi></mrow><none></none></mmultiscripts><mo>⁢</mo><msub><mo>∂</mo><mi>s</mi></msub></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+<div id="S4.p4" class="ltx_para">
+<p class="ltx_p">With these one define the connection forms and the curvature forms as</p>
+<table id="S4.Ex28" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S4.Ex28.m1" class="ltx_Math" alttext="\nabla_{X}\partial_{j}={\omega^{s}}_{j}(X)\partial_{s}" display="block"><mrow><mrow><msub><mo>∇</mo><mi>X</mi></msub><mo>⁡</mo><msub><mo>∂</mo><mi>j</mi></msub></mrow><mo>=</mo><mrow><mmultiscripts><mi>ω</mi><none></none><mi>s</mi><mi>j</mi><none></none></mmultiscripts><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mo>∂</mo><mi>s</mi></msub></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">and</p>
+<table id="S4.Ex29" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S4.Ex29.m1" class="ltx_Math" alttext="R(X,Y)\partial_{j}={\Omega^{s}}_{j}(X,Y)\partial_{s}" display="block"><mrow><mrow><mi>R</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi>Y</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mo>∂</mo><mi>j</mi></msub></mrow><mo>=</mo><mrow><mmultiscripts><mi mathvariant="normal">Ω</mi><none></none><mi>s</mi><mi>j</mi><none></none></mmultiscripts><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo>,</mo><mi>Y</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mo>∂</mo><mi>s</mi></msub></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">these <math id="S4.p4.m1" class="ltx_Math" alttext="{\omega^{s}}_{j}" display="inline"><mmultiscripts><mi>ω</mi><none></none><mi>s</mi><mi>j</mi><none></none></mmultiscripts></math> and <math id="S4.p4.m2" class="ltx_Math" alttext="{\Omega^{s}}_{j}" display="inline"><mmultiscripts><mi mathvariant="normal">Ω</mi><none></none><mi>s</mi><mi>j</mi><none></none></mmultiscripts></math> define a 1-form and a 2-form viewed as a sections <math id="S4.p4.m3" class="ltx_Math" alttext="M\to\Omega^{1}(TM)" display="inline"><mrow><mi>M</mi><mo>→</mo><mrow><msup><mi mathvariant="normal">Ω</mi><mn>1</mn></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>T</mi><mo>⁢</mo><mi>M</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math> and <math id="S4.p4.m4" class="ltx_Math" alttext="M\to\Omega^{2}(TM)" display="inline"><mrow><mi>M</mi><mo>→</mo><mrow><msup><mi mathvariant="normal">Ω</mi><mn>2</mn></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mi>T</mi><mo>⁢</mo><mi>M</mi></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math> respectively.</p>
+</div>
+<div id="S4.p5" class="ltx_para">
+<p class="ltx_p">Observe that <math id="S4.p5.m1" class="ltx_Math" alttext="\nabla_{\partial_{k}}\partial_{j}={\omega^{s}}_{j}(\partial_{k})\partial_{s}" display="inline"><mrow><mrow><msub><mo>∇</mo><msub><mo>∂</mo><mi>k</mi></msub></msub><mo>⁡</mo><msub><mo>∂</mo><mi>j</mi></msub></mrow><mo>=</mo><mrow><mmultiscripts><mi>ω</mi><none></none><mi>s</mi><mi>j</mi><none></none></mmultiscripts><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mo>∂</mo><mi>k</mi></msub><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mo>∂</mo><mi>s</mi></msub></mrow></mrow></math> which compared with <math id="S4.p5.m2" class="ltx_Math" alttext="\nabla_{\partial_{k}}\partial_{j}=\Gamma^{s}_{kj}\partial_{s}" display="inline"><mrow><mrow><msub><mo>∇</mo><msub><mo>∂</mo><mi>k</mi></msub></msub><mo>⁡</mo><msub><mo>∂</mo><mi>j</mi></msub></mrow><mo>=</mo><mrow><msubsup><mi mathvariant="normal">Γ</mi><mrow><mi>k</mi><mo>⁢</mo><mi>j</mi></mrow><mi>s</mi></msubsup><mo>⁢</mo><msub><mo>∂</mo><mi>s</mi></msub></mrow></mrow></math>, it implies <math id="S4.p5.m3" class="ltx_Math" alttext="{\omega^{s}}_{j}(\partial_{k})=\Gamma^{s}_{kj}" display="inline"><mrow><mrow><mmultiscripts><mi>ω</mi><none></none><mi>s</mi><mi>j</mi><none></none></mmultiscripts><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mo>∂</mo><mi>k</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><msubsup><mi mathvariant="normal">Γ</mi><mrow><mi>k</mi><mo>⁢</mo><mi>j</mi></mrow><mi>s</mi></msubsup></mrow></math>
+and for an arbitrary vector field <math id="S4.p5.m4" class="ltx_Math" alttext="X=X^{k}\partial_{k}" display="inline"><mrow><mi>X</mi><mo>=</mo><mrow><msup><mi>X</mi><mi>k</mi></msup><mo>⁢</mo><msub><mo>∂</mo><mi>k</mi></msub></mrow></mrow></math> (in the tangent coordinated basis)
+</p>
+<table id="S4.Ex30" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S4.Ex30.m1" class="ltx_Math" alttext="{\omega^{s}}_{j}(X)=X^{k}\Gamma^{s}_{kj}" display="block"><mrow><mrow><mmultiscripts><mi>ω</mi><none></none><mi>s</mi><mi>j</mi><none></none></mmultiscripts><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>X</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msup><mi>X</mi><mi>k</mi></msup><mo>⁢</mo><msubsup><mi mathvariant="normal">Γ</mi><mrow><mi>k</mi><mo>⁢</mo><mi>j</mi></mrow><mi>s</mi></msubsup></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+<div id="S4.p6" class="ltx_para">
+<p class="ltx_p">Let <math id="S4.p6.m1" class="ltx_Math" alttext="X_{1},X_{2},...,X_{n}" display="inline"><mrow><msub><mi>X</mi><mn>1</mn></msub><mo>,</mo><msub><mi>X</mi><mn>2</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>X</mi><mi>n</mi></msub></mrow></math> be another frame field (the <math id="S4.p6.m2" class="ltx_Math" alttext="\partial_{i}" display="inline"><msub><mo>∂</mo><mi>i</mi></msub></math> are the coordinated frame field) , i.e. a system of <math id="S4.p6.m3" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math>-tangent vectors which are linearly independent in the tangent space, i.e, they span each <math id="S4.p6.m4" class="ltx_Math" alttext="T_{p}M" display="inline"><mrow><msub><mi>T</mi><mi>p</mi></msub><mo>⁢</mo><mi>M</mi></mrow></math>.</p>
+</div>
+<div id="S4.p7" class="ltx_para">
+<p class="ltx_p">Define thru</p>
+<table id="S4.Ex31" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S4.Ex31.m1" class="ltx_Math" alttext="\nabla_{X_{i}}X_{j}=\hat{\Gamma}^{s}_{ij}X_{s}" display="block"><mrow><mrow><msub><mo>∇</mo><msub><mi>X</mi><mi>i</mi></msub></msub><mo>⁡</mo><msub><mi>X</mi><mi>j</mi></msub></mrow><mo>=</mo><mrow><msubsup><mover accent="true"><mi mathvariant="normal">Γ</mi><mo stretchy="false">^</mo></mover><mrow><mi>i</mi><mo>⁢</mo><mi>j</mi></mrow><mi>s</mi></msubsup><mo>⁢</mo><msub><mi>X</mi><mi>s</mi></msub></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">a an-holonomic connection coefficients</p>
+</div>
+<div id="S4.p8" class="ltx_para">
+<p class="ltx_p">and</p>
+</div>
+<div id="S4.p9" class="ltx_para">
+<table id="S4.Ex32" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S4.Ex32.m1" class="ltx_Math" alttext="R(X_{i},X_{j})X_{k}={{\hat{R^{s}}}}_{ijk}X_{s}" display="block"><mrow><mrow><mi>R</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>X</mi><mi>i</mi></msub><mo>,</mo><msub><mi>X</mi><mi>j</mi></msub><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>X</mi><mi>k</mi></msub></mrow><mo>=</mo><mrow><msub><mover accent="true"><msup><mi>R</mi><mi>s</mi></msup><mo stretchy="false">^</mo></mover><mrow><mi>i</mi><mo>⁢</mo><mi>j</mi><mo>⁢</mo><mi>k</mi></mrow></msub><mo>⁢</mo><msub><mi>X</mi><mi>s</mi></msub></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">as the an-holonomic.</p>
+</div>
+<div id="S4.p10" class="ltx_para">
+<p class="ltx_p">Remember that in the coordinated frame field <math id="S4.p10.m1" class="ltx_Math" alttext="[\partial_{i},\partial_{j}]=0" display="inline"><mrow><mrow><mo stretchy="false">[</mo><msub><mo>∂</mo><mi>i</mi></msub><mo>,</mo><msub><mo>∂</mo><mi>j</mi></msub><mo stretchy="false">]</mo></mrow><mo>=</mo><mn>0</mn></mrow></math>, but since <math id="S4.p10.m2" class="ltx_Math" alttext="\nabla_{X_{i}}X_{j}-\nabla_{X_{j}}X_{i}=[X_{i},X_{j}]" display="inline"><mrow><mrow><mrow><msub><mo>∇</mo><msub><mi>X</mi><mi>i</mi></msub></msub><mo>⁡</mo><msub><mi>X</mi><mi>j</mi></msub></mrow><mo>-</mo><mrow><msub><mo>∇</mo><msub><mi>X</mi><mi>j</mi></msub></msub><mo>⁡</mo><msub><mi>X</mi><mi>i</mi></msub></mrow></mrow><mo>=</mo><mrow><mo stretchy="false">[</mo><msub><mi>X</mi><mi>i</mi></msub><mo>,</mo><msub><mi>X</mi><mi>j</mi></msub><mo stretchy="false">]</mo></mrow></mrow></math> this define the structural ”constants”</p>
+<table id="S4.Ex33" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S4.Ex33.m1" class="ltx_Math" alttext="{c^{s}}_{ij}X_{s}=[X_{i},X_{j}]" display="block"><mrow><mrow><mmultiscripts><mi>c</mi><none></none><mi>s</mi><mrow><mi>i</mi><mo>⁢</mo><mi>j</mi></mrow><none></none></mmultiscripts><mo>⁢</mo><msub><mi>X</mi><mi>s</mi></msub></mrow><mo>=</mo><mrow><mo stretchy="false">[</mo><msub><mi>X</mi><mi>i</mi></msub><mo>,</mo><msub><mi>X</mi><mi>j</mi></msub><mo stretchy="false">]</mo></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">and the give relation</p>
+<table id="S4.Ex34" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S4.Ex34.m1" class="ltx_Math" alttext="{c^{s}}_{ij}=\hat{\Gamma}^{s}_{ij}-\hat{\Gamma}^{s}_{ji}" display="block"><mrow><mmultiscripts><mi>c</mi><none></none><mi>s</mi><mrow><mi>i</mi><mo>⁢</mo><mi>j</mi></mrow><none></none></mmultiscripts><mo>=</mo><mrow><msubsup><mover accent="true"><mi mathvariant="normal">Γ</mi><mo stretchy="false">^</mo></mover><mrow><mi>i</mi><mo>⁢</mo><mi>j</mi></mrow><mi>s</mi></msubsup><mo>-</mo><msubsup><mover accent="true"><mi mathvariant="normal">Γ</mi><mo stretchy="false">^</mo></mover><mrow><mi>j</mi><mo>⁢</mo><mi>i</mi></mrow><mi>s</mi></msubsup></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+</section>
+<section id="S5" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">5 </span><span class="ltx_text ltx_font_bold">Cartan Structural Equations</span>
+</h2>
+
+<div id="S5.p1" class="ltx_para">
+<p class="ltx_p">The connection and the curvature forms satisfy the premiere
+<math id="S5.p1.m1" class="ltx_Math" alttext="d\theta^{i}=-{\hat{\omega^{i}}}_{s}\wedge\theta^{s}" display="inline"><mrow><mrow><mi>d</mi><mo>⁢</mo><msup><mi>θ</mi><mi>i</mi></msup></mrow><mo>=</mo><mrow><mrow><mo>-</mo><msub><mover accent="true"><msup><mi>ω</mi><mi>i</mi></msup><mo stretchy="false">^</mo></mover><mi>s</mi></msub></mrow><mo>∧</mo><msup><mi>θ</mi><mi>s</mi></msup></mrow></mrow></math>,
+where the <math id="S5.p1.m2" class="ltx_Math" alttext="\theta^{i}" display="inline"><msup><mi>θ</mi><mi>i</mi></msup></math> are the 1-forms dual to the <math id="S5.p1.m3" class="ltx_Math" alttext="X_{j}" display="inline"><msub><mi>X</mi><mi>j</mi></msub></math> and the deuxieme
+<math id="S5.p1.m4" class="ltx_Math" alttext="{\hat{\Omega^{i}}}_{j}=d{{\hat{\omega^{i}}}}_{j}+{{\hat{\omega^{i}}}}_{s}%
+\wedge{{\hat{\omega^{s}}}}_{j}" display="inline"><mrow><msub><mover accent="true"><msup><mi mathvariant="normal">Ω</mi><mi>i</mi></msup><mo stretchy="false">^</mo></mover><mi>j</mi></msub><mo>=</mo><mrow><mrow><mrow><mi>d</mi><mo>⁢</mo><msub><mover accent="true"><msup><mi>ω</mi><mi>i</mi></msup><mo stretchy="false">^</mo></mover><mi>j</mi></msub></mrow><mo>+</mo><msub><mover accent="true"><msup><mi>ω</mi><mi>i</mi></msup><mo stretchy="false">^</mo></mover><mi>s</mi></msub></mrow><mo>∧</mo><msub><mover accent="true"><msup><mi>ω</mi><mi>s</mi></msup><mo stretchy="false">^</mo></mover><mi>j</mi></msub></mrow></mrow></math>
+where the corresponding connection forms are calculated by
+<math id="S5.p1.m5" class="ltx_Math" alttext="\nabla_{Y}X_{j}=\hat{\omega^{s}}_{j}(Y)X_{s}" display="inline"><mrow><mrow><msub><mo>∇</mo><mi>Y</mi></msub><mo>⁡</mo><msub><mi>X</mi><mi>j</mi></msub></mrow><mo>=</mo><mrow><msub><mover accent="true"><msup><mi>ω</mi><mi>s</mi></msup><mo stretchy="false">^</mo></mover><mi>j</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>Y</mi><mo stretchy="false">)</mo></mrow><mo>⁢</mo><msub><mi>X</mi><mi>s</mi></msub></mrow></mrow></math>
+i.e.</p>
+<table id="S5.Ex35" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S5.Ex35.m1" class="ltx_Math" alttext="\hat{\omega^{l}}_{j}=\hat{\Gamma}^{l}_{js}\theta_{s}." display="block"><mrow><mrow><msub><mover accent="true"><msup><mi>ω</mi><mi>l</mi></msup><mo stretchy="false">^</mo></mover><mi>j</mi></msub><mo>=</mo><mrow><msubsup><mover accent="true"><mi mathvariant="normal">Γ</mi><mo stretchy="false">^</mo></mover><mrow><mi>j</mi><mo>⁢</mo><mi>s</mi></mrow><mi>l</mi></msubsup><mo>⁢</mo><msub><mi>θ</mi><mi>s</mi></msub></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">All that fits perfectly to give</p>
+<table id="S5.Ex36" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S5.Ex36.m1" class="ltx_Math" alttext="\hat{\Omega^{i}}_{j}={1\over 2}\hat{R^{i}}_{jkl}\theta^{k}\wedge\theta^{l}" display="block"><mrow><msub><mover accent="true"><msup><mi mathvariant="normal">Ω</mi><mi>i</mi></msup><mo stretchy="false">^</mo></mover><mi>j</mi></msub><mo>=</mo><mrow><mrow><mfrac><mn>1</mn><mn>2</mn></mfrac><mo>⁢</mo><msub><mover accent="true"><msup><mi>R</mi><mi>i</mi></msup><mo stretchy="false">^</mo></mover><mrow><mi>j</mi><mo>⁢</mo><mi>k</mi><mo>⁢</mo><mi>l</mi></mrow></msub><mo>⁢</mo><msup><mi>θ</mi><mi>k</mi></msup></mrow><mo>∧</mo><msup><mi>θ</mi><mi>l</mi></msup></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">with <math id="S5.p1.m6" class="ltx_Math" alttext="k&lt;l" display="inline"><mrow><mi>k</mi><mo>&lt;</mo><mi>l</mi></mrow></math>.</p>
+</div>
+<div id="S5.p2" class="ltx_para">
+<p class="ltx_p">This shows that the calculations of <math id="S5.p2.m1" class="ltx_Math" alttext="\hat{R^{i}}_{jkl}" display="inline"><msub><mover accent="true"><msup><mi>R</mi><mi>i</mi></msup><mo stretchy="false">^</mo></mover><mrow><mi>j</mi><mo>⁢</mo><mi>k</mi><mo>⁢</mo><mi>l</mi></mrow></msub></math> are very easy objects to put into an algorithm (Debever).
+</p>
+<table class="ltx_tabular ltx_align_right ltx_guessed_headers ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l ltx_border_t">Title</th>
+<td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">common formulas in calculus of differential forms</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Canonical name</th>
+<td class="ltx_td ltx_align_left ltx_border_r">CommonFormulasInCalculusOfDifferentialForms</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Date of creation</th>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 15:51:28</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Last modified on</th>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 15:51:28</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Owner</th>
+<td class="ltx_td ltx_align_left ltx_border_r">juanman (12619)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Last modified by</th>
+<td class="ltx_td ltx_align_left ltx_border_r">juanman (12619)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Numerical id</th>
+<td class="ltx_td ltx_align_left ltx_border_r">37</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Author</th>
+<td class="ltx_td ltx_align_left ltx_border_r">juanman (12619)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Entry type</th>
+<td class="ltx_td ltx_align_left ltx_border_r">Topic</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Classification</th>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 58A12</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Classification</th>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 58A10</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Related topic</th>
+<td class="ltx_td ltx_align_left ltx_border_r">Calculus</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_b ltx_border_l">Related topic</th>
+<td class="ltx_td ltx_align_left ltx_border_b ltx_border_r">TopicsOnCalculus</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+</article>
+</div>
+<footer class="ltx_page_footer">
+<div class="ltx_page_logo">Generated  on Sat Feb 10 11:50:22 2018 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</body>
+</html>

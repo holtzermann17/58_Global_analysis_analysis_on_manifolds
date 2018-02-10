@@ -1,0 +1,709 @@
+<!DOCTYPE html><html>
+<head>
+<title>Lagrange multipliers on manifolds</title>
+<!--Generated on Sat Feb 10 11:50:57 2018 by LaTeXML (version 0.8.2) http://dlmf.nist.gov/LaTeXML/.-->
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="ltx-article.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/3f71ceeb3b055e1ddc3b6c11fb1f074c/raw/2bb23e3b173ff96840797fc0c3bcb8c54085df8e/LaTeXML.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.rawgit.com/holtzermann17/4bda0365b30858ac2fb83623185fe3ec/raw/cedd84ed3e3ad597c5d293f443ecfe4803741c6b/ltx-article.css" type="text/css">
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=MML_HTMLorMML" type="text/javascript"></script>
+</head>
+<body>
+<div class="ltx_page_main">
+<div class="ltx_page_content">
+<article class="ltx_document ltx_authors_1line">
+<h1 class="ltx_title ltx_title_document">Lagrange multipliers on manifolds</h1>
+
+<div id="p1" class="ltx_para">
+<br class="ltx_break">
+</div>
+<div id="p2" class="ltx_para">
+<p class="ltx_p">We discuss in this article the theoretical aspects of
+the Lagrange multiplier method.</p>
+</div>
+<div id="p3" class="ltx_para">
+<p class="ltx_p">To enhance understanding,
+proofs and intuitive explanations of the Lagrange multipler method
+will be given from several different viewpoints,
+both elementary and advanced.</p>
+</div>
+<div class="ltx_TOC ltx_role_contents">
+<h6>Contents:</h6>
+<ul class="ltx_toclist">
+<li class="ltx_tocentry ltx_tocentry_section">
+<a href="#S1" title="1 Statements of theorem ‣ Lagrange multipliers on manifolds" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1 </span>Statements of theorem</span></a>
+<ul class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="#S1.SS1" title="1.1 Formulation with differential forms ‣ 1 Statements of theorem ‣ Lagrange multipliers on manifolds" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.1 </span>Formulation with differential forms</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="#S1.SS2" title="1.2 Formulation with gradients ‣ 1 Statements of theorem ‣ Lagrange multipliers on manifolds" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.2 </span>Formulation with gradients</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="#S1.SS3" title="1.3 Formulation with tangent maps ‣ 1 Statements of theorem ‣ Lagrange multipliers on manifolds" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">1.3 </span>Formulation with tangent maps</span></a></li>
+</ul>
+</li>
+<li class="ltx_tocentry ltx_tocentry_section">
+<a href="#S2" title="2 Proofs ‣ Lagrange multipliers on manifolds" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2 </span>Proofs</span></a>
+<ul class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="#S2.SS1" title="2.1 Beautiful abstract proof ‣ 2 Proofs ‣ Lagrange multipliers on manifolds" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.1 </span>Beautiful abstract proof</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="#S2.SS2" title="2.2 Clumsy, but down-to-earth proof ‣ 2 Proofs ‣ Lagrange multipliers on manifolds" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">2.2 </span>Clumsy, but down-to-earth proof</span></a></li>
+</ul>
+</li>
+<li class="ltx_tocentry ltx_tocentry_section">
+<a href="#S3" title="3 Intuitive interpretations ‣ Lagrange multipliers on manifolds" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3 </span>Intuitive interpretations</span></a>
+<ul class="ltx_toclist ltx_toclist_section">
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="#S3.SS1" title="3.1 Normals to tangent hyperplanes ‣ 3 Intuitive interpretations ‣ Lagrange multipliers on manifolds" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.1 </span>Normals to tangent hyperplanes</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="#S3.SS2" title="3.2 With infinitesimals ‣ 3 Intuitive interpretations ‣ Lagrange multipliers on manifolds" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.2 </span>With infinitesimals</span></a></li>
+<li class="ltx_tocentry ltx_tocentry_subsection"><a href="#S3.SS3" title="3.3 As rates of substitution ‣ 3 Intuitive interpretations ‣ Lagrange multipliers on manifolds" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">3.3 </span>As rates of substitution</span></a></li>
+</ul>
+</li>
+<li class="ltx_tocentry ltx_tocentry_section"><a href="#S4" title="4 Stationary points ‣ Lagrange multipliers on manifolds" class="ltx_ref"><span class="ltx_text ltx_ref_title"><span class="ltx_tag ltx_tag_ref">4 </span>Stationary points</span></a></li>
+</ul>
+</div>
+<section id="S1" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">1 </span>Statements of theorem</h2>
+
+<div id="S1.p1" class="ltx_para">
+<p class="ltx_p">Let <math id="S1.p1.m1" class="ltx_Math" alttext="N" display="inline"><mi>N</mi></math> be a <math id="S1.p1.m2" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math>-dimensional differentiable manifold (without boundary), and <math id="S1.p1.m3" class="ltx_Math" alttext="f\colon N\to\mathbb{R}" display="inline"><mrow><mi>f</mi><mo>:</mo><mrow><mi>N</mi><mo>→</mo><mi>ℝ</mi></mrow></mrow></math>, and
+<math id="S1.p1.m4" class="ltx_Math" alttext="g_{i}\colon N\to\mathbb{R}" display="inline"><mrow><msub><mi>g</mi><mi>i</mi></msub><mo>:</mo><mrow><mi>N</mi><mo>→</mo><mi>ℝ</mi></mrow></mrow></math>, for <math id="S1.p1.m5" class="ltx_Math" alttext="i=1,\ldots,k" display="inline"><mrow><mi>i</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi>k</mi></mrow></mrow></math>, be continuously differentiable.
+Set <math id="S1.p1.m6" class="ltx_Math" alttext="M=\bigcap_{i=1}^{k}g_{i}^{-1}(\{0\})" display="inline"><mrow><mi>M</mi><mo>=</mo><mrow><msubsup><mo largeop="true" mathsize="160%" stretchy="false" symmetric="true">⋂</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>k</mi></msubsup><mrow><msubsup><mi>g</mi><mi>i</mi><mrow><mo>-</mo><mn>1</mn></mrow></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo stretchy="false">{</mo><mn>0</mn><mo stretchy="false">}</mo></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math>.
+</p>
+</div>
+<section id="S1.SS1" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">1.1 </span>Formulation with differential forms</h3>
+
+<div id="Thmthm1" class="ltx_theorem ltx_theorem_thm">
+<h6 class="ltx_title ltx_runin ltx_font_bold ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem">Theorem 1</span>.</h6>
+<div id="Thmthm1.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Suppose <math id="Thmthm1.p1.m1" class="ltx_Math" alttext="dg_{i}" display="inline"><mrow><mi>d</mi><mo mathvariant="italic">⁢</mo><msub><mi>g</mi><mi>i</mi></msub></mrow></math> are linearly independent
+at each point of <math id="Thmthm1.p1.m2" class="ltx_Math" alttext="M" display="inline"><mi>M</mi></math>.
+If <math id="Thmthm1.p1.m3" class="ltx_Math" alttext="p\in M" display="inline"><mrow><mi>p</mi><mo mathvariant="normal">∈</mo><mi>M</mi></mrow></math> is a local minimum or maximum point of <math id="Thmthm1.p1.m4" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> restricted to <math id="Thmthm1.p1.m5" class="ltx_Math" alttext="M" display="inline"><mi>M</mi></math>,
+then there exist Lagrange multipliers
+<math id="Thmthm1.p1.m6" class="ltx_Math" alttext="\lambda_{1},\ldots,\lambda_{k}\in\mathbb{R}" display="inline"><mrow><mrow><msub><mi>λ</mi><mn mathvariant="normal">1</mn></msub><mo mathvariant="normal">,</mo><mi mathvariant="normal">…</mi><mo mathvariant="normal">,</mo><msub><mi>λ</mi><mi>k</mi></msub></mrow><mo mathvariant="normal">∈</mo><mi mathvariant="normal">R</mi></mrow></math>, depending on <math id="Thmthm1.p1.m7" class="ltx_Math" alttext="p" display="inline"><mi>p</mi></math>,
+such that</span></p>
+<table id="S1.Ex1" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.Ex1.m1" class="ltx_Math" alttext="df(p)=\lambda_{1}\,dg_{1}(p)+\cdots+\lambda_{k}\,dg_{k}(p)\,." display="block"><mrow><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mpadded width="+1.7pt"><msub><mi>λ</mi><mn>1</mn></msub></mpadded><mo>⁢</mo><mi>d</mi><mo>⁢</mo><msub><mi>g</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mrow><mpadded width="+1.7pt"><msub><mi>λ</mi><mi>k</mi></msub></mpadded><mo>⁢</mo><mi>d</mi><mo>⁢</mo><msub><mi>g</mi><mi>k</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo rspace="4.2pt" stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Here, <math id="Thmthm1.p1.m8" class="ltx_Math" alttext="d" display="inline"><mi>d</mi></math> denotes the exterior derivative.</span></p>
+</div>
+</div>
+<div id="S1.SS1.p1" class="ltx_para">
+<p class="ltx_p">Of course, as in one-dimensional calculus, the condition <math id="S1.SS1.p1.m1" class="ltx_Math" alttext="df(p)=\sum_{i}\lambda_{i}\,dg_{i}(p)" display="inline"><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msub><mo largeop="true" symmetric="true">∑</mo><mi>i</mi></msub><mrow><mpadded width="+1.7pt"><msub><mi>λ</mi><mi>i</mi></msub></mpadded><mo>⁢</mo><mi>d</mi><mo>⁢</mo><msub><mi>g</mi><mi>i</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math> by itself does not guarantee <math id="S1.SS1.p1.m2" class="ltx_Math" alttext="p" display="inline"><mi>p</mi></math> is a
+minimum or maximum point, even locally.</p>
+</div>
+</section>
+<section id="S1.SS2" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">1.2 </span>Formulation with gradients</h3>
+
+<div id="S1.SS2.p1" class="ltx_para">
+<p class="ltx_p">The version of Lagrange multipliers typically
+used in calculus is the special case
+<math id="S1.SS2.p1.m1" class="ltx_Math" alttext="N=\mathbb{R}^{n}" display="inline"><mrow><mi>N</mi><mo>=</mo><msup><mi>ℝ</mi><mi>n</mi></msup></mrow></math> in Theorem 1.
+In this case,
+the conclusion of the
+theorem can also be written
+in terms of gradients instead of differential forms:</p>
+</div>
+<div id="Thmthm2" class="ltx_theorem ltx_theorem_thm">
+<h6 class="ltx_title ltx_runin ltx_font_bold ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem">Theorem 2</span>.</h6>
+<div id="Thmthm2.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Suppose <math id="Thmthm2.p1.m1" class="ltx_Math" alttext="\nabla g_{i}" display="inline"><mrow><mo mathvariant="normal">∇</mo><mo mathvariant="italic">⁡</mo><msub><mi>g</mi><mi>i</mi></msub></mrow></math> are linearly independent
+at each point of <math id="Thmthm2.p1.m2" class="ltx_Math" alttext="M" display="inline"><mi>M</mi></math>.
+If <math id="Thmthm2.p1.m3" class="ltx_Math" alttext="p\in M" display="inline"><mrow><mi>p</mi><mo mathvariant="normal">∈</mo><mi>M</mi></mrow></math> is a local minimum or maximum point of <math id="Thmthm2.p1.m4" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> restricted to <math id="Thmthm2.p1.m5" class="ltx_Math" alttext="M" display="inline"><mi>M</mi></math>,
+then there exist Lagrange multipliers
+<math id="Thmthm2.p1.m6" class="ltx_Math" alttext="\lambda_{1},\ldots,\lambda_{k}\in\mathbb{R}" display="inline"><mrow><mrow><msub><mi>λ</mi><mn mathvariant="normal">1</mn></msub><mo mathvariant="normal">,</mo><mi mathvariant="normal">…</mi><mo mathvariant="normal">,</mo><msub><mi>λ</mi><mi>k</mi></msub></mrow><mo mathvariant="normal">∈</mo><mi mathvariant="normal">R</mi></mrow></math>, depending on <math id="Thmthm2.p1.m7" class="ltx_Math" alttext="p" display="inline"><mi>p</mi></math>,
+such that</span></p>
+<table id="S1.Ex2" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.Ex2.m1" class="ltx_Math" alttext="\nabla f(p)=\lambda_{1}\,\nabla g_{1}(p)+\cdots+\lambda_{k}\,\nabla g_{k}(p)\,." display="block"><mrow><mrow><mrow><mrow><mo>∇</mo><mo>⁡</mo><mi>f</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mpadded width="+1.7pt"><msub><mi>λ</mi><mn>1</mn></msub></mpadded><mo>⁢</mo><mrow><mo>∇</mo><mo>⁡</mo><msub><mi>g</mi><mn>1</mn></msub></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mrow><mpadded width="+1.7pt"><msub><mi>λ</mi><mi>k</mi></msub></mpadded><mo>⁢</mo><mrow><mo>∇</mo><mo>⁡</mo><msub><mi>g</mi><mi>k</mi></msub></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo rspace="4.2pt" stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+</div>
+<div id="S1.SS2.p2" class="ltx_para">
+<p class="ltx_p">This formulation and the first one
+are equivalent since
+the 1-form <math id="S1.SS2.p2.m1" class="ltx_Math" alttext="df" display="inline"><mrow><mi>d</mi><mo>⁢</mo><mi>f</mi></mrow></math> can be identified with the gradient
+<math id="S1.SS2.p2.m2" class="ltx_Math" alttext="\nabla f" display="inline"><mrow><mo>∇</mo><mo>⁡</mo><mi>f</mi></mrow></math>, via the formula <math id="S1.SS2.p2.m3" class="ltx_Math" alttext="\nabla f(p)\cdot v=df(p;v)=df_{p}(v)" display="inline"><mrow><mrow><mrow><mrow><mo>∇</mo><mo>⁡</mo><mi>f</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⋅</mo><mi>v</mi></mrow><mo>=</mo><mrow><mi>d</mi><mo>⁢</mo><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo>;</mo><mi>v</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mi>d</mi><mo>⁢</mo><msub><mi>f</mi><mi>p</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>v</mi><mo stretchy="false">)</mo></mrow></mrow></mrow></math>.</p>
+</div>
+</section>
+<section id="S1.SS3" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">1.3 </span>Formulation with tangent maps</h3>
+
+<div id="S1.SS3.p1" class="ltx_para">
+<p class="ltx_p">The functions <math id="S1.SS3.p1.m1" class="ltx_Math" alttext="g_{i}" display="inline"><msub><mi>g</mi><mi>i</mi></msub></math> can also be coalesced into a vector-valued function
+<math id="S1.SS3.p1.m2" class="ltx_Math" alttext="g\colon N\to\mathbb{R}^{k}" display="inline"><mrow><mi>g</mi><mo>:</mo><mrow><mi>N</mi><mo>→</mo><msup><mi>ℝ</mi><mi>k</mi></msup></mrow></mrow></math>. Then we have:</p>
+</div>
+<div id="Thmthm3" class="ltx_theorem ltx_theorem_thm">
+<h6 class="ltx_title ltx_runin ltx_font_bold ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem">Theorem 3</span>.</h6>
+<div id="Thmthm3.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Let <math id="Thmthm3.p1.m1" class="ltx_Math" alttext="g=(g_{1},\ldots,g_{k})\colon N\to\mathbb{R}^{k}" display="inline"><mrow><mrow><mi>g</mi><mo mathvariant="normal">=</mo><mrow><mo mathvariant="normal" stretchy="false">(</mo><msub><mi>g</mi><mn mathvariant="normal">1</mn></msub><mo mathvariant="normal">,</mo><mi mathvariant="normal">…</mi><mo mathvariant="normal">,</mo><msub><mi>g</mi><mi>k</mi></msub><mo mathvariant="normal" stretchy="false">)</mo></mrow></mrow><mo mathvariant="normal">:</mo><mrow><mi>N</mi><mo mathvariant="normal">→</mo><msup><mi mathvariant="normal">R</mi><mi>k</mi></msup></mrow></mrow></math>.
+Suppose the tangent map <math id="Thmthm3.p1.m2" class="ltx_Math" alttext="\operatorname{D}g" display="inline"><mrow><mi mathvariant="normal">D</mi><mo mathvariant="italic">⁡</mo><mi>g</mi></mrow></math> is surjective
+at each point of <math id="Thmthm3.p1.m3" class="ltx_Math" alttext="M" display="inline"><mi>M</mi></math>.
+If <math id="Thmthm3.p1.m4" class="ltx_Math" alttext="p\in M" display="inline"><mrow><mi>p</mi><mo mathvariant="normal">∈</mo><mi>M</mi></mrow></math> is a local minimum or maximum point of <math id="Thmthm3.p1.m5" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> restricted to <math id="Thmthm3.p1.m6" class="ltx_Math" alttext="M" display="inline"><mi>M</mi></math>,
+then
+there exists a Lagrange multiplier vector <math id="Thmthm3.p1.m7" class="ltx_Math" alttext="\lambda\in(\mathbb{R}^{k})^{*}" display="inline"><mrow><mi>λ</mi><mo mathvariant="normal">∈</mo><msup><mrow><mo mathvariant="normal" stretchy="false">(</mo><msup><mi mathvariant="normal">R</mi><mi>k</mi></msup><mo mathvariant="normal" stretchy="false">)</mo></mrow><mo mathvariant="normal">*</mo></msup></mrow></math>,
+depending on <math id="Thmthm3.p1.m8" class="ltx_Math" alttext="p" display="inline"><mi>p</mi></math>, such that</span></p>
+<table id="S1.Ex3" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S1.Ex3.m1" class="ltx_Math" alttext="\operatorname{D}f(p)=\operatorname{D}g(p)^{*}\lambda\,." display="block"><mrow><mrow><mrow><mrow><mi mathvariant="normal">D</mi><mo>⁡</mo><mi>f</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi mathvariant="normal">D</mi><mo>⁡</mo><mi>g</mi></mrow><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow><mo>*</mo></msup><mo>⁢</mo><mpadded width="+1.7pt"><mi>λ</mi></mpadded></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Here, <math id="Thmthm3.p1.m9" class="ltx_Math" alttext="\operatorname{D}g(p)\colon(\mathbb{R}^{k})^{*}\to(\mathrm{T}_{p}N)^{*}" display="inline"><mrow><mrow><mrow><mi mathvariant="normal">D</mi><mo mathvariant="italic">⁡</mo><mi>g</mi></mrow><mo mathvariant="italic">⁢</mo><mrow><mo mathvariant="normal" stretchy="false">(</mo><mi>p</mi><mo mathvariant="normal" stretchy="false">)</mo></mrow></mrow><mo mathvariant="normal">:</mo><mrow><msup><mrow><mo mathvariant="normal" stretchy="false">(</mo><msup><mi mathvariant="normal">R</mi><mi>k</mi></msup><mo mathvariant="normal" stretchy="false">)</mo></mrow><mo mathvariant="normal">*</mo></msup><mo mathvariant="normal">→</mo><msup><mrow><mo mathvariant="normal" stretchy="false">(</mo><mrow><msub><mi mathvariant="normal">T</mi><mi>p</mi></msub><mo mathvariant="italic">⁢</mo><mi>N</mi></mrow><mo mathvariant="normal" stretchy="false">)</mo></mrow><mo mathvariant="normal">*</mo></msup></mrow></mrow></math>
+denotes the pullback of the linear
+transformation (<span class="ltx_text ltx_font_typewriter">http://planetmath.org/DualHomomorphism</span>) <math id="Thmthm3.p1.m10" class="ltx_Math" alttext="\operatorname{D}g(p)\colon\mathrm{T}_{p}N\to\mathbb{R}^{k}" display="inline"><mrow><mrow><mrow><mi mathvariant="normal">D</mi><mo mathvariant="italic">⁡</mo><mi>g</mi></mrow><mo mathvariant="italic">⁢</mo><mrow><mo mathvariant="normal" stretchy="false">(</mo><mi>p</mi><mo mathvariant="normal" stretchy="false">)</mo></mrow></mrow><mo mathvariant="normal">:</mo><mrow><mrow><msub><mi mathvariant="normal">T</mi><mi>p</mi></msub><mo mathvariant="italic">⁢</mo><mi>N</mi></mrow><mo mathvariant="normal">→</mo><msup><mi mathvariant="normal">R</mi><mi>k</mi></msup></mrow></mrow></math>.</span></p>
+</div>
+</div>
+<div id="S1.SS3.p2" class="ltx_para">
+<p class="ltx_p">If <math id="S1.SS3.p2.m1" class="ltx_Math" alttext="\operatorname{D}g" display="inline"><mrow><mi mathvariant="normal">D</mi><mo>⁡</mo><mi>g</mi></mrow></math> is represented by its Jacobian matrix,
+then the condition that it be surjective is equivalent to
+its Jacobian matrix having full rank.</p>
+</div>
+<div id="S1.SS3.p3" class="ltx_para">
+<p class="ltx_p">Note the deliberate use of the space <math id="S1.SS3.p3.m1" class="ltx_Math" alttext="(\mathbb{R}^{k})^{*}" display="inline"><msup><mrow><mo stretchy="false">(</mo><msup><mi>ℝ</mi><mi>k</mi></msup><mo stretchy="false">)</mo></mrow><mo>*</mo></msup></math> instead of <math id="S1.SS3.p3.m2" class="ltx_Math" alttext="\mathbb{R}^{k}" display="inline"><msup><mi>ℝ</mi><mi>k</mi></msup></math>
+— to which the former is isomorphic to —
+for the Lagrange multiplier vector. It turns out that the
+Lagrange multiplier vector naturally
+lives in the dual space and not the original vector space <math id="S1.SS3.p3.m3" class="ltx_Math" alttext="\mathbb{R}^{k}" display="inline"><msup><mi>ℝ</mi><mi>k</mi></msup></math>.
+This distinction is particularly important in the infinite-dimensional
+generalizations of Lagrange multipliers.
+But even in the finite-dimensional setting,
+we do see hints that the dual space
+has to be involved, because a transpose is involved
+in the matrix expression for Lagrange multipliers.</p>
+</div>
+<div id="S1.SS3.p4" class="ltx_para">
+<p class="ltx_p">If the expression <math id="S1.SS3.p4.m1" class="ltx_Math" alttext="\operatorname{D}g(p)^{*}\lambda" display="inline"><mrow><mrow><mi mathvariant="normal">D</mi><mo>⁡</mo><mi>g</mi></mrow><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow><mo>*</mo></msup><mo>⁢</mo><mi>λ</mi></mrow></math> is written
+out in coordinates, then it is apparent that the components <math id="S1.SS3.p4.m2" class="ltx_Math" alttext="\lambda_{i}" display="inline"><msub><mi>λ</mi><mi>i</mi></msub></math>
+of the vector <math id="S1.SS3.p4.m3" class="ltx_Math" alttext="\lambda" display="inline"><mi>λ</mi></math> are exactly those
+Lagrange multipliers from Theorems 1 and 2.</p>
+</div>
+</section>
+</section>
+<section id="S2" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">2 </span>Proofs</h2>
+
+<div id="S2.p1" class="ltx_para">
+<p class="ltx_p">The proof of the Lagrange multiplier theorem is surprisingly short and elegant,
+when properly phrased in the language of abstract manifolds and
+differential forms.</p>
+</div>
+<div id="S2.p2" class="ltx_para">
+<p class="ltx_p">However, for the benefit of the readers not versed in these topics,
+we provide, in addition to the abstract proof, a concrete translation of the arguments
+in the more familiar setting <math id="S2.p2.m1" class="ltx_Math" alttext="N=\mathbb{R}^{n}" display="inline"><mrow><mi>N</mi><mo>=</mo><msup><mi>ℝ</mi><mi>n</mi></msup></mrow></math>.
+</p>
+</div>
+<section id="S2.SS1" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">2.1 </span>Beautiful abstract proof</h3>
+
+<div class="ltx_proof">
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Proof.</h6>
+<div id="S2.SS1.p1" class="ltx_para">
+<p class="ltx_p">Since <math id="S2.SS1.p1.m1" class="ltx_Math" alttext="dg_{i}" display="inline"><mrow><mi>d</mi><mo>⁢</mo><msub><mi>g</mi><mi>i</mi></msub></mrow></math> are linearly independent at each point of <math id="S2.SS1.p1.m2" class="ltx_Math" alttext="M=\bigcap_{i=1}^{k}g_{i}^{-1}(\{0\})" display="inline"><mrow><mi>M</mi><mo>=</mo><mrow><msubsup><mo largeop="true" mathsize="160%" stretchy="false" symmetric="true">⋂</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>k</mi></msubsup><mrow><msubsup><mi>g</mi><mi>i</mi><mrow><mo>-</mo><mn>1</mn></mrow></msubsup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo stretchy="false">{</mo><mn>0</mn><mo stretchy="false">}</mo></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></mrow></math>,
+<math id="S2.SS1.p1.m3" class="ltx_Math" alttext="M" display="inline"><mi>M</mi></math> is an embedded submanifold of <math id="S2.SS1.p1.m4" class="ltx_Math" alttext="N" display="inline"><mi>N</mi></math>,
+of dimension <math id="S2.SS1.p1.m5" class="ltx_Math" alttext="m=n-k" display="inline"><mrow><mi>m</mi><mo>=</mo><mrow><mi>n</mi><mo>-</mo><mi>k</mi></mrow></mrow></math>. Let <math id="S2.SS1.p1.m6" class="ltx_Math" alttext="\alpha\colon U\to M" display="inline"><mrow><mi>α</mi><mo>:</mo><mrow><mi>U</mi><mo>→</mo><mi>M</mi></mrow></mrow></math>, with <math id="S2.SS1.p1.m7" class="ltx_Math" alttext="U" display="inline"><mi>U</mi></math> open in <math id="S2.SS1.p1.m8" class="ltx_Math" alttext="\mathbb{R}^{m}" display="inline"><msup><mi>ℝ</mi><mi>m</mi></msup></math>, be
+a coordinate chart for <math id="S2.SS1.p1.m9" class="ltx_Math" alttext="M" display="inline"><mi>M</mi></math> such that <math id="S2.SS1.p1.m10" class="ltx_Math" alttext="\alpha(0)=p" display="inline"><mrow><mrow><mi>α</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>p</mi></mrow></math>.
+Then <math id="S2.SS1.p1.m11" class="ltx_Math" alttext="\alpha^{*}f" display="inline"><mrow><msup><mi>α</mi><mo>*</mo></msup><mo>⁢</mo><mi>f</mi></mrow></math> has a local minimum or maximum at <math id="S2.SS1.p1.m12" class="ltx_Math" alttext="0" display="inline"><mn>0</mn></math>,
+and therefore <math id="S2.SS1.p1.m13" class="ltx_Math" alttext="0=d(\alpha^{*}f)=\alpha^{*}df" display="inline"><mrow><mn>0</mn><mo>=</mo><mrow><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>α</mi><mo>*</mo></msup><mo>⁢</mo><mi>f</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msup><mi>α</mi><mo>*</mo></msup><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mi>f</mi></mrow></mrow></math> at <math id="S2.SS1.p1.m14" class="ltx_Math" alttext="0" display="inline"><mn>0</mn></math>.
+But <math id="S2.SS1.p1.m15" class="ltx_Math" alttext="\alpha^{*}" display="inline"><msup><mi>α</mi><mo>*</mo></msup></math> at <math id="S2.SS1.p1.m16" class="ltx_Math" alttext="p" display="inline"><mi>p</mi></math> is an isomorphism <math id="S2.SS1.p1.m17" class="ltx_Math" alttext="\left(\mathrm{T}_{p}M\right)^{*}\to\left(\mathrm{T}_{0}\mathbb{R}^{m}\right)^{*}" display="inline"><mrow><msup><mrow><mo>(</mo><mrow><msub><mi mathvariant="normal">T</mi><mi>p</mi></msub><mo>⁢</mo><mi>M</mi></mrow><mo>)</mo></mrow><mo>*</mo></msup><mo>→</mo><msup><mrow><mo>(</mo><mrow><msub><mi mathvariant="normal">T</mi><mn>0</mn></msub><mo>⁢</mo><msup><mi>ℝ</mi><mi>m</mi></msup></mrow><mo>)</mo></mrow><mo>*</mo></msup></mrow></math>,
+so the preceding equation says that <math id="S2.SS1.p1.m18" class="ltx_Math" alttext="df" display="inline"><mrow><mi>d</mi><mo>⁢</mo><mi>f</mi></mrow></math> vanishes on <math id="S2.SS1.p1.m19" class="ltx_Math" alttext="\mathrm{T}_{p}M" display="inline"><mrow><msub><mi mathvariant="normal">T</mi><mi>p</mi></msub><mo>⁢</mo><mi>M</mi></mrow></math>.</p>
+</div>
+<div id="S2.SS1.p2" class="ltx_para">
+<p class="ltx_p">Now, by the definition of <math id="S2.SS1.p2.m1" class="ltx_Math" alttext="g_{i}" display="inline"><msub><mi>g</mi><mi>i</mi></msub></math>, we have <math id="S2.SS1.p2.m2" class="ltx_Math" alttext="\alpha^{*}g_{i}=0" display="inline"><mrow><mrow><msup><mi>α</mi><mo>*</mo></msup><mo>⁢</mo><msub><mi>g</mi><mi>i</mi></msub></mrow><mo>=</mo><mn>0</mn></mrow></math>,
+so <math id="S2.SS1.p2.m3" class="ltx_Math" alttext="0=d(\alpha^{*}g_{i})=\alpha^{*}dg_{i}" display="inline"><mrow><mn>0</mn><mo>=</mo><mrow><mi>d</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><msup><mi>α</mi><mo>*</mo></msup><mo>⁢</mo><msub><mi>g</mi><mi>i</mi></msub></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msup><mi>α</mi><mo>*</mo></msup><mo>⁢</mo><mi>d</mi><mo>⁢</mo><msub><mi>g</mi><mi>i</mi></msub></mrow></mrow></math>. So like <math id="S2.SS1.p2.m4" class="ltx_Math" alttext="df" display="inline"><mrow><mi>d</mi><mo>⁢</mo><mi>f</mi></mrow></math>, <math id="S2.SS1.p2.m5" class="ltx_Math" alttext="dg_{i}" display="inline"><mrow><mi>d</mi><mo>⁢</mo><msub><mi>g</mi><mi>i</mi></msub></mrow></math> vanishes on <math id="S2.SS1.p2.m6" class="ltx_Math" alttext="\mathrm{T}_{p}M" display="inline"><mrow><msub><mi mathvariant="normal">T</mi><mi>p</mi></msub><mo>⁢</mo><mi>M</mi></mrow></math>.</p>
+</div>
+<div id="S2.SS1.p3" class="ltx_para">
+<p class="ltx_p">In other words, <math id="S2.SS1.p3.m1" class="ltx_Math" alttext="dg_{i}(p)" display="inline"><mrow><mi>d</mi><mo>⁢</mo><msub><mi>g</mi><mi>i</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow></math> is in the annihilator (<span class="ltx_text ltx_font_typewriter">http://planetmath.org/AnnihilatorOfVectorSubspace</span>)
+<math id="S2.SS1.p3.m2" class="ltx_Math" alttext="\left(\mathrm{T}_{p}M\right)^{0}" display="inline"><msup><mrow><mo>(</mo><mrow><msub><mi mathvariant="normal">T</mi><mi>p</mi></msub><mo>⁢</mo><mi>M</mi></mrow><mo>)</mo></mrow><mn>0</mn></msup></math> of the subspace <math id="S2.SS1.p3.m3" class="ltx_Math" alttext="\mathrm{T}_{p}M\subseteq\mathrm{T}_{p}N" display="inline"><mrow><mrow><msub><mi mathvariant="normal">T</mi><mi>p</mi></msub><mo>⁢</mo><mi>M</mi></mrow><mo>⊆</mo><mrow><msub><mi mathvariant="normal">T</mi><mi>p</mi></msub><mo>⁢</mo><mi>N</mi></mrow></mrow></math>.
+Since <math id="S2.SS1.p3.m4" class="ltx_Math" alttext="\mathrm{T}_{p}M" display="inline"><mrow><msub><mi mathvariant="normal">T</mi><mi>p</mi></msub><mo>⁢</mo><mi>M</mi></mrow></math> has dimension <math id="S2.SS1.p3.m5" class="ltx_Math" alttext="m=n-k" display="inline"><mrow><mi>m</mi><mo>=</mo><mrow><mi>n</mi><mo>-</mo><mi>k</mi></mrow></mrow></math>, and <math id="S2.SS1.p3.m6" class="ltx_Math" alttext="\mathrm{T}_{p}N" display="inline"><mrow><msub><mi mathvariant="normal">T</mi><mi>p</mi></msub><mo>⁢</mo><mi>N</mi></mrow></math> has dimension <math id="S2.SS1.p3.m7" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math>,
+the annihilator <math id="S2.SS1.p3.m8" class="ltx_Math" alttext="\left(\mathrm{T}_{p}M\right)^{0}" display="inline"><msup><mrow><mo>(</mo><mrow><msub><mi mathvariant="normal">T</mi><mi>p</mi></msub><mo>⁢</mo><mi>M</mi></mrow><mo>)</mo></mrow><mn>0</mn></msup></math> has dimension <math id="S2.SS1.p3.m9" class="ltx_Math" alttext="k" display="inline"><mi>k</mi></math>.
+Now <math id="S2.SS1.p3.m10" class="ltx_Math" alttext="dg_{i}(p)\in\left(\mathrm{T}_{p}M\right)^{0}" display="inline"><mrow><mrow><mi>d</mi><mo>⁢</mo><msub><mi>g</mi><mi>i</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow><mo>∈</mo><msup><mrow><mo>(</mo><mrow><msub><mi mathvariant="normal">T</mi><mi>p</mi></msub><mo>⁢</mo><mi>M</mi></mrow><mo>)</mo></mrow><mn>0</mn></msup></mrow></math> are linearly independent,
+so they must in fact be a basis for <math id="S2.SS1.p3.m11" class="ltx_Math" alttext="\left(\mathrm{T}_{p}M\right)^{0}" display="inline"><msup><mrow><mo>(</mo><mrow><msub><mi mathvariant="normal">T</mi><mi>p</mi></msub><mo>⁢</mo><mi>M</mi></mrow><mo>)</mo></mrow><mn>0</mn></msup></math>.
+But we had argued that <math id="S2.SS1.p3.m12" class="ltx_Math" alttext="df(p)\in\left(\mathrm{T}_{p}M\right)^{0}" display="inline"><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow><mo>∈</mo><msup><mrow><mo>(</mo><mrow><msub><mi mathvariant="normal">T</mi><mi>p</mi></msub><mo>⁢</mo><mi>M</mi></mrow><mo>)</mo></mrow><mn>0</mn></msup></mrow></math>.
+Therefore <math id="S2.SS1.p3.m13" class="ltx_Math" alttext="df(p)" display="inline"><mrow><mi>d</mi><mo>⁢</mo><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow></math> may be written as a unique linear combination
+of the <math id="S2.SS1.p3.m14" class="ltx_Math" alttext="dg_{i}(p)" display="inline"><mrow><mi>d</mi><mo>⁢</mo><msub><mi>g</mi><mi>i</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow></math>:
+</p>
+<table id="S2.Ex4" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S2.Ex4.m1" class="ltx_Math" alttext="df(p)=\lambda_{1}\,dg_{1}(p)+\cdots+\lambda_{k}\,dg_{k}(p)\,.\qed" display="block"><mrow><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mpadded width="+1.7pt"><msub><mi>λ</mi><mn>1</mn></msub></mpadded><mo>⁢</mo><mi>d</mi><mo>⁢</mo><msub><mi>g</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mrow><mpadded width="+1.7pt"><msub><mi>λ</mi><mi>k</mi></msub></mpadded><mo>⁢</mo><mi>d</mi><mo>⁢</mo><msub><mi>g</mi><mi>k</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo rspace="4.2pt" stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>.</mo><mo mathvariant="italic" separator="true">∎</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+</div>
+<div id="S2.SS1.p4" class="ltx_para">
+<p class="ltx_p">The last paragraph of the previous proof can also be rephrased,
+based on the same underlying ideas,
+to make evident the fact that the Lagrange multiplier vector
+lives in the dual space <math id="S2.SS1.p4.m1" class="ltx_Math" alttext="(\mathbb{R}^{k})^{*}" display="inline"><msup><mrow><mo stretchy="false">(</mo><msup><mi>ℝ</mi><mi>k</mi></msup><mo stretchy="false">)</mo></mrow><mo>*</mo></msup></math>.</p>
+</div>
+<div class="ltx_proof">
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Alternative argument..</h6>
+<div id="S2.SS1.p5" class="ltx_para">
+<p class="ltx_p">A general theorem in linear algebra states that for any linear
+transformation <math id="S2.SS1.p5.m1" class="ltx_Math" alttext="L" display="inline"><mi>L</mi></math>,
+the image of the pullback <math id="S2.SS1.p5.m2" class="ltx_Math" alttext="L^{*}" display="inline"><msup><mi>L</mi><mo>*</mo></msup></math>
+is the annihilator of the kernel of <math id="S2.SS1.p5.m3" class="ltx_Math" alttext="L" display="inline"><mi>L</mi></math>.
+Since <math id="S2.SS1.p5.m4" class="ltx_Math" alttext="\ker\operatorname{D}g(p)=\mathrm{T}_{p}M" display="inline"><mrow><mrow><mrow><mi>ker</mi><mo>⁡</mo><mrow><mi mathvariant="normal">D</mi><mo>⁡</mo><mi>g</mi></mrow></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msub><mi mathvariant="normal">T</mi><mi>p</mi></msub><mo>⁢</mo><mi>M</mi></mrow></mrow></math>
+and <math id="S2.SS1.p5.m5" class="ltx_Math" alttext="df(p)\in(\mathrm{T}_{p}M)^{0}" display="inline"><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow><mo>∈</mo><msup><mrow><mo stretchy="false">(</mo><mrow><msub><mi mathvariant="normal">T</mi><mi>p</mi></msub><mo>⁢</mo><mi>M</mi></mrow><mo stretchy="false">)</mo></mrow><mn>0</mn></msup></mrow></math>,
+it immediately follows that <math id="S2.SS1.p5.m6" class="ltx_Math" alttext="\lambda\in(\mathbb{R}^{k})^{*}" display="inline"><mrow><mi>λ</mi><mo>∈</mo><msup><mrow><mo stretchy="false">(</mo><msup><mi>ℝ</mi><mi>k</mi></msup><mo stretchy="false">)</mo></mrow><mo>*</mo></msup></mrow></math>
+exists such that <math id="S2.SS1.p5.m7" class="ltx_Math" alttext="df(p)=\operatorname{D}g(p)^{*}\lambda" display="inline"><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mi mathvariant="normal">D</mi><mo>⁡</mo><mi>g</mi></mrow><mo>⁢</mo><msup><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow><mo>*</mo></msup><mo>⁢</mo><mi>λ</mi></mrow></mrow></math>.
+∎</p>
+</div>
+</div>
+<div id="S2.SS1.p6" class="ltx_para">
+<p class="ltx_p">Yet another proof
+could be devised by observing
+that the result is obvious if <math id="S2.SS1.p6.m1" class="ltx_Math" alttext="N=\mathbb{R}^{n}" display="inline"><mrow><mi>N</mi><mo>=</mo><msup><mi>ℝ</mi><mi>n</mi></msup></mrow></math> and the constraint functions
+are just coordinate projections on <math id="S2.SS1.p6.m2" class="ltx_Math" alttext="\mathbb{R}^{n}" display="inline"><msup><mi>ℝ</mi><mi>n</mi></msup></math>:</p>
+<table id="S2.Ex5" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S2.Ex5.m1" class="ltx_Math" alttext="g_{i}(y_{1},\ldots,y_{n})=y_{i}\,,\quad i=1,\ldots,k\,." display="block"><mrow><mrow><mrow><mrow><msub><mi>g</mi><mi>i</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><msub><mi>y</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>y</mi><mi>n</mi></msub><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mpadded width="+1.7pt"><msub><mi>y</mi><mi>i</mi></msub></mpadded></mrow><mo rspace="12.5pt">,</mo><mrow><mi>i</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mpadded width="+1.7pt"><mi>k</mi></mpadded></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">We clearly must have
+<math id="S2.SS1.p6.m3" class="ltx_Math" alttext="\partial f/\partial y_{k+1}=\cdots=\partial f/\partial y_{n}=0" display="inline"><mrow><mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>f</mi></mrow><mo>/</mo><mrow><mo>∂</mo><mo>⁡</mo><msub><mi>y</mi><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow></mrow><mo>=</mo><mi mathvariant="normal">⋯</mi><mo>=</mo><mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>f</mi></mrow><mo>/</mo><mrow><mo>∂</mo><mo>⁡</mo><msub><mi>y</mi><mi>n</mi></msub></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math>
+at a point <math id="S2.SS1.p6.m4" class="ltx_Math" alttext="p" display="inline"><mi>p</mi></math> that minimizes <math id="S2.SS1.p6.m5" class="ltx_Math" alttext="f(y)" display="inline"><mrow><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>y</mi><mo stretchy="false">)</mo></mrow></mrow></math> over <math id="S2.SS1.p6.m6" class="ltx_Math" alttext="y_{1}=\cdots=y_{k}=0" display="inline"><mrow><msub><mi>y</mi><mn>1</mn></msub><mo>=</mo><mi mathvariant="normal">⋯</mi><mo>=</mo><msub><mi>y</mi><mi>k</mi></msub><mo>=</mo><mn>0</mn></mrow></math>.
+The general case can be deduced to this by a coordinate change:</p>
+</div>
+<div class="ltx_proof">
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Alternate argument..</h6>
+<div id="S2.SS1.p7" class="ltx_para">
+<p class="ltx_p">Since <math id="S2.SS1.p7.m1" class="ltx_Math" alttext="dg_{i}" display="inline"><mrow><mi>d</mi><mo>⁢</mo><msub><mi>g</mi><mi>i</mi></msub></mrow></math> are linearly independent,
+we can find a coordinate chart for <math id="S2.SS1.p7.m2" class="ltx_Math" alttext="N" display="inline"><mi>N</mi></math> about the point <math id="S2.SS1.p7.m3" class="ltx_Math" alttext="p" display="inline"><mi>p</mi></math>,
+with coordinate functions <math id="S2.SS1.p7.m4" class="ltx_Math" alttext="y_{1},\ldots,y_{n}\colon N\to\mathbb{R}" display="inline"><mrow><mrow><msub><mi>y</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>y</mi><mi>n</mi></msub></mrow><mo>:</mo><mrow><mi>N</mi><mo>→</mo><mi>ℝ</mi></mrow></mrow></math>
+such that <math id="S2.SS1.p7.m5" class="ltx_Math" alttext="y_{i}=g_{i}" display="inline"><mrow><msub><mi>y</mi><mi>i</mi></msub><mo>=</mo><msub><mi>g</mi><mi>i</mi></msub></mrow></math> for <math id="S2.SS1.p7.m6" class="ltx_Math" alttext="i=1,\ldots,k" display="inline"><mrow><mi>i</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi>k</mi></mrow></mrow></math>.
+Then</p>
+<table id="A0.EGx1" class="ltx_equationgroup ltx_eqn_align ltx_eqn_table">
+
+<tr id="S2.Ex6" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"><math id="S2.Ex6.m1" class="ltx_Math" alttext="\displaystyle df" display="inline"><mrow><mi>d</mi><mo>⁢</mo><mi>f</mi></mrow></math></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S2.Ex6.m2" class="ltx_Math" alttext="\displaystyle=\frac{\partial f}{\partial y_{1}}dy_{1}+\cdots+\frac{\partial f}%
+{\partial y_{n}}dy_{n}" display="inline"><mrow><mi></mi><mo>=</mo><mrow><mrow><mstyle displaystyle="true"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>f</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><msub><mi>y</mi><mn>1</mn></msub></mrow></mfrac></mstyle><mo>⁢</mo><mi>d</mi><mo>⁢</mo><msub><mi>y</mi><mn>1</mn></msub></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mrow><mstyle displaystyle="true"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>f</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><msub><mi>y</mi><mi>n</mi></msub></mrow></mfrac></mstyle><mo>⁢</mo><mi>d</mi><mo>⁢</mo><msub><mi>y</mi><mi>n</mi></msub></mrow></mrow></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+<tr id="S2.Ex7" class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_td ltx_align_right ltx_eqn_cell"></td>
+<td class="ltx_td ltx_align_left ltx_eqn_cell"><math id="S2.Ex7.m2" class="ltx_Math" alttext="\displaystyle=\frac{\partial f}{\partial g_{1}}dg_{1}+\cdots+\frac{\partial f}%
+{\partial g_{k}}dg_{k}+\frac{\partial f}{\partial y_{k+1}}dy_{k+1}+\cdots+%
+\frac{\partial f}{\partial y_{n}}dy_{n}\,," display="inline"><mrow><mrow><mi></mi><mo>=</mo><mrow><mrow><mstyle displaystyle="true"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>f</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><msub><mi>g</mi><mn>1</mn></msub></mrow></mfrac></mstyle><mo>⁢</mo><mi>d</mi><mo>⁢</mo><msub><mi>g</mi><mn>1</mn></msub></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mrow><mstyle displaystyle="true"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>f</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><msub><mi>g</mi><mi>k</mi></msub></mrow></mfrac></mstyle><mo>⁢</mo><mi>d</mi><mo>⁢</mo><msub><mi>g</mi><mi>k</mi></msub></mrow><mo>+</mo><mrow><mstyle displaystyle="true"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>f</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><msub><mi>y</mi><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow></mfrac></mstyle><mo>⁢</mo><mi>d</mi><mo>⁢</mo><msub><mi>y</mi><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mrow><mstyle displaystyle="true"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>f</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><msub><mi>y</mi><mi>n</mi></msub></mrow></mfrac></mstyle><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mpadded width="+1.7pt"><msub><mi>y</mi><mi>n</mi></msub></mpadded></mrow></mrow></mrow><mo>,</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">but <math id="S2.SS1.p7.m7" class="ltx_Math" alttext="\partial f/\partial y_{k+1}=\cdots=\partial f/\partial y_{n}=0" display="inline"><mrow><mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>f</mi></mrow><mo>/</mo><mrow><mo>∂</mo><mo>⁡</mo><msub><mi>y</mi><mrow><mi>k</mi><mo>+</mo><mn>1</mn></mrow></msub></mrow></mrow><mo>=</mo><mi mathvariant="normal">⋯</mi><mo>=</mo><mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>f</mi></mrow><mo>/</mo><mrow><mo>∂</mo><mo>⁡</mo><msub><mi>y</mi><mi>n</mi></msub></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math>
+at the point <math id="S2.SS1.p7.m8" class="ltx_Math" alttext="p" display="inline"><mi>p</mi></math>. Set <math id="S2.SS1.p7.m9" class="ltx_Math" alttext="\lambda_{i}=\partial f/\partial g_{i}" display="inline"><mrow><msub><mi>λ</mi><mi>i</mi></msub><mo>=</mo><mrow><mrow><mo>∂</mo><mo>⁡</mo><mi>f</mi></mrow><mo>/</mo><mrow><mo>∂</mo><mo>⁡</mo><msub><mi>g</mi><mi>i</mi></msub></mrow></mrow></mrow></math> at <math id="S2.SS1.p7.m10" class="ltx_Math" alttext="p" display="inline"><mi>p</mi></math>.
+∎</p>
+</div>
+</div>
+</section>
+<section id="S2.SS2" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">2.2 </span>Clumsy, but down-to-earth proof</h3>
+
+<div class="ltx_proof">
+<h6 class="ltx_title ltx_runin ltx_font_italic ltx_title_proof">Proof.</h6>
+<div id="S2.SS2.p1" class="ltx_para">
+<p class="ltx_p">We assume that <math id="S2.SS2.p1.m1" class="ltx_Math" alttext="N=\mathbb{R}^{n}" display="inline"><mrow><mi>N</mi><mo>=</mo><msup><mi>ℝ</mi><mi>n</mi></msup></mrow></math>.
+Consider the list vector <math id="S2.SS2.p1.m2" class="ltx_Math" alttext="g=(g_{1},\ldots,g_{k})" display="inline"><mrow><mi>g</mi><mo>=</mo><mrow><mo stretchy="false">(</mo><msub><mi>g</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>g</mi><mi>k</mi></msub><mo stretchy="false">)</mo></mrow></mrow></math> discussed earlier,
+and its Jacobian matrix <math id="S2.SS2.p1.m3" class="ltx_Math" alttext="\operatorname{D}g" display="inline"><mrow><mi mathvariant="normal">D</mi><mo>⁡</mo><mi>g</mi></mrow></math> in Euclidean coordinates.
+The <math id="S2.SS2.p1.m4" class="ltx_Math" alttext="i" display="inline"><mi>i</mi></math>th row of this matrix
+is</p>
+<table id="S2.Ex8" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S2.Ex8.m1" class="ltx_Math" alttext="\begin{bmatrix}\dfrac{\partial g_{i}}{\partial x_{1}}&amp;\ldots&amp;\dfrac{\partial g%
+_{i}}{\partial x_{n}}\end{bmatrix}=\left(\nabla g_{i}\right)^{\mathrm{T}}\,." display="block"><mrow><mrow><mrow><mo>[</mo><mtable columnspacing="5pt" displaystyle="true"><mtr><mtd columnalign="center"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><msub><mi>g</mi><mi>i</mi></msub></mrow><mrow><mo>∂</mo><mo>⁡</mo><msub><mi>x</mi><mn>1</mn></msub></mrow></mfrac></mtd><mtd columnalign="center"><mi mathvariant="normal">…</mi></mtd><mtd columnalign="center"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><msub><mi>g</mi><mi>i</mi></msub></mrow><mrow><mo>∂</mo><mo>⁡</mo><msub><mi>x</mi><mi>n</mi></msub></mrow></mfrac></mtd></mtr></mtable><mo>]</mo></mrow><mo>=</mo><mpadded width="+1.7pt"><msup><mrow><mo>(</mo><mrow><mo>∇</mo><mo>⁡</mo><msub><mi>g</mi><mi>i</mi></msub></mrow><mo>)</mo></mrow><mi mathvariant="normal">T</mi></msup></mpadded></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">So the matrix <math id="S2.SS2.p1.m5" class="ltx_Math" alttext="\operatorname{D}g" display="inline"><mrow><mi mathvariant="normal">D</mi><mo>⁡</mo><mi>g</mi></mrow></math> has full rank (i.e. <math id="S2.SS2.p1.m6" class="ltx_Math" alttext="\operatorname{rank}\operatorname{D}g=k" display="inline"><mrow><mrow><mi>rank</mi><mo>⁡</mo><mrow><mi mathvariant="normal">D</mi><mo>⁡</mo><mi>g</mi></mrow></mrow><mo>=</mo><mi>k</mi></mrow></math>) if and only
+if the <math id="S2.SS2.p1.m7" class="ltx_Math" alttext="k" display="inline"><mi>k</mi></math> gradients <math id="S2.SS2.p1.m8" class="ltx_Math" alttext="\nabla g_{i}" display="inline"><mrow><mo>∇</mo><mo>⁡</mo><msub><mi>g</mi><mi>i</mi></msub></mrow></math> are linearly independent.</p>
+</div>
+<div id="S2.SS2.p2" class="ltx_para">
+<p class="ltx_p">Consider each solution <math id="S2.SS2.p2.m1" class="ltx_Math" alttext="q\in M" display="inline"><mrow><mi>q</mi><mo>∈</mo><mi>M</mi></mrow></math> of <math id="S2.SS2.p2.m2" class="ltx_Math" alttext="g(q)=0" display="inline"><mrow><mrow><mi>g</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>q</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mn>0</mn></mrow></math>.
+Since <math id="S2.SS2.p2.m3" class="ltx_Math" alttext="\operatorname{D}g" display="inline"><mrow><mi mathvariant="normal">D</mi><mo>⁡</mo><mi>g</mi></mrow></math> has full rank, we can apply the implicit function theorem,
+which states that there exist smooth solution parameterizations
+<math id="S2.SS2.p2.m4" class="ltx_Math" alttext="\alpha\colon U\to M" display="inline"><mrow><mi>α</mi><mo>:</mo><mrow><mi>U</mi><mo>→</mo><mi>M</mi></mrow></mrow></math> around each point <math id="S2.SS2.p2.m5" class="ltx_Math" alttext="q\in M" display="inline"><mrow><mi>q</mi><mo>∈</mo><mi>M</mi></mrow></math>. (<math id="S2.SS2.p2.m6" class="ltx_Math" alttext="U" display="inline"><mi>U</mi></math> is an open set in <math id="S2.SS2.p2.m7" class="ltx_Math" alttext="\mathbb{R}^{m}" display="inline"><msup><mi>ℝ</mi><mi>m</mi></msup></math>, <math id="S2.SS2.p2.m8" class="ltx_Math" alttext="m=n-k" display="inline"><mrow><mi>m</mi><mo>=</mo><mrow><mi>n</mi><mo>-</mo><mi>k</mi></mrow></mrow></math>.)
+These <math id="S2.SS2.p2.m9" class="ltx_Math" alttext="\alpha" display="inline"><mi>α</mi></math> are the coordinate charts which give to <math id="S2.SS2.p2.m10" class="ltx_Math" alttext="M=g^{-1}(\{0\})" display="inline"><mrow><mi>M</mi><mo>=</mo><mrow><msup><mi>g</mi><mrow><mo>-</mo><mn>1</mn></mrow></msup><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mrow><mo stretchy="false">{</mo><mn>0</mn><mo stretchy="false">}</mo></mrow><mo stretchy="false">)</mo></mrow></mrow></mrow></math> a manifold structure.</p>
+</div>
+<div id="S2.SS2.p3" class="ltx_para">
+<p class="ltx_p">We now consider specially the point <math id="S2.SS2.p3.m1" class="ltx_Math" alttext="q=p" display="inline"><mrow><mi>q</mi><mo>=</mo><mi>p</mi></mrow></math>; without loss of generality, assume <math id="S2.SS2.p3.m2" class="ltx_Math" alttext="\alpha(0)=p" display="inline"><mrow><mrow><mi>α</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mi>p</mi></mrow></math>.
+Then <math id="S2.SS2.p3.m3" class="ltx_Math" alttext="f\circ\alpha" display="inline"><mrow><mi>f</mi><mo>∘</mo><mi>α</mi></mrow></math> is a function on Euclidean space having a local minimum or maximum at <math id="S2.SS2.p3.m4" class="ltx_Math" alttext="0" display="inline"><mn>0</mn></math>,
+so its derivative vanishes at <math id="S2.SS2.p3.m5" class="ltx_Math" alttext="0" display="inline"><mn>0</mn></math>.
+Calculating by the chain rule, we have
+<math id="S2.SS2.p3.m6" class="ltx_Math" alttext="0=\operatorname{D}(f\circ\alpha)(0)=\operatorname{D}f(p)\cdot\operatorname{D}%
+\alpha(0)" display="inline"><mrow><mn>0</mn><mo>=</mo><mrow><mrow><mi mathvariant="normal">D</mi><mo>⁡</mo><mrow><mo stretchy="false">(</mo><mrow><mi>f</mi><mo>∘</mo><mi>α</mi></mrow><mo stretchy="false">)</mo></mrow></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mrow><mrow><mi mathvariant="normal">D</mi><mo>⁡</mo><mi>f</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⋅</mo><mrow><mi mathvariant="normal">D</mi><mo>⁡</mo><mi>α</mi></mrow></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow></mrow></math>.
+In other words, <math id="S2.SS2.p3.m7" class="ltx_Math" alttext="\ker\operatorname{D}f(p)\supseteq\textrm{range of }\operatorname{D}\alpha(0)=%
+\mathrm{T}_{p}M" display="inline"><mrow><mrow><mrow><mi>ker</mi><mo>⁡</mo><mrow><mi mathvariant="normal">D</mi><mo>⁡</mo><mi>f</mi></mrow></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⊇</mo><mrow><mtext>range of </mtext><mo>⁢</mo><mrow><mi mathvariant="normal">D</mi><mo>⁡</mo><mi>α</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><msub><mi mathvariant="normal">T</mi><mi>p</mi></msub><mo>⁢</mo><mi>M</mi></mrow></mrow></math>.
+Intuitively, this says that the directional derivatives
+at <math id="S2.SS2.p3.m8" class="ltx_Math" alttext="p" display="inline"><mi>p</mi></math> of <math id="S2.SS2.p3.m9" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> lying in the tangent space <math id="S2.SS2.p3.m10" class="ltx_Math" alttext="\mathrm{T}_{p}M" display="inline"><mrow><msub><mi mathvariant="normal">T</mi><mi>p</mi></msub><mo>⁢</mo><mi>M</mi></mrow></math> of the manifold <math id="S2.SS2.p3.m11" class="ltx_Math" alttext="M" display="inline"><mi>M</mi></math> vanish.</p>
+</div>
+<div id="S2.SS2.p4" class="ltx_para">
+<p class="ltx_p">By the definition of <math id="S2.SS2.p4.m1" class="ltx_Math" alttext="g" display="inline"><mi>g</mi></math> and <math id="S2.SS2.p4.m2" class="ltx_Math" alttext="\alpha" display="inline"><mi>α</mi></math>, we have <math id="S2.SS2.p4.m3" class="ltx_Math" alttext="g\circ\alpha=0" display="inline"><mrow><mrow><mi>g</mi><mo>∘</mo><mi>α</mi></mrow><mo>=</mo><mn>0</mn></mrow></math>.
+By the chain rule again, we derive <math id="S2.SS2.p4.m4" class="ltx_Math" alttext="0=\operatorname{D}g(p)\cdot\operatorname{D}\alpha(0)" display="inline"><mrow><mn>0</mn><mo>=</mo><mrow><mrow><mrow><mrow><mi mathvariant="normal">D</mi><mo>⁡</mo><mi>g</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⋅</mo><mrow><mi mathvariant="normal">D</mi><mo>⁡</mo><mi>α</mi></mrow></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow></mrow></math>.</p>
+</div>
+<div id="S2.SS2.p5" class="ltx_para">
+<p class="ltx_p">Let the columns of <math id="S2.SS2.p5.m1" class="ltx_Math" alttext="\operatorname{D}\alpha(0)" display="inline"><mrow><mrow><mi mathvariant="normal">D</mi><mo>⁡</mo><mi>α</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow></math> be the column vectors <math id="S2.SS2.p5.m2" class="ltx_Math" alttext="v_{1},\ldots,v_{m}" display="inline"><mrow><msub><mi>v</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>v</mi><mi>m</mi></msub></mrow></math>, which span the
+<math id="S2.SS2.p5.m3" class="ltx_Math" alttext="m" display="inline"><mi>m</mi></math>-dimensional space <math id="S2.SS2.p5.m4" class="ltx_Math" alttext="\mathrm{T}_{p}M" display="inline"><mrow><msub><mi mathvariant="normal">T</mi><mi>p</mi></msub><mo>⁢</mo><mi>M</mi></mrow></math>,
+and look at the matrix equation <math id="S2.SS2.p5.m5" class="ltx_Math" alttext="0=\operatorname{D}f(p)\cdot\operatorname{D}\alpha(0)" display="inline"><mrow><mn>0</mn><mo>=</mo><mrow><mrow><mrow><mrow><mi mathvariant="normal">D</mi><mo>⁡</mo><mi>f</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⋅</mo><mrow><mi mathvariant="normal">D</mi><mo>⁡</mo><mi>α</mi></mrow></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow></mrow></math> again.
+The equation for each entry of this matrix, which consists of only one row, is:</p>
+<table id="S2.Ex9" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S2.Ex9.m1" class="ltx_Math" alttext="\nabla f(p)\cdot v_{j}=0\,,\quad j=1,\ldots,m\,." display="block"><mrow><mrow><mrow><mrow><mrow><mrow><mo>∇</mo><mo>⁡</mo><mi>f</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⋅</mo><msub><mi>v</mi><mi>j</mi></msub></mrow><mo>=</mo><mpadded width="+1.7pt"><mn>0</mn></mpadded></mrow><mo rspace="12.5pt">,</mo><mrow><mi>j</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mpadded width="+1.7pt"><mi>m</mi></mpadded></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">In other words, <math id="S2.SS2.p5.m6" class="ltx_Math" alttext="\nabla f(p)" display="inline"><mrow><mrow><mo>∇</mo><mo>⁡</mo><mi>f</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow></math> is orthogonal to <math id="S2.SS2.p5.m7" class="ltx_Math" alttext="v_{1},\ldots,v_{m}" display="inline"><mrow><msub><mi>v</mi><mn>1</mn></msub><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><msub><mi>v</mi><mi>m</mi></msub></mrow></math>,
+and hence it is orthogonal to the entire tangent space <math id="S2.SS2.p5.m8" class="ltx_Math" alttext="\mathrm{T}_{p}M" display="inline"><mrow><msub><mi mathvariant="normal">T</mi><mi>p</mi></msub><mo>⁢</mo><mi>M</mi></mrow></math>.</p>
+</div>
+<div id="S2.SS2.p6" class="ltx_para">
+<p class="ltx_p">Similarly, the matrix equation <math id="S2.SS2.p6.m1" class="ltx_Math" alttext="0=\operatorname{D}g(p)\cdot\operatorname{D}\alpha(0)" display="inline"><mrow><mn>0</mn><mo>=</mo><mrow><mrow><mrow><mrow><mi mathvariant="normal">D</mi><mo>⁡</mo><mi>g</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⋅</mo><mrow><mi mathvariant="normal">D</mi><mo>⁡</mo><mi>α</mi></mrow></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow></mrow></math> can be split into individual
+scalar equations:</p>
+<table id="S2.Ex10" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S2.Ex10.m1" class="ltx_Math" alttext="\nabla g_{i}(p)\cdot v_{j}=0\,,\quad i=1,\ldots,k,\;j=1,\ldots,m\,." display="block"><mrow><mrow><mrow><mrow><mrow><mrow><mo>∇</mo><mo>⁡</mo><msub><mi>g</mi><mi>i</mi></msub></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⋅</mo><msub><mi>v</mi><mi>j</mi></msub></mrow><mo>=</mo><mpadded width="+1.7pt"><mn>0</mn></mpadded></mrow><mo rspace="12.5pt">,</mo><mrow><mrow><mi>i</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mi>k</mi></mrow></mrow><mo rspace="5.3pt">,</mo><mrow><mi>j</mi><mo>=</mo><mrow><mn>1</mn><mo>,</mo><mi mathvariant="normal">…</mi><mo>,</mo><mpadded width="+1.7pt"><mi>m</mi></mpadded></mrow></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">Thus <math id="S2.SS2.p6.m2" class="ltx_Math" alttext="\nabla g_{i}(p)" display="inline"><mrow><mrow><mo>∇</mo><mo>⁡</mo><msub><mi>g</mi><mi>i</mi></msub></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow></math> is orthogonal to <math id="S2.SS2.p6.m3" class="ltx_Math" alttext="\mathrm{T}_{p}M" display="inline"><mrow><msub><mi mathvariant="normal">T</mi><mi>p</mi></msub><mo>⁢</mo><mi>M</mi></mrow></math>.
+But <math id="S2.SS2.p6.m4" class="ltx_Math" alttext="\nabla g_{i}(p)" display="inline"><mrow><mrow><mo>∇</mo><mo>⁡</mo><msub><mi>g</mi><mi>i</mi></msub></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow></math> are, by hypothesis, linearly independent,
+and there are <math id="S2.SS2.p6.m5" class="ltx_Math" alttext="k" display="inline"><mi>k</mi></math> of these gradients, so they must form a basis for
+the orthogonal complement of <math id="S2.SS2.p6.m6" class="ltx_Math" alttext="\mathrm{T}_{p}M" display="inline"><mrow><msub><mi mathvariant="normal">T</mi><mi>p</mi></msub><mo>⁢</mo><mi>M</mi></mrow></math>, of <math id="S2.SS2.p6.m7" class="ltx_Math" alttext="n-m=k" display="inline"><mrow><mrow><mi>n</mi><mo>-</mo><mi>m</mi></mrow><mo>=</mo><mi>k</mi></mrow></math> dimensions.
+Hence <math id="S2.SS2.p6.m8" class="ltx_Math" alttext="\nabla f(p)" display="inline"><mrow><mrow><mo>∇</mo><mo>⁡</mo><mi>f</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow></math> can be written as a unique linear combination of <math id="S2.SS2.p6.m9" class="ltx_Math" alttext="\nabla g_{i}(p)" display="inline"><mrow><mrow><mo>∇</mo><mo>⁡</mo><msub><mi>g</mi><mi>i</mi></msub></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow></math>:</p>
+<table id="S2.Ex11" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S2.Ex11.m1" class="ltx_Math" alttext="\nabla f(p)=\lambda_{1}\nabla g_{1}(p)+\cdots+\lambda_{k}\nabla g_{k}(p)\,.\qed" display="block"><mrow><mrow><mrow><mrow><mo>∇</mo><mo>⁡</mo><mi>f</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><msub><mi>λ</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo>∇</mo><mo>⁡</mo><msub><mi>g</mi><mn>1</mn></msub></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mrow><msub><mi>λ</mi><mi>k</mi></msub><mo>⁢</mo><mrow><mo>∇</mo><mo>⁡</mo><msub><mi>g</mi><mi>k</mi></msub></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo rspace="4.2pt" stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>.</mo><mo mathvariant="italic" separator="true">∎</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+</div>
+</section>
+</section>
+<section id="S3" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">3 </span>Intuitive interpretations</h2>
+
+<div id="S3.p1" class="ltx_para">
+<p class="ltx_p">We now discuss the intuitive and geometric
+interpretations of Lagrange multipliers.</p>
+</div>
+<section id="S3.SS1" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">3.1 </span>Normals to tangent hyperplanes</h3>
+
+<div id="S3.SS1.p1" class="ltx_para ltx_centering">
+<img src="manifold-tangent" id="S3.SS1.p1.g1" class="ltx_graphics" alt="">
+</div>
+<div id="S3.SS1.p2" class="ltx_para">
+<p class="ltx_p">Each equation <math id="S3.SS1.p2.m1" class="ltx_Math" alttext="g_{i}=0" display="inline"><mrow><msub><mi>g</mi><mi>i</mi></msub><mo>=</mo><mn>0</mn></mrow></math> defines a hypersurface <math id="S3.SS1.p2.m2" class="ltx_Math" alttext="M_{i}" display="inline"><msub><mi>M</mi><mi>i</mi></msub></math> in <math id="S3.SS1.p2.m3" class="ltx_Math" alttext="\mathbb{R}^{n}" display="inline"><msup><mi>ℝ</mi><mi>n</mi></msup></math>, a manifold of dimension <math id="S3.SS1.p2.m4" class="ltx_Math" alttext="n-1" display="inline"><mrow><mi>n</mi><mo>-</mo><mn>1</mn></mrow></math>.
+If we consider the tangent hyperplane at <math id="S3.SS1.p2.m5" class="ltx_Math" alttext="p" display="inline"><mi>p</mi></math> of these hypersurfaces, <math id="S3.SS1.p2.m6" class="ltx_Math" alttext="\mathrm{T}_{p}M_{i}" display="inline"><mrow><msub><mi mathvariant="normal">T</mi><mi>p</mi></msub><mo>⁢</mo><msub><mi>M</mi><mi>i</mi></msub></mrow></math>, the gradient <math id="S3.SS1.p2.m7" class="ltx_Math" alttext="\nabla g_{i}(p)" display="inline"><mrow><mrow><mo>∇</mo><mo>⁡</mo><msub><mi>g</mi><mi>i</mi></msub></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow></math>
+gives the normal vector to these hyperplanes.
+</p>
+</div>
+<div id="S3.SS1.p3" class="ltx_para">
+<p class="ltx_p">The manifold <math id="S3.SS1.p3.m1" class="ltx_Math" alttext="M" display="inline"><mi>M</mi></math> is the intersection of the hypersurfaces <math id="S3.SS1.p3.m2" class="ltx_Math" alttext="M_{i}" display="inline"><msub><mi>M</mi><mi>i</mi></msub></math>.
+Presumably, the tangent space <math id="S3.SS1.p3.m3" class="ltx_Math" alttext="\mathrm{T}_{p}M" display="inline"><mrow><msub><mi mathvariant="normal">T</mi><mi>p</mi></msub><mo>⁢</mo><mi>M</mi></mrow></math> is the intersection of the <math id="S3.SS1.p3.m4" class="ltx_Math" alttext="\mathrm{T}_{p}M_{i}" display="inline"><mrow><msub><mi mathvariant="normal">T</mi><mi>p</mi></msub><mo>⁢</mo><msub><mi>M</mi><mi>i</mi></msub></mrow></math>, and the subspace perpendicular to <math id="S3.SS1.p3.m5" class="ltx_Math" alttext="\mathrm{T}_{p}M" display="inline"><mrow><msub><mi mathvariant="normal">T</mi><mi>p</mi></msub><mo>⁢</mo><mi>M</mi></mrow></math> would be spanned by the normals <math id="S3.SS1.p3.m6" class="ltx_Math" alttext="\nabla g_{i}(p)" display="inline"><mrow><mrow><mo>∇</mo><mo>⁡</mo><msub><mi>g</mi><mi>i</mi></msub></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow></math>.
+Now, the direction derivatives at <math id="S3.SS1.p3.m7" class="ltx_Math" alttext="p" display="inline"><mi>p</mi></math> of <math id="S3.SS1.p3.m8" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> with respect to each vector in <math id="S3.SS1.p3.m9" class="ltx_Math" alttext="\mathrm{T}_{p}M" display="inline"><mrow><msub><mi mathvariant="normal">T</mi><mi>p</mi></msub><mo>⁢</mo><mi>M</mi></mrow></math>, as we have proved,
+vanish. So the direction of <math id="S3.SS1.p3.m10" class="ltx_Math" alttext="\nabla f(p)" display="inline"><mrow><mrow><mo>∇</mo><mo>⁡</mo><mi>f</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow></math>, the direction
+of the greatest change in <math id="S3.SS1.p3.m11" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> at <math id="S3.SS1.p3.m12" class="ltx_Math" alttext="p" display="inline"><mi>p</mi></math>, should be perpendicular
+to <math id="S3.SS1.p3.m13" class="ltx_Math" alttext="\mathrm{T}_{p}M" display="inline"><mrow><msub><mi mathvariant="normal">T</mi><mi>p</mi></msub><mo>⁢</mo><mi>M</mi></mrow></math>. Hence <math id="S3.SS1.p3.m14" class="ltx_Math" alttext="\nabla f(p)" display="inline"><mrow><mrow><mo>∇</mo><mo>⁡</mo><mi>f</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow></math> can be written as a linear combination of the <math id="S3.SS1.p3.m15" class="ltx_Math" alttext="\nabla g_{i}(p)" display="inline"><mrow><mrow><mo>∇</mo><mo>⁡</mo><msub><mi>g</mi><mi>i</mi></msub></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow></math>.</p>
+</div>
+<div id="S3.SS1.p4" class="ltx_para">
+<p class="ltx_p">Note, however, that this geometric picture, and the manipulations with the gradients <math id="S3.SS1.p4.m1" class="ltx_Math" alttext="\nabla f(p)" display="inline"><mrow><mrow><mo>∇</mo><mo>⁡</mo><mi>f</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow></math>
+and <math id="S3.SS1.p4.m2" class="ltx_Math" alttext="\nabla g_{i}(p)" display="inline"><mrow><mrow><mo>∇</mo><mo>⁡</mo><msub><mi>g</mi><mi>i</mi></msub></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow></math>, do not carry over to abstract manifolds.
+The notions of gradients and normals to surfaces depend on the
+inner product structure of <math id="S3.SS1.p4.m3" class="ltx_Math" alttext="\mathbb{R}^{n}" display="inline"><msup><mi>ℝ</mi><mi>n</mi></msup></math>, which is
+not present in an abstract manifold (without a Riemannian metric).</p>
+</div>
+<div id="S3.SS1.p5" class="ltx_para">
+<p class="ltx_p">On the other hand, this explains the mysterious appearance of annihilators in
+the last paragraph of the abstract proof.
+Annihilators and dual space theory serve as the proper tools
+to formalize the manipulations we made with the matrix equations <math id="S3.SS1.p5.m1" class="ltx_Math" alttext="0=\operatorname{D}f(p)\cdot\operatorname{D}\alpha(0)" display="inline"><mrow><mn>0</mn><mo>=</mo><mrow><mrow><mrow><mrow><mi mathvariant="normal">D</mi><mo>⁡</mo><mi>f</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⋅</mo><mrow><mi mathvariant="normal">D</mi><mo>⁡</mo><mi>α</mi></mrow></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow></mrow></math> and <math id="S3.SS1.p5.m2" class="ltx_Math" alttext="0=\operatorname{D}g(p)\cdot\operatorname{D}\alpha(0)" display="inline"><mrow><mn>0</mn><mo>=</mo><mrow><mrow><mrow><mrow><mi mathvariant="normal">D</mi><mo>⁡</mo><mi>g</mi></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow><mo>⋅</mo><mrow><mi mathvariant="normal">D</mi><mo>⁡</mo><mi>α</mi></mrow></mrow><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mn>0</mn><mo stretchy="false">)</mo></mrow></mrow></mrow></math>, without resorting to Euclidean coordinates, which, of course, are not even defined on an abstract manifold.</p>
+</div>
+</section>
+<section id="S3.SS2" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">3.2 </span>With infinitesimals</h3>
+
+<div id="S3.SS2.p1" class="ltx_para">
+<p class="ltx_p">If we are willing to interpret the quantities <math id="S3.SS2.p1.m1" class="ltx_Math" alttext="df" display="inline"><mrow><mi>d</mi><mo>⁢</mo><mi>f</mi></mrow></math> and <math id="S3.SS2.p1.m2" class="ltx_Math" alttext="dg_{i}" display="inline"><mrow><mi>d</mi><mo>⁢</mo><msub><mi>g</mi><mi>i</mi></msub></mrow></math> as infinitesimals,
+even the abstract version of the result has an intuitive explanation.
+Suppose we are at the point <math id="S3.SS2.p1.m3" class="ltx_Math" alttext="p" display="inline"><mi>p</mi></math> of the manifold <math id="S3.SS2.p1.m4" class="ltx_Math" alttext="M" display="inline"><mi>M</mi></math>,
+and consider an infinitesimal movement <math id="S3.SS2.p1.m5" class="ltx_Math" alttext="\Delta p" display="inline"><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>p</mi></mrow></math> about this point.
+The infinitesimal movement <math id="S3.SS2.p1.m6" class="ltx_Math" alttext="\Delta p" display="inline"><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>p</mi></mrow></math> is a vector in the tangent space
+<math id="S3.SS2.p1.m7" class="ltx_Math" alttext="\mathrm{T}_{p}M" display="inline"><mrow><msub><mi mathvariant="normal">T</mi><mi>p</mi></msub><mo>⁢</mo><mi>M</mi></mrow></math>, because, near <math id="S3.SS2.p1.m8" class="ltx_Math" alttext="p" display="inline"><mi>p</mi></math>, <math id="S3.SS2.p1.m9" class="ltx_Math" alttext="M" display="inline"><mi>M</mi></math> looks like the linear space <math id="S3.SS2.p1.m10" class="ltx_Math" alttext="\mathrm{T}_{p}M" display="inline"><mrow><msub><mi mathvariant="normal">T</mi><mi>p</mi></msub><mo>⁢</mo><mi>M</mi></mrow></math>.
+And as <math id="S3.SS2.p1.m11" class="ltx_Math" alttext="p" display="inline"><mi>p</mi></math> moves, the function <math id="S3.SS2.p1.m12" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> changes by a corresponding infinitesimal amount <math id="S3.SS2.p1.m13" class="ltx_Math" alttext="df" display="inline"><mrow><mi>d</mi><mo>⁢</mo><mi>f</mi></mrow></math>
+that is approximately linear in <math id="S3.SS2.p1.m14" class="ltx_Math" alttext="\Delta p" display="inline"><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>p</mi></mrow></math>.</p>
+</div>
+<div id="S3.SS2.p2" class="ltx_para">
+<p class="ltx_p">Furthermore, the change <math id="S3.SS2.p2.m1" class="ltx_Math" alttext="df" display="inline"><mrow><mi>d</mi><mo>⁢</mo><mi>f</mi></mrow></math> may be decomposed
+as the sum of a change as <math id="S3.SS2.p2.m2" class="ltx_Math" alttext="p" display="inline"><mi>p</mi></math> moves <em class="ltx_emph ltx_font_italic">along</em> the manifold <math id="S3.SS2.p2.m3" class="ltx_Math" alttext="M" display="inline"><mi>M</mi></math>,
+and a change as <math id="S3.SS2.p2.m4" class="ltx_Math" alttext="p" display="inline"><mi>p</mi></math> moves <em class="ltx_emph ltx_font_italic">out</em> of the manifold <math id="S3.SS2.p2.m5" class="ltx_Math" alttext="M" display="inline"><mi>M</mi></math>.
+But if <math id="S3.SS2.p2.m6" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> has a local minimum at <math id="S3.SS2.p2.m7" class="ltx_Math" alttext="p" display="inline"><mi>p</mi></math>, then there cannot be
+any change of <math id="S3.SS2.p2.m8" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> along <math id="S3.SS2.p2.m9" class="ltx_Math" alttext="M" display="inline"><mi>M</mi></math>; thus <math id="S3.SS2.p2.m10" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> only changes
+when moving out of <math id="S3.SS2.p2.m11" class="ltx_Math" alttext="M" display="inline"><mi>M</mi></math>.
+Now <math id="S3.SS2.p2.m12" class="ltx_Math" alttext="M" display="inline"><mi>M</mi></math> is described by the equations <math id="S3.SS2.p2.m13" class="ltx_Math" alttext="g_{i}=0" display="inline"><mrow><msub><mi>g</mi><mi>i</mi></msub><mo>=</mo><mn>0</mn></mrow></math>,
+so a movement out of <math id="S3.SS2.p2.m14" class="ltx_Math" alttext="M" display="inline"><mi>M</mi></math> is described by the infinitesimal changes
+<math id="S3.SS2.p2.m15" class="ltx_Math" alttext="dg_{i}" display="inline"><mrow><mi>d</mi><mo>⁢</mo><msub><mi>g</mi><mi>i</mi></msub></mrow></math>.
+As <math id="S3.SS2.p2.m16" class="ltx_Math" alttext="df" display="inline"><mrow><mi>d</mi><mo>⁢</mo><mi>f</mi></mrow></math> is linear in the change <math id="S3.SS2.p2.m17" class="ltx_Math" alttext="\Delta p" display="inline"><mrow><mi mathvariant="normal">Δ</mi><mo>⁢</mo><mi>p</mi></mrow></math>,
+we ought to be able to write it as a weighted sum of the changes <math id="S3.SS2.p2.m18" class="ltx_Math" alttext="dg_{i}" display="inline"><mrow><mi>d</mi><mo>⁢</mo><msub><mi>g</mi><mi>i</mi></msub></mrow></math>.
+The weights are, of course, the Lagrange multipliers <math id="S3.SS2.p2.m19" class="ltx_Math" alttext="\lambda_{i}" display="inline"><msub><mi>λ</mi><mi>i</mi></msub></math>.</p>
+</div>
+<div id="S3.SS2.p3" class="ltx_para">
+<p class="ltx_p">The linear algebra performed in the abstract proof can be regarded as the precise, rigorous
+translation of the preceding argument.</p>
+</div>
+</section>
+<section id="S3.SS3" class="ltx_subsection">
+<h3 class="ltx_title ltx_title_subsection">
+<span class="ltx_tag ltx_tag_subsection">3.3 </span>As rates of substitution</h3>
+
+<div id="S3.SS3.p1" class="ltx_para">
+<p class="ltx_p">Observe that the formula for Lagrange multipliers is formally
+very similar to the standard formula for expressing
+a differential form in terms of a basis:</p>
+<table id="S3.Ex12" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S3.Ex12.m1" class="ltx_Math" alttext="df(p)=\frac{\partial f}{\partial y_{1}}dy_{1}+\cdots+\frac{\partial f}{%
+\partial y_{k}}dy_{k}\,." display="block"><mrow><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>f</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><msub><mi>y</mi><mn>1</mn></msub></mrow></mfrac><mo>⁢</mo><mi>d</mi><mo>⁢</mo><msub><mi>y</mi><mn>1</mn></msub></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mrow><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>f</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><msub><mi>y</mi><mi>k</mi></msub></mrow></mfrac><mo>⁢</mo><mi>d</mi><mo>⁢</mo><mpadded width="+1.7pt"><msub><mi>y</mi><mi>k</mi></msub></mpadded></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+</div>
+<div id="S3.SS3.p2" class="ltx_para">
+<p class="ltx_p">In fact, if <math id="S3.SS3.p2.m1" class="ltx_Math" alttext="dg_{i}(p)" display="inline"><mrow><mi>d</mi><mo>⁢</mo><msub><mi>g</mi><mi>i</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow></math> are linearly independent,
+then they do form a basis for <math id="S3.SS3.p2.m2" class="ltx_Math" alttext="(\mathrm{T}_{p}M)^{0}" display="inline"><msup><mrow><mo stretchy="false">(</mo><mrow><msub><mi mathvariant="normal">T</mi><mi>p</mi></msub><mo>⁢</mo><mi>M</mi></mrow><mo stretchy="false">)</mo></mrow><mn>0</mn></msup></math>,
+that can be extended to a basis for <math id="S3.SS3.p2.m3" class="ltx_Math" alttext="(\mathrm{T}_{p}N)^{*}" display="inline"><msup><mrow><mo stretchy="false">(</mo><mrow><msub><mi mathvariant="normal">T</mi><mi>p</mi></msub><mo>⁢</mo><mi>N</mi></mrow><mo stretchy="false">)</mo></mrow><mo>*</mo></msup></math>.
+By the uniqueness of the basis representation,
+we must have</p>
+<table id="S3.Ex13" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S3.Ex13.m1" class="ltx_Math" alttext="\lambda_{i}=\frac{\partial f}{\partial g_{i}}\,." display="block"><mrow><mrow><msub><mi>λ</mi><mi>i</mi></msub><mo>=</mo><mpadded width="+1.7pt"><mfrac><mrow><mo>∂</mo><mo>⁡</mo><mi>f</mi></mrow><mrow><mo>∂</mo><mo>⁡</mo><msub><mi>g</mi><mi>i</mi></msub></mrow></mfrac></mpadded></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p">That is, <math id="S3.SS3.p2.m4" class="ltx_Math" alttext="\lambda_{i}" display="inline"><msub><mi>λ</mi><mi>i</mi></msub></math> is the differential
+of <math id="S3.SS3.p2.m5" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> with respect to changes in <math id="S3.SS3.p2.m6" class="ltx_Math" alttext="g_{i}" display="inline"><msub><mi>g</mi><mi>i</mi></msub></math>.</p>
+</div>
+<div id="S3.SS3.p3" class="ltx_para">
+<p class="ltx_p">In applications of Lagrange multipliers to economic
+problems, the multipliers <math id="S3.SS3.p3.m1" class="ltx_Math" alttext="\lambda_{i}" display="inline"><msub><mi>λ</mi><mi>i</mi></msub></math> are <em class="ltx_emph ltx_font_italic">rates of substitution</em> —
+they give the rate of improvement in the objective function <math id="S3.SS3.p3.m2" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math>
+as the constraints <math id="S3.SS3.p3.m3" class="ltx_Math" alttext="g_{i}" display="inline"><msub><mi>g</mi><mi>i</mi></msub></math> are relaxed.</p>
+</div>
+</section>
+</section>
+<section id="S4" class="ltx_section">
+<h2 class="ltx_title ltx_title_section">
+<span class="ltx_tag ltx_tag_section">4 </span>Stationary points</h2>
+
+<div id="S4.p1" class="ltx_para">
+<p class="ltx_p">In applications,
+sometimes we are interested in
+finding stationary points <math id="S4.p1.m1" class="ltx_Math" alttext="p" display="inline"><mi>p</mi></math> of <math id="S4.p1.m2" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> — defined as
+points <math id="S4.p1.m3" class="ltx_Math" alttext="p" display="inline"><mi>p</mi></math> such that <math id="S4.p1.m4" class="ltx_Math" alttext="df" display="inline"><mrow><mi>d</mi><mo>⁢</mo><mi>f</mi></mrow></math> vanishes on <math id="S4.p1.m5" class="ltx_Math" alttext="\mathrm{T}_{p}M" display="inline"><mrow><msub><mi mathvariant="normal">T</mi><mi>p</mi></msub><mo>⁢</mo><mi>M</mi></mrow></math>, or equivalently,
+that the Taylor expansion of <math id="S4.p1.m6" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> at <math id="S4.p1.m7" class="ltx_Math" alttext="p" display="inline"><mi>p</mi></math>, under any system of coordinates
+for <math id="S4.p1.m8" class="ltx_Math" alttext="M" display="inline"><mi>M</mi></math>, has no terms of first order. Then the Lagrange multiplier method
+works for this situation too.</p>
+</div>
+<div id="S4.p2" class="ltx_para">
+<p class="ltx_p">The following theorem incorporates
+the more general notion of stationary points.</p>
+</div>
+<div id="Thmthm4" class="ltx_theorem ltx_theorem_thm">
+<h6 class="ltx_title ltx_runin ltx_font_bold ltx_title_theorem">
+<span class="ltx_tag ltx_tag_theorem">Theorem 4</span>.</h6>
+<div id="Thmthm4.p1" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Let <math id="Thmthm4.p1.m1" class="ltx_Math" alttext="N" display="inline"><mi>N</mi></math> be a <math id="Thmthm4.p1.m2" class="ltx_Math" alttext="n" display="inline"><mi>n</mi></math>-dimensional differentiable manifold (without boundary), and <math id="Thmthm4.p1.m3" class="ltx_Math" alttext="f\colon N\to\mathbb{R}" display="inline"><mrow><mi>f</mi><mo mathvariant="normal">:</mo><mrow><mi>N</mi><mo mathvariant="normal">→</mo><mi mathvariant="normal">R</mi></mrow></mrow></math>,
+<math id="Thmthm4.p1.m4" class="ltx_Math" alttext="g_{i}\colon N\to\mathbb{R}" display="inline"><mrow><msub><mi>g</mi><mi>i</mi></msub><mo mathvariant="normal">:</mo><mrow><mi>N</mi><mo mathvariant="normal">→</mo><mi mathvariant="normal">R</mi></mrow></mrow></math>, for <math id="Thmthm4.p1.m5" class="ltx_Math" alttext="i=1,\ldots,k" display="inline"><mrow><mi>i</mi><mo mathvariant="normal">=</mo><mrow><mn mathvariant="normal">1</mn><mo mathvariant="normal">,</mo><mi mathvariant="normal">…</mi><mo mathvariant="normal">,</mo><mi>k</mi></mrow></mrow></math>,
+be continuously differentiable. Suppose <math id="Thmthm4.p1.m6" class="ltx_Math" alttext="p\in M=\bigcap_{i=1}^{k}g_{i}^{-1}(\{0\})" display="inline"><mrow><mi>p</mi><mo mathvariant="normal">∈</mo><mi>M</mi><mo mathvariant="normal">=</mo><mrow><msubsup><mo largeop="true" mathsize="160%" mathvariant="normal" stretchy="false" symmetric="true">⋂</mo><mrow><mi>i</mi><mo mathvariant="normal">=</mo><mn mathvariant="normal">1</mn></mrow><mi>k</mi></msubsup><mrow><msubsup><mi>g</mi><mi>i</mi><mrow><mo mathvariant="normal">-</mo><mn mathvariant="normal">1</mn></mrow></msubsup><mo mathvariant="italic">⁢</mo><mrow><mo mathvariant="normal" stretchy="false">(</mo><mrow><mo mathvariant="normal" stretchy="false">{</mo><mn mathvariant="normal">0</mn><mo mathvariant="normal" stretchy="false">}</mo></mrow><mo mathvariant="normal" stretchy="false">)</mo></mrow></mrow></mrow></mrow></math>, and
+<math id="Thmthm4.p1.m7" class="ltx_Math" alttext="dg_{i}(p)" display="inline"><mrow><mi>d</mi><mo mathvariant="italic">⁢</mo><msub><mi>g</mi><mi>i</mi></msub><mo mathvariant="italic">⁢</mo><mrow><mo mathvariant="normal" stretchy="false">(</mo><mi>p</mi><mo mathvariant="normal" stretchy="false">)</mo></mrow></mrow></math> are linearly independent.</span></p>
+</div>
+<div id="Thmthm4.p2" class="ltx_para">
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">Then <math id="Thmthm4.p2.m1" class="ltx_Math" alttext="p" display="inline"><mi>p</mi></math> is a stationary point (e.g. a local extremum point) of <math id="Thmthm4.p2.m2" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> restricted to <math id="Thmthm4.p2.m3" class="ltx_Math" alttext="M" display="inline"><mi>M</mi></math>,
+if and only if there exist <math id="Thmthm4.p2.m4" class="ltx_Math" alttext="\lambda_{1},\ldots,\lambda_{k}\in\mathbb{R}" display="inline"><mrow><mrow><msub><mi>λ</mi><mn mathvariant="normal">1</mn></msub><mo mathvariant="normal">,</mo><mi mathvariant="normal">…</mi><mo mathvariant="normal">,</mo><msub><mi>λ</mi><mi>k</mi></msub></mrow><mo mathvariant="normal">∈</mo><mi mathvariant="normal">R</mi></mrow></math>
+such that</span></p>
+<table id="S4.Ex14" class="ltx_equation ltx_eqn_table">
+
+<tr class="ltx_equation ltx_eqn_row ltx_align_baseline">
+<td class="ltx_eqn_cell ltx_eqn_center_padleft"></td>
+<td class="ltx_eqn_cell ltx_align_center"><math id="S4.Ex14.m1" class="ltx_Math" alttext="df(p)=\lambda_{1}\,dg_{1}(p)+\cdots+\lambda_{k}\,dg_{k}(p)\,." display="block"><mrow><mrow><mrow><mi>d</mi><mo>⁢</mo><mi>f</mi><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow><mo>=</mo><mrow><mrow><mpadded width="+1.7pt"><msub><mi>λ</mi><mn>1</mn></msub></mpadded><mo>⁢</mo><mi>d</mi><mo>⁢</mo><msub><mi>g</mi><mn>1</mn></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow><mo>+</mo><mi mathvariant="normal">⋯</mi><mo>+</mo><mrow><mpadded width="+1.7pt"><msub><mi>λ</mi><mi>k</mi></msub></mpadded><mo>⁢</mo><mi>d</mi><mo>⁢</mo><msub><mi>g</mi><mi>k</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo rspace="4.2pt" stretchy="false">)</mo></mrow></mrow></mrow></mrow><mo>.</mo></mrow></math></td>
+<td class="ltx_eqn_cell ltx_eqn_center_padright"></td>
+</tr>
+</table>
+<p class="ltx_p"><span class="ltx_text ltx_font_italic">The Lagrange multipliers <math id="Thmthm4.p2.m5" class="ltx_Math" alttext="\lambda_{i}" display="inline"><msub><mi>λ</mi><mi>i</mi></msub></math>, which depend on <math id="Thmthm4.p2.m6" class="ltx_Math" alttext="p" display="inline"><mi>p</mi></math>, are unique when they exist.</span></p>
+</div>
+</div>
+<div id="S4.p3" class="ltx_para">
+<p class="ltx_p">In this formulation, <math id="S4.p3.m1" class="ltx_Math" alttext="M" display="inline"><mi>M</mi></math> is not necessarily a manifold,
+but it is one when intersected with a sufficiently small neighborhood about <math id="S4.p3.m2" class="ltx_Math" alttext="p" display="inline"><mi>p</mi></math>.
+So it makes sense to talk about <math id="S4.p3.m3" class="ltx_Math" alttext="\mathrm{T}_{p}M" display="inline"><mrow><msub><mi mathvariant="normal">T</mi><mi>p</mi></msub><mo>⁢</mo><mi>M</mi></mrow></math>, although we are abusing notation here.
+The subspace in question can be more accurately described as the
+annihilated subspace of <math id="S4.p3.m4" class="ltx_Math" alttext="\operatorname{span}\{dg_{i}(p)\}" display="inline"><mrow><mi>span</mi><mo>⁡</mo><mrow><mo stretchy="false">{</mo><mrow><mi>d</mi><mo>⁢</mo><msub><mi>g</mi><mi>i</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow><mo stretchy="false">}</mo></mrow></mrow></math>.</p>
+</div>
+<div id="S4.p4" class="ltx_para">
+<p class="ltx_p">It is also enough that <math id="S4.p4.m1" class="ltx_Math" alttext="dg_{i}" display="inline"><mrow><mi>d</mi><mo>⁢</mo><msub><mi>g</mi><mi>i</mi></msub></mrow></math> be linearly independent
+only at the point <math id="S4.p4.m2" class="ltx_Math" alttext="p" display="inline"><mi>p</mi></math>.
+For <math id="S4.p4.m3" class="ltx_Math" alttext="dg_{i}" display="inline"><mrow><mi>d</mi><mo>⁢</mo><msub><mi>g</mi><mi>i</mi></msub></mrow></math> are continuous, so they will be
+linearly independent for points near
+<math id="S4.p4.m4" class="ltx_Math" alttext="p" display="inline"><mi>p</mi></math> anyway,
+and we may restrict our viewpoint to a sufficiently small neighborhood
+around <math id="S4.p4.m5" class="ltx_Math" alttext="p" display="inline"><mi>p</mi></math>, and the proofs carry through.</p>
+</div>
+<div id="S4.p5" class="ltx_para">
+<p class="ltx_p">The proof involves only simple modifications to
+that of Theorem 1 — for instance,
+the converse implication follows
+because we have already proved that the <math id="S4.p5.m1" class="ltx_Math" alttext="dg_{i}(p)" display="inline"><mrow><mi>d</mi><mo>⁢</mo><msub><mi>g</mi><mi>i</mi></msub><mo>⁢</mo><mrow><mo stretchy="false">(</mo><mi>p</mi><mo stretchy="false">)</mo></mrow></mrow></math> form a basis for the annihilator of <math id="S4.p5.m2" class="ltx_Math" alttext="\mathrm{T}_{p}M" display="inline"><mrow><msub><mi mathvariant="normal">T</mi><mi>p</mi></msub><mo>⁢</mo><mi>M</mi></mrow></math>,
+independently of whether or not <math id="S4.p5.m3" class="ltx_Math" alttext="p" display="inline"><mi>p</mi></math> is a stationary point of <math id="S4.p5.m4" class="ltx_Math" alttext="f" display="inline"><mi>f</mi></math> on <math id="S4.p5.m5" class="ltx_Math" alttext="M" display="inline"><mi>M</mi></math>.</p>
+</div>
+</section>
+<section id="bib" class="ltx_bibliography">
+<h2 class="ltx_title ltx_title_bibliography">References</h2>
+
+<ul class="ltx_biblist">
+      
+<li id="bib.bib1" class="ltx_bibitem">
+        <span class="ltx_bibtag ltx_role_refnum">1</span>
+        
+<span class="ltx_bibblock"> Friedberg, Insel, Spence. <span class="ltx_text ltx_font_italic">Linear Algebra</span>. Prentice-Hall, 1997.
+
+</span>
+      </li>
+      
+<li id="bib.bib2" class="ltx_bibitem">
+        <span class="ltx_bibtag ltx_role_refnum">2</span>
+        
+<span class="ltx_bibblock"> David Luenberger. <span class="ltx_text ltx_font_italic">Optimization by Vector Space Methods</span>.
+John Wiley &amp; Sons, 1969.
+
+</span>
+      </li>
+      
+<li id="bib.bib3" class="ltx_bibitem">
+        <span class="ltx_bibtag ltx_role_refnum">3</span>
+        
+<span class="ltx_bibblock"> James R. Munkres. <span class="ltx_text ltx_font_italic">Analysis on Manifolds</span>. Westview Press, 1991.
+
+</span>
+      </li>
+      
+<li id="bib.bib4" class="ltx_bibitem">
+        <span class="ltx_bibtag ltx_role_refnum">4</span>
+        
+<span class="ltx_bibblock"> R. Tyrrell Rockafellar. “Lagrange Multipliers and Optimality”. <span class="ltx_text ltx_font_italic">SIAM Review</span>. Vol. 35, No. 2, June 1993.
+
+</span>
+      </li>
+      
+<li id="bib.bib5" class="ltx_bibitem">
+        <span class="ltx_bibtag ltx_role_refnum">5</span>
+        
+<span class="ltx_bibblock"> Michael Spivak. <span class="ltx_text ltx_font_italic">Calculus on Manifolds</span>. Perseus Books, 1998.
+
+</span>
+      </li>
+    
+</ul>
+</section>
+<div id="p4" class="ltx_para ltx_align_right">
+<table class="ltx_tabular ltx_guessed_headers ltx_align_middle">
+<tbody class="ltx_tbody">
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l ltx_border_t">Title</th>
+<td class="ltx_td ltx_align_left ltx_border_r ltx_border_t">Lagrange multipliers on manifolds</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Canonical name</th>
+<td class="ltx_td ltx_align_left ltx_border_r">LagrangeMultipliersOnManifolds</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Date of creation</th>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 15:25:45</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Last modified on</th>
+<td class="ltx_td ltx_align_left ltx_border_r">2013-03-22 15:25:45</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Owner</th>
+<td class="ltx_td ltx_align_left ltx_border_r">stevecheng (10074)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Last modified by</th>
+<td class="ltx_td ltx_align_left ltx_border_r">stevecheng (10074)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Numerical id</th>
+<td class="ltx_td ltx_align_left ltx_border_r">24</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Author</th>
+<td class="ltx_td ltx_align_left ltx_border_r">stevecheng (10074)</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Entry type</th>
+<td class="ltx_td ltx_align_left ltx_border_r">Topic</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Classification</th>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 58C05</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_l">Classification</th>
+<td class="ltx_td ltx_align_left ltx_border_r">msc 49-00</td>
+</tr>
+<tr class="ltx_tr">
+<th class="ltx_td ltx_align_left ltx_th ltx_th_row ltx_border_b ltx_border_l">Related topic</th>
+<td class="ltx_td ltx_align_left ltx_border_b ltx_border_r">Manifold</td>
+</tr>
+</tbody>
+</table>
+</div>
+</article>
+</div>
+<footer class="ltx_page_footer">
+<div class="ltx_page_logo">Generated  on Sat Feb 10 11:50:57 2018 by <a href="http://dlmf.nist.gov/LaTeXML/">LaTeXML <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAAOCAYAAAD5YeaVAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9wKExQZLWTEaOUAAAAddEVYdENvbW1lbnQAQ3JlYXRlZCB3aXRoIFRoZSBHSU1Q72QlbgAAAdpJREFUKM9tkL+L2nAARz9fPZNCKFapUn8kyI0e4iRHSR1Kb8ng0lJw6FYHFwv2LwhOpcWxTjeUunYqOmqd6hEoRDhtDWdA8ApRYsSUCDHNt5ul13vz4w0vWCgUnnEc975arX6ORqN3VqtVZbfbTQC4uEHANM3jSqXymFI6yWazP2KxWAXAL9zCUa1Wy2tXVxheKA9YNoR8Pt+aTqe4FVVVvz05O6MBhqUIBGk8Hn8HAOVy+T+XLJfLS4ZhTiRJgqIoVBRFIoric47jPnmeB1mW/9rr9ZpSSn3Lsmir1fJZlqWlUonKsvwWwD8ymc/nXwVBeLjf7xEKhdBut9Hr9WgmkyGEkJwsy5eHG5vN5g0AKIoCAEgkEkin0wQAfN9/cXPdheu6P33fBwB4ngcAcByHJpPJl+fn54mD3Gg0NrquXxeLRQAAwzAYj8cwTZPwPH9/sVg8PXweDAauqqr2cDjEer1GJBLBZDJBs9mE4zjwfZ85lAGg2+06hmGgXq+j3+/DsixYlgVN03a9Xu8jgCNCyIegIAgx13Vfd7vdu+FweG8YRkjXdWy329+dTgeSJD3ieZ7RNO0VAXAPwDEAO5VKndi2fWrb9jWl9Esul6PZbDY9Go1OZ7PZ9z/lyuD3OozU2wAAAABJRU5ErkJggg==" alt="[LOGO]"></a>
+</div></footer>
+</div>
+</body>
+</html>
